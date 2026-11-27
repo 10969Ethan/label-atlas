@@ -334,10 +334,10 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 #tm *{box-sizing:border-box;min-width:0}
 #tm button,#tm input,#tm select{font:inherit;color:inherit}
 #tm a{color:inherit}
-.tm-top{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:end;justify-content:space-between;padding:clamp(20px,3vw,36px) max(4vw,16px) 12px;max-width:1320px;margin:auto}
+.tm-top{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(20px,4vw,56px);align-items:end;padding:clamp(20px,3vw,36px) max(4vw,16px) 12px;max-width:1480px;margin:auto}
 #tm .tm-top .tm-h{margin:0;font:900 clamp(30px,4.4vw,48px)/1.05 'Noto Sans TC',sans-serif;letter-spacing:-.02em}
 .tm-top p{margin:6px 0 0;color:#aab7bf;max-width:46ch}
-.tm-top-controls{display:grid;grid-template-columns:minmax(220px,1fr);width:min(310px,40%);gap:8px;align-items:end;flex:none}
+.tm-top-controls{display:grid;grid-template-columns:minmax(220px,1fr);width:100%;max-width:760px;gap:8px;align-items:end;justify-self:stretch}
 .tm-route{display:grid;gap:4px}
 .tm-route .tm-sel{width:100%;min-width:0}
 .tm-route label{font-size:14px;color:#aab7bf}
@@ -357,8 +357,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 .tm-scene[data-era=vhs]{filter:saturate(1.25) hue-rotate(-8deg);--grain:.2}
 .tm-scene[data-era=vhs] .tm-scan{opacity:1}
 .tm-scan{position:absolute;inset:0;opacity:0;pointer-events:none;background:repeating-linear-gradient(0deg,#0003 0 1px,#0000 1px 3px);box-shadow:inset 4px 0 #ff00502a,inset -4px 0 #00d0ff2a}
-.tm-stagewrap{position:absolute;inset:4% 0 0;perspective:900px;display:grid;place-items:center;cursor:grab;touch-action:pan-y}
-.tm-stagewrap:active{cursor:grabbing}
+.tm-stagewrap{position:absolute;inset:4% 0 0;perspective:900px;display:grid;place-items:center;cursor:default;touch-action:pan-y}
 .tm-stage{position:relative;height:100%;aspect-ratio:200/360;transform-style:preserve-3d;transform:scale(var(--z,1)) rotateY(var(--rot,0deg));transition:transform .45s cubic-bezier(.2,.7,.2,1)}
 .tm-stage.drag{transition:none}
 .tm-face{position:absolute;inset:0;-webkit-backface-visibility:hidden;backface-visibility:hidden;display:grid;place-items:center}
@@ -762,7 +761,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 #tm .log-folio{margin-top:8px}
 #tm .tm-foot{padding:4px 2vw 14px;font-size:10px}
 }
-@media(max-width:959px){#tm .tm-workspace{display:flex;flex-direction:column;gap:0;height:auto;padding:0}.tm-control-column{display:contents}.tm-top-controls{width:100%;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}.tm-log{width:100%}.tm-login{padding:24px 16px}.log-shortcuts{position:sticky;top:0}}
+@media(max-width:959px){#tm .tm-top{grid-template-columns:minmax(0,1fr)}#tm .tm-workspace{display:flex;flex-direction:column;gap:0;height:auto;padding:0}.tm-control-column{display:contents}.tm-top-controls{width:100%;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}.tm-log{width:100%}.tm-login{padding:24px 16px}.log-shortcuts{position:sticky;top:0}}
 @media(max-width:520px){.log-ch{letter-spacing:.16em}.tm-log .tm-flip{min-height:210px}.log-turn{grid-template-columns:1fr}.log-turn .nx{grid-column:1}.log-body>p{text-align:left}}
 @media(prefers-reduced-motion:reduce){.tm-log::before,.log-yr,.log-portrait .orbit,.log-turn .warp{animation:none!important}#log-page.turn-f,#log-page.turn-b{animation:none}}
 /* 主理人與作品 / image-led editorial profile */
@@ -844,7 +843,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     <div class="tm-cabin" id="tm-cabin">
       <div class="tm-shield" id="tm-shield">
         <div class="tm-scene" id="tm-scene">
-          <div class="tm-stagewrap" id="tm-stagewrap" title="拖曳旋轉、雙擊放大">
+          <div class="tm-stagewrap" id="tm-stagewrap" title="使用下方控制鈕縮放或翻面">
             <div class="tm-stage" id="tm-stage">
               <div class="tm-face" id="tm-front"></div>
               <div class="tm-face back" id="tm-backface"></div>
@@ -852,7 +851,6 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
           </div>
           <div class="tm-scan"></div>
           <div class="tm-hud" id="tm-hud"></div>
-          <div class="tm-hint">拖曳輪廓可 360° 轉動，翻到背面看辨識重點</div>
         </div>
         <canvas class="tm-warp" id="tm-warp"></canvas>
         <div class="tm-glass"></div>
@@ -2097,18 +2095,11 @@ function status(t){$('#tm-status').textContent=t}
 
 /* ---------- 3D 時間軸 ---------- */
 
-/* ---------- 駕駛艙視差與輪廓轉動 ---------- */
+/* ---------- 駕駛艙視差與輪廓控制 ---------- */
 const car=$('#tm-car'), cab=$('#tm-cabin'), stage=$('#tm-stage');
 car.addEventListener('pointermove',e=>{if(e.pointerType!=='mouse'||quiet||reduce.matches||busy)return;const r=car.getBoundingClientRect();cab.style.setProperty('--ry',((e.clientX-r.left)/r.width-.5)*6+'deg');cab.style.setProperty('--rx',-((e.clientY-r.top)/r.height-.5)*5+'deg')});
 car.addEventListener('pointerleave',()=>{cab.style.setProperty('--rx','0deg');cab.style.setProperty('--ry','0deg')});
 const setStage=()=>{stage.style.setProperty('--rot',rot+'deg');stage.style.setProperty('--z',zoom)};
-let drag=null;
-const sw=$('#tm-stagewrap');
-sw.addEventListener('pointerdown',e=>{drag={x:e.clientX,r:rot};sw.setPointerCapture(e.pointerId);stage.classList.add('drag')});
-sw.addEventListener('pointermove',e=>{if(!drag)return;rot=drag.r+(e.clientX-drag.x)*.6;setStage()});
-const end=()=>{if(!drag)return;drag=null;stage.classList.remove('drag');rot=Math.round(rot/180)*180;setStage()};
-sw.addEventListener('pointerup',end);sw.addEventListener('pointercancel',end);
-sw.addEventListener('dblclick',()=>{zoom=zoom>1?1:1.7;setStage()});
 $('#tm-zin').onclick=()=>{zoom=Math.min(2.4,zoom+.3);setStage()};
 $('#tm-zout').onclick=()=>{zoom=Math.max(.7,zoom-.3);setStage()};
 $('#tm-turn').onclick=()=>{rot+=180;setStage()};
@@ -2214,8 +2205,8 @@ status('目的地已設定：'+C[planned].year+' · '+C[planned].person+'。拉�
 <script id="warp-gates-js">
 /* 轉場可調設定：高度、粒子數量、顏色、標題與特效 */
 const GATE_FX={
-  warp:{height:'160vh',particles:{desktop:600,mobile:250},colors:['#9fb3ff','#ffd98a','#d08cff'],text:'啟動時光機 · ENGAGING TIME DRIVE',flash:true,shake:true},
-  landing:{height:'160vh',particles:{desktop:500,mobile:220},colors:['#ffd98a','#c3a96d'],paper:'#f8f6f0',text:'抵達 · 服裝歷史檔案館 ARRIVING AT THE ARCHIVE',iris:true}
+  warp:{height:'240vh',particles:{desktop:600,mobile:250},colors:['#9fb3ff','#ffd98a','#d08cff'],text:'啟動時光機 · ENGAGING TIME DRIVE',flash:true,shake:true},
+  landing:{height:'240vh',particles:{desktop:500,mobile:220},colors:['#ffd98a','#c3a96d'],paper:'#f8f6f0',text:'抵達 · 服裝歷史檔案館 ARRIVING AT THE ARCHIVE',iris:true}
 };
 (()=>{
   'use strict';
