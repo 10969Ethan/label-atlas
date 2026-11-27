@@ -335,7 +335,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 #tm button,#tm input,#tm select{font:inherit;color:inherit}
 #tm a{color:inherit}
 .tm-top{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:end;justify-content:space-between;padding:clamp(20px,3vw,36px) max(4vw,16px) 12px;max-width:1320px;margin:auto}
-.tm-top h1{margin:0;font:900 clamp(30px,4.4vw,48px)/1.05 'Noto Sans TC',sans-serif;letter-spacing:-.02em}
+#tm .tm-top .tm-h{margin:0;font:900 clamp(30px,4.4vw,48px)/1.05 'Noto Sans TC',sans-serif;letter-spacing:-.02em}
 .tm-top p{margin:6px 0 0;color:#aab7bf;max-width:46ch}
 .tm-route{display:grid;gap:4px}
 .tm-route label{font-size:14px;color:#aab7bf}
@@ -490,16 +490,16 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
   <p class="library-editorial-note">分類為編輯選讀，並非完整或唯一的品牌定位。書封由本站設計；LOGO 僅作品牌辨識，版本依來源。未取得可靠圖檔的品牌採本站編排字標。</p>
 </section>
 <section id="time-machine" aria-label="時光機"><div id="tm">
-  <header class="tm-top">
+  <div class="tm-top">
     <div>
-      <h1>坐上時光車，穿越時尚。</h1>
+      <h2 class="tm-h">坐上時光車，穿越時尚。</h2>
       <p>選一個年代，拉下啟動桿。窗外是那個時代最具代表性的衣服輪廓，下方航行日誌是你需要知道的歷史。</p>
     </div>
     <div class="tm-route">
       <label for="tm-route">閱讀路線</label>
       <select class="tm-sel" id="tm-route"></select>
     </div>
-  </header>
+  </div>
 
   <section class="tm-car" id="tm-car" aria-label="時光車駕駛艙">
     <div class="tm-cabin" id="tm-cabin">
