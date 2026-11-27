@@ -695,9 +695,68 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 .log-shortcuts button[aria-current=true]{border-color:#ffd98a;color:#fff;background:#25203a;box-shadow:0 0 16px #ffd98a22}
 .log-visual{margin:22px 0 0;max-width:700px;border:1px solid #9fb3ff2b;background:#080d1c;border-radius:12px;overflow:hidden}
 .log-visual img{display:block;width:100%;height:clamp(170px,25vh,300px);object-fit:cover}
+.log-visual>svg{display:block;width:100%;height:190px}
 .log-visual figcaption{padding:8px 12px;color:#929dbd;font:11px/1.6 'Noto Sans TC',sans-serif}
 .log-visual figcaption a{color:#a9bcff}
+.log-silhouette svg{display:block;width:100%;height:240px;object-fit:contain;background:radial-gradient(circle at 50% 30%,#202d5a,#080d1c 75%);padding:8px}
+.log-placeholder{height:220px;display:grid;place-content:center;text-align:center;background:radial-gradient(circle at 50% 35%,#293563,#0b1020 75%);font:600 25px/1.3 'Noto Serif TC',serif;color:#fff}
+.log-placeholder small{display:block;margin-top:10px;color:#a6b5e9;font:11px 'Barlow Condensed',sans-serif;letter-spacing:.2em}
+.log-work-art .log-placeholder{background:linear-gradient(145deg,#15203e,#0c1124);border:1px solid #9fb3ff36;color:#ffd98a}
 .log-portrait .face img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+@media(min-width:960px){
+#tm .tm-workspace{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);grid-template-rows:minmax(0,1fr);gap:clamp(14px,1.8vw,26px);height:clamp(560px,calc(100svh - 255px),900px);padding:0 max(2vw,18px) 18px;align-items:stretch}
+#tm .tm-control-column{display:grid;grid-template-rows:minmax(0,1fr) 92px;gap:8px;min-width:0;min-height:0}
+#tm .tm-car{height:100%;min-height:0;padding:0;margin:0;max-width:none}
+#tm .tm-cabin{height:100%;padding:10px;display:flex;flex-direction:column;gap:8px;border-radius:20px}
+#tm .tm-shield{height:clamp(210px,31vh,360px);min-height:0;flex:0 0 auto;aspect-ratio:auto;border-radius:34% 34% 10px 10px/18% 18% 10px 10px}
+#tm .tm-dash{flex:1;min-height:0;margin-top:0;gap:8px;grid-template-columns:minmax(0,1.35fr) minmax(86px,.55fr) minmax(0,1fr)}
+#tm .tm-panel{padding:8px;border-radius:12px}
+#tm .tm-row{padding:6px 7px;gap:5px}
+#tm .tm-row .who{font-size:12px}
+#tm .tm-row small,.tm-gauge .lbl{font-size:11px}
+#tm .tm-gauge svg{max-height:120px}
+#tm .tm-ctrls{gap:6px}
+#tm .tm-ctrls label,.tm-ctrls .tm-in,.tm-ctrls .tm-sel{font-size:12px}
+#tm .tm-in,#tm .tm-sel{height:36px;padding:0 8px}
+#tm .tm-go{grid-template-columns:34px minmax(0,1fr) 34px;gap:4px}
+#tm .tm-ico{width:34px;height:36px}
+#tm .tm-lever{height:42px;min-height:42px;font-size:14px;border-radius:10px}
+#tm .tm-switch{min-height:26px;font-size:11px;gap:6px}
+#tm .tm-switch b{width:34px;height:20px}
+#tm .tm-switch b::after{width:12px;height:12px}
+#tm .tm-switch[aria-pressed=true] b::after{left:19px}
+#tm .tm-status{font-size:10px;min-height:1em}
+#tm .tm-railw{height:92px;padding:0;grid-template-columns:34px minmax(0,1fr) 34px;gap:5px;overflow:hidden}
+#tm .tm-rail{padding:8px 24%;gap:8px}
+#tm .tm-stop{width:108px;min-height:72px;padding:8px}
+#tm .tm-stop span{font-size:23px}
+#tm .tm-stop strong{font-size:11px}
+#tm .tm-log{height:100%;min-height:0;overflow:hidden;border-radius:18px;background:transparent}
+#tm .tm-log .tm-login{height:100%;max-width:none;padding:0}
+#tm .log-book{height:100%;grid-template-columns:minmax(0,.68fr) 14px minmax(0,1.32fr);overflow:hidden;border-radius:18px}
+#tm .log-left{position:relative;top:auto;align-self:stretch;overflow-y:auto;padding:clamp(16px,1.7vw,24px)}
+#tm .log-yr{font-size:clamp(62px,6vw,92px)}
+#tm .log-left h2{font-size:clamp(24px,2.2vw,32px)}
+#tm .log-portrait{width:min(150px,55%);margin:14px auto 8px}
+#tm .log-portrait figcaption{margin-top:16px;font-size:9px}
+#tm .tm-log .ti{font-size:16px;margin:8px 0}
+#tm .tm-q{margin-top:10px;padding:10px 12px;font-size:12px}
+#tm .log-right{height:100%;min-height:0;overflow:hidden;padding:12px 16px;}
+#tm .log-shortcuts{position:static;flex-wrap:nowrap;gap:5px;padding:2px 0 8px}
+#tm .log-shortcuts button{padding:6px 9px;font-size:10px}
+#tm #log-page{min-height:0;overflow-y:auto;padding-right:4px}
+#tm #log-page h3{margin-bottom:12px}
+#tm .log-body>p{font-size:15px;line-height:1.9}
+#tm .log-visual{margin-top:14px}
+#tm .log-visual img{height:clamp(110px,17vh,190px)}
+#tm .log-visual svg{display:block;width:100%;height:clamp(110px,17vh,190px)}
+#tm .log-visual figcaption{padding:6px 10px;font-size:9px}
+#tm .log-turn{padding-top:16px;gap:8px}
+#tm .log-turn button{padding:9px 11px;font-size:12px}
+#tm .log-folio{margin-top:8px}
+#tm .tm-foot{padding:4px 2vw 14px;font-size:10px}
+}
+@media(max-width:959px){#tm .tm-workspace{display:flex;flex-direction:column;gap:0;height:auto;padding:0}.tm-control-column{display:contents}.tm-log{width:100%}.tm-login{padding:24px 16px}.log-shortcuts{position:sticky;top:0}}
 @media(max-width:520px){.log-ch{letter-spacing:.16em}.tm-log .tm-flip{min-height:210px}.log-turn{grid-template-columns:1fr}.log-turn .nx{grid-column:1}.log-body>p{text-align:left}}
 @media(prefers-reduced-motion:reduce){.tm-log::before,.log-yr,.log-portrait .orbit,.log-turn .warp{animation:none!important}#log-page.turn-f,#log-page.turn-b{animation:none}}
 /* 主理人與作品 / image-led editorial profile */
@@ -758,6 +817,8 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     </div>
   </div>
 
+  <div class="tm-workspace">
+  <div class="tm-control-column">
   <section class="tm-car" id="tm-car" aria-label="時光車駕駛艙">
     <div class="tm-cabin" id="tm-cabin">
       <div class="tm-shield" id="tm-shield">
@@ -813,8 +874,9 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     <nav class="tm-rail" id="tm-rail" aria-label="年代航站"></nav>
     <button class="tm-ico" id="tm-rr" aria-label="時間軸往後">›</button>
   </div>
-
+  </div>
   <section class="tm-log" aria-label="航行日誌"><div class="tm-login" id="tm-log"></div></section>
+  </div>
   <p class="tm-foot">內容依各站列出的博物館、學術與媒體資料重新撰寫摘要。窗外圖片依圖說標示來源，權利屬原館／原站；沒有圖片的站以代表輪廓示意圖呈現。</p>
 </div></section>
 
@@ -1931,7 +1993,6 @@ function renderLog(){
     <div class="ti">${esc(c.title)}</div>
     <ul class="tm-tags">${c.tags.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>
     <div class="tm-q"><small>帶著這個問題閱讀</small>${esc(c.question)}</div>
-    <nav class="log-toc" aria-label="本站章節">${LOG_CH.map((ch,i)=>`<button data-page="${i}"><i>${ch[0]}</i><span>${ch[1]}</span></button>`).join('')}</nav>
    </aside>
    <div class="log-spine" aria-hidden="true"></div>
    <article class="log-right"><div class="log-shortcuts" aria-label="快速前往章節">${LOG_CH.map((ch,i)=>`<button type="button" data-page="${i}" aria-label="第 ${ch[0]} 章：${ch[1]}">${ch[0]} · ${ch[1]}</button>`).join('')}</div><div id="log-page" aria-live="polite"></div></article>
@@ -1954,7 +2015,7 @@ async function loadLogPortrait(c){
     face.innerHTML=`<img src="${esc(url)}" alt="${esc(name)} 肖像" loading="lazy">`;
     const cap=$('#tm-log .log-portrait figcaption');if(cap)cap.innerHTML=`${esc(data.title||name)} · Wikipedia <a href="${esc(data.content_urls?.desktop?.page||'https://en.wikipedia.org/wiki/'+encodeURIComponent(name))}" target="_blank" rel="noopener">來源 ↗</a>`;
     const page=$('#log-page .log-body');
-    if(page&&!page.querySelector('.log-visual')&&logPage<5)page.insertAdjacentHTML('beforeend',`<figure class="log-visual"><img src="${esc(url)}" alt="${esc(name)}：${esc(LOG_CH[logPage][1])}" loading="lazy"><figcaption>${esc(data.title||name)} · Wikipedia <a href="${esc(data.content_urls?.desktop?.page||'https://en.wikipedia.org/wiki/'+encodeURIComponent(name))}" target="_blank" rel="noopener">影像來源 ↗</a></figcaption></figure>`);
+    if(page&&logPage===1){let art=page.querySelector('.log-visual');if(!art){page.insertAdjacentHTML('beforeend',`<figure class="log-visual"><img src="${esc(url)}" alt="${esc(name)} 肖像" loading="lazy"><figcaption>${esc(data.title||name)} · Wikipedia <a href="${esc(data.content_urls?.desktop?.page||'https://en.wikipedia.org/wiki/'+encodeURIComponent(name))}" target="_blank" rel="noopener">人物影像來源 ↗</a></figcaption></figure>`)}else if(art.classList.contains('log-bio-art'))art.outerHTML=`<figure class="log-visual"><img src="${esc(url)}" alt="${esc(name)} 肖像" loading="lazy"><figcaption>${esc(data.title||name)} · Wikipedia <a href="${esc(data.content_urls?.desktop?.page||'https://en.wikipedia.org/wiki/'+encodeURIComponent(name))}" target="_blank" rel="noopener">人物影像來源 ↗</a></figcaption></figure>`;}
   }catch{}
 }
 function turnLog(d){
@@ -1975,11 +2036,9 @@ function drawLogPage(c,vs,dir){
   const prev=p>0?`<button data-turn="-1"><small>← 上一章</small>${LOG_CH[p-1][1]}</button>`:'<span></span>';
   const nx=p<LOG_CH.length-1?`<button data-turn="1" class="nx"><small>下一章 →</small>${LOG_CH[p+1][1]}</button>`:`<button data-next-stop class="nx warp"><small>前往下一站 →</small>${C[next].year} ${esc(C[next].person)}</button>`;
   const pg=$('#log-page');
-  const visualUrl=c.portrait?.src||c.image||'';
-  const visual=visualUrl?`<figure class="log-visual"><img src="${esc(visualUrl)}" alt="${esc(c.person)}：${esc(ch[1])}" loading="lazy"><figcaption>${esc(c.portrait?.credit||c.person+' · '+ch[1])}${c.portrait?.url?` · <a href="${esc(c.portrait.url)}" target="_blank" rel="noopener">影像來源 ↗</a>`:''}</figcaption></figure>`:'';
-  const pvisual=(p===0||p===1||p===2||p===3||p===4)?visual:'';
+  const pvisual=chapterVisual(c,vs,p);
   pg.innerHTML=`<div class="log-ch"><span>CHAPTER ${ch[0]} · ${ch[2]}</span><span>${p+1} / ${LOG_CH.length}</span></div><div class="log-meter"><i style="width:${(p+1)/LOG_CH.length*100}%"></i></div><h3>${ch[1]}</h3><div class="log-body">${body}${pvisual}</div><div class="log-turn">${prev}${nx}</div><div class="log-folio">— ${c.year} · ${p+1} —</div>`;
-  loadChapterImage(c,p);
+  if(p===1)loadLogPortrait(c);
   pg.classList.remove('turn-f','turn-b');if(dir){void pg.offsetWidth;pg.classList.add(dir>0?'turn-f':'turn-b')}
   $('#tm-log').querySelectorAll('[data-page]').forEach(b=>{const i=+b.dataset.page;b.setAttribute('aria-current',i===p?'true':'false');b.classList.toggle('read',logRead.has(i))});
   pg.querySelectorAll('.tm-flip').forEach(b=>b.onclick=()=>{b.classList.toggle('on');b.setAttribute('aria-pressed',b.classList.contains('on'))});
@@ -1987,23 +2046,14 @@ function drawLogPage(c,vs,dir){
   const v=pg.querySelector('[data-vs]');if(v)v.onclick=()=>{plan(+v.dataset.vs);$('#tm-car').scrollIntoView({behavior:reduce.matches?'auto':'smooth'})};
   const ns=pg.querySelector('[data-next-stop]');if(ns)ns.onclick=()=>{plan(next);$('#tm-car').scrollIntoView({behavior:reduce.matches?'auto':'smooth'})};
 }
-async function loadChapterImage(c,p){
-  const caseId=cur, pageId=logPage;
-  const subject=p===0?`${c.person} ${c.title}`:p===1?`${c.person} designer`:p===2?`${c.features.map(x=>x.name).join(' ')}`:p===3?`${c.works.slice(0,2).map(x=>x.name).join(' ')}`:p===4?`${c.person} ${c.legacy.slice(0,70)}`:`${c.person} fashion archive`;
-  try{
-    const api='https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&srsearch='+encodeURIComponent(subject)+'&srlimit=12&format=json&origin=*';
-    const res=await fetch(api,{signal:AbortSignal.timeout(9000)});if(!res.ok)return;const data=await res.json();
-    const terms=subject.toLowerCase().split(/[^a-z0-9\u3400-\u9fff]+/i).filter(x=>x.length>2);
-    const ranked=(data.query?.search||[]).map(x=>({x,score:terms.reduce((n,t)=>n+(x.title.toLowerCase().includes(t)?1:0),0)})).filter(x=>x.score>0).sort((a,b)=>b.score-a.score);
-    const ids=ranked.slice(0,8).map(x=>x.x.pageid).join('|');if(!ids)return;
-    const detail=await fetch('https://commons.wikimedia.org/w/api.php?action=query&pageids='+ids+'&prop=imageinfo&iiprop=url&iiurlwidth=1200&format=json&origin=*',{signal:AbortSignal.timeout(9000)});if(!detail.ok)return;
-    const files=Object.values((await detail.json()).query?.pages||{}).map(x=>({...x,score:ranked.find(r=>r.x.pageid===x.pageid)?.score||0}));
-    const file=files.filter(x=>x.imageinfo?.[0]?.thumburl&&!/\.pdf(?:$|\/)/i.test(x.title)).sort((a,b)=>b.score-a.score)[0];
-    if(!file||caseId!==cur||pageId!==logPage)return;
-    const info=file.imageinfo[0],page=$('#log-page .log-body');if(!page)return;
-    let figure=page.querySelector('.log-visual');if(!figure){figure=document.createElement('figure');figure.className='log-visual';page.append(figure)}
-    figure.innerHTML=`<img src="${esc(info.thumburl)}" alt="${esc(file.title.replace(/^File:/,''))}" loading="lazy"><figcaption>${esc(file.title.replace(/^File:/,''))} · Wikimedia Commons <a href="${esc(info.descriptionurl||'https://commons.wikimedia.org/wiki/'+encodeURIComponent(file.title.replaceAll(' ','_')))}" target="_blank" rel="noopener">影像來源 ↗</a></figcaption>`;
-  }catch{}
+function chapterVisual(c,vs,p){
+  const label=esc(c.person+' · '+LOG_CH[p][1]);
+  if(p===0)return `<figure class="log-visual log-context-art"><svg viewBox="0 0 720 250" role="img" aria-label="${label}：年代脈絡圖"><defs><linearGradient id="postwar" x2="1"><stop stop-color="#9fb3ff" stop-opacity=".14"/><stop offset="1" stop-color="#ffd98a" stop-opacity=".2"/></linearGradient></defs><rect width="720" height="250" fill="#0c142b"/><path d="M54 178H666" stroke="#9fb3ff" stroke-opacity=".45"/><path d="M140 178V112M360 178V73M580 178V45" stroke="#ffd98a" stroke-width="3"/><circle cx="140" cy="112" r="7" fill="#9fb3ff"/><circle cx="360" cy="73" r="8" fill="#ffd98a"/><circle cx="580" cy="45" r="7" fill="#ffd98a"/><path d="M140 112Q250 112 360 73T580 45" fill="none" stroke="url(#postwar)" stroke-width="22"/><text x="140" y="212" fill="#aab6d7" text-anchor="middle" font-size="18">時代環境</text><text x="360" y="212" fill="#ffd98a" text-anchor="middle" font-size="18">${esc(c.year)} · ${esc(c.person)}</text><text x="580" y="212" fill="#aab6d7" text-anchor="middle" font-size="18">設計影響</text></svg><figcaption>${label} · 時代脈絡圖</figcaption></figure>`;
+  if(p===1)return c.portrait?.src?`<figure class="log-visual"><img src="${esc(c.portrait.src)}" alt="${label}" loading="lazy"><figcaption>${esc(c.portrait.credit||c.person)}${c.portrait.url?` · <a href="${esc(c.portrait.url)}" target="_blank" rel="noopener">人物影像來源 ↗</a>`:''}</figcaption></figure>`:`<figure class="log-visual log-bio-art"><div class="log-placeholder">${esc(c.person)}<small>${esc(c.year)} · DESIGNER PROFILE</small></div><figcaption>人物肖像載入中 · Wikipedia</figcaption></figure>`;
+  if(p===2)return `<figure class="log-visual log-silhouette">${figure(FIG[c.person])}<figcaption>${label} · 本站設計輪廓示意，非歷史實物</figcaption></figure>`;
+  if(p===3)return c.image?`<figure class="log-visual"><img src="${esc(c.image)}" alt="${esc(c.caption||label)}" loading="lazy"><figcaption>${esc(c.caption||label)}${c.imageSource?` · <a href="${esc(c.imageSource)}" target="_blank" rel="noopener">典藏影像來源 ↗</a>`:''}</figcaption></figure>`:`<figure class="log-visual log-work-art"><div class="log-placeholder">${esc(c.works[0]?.name||c.title)}<small>${esc(c.works[0]?.year||c.year)} · KEY WORK</small></div><figcaption>${label} · 代表作索引卡</figcaption></figure>`;
+  if(p===4){const other=vs>=0&&vs!==cur?C[vs]:null;return other?.image?`<figure class="log-visual"><img src="${esc(other.image)}" alt="${esc(other.caption||other.person)}" loading="lazy"><figcaption>${esc(other.caption||other.person)} · 對照作品${other.imageSource?` · <a href="${esc(other.imageSource)}" target="_blank" rel="noopener">影像來源 ↗</a>`:''}</figcaption></figure>`:`<figure class="log-visual log-silhouette">${figure(FIG[c.person])}<figcaption>${label} · 設計脈絡示意圖</figcaption></figure>`;}
+  return `<figure class="log-visual log-source-art"><svg viewBox="0 0 720 250" role="img" aria-label="${label}：資料來源圖示"><rect width="720" height="250" rx="16" fill="#101832"/><path d="M250 48h170l54 54v112H250z" fill="#1b2749" stroke="#9fb3ff" stroke-width="2"/><path d="M420 48v56h54M282 132h156M282 158h156M282 184h112" fill="none" stroke="#ffd98a" stroke-width="5" stroke-linecap="round"/><circle cx="178" cy="125" r="53" fill="#ffd98a" fill-opacity=".13" stroke="#ffd98a" stroke-width="2"/><text x="178" y="138" fill="#ffd98a" text-anchor="middle" font-size="42">↗</text><text x="540" y="125" fill="#e8edff" text-anchor="middle" font-size="19">${esc(c.sources.length)} 個原始來源</text><text x="540" y="157" fill="#9eabd0" text-anchor="middle" font-size="15">館藏 · 專題 · 研究</text></svg><figcaption>${label} · 資料來源索引</figcaption></figure>`;
 }
 function initLogSky(){
   if(logSky)return;const sec=$('#tm-log').closest('.tm-log');if(!sec)return;
