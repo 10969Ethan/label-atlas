@@ -811,6 +811,10 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
   <form id="library-custom" class="library-custom"><div><h3>書架之外，還有更多故事。</h3><p>輸入任何品牌、設計師或選品店，翻開新的研究書。</p></div><div class="library-custom-input"><label for="library-name" class="sr-only">自訂品牌名稱</label><input id="library-name" placeholder="你想認識哪個品牌？" required minlength="2" maxlength="80"><button>打開研究書</button></div></form>
   <p class="library-editorial-note">分類為編輯選讀，並非完整或唯一的品牌定位。書封由本站設計；LOGO 僅作品牌辨識，版本依來源。未取得可靠圖檔的品牌採本站編排字標。</p>
 </section>
+<section class="warp-gate" data-gate="warp" aria-hidden="true">
+  <div class="gate-stage"><canvas class="gate-canvas"></canvas><div class="gate-vignette"></div><div class="gate-ring"></div><div class="gate-flash"></div><div class="gate-copy"><span class="gate-kicker">WARP TRANSIT</span><strong class="gate-year">2026</strong><span class="gate-message"></span></div></div>
+</section>
+<button class="gate-skip" type="button" data-gate-skip="#time-machine" hidden>略過轉場 ↓</button>
 <section id="time-machine" aria-label="時光機"><div id="tm">
   <div class="tm-top">
     <div>
@@ -886,6 +890,10 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
   <p class="tm-foot">內容依各站列出的博物館、學術與媒體資料重新撰寫摘要。窗外圖片依圖說標示來源，權利屬原館／原站；沒有圖片的站以代表輪廓示意圖呈現。</p>
 </div></section>
 
+<section class="warp-gate gate-landing" data-gate="landing" aria-hidden="true">
+  <div class="gate-stage"><canvas class="gate-canvas"></canvas><div class="gate-paper"></div><div class="gate-iris"></div><div class="gate-copy"><span class="gate-kicker">LANDING SEQUENCE</span><strong class="gate-axis" aria-hidden="true"></strong><span class="gate-message"></span></div></div>
+</section>
+<button class="gate-skip" type="button" data-gate-skip="#fashion-history" hidden>略過轉場 ↓</button>
 <section id="fashion-history" class="history"><div class="history-heading"><div><span class="mini">01 / A BRIEF HISTORY OF GETTING DRESSED</span><h2>衣服如何走到今天。</h2></div><p>從一枚鉚釘，到一次輪廓革命。<br>沿著時間，閱讀穿在身上的歷史。</p></div><div class="history-tools"><label class="history-search">搜尋歷史<input id="history-query" type="search" placeholder="搜尋年代、服裝或設計師" aria-label="搜尋服裝歷史"></label><label>年代<select id="history-era" aria-label="篩選歷史年代"><option value="">所有年代</option><option>1900 年以前</option><option>1900–1949</option><option>1950–1979</option><option>1980 年以後</option></select></label><label>主題<select id="history-category" aria-label="篩選歷史主題"><option value="">所有主題</option><option>工裝與日常</option><option>輪廓與身體</option><option>青年與反叛</option><option>設計觀念</option></select></label></div><div class="history-meta"><span id="history-count" role="status" aria-live="polite"></span><span>精選節點 · 非完整服裝史 · 資料整理：2026.11.21</span></div><div id="history-list"></div><div id="history-empty" class="empty" hidden>這組條件沒有符合的歷史節點。<button id="history-reset" class="outline">清除篩選</button></div></section><div class="sectionline"><h2>The Reading List</h2><span class="mini">01 — THE INDEX</span></div><div class="grid"><button class="card" data-q="UNIQLO"><span class="mini">01 / EVERYDAY WEAR</span><span class="arrow">↗</span><h3>UNIQLO</h3><p>從日常穿著出發，<br>探索品牌故事與設計特色。</p></button><button class="card" data-q="Nike"><span class="mini">02 / SPORT &amp; CULTURE</span><span class="arrow">↗</span><h3>Nike</h3><p>從運動走進日常，<br>閱讀品牌與代表單品的故事。</p></button><button class="card" data-q="adidas"><span class="mini">03 / BEYOND SPORT</span><span class="arrow">↗</span><h3>adidas</h3><p>從熟悉的名字開始，<br>認識設計、文化與購買去處。</p></button></div><div class="process"><div><span class="mini">01 / DISCOVER</span><b>一個名字，開始探索</b><p>自動搜尋公開網頁與百科，無須逐一蒐集文章。</p></div><div><span class="mini">02 / UNDERSTAND</span><b>資料有出處，閱讀有脈絡</b><p>品牌、人物與市場報導分區整理，保留原文來源。</p></div><div><span class="mini">03 / FIND</span><b>找到喜歡的，也找到去處</b><p>查找販售線索，收藏項目，匯出你的研究筆記。</p></div></div></section><section id="about" class="editor-note" aria-labelledby="editor-title">
   <div class="editor-intro">
     <div class="editor-profile">
@@ -2169,5 +2177,148 @@ gauge(0);render();
 status('目的地已設定：'+C[planned].year+' · '+C[planned].person+'。拉下啟動桿出發。');
 }
 
+</script>
+<style id="warp-gates">
+/* 轉場場景沿用原生頁面捲動；sticky 舞台以捲動進度展示正放與倒放 */
+.warp-gate{position:relative;height:var(--gate-height,160vh);isolation:isolate;background:#04060c}
+.gate-stage{position:sticky;top:0;height:100vh;height:100svh;min-height:420px;overflow:hidden;isolation:isolate;color:#f4f3f6;background:#04060c;--gate-p:0}
+.gate-canvas,.gate-vignette,.gate-ring,.gate-flash,.gate-paper,.gate-iris{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.gate-canvas{z-index:0;display:block}
+.gate-vignette{z-index:1;background:radial-gradient(ellipse at center,transparent 18%,#02030ab8 78%,#02030a 120%)}
+.gate-copy{position:absolute;z-index:4;inset:0;display:grid;align-content:center;justify-items:center;gap:clamp(12px,2vh,24px);padding:24px;text-align:center;text-shadow:0 4px 30px #000a}
+.gate-kicker{color:#b8c3ff;font:600 12px/1.2 'Barlow Condensed',sans-serif;letter-spacing:.32em}
+.gate-year{color:#fff;font:700 clamp(72px,16vw,190px)/.9 'Barlow Condensed',sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-.035em}
+.gate-message{max-width:min(90vw,760px);color:#f4e6c5;font:600 clamp(15px,2vw,22px)/1.7 'Noto Sans TC',sans-serif;letter-spacing:.08em}
+.gate-ring{z-index:2;inset:50% auto auto 50%;width:min(64vmin,620px);aspect-ratio:1;height:auto;border:1px solid #9fb3ffb0;border-radius:50%;opacity:var(--ring-opacity,0);transform:translate(-50%,-50%) scale(var(--ring-scale,.35));box-shadow:0 0 26px #9fb3ff90,0 0 80px #745dff70,inset 0 0 34px #d08cff4d,inset 12px 0 20px #9fb3ff28,inset -12px 0 20px #d08cff28}
+.gate-ring::before,.gate-ring::after{content:"";position:absolute;inset:8%;border:2px solid #d08cff9c;border-radius:inherit;filter:blur(1px);transform:translateX(-7px)}
+.gate-ring::after{border-color:#7be7ff9c;transform:translateX(7px)}
+.gate-flash{z-index:5;background:#fff;opacity:var(--flash-opacity,0)}
+.gate-landing .gate-stage{background:#04060c}
+.gate-paper{z-index:1;background-color:var(--paper-color,#f8f6f0);opacity:var(--paper-alpha,0)}
+.gate-paper::after{content:"";position:absolute;inset:0;opacity:.35;background:repeating-linear-gradient(0deg,#6b5a3810 0 1px,transparent 1px 4px),repeating-linear-gradient(90deg,#8a755010 0 1px,transparent 1px 7px),radial-gradient(ellipse at 50% 50%,#ffffff70,transparent 75%)}
+.gate-iris{z-index:2;background:var(--paper-color,#f8f6f0);clip-path:circle(var(--iris-size,0px) at 50% 50%)}
+.gate-landing .gate-copy{z-index:3;color:#342c20;text-shadow:0 1px 16px #f8f6f099}
+.gate-landing .gate-kicker{color:#887246}
+.gate-landing .gate-message{color:#332b20;font-family:'Noto Serif TC',serif;letter-spacing:.04em}
+.gate-axis{display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(10px,2vw,28px);min-height:1.2em;color:#6c5935;font:600 clamp(18px,3vw,32px)/1.2 'Barlow Condensed',sans-serif;font-variant-numeric:tabular-nums;letter-spacing:.08em}
+.gate-axis span{opacity:var(--node-lit,0);transform:translateY(calc((1 - var(--node-lit,0))*8px))}
+.gate-skip{position:fixed;z-index:999;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));border:1px solid #d7c59088;border-radius:999px;padding:9px 14px;color:#fff;background:#111523ef;box-shadow:0 4px 24px #0005;font:500 12px/1.2 'Noto Sans TC',sans-serif;cursor:pointer}
+.gate-skip:hover,.gate-skip:focus-visible{border-color:#ffd98a;background:#24233a}
+.gate-skip:focus-visible{outline:3px solid #ffd98a;outline-offset:3px}
+.gate-skip[hidden]{display:none!important}
+#tm-car{opacity:var(--gate-car-opacity,1)}
+#fashion-history{clip-path:circle(var(--archive-iris-size,180vmax) at 50% 50%)}
+@media(max-width:767px){.gate-year{font-size:clamp(72px,22vw,132px)}.gate-message{max-width:34ch;font-size:15px}.gate-ring{width:78vmin}.gate-axis{gap:12px;font-size:20px}}
+@media(prefers-reduced-motion:reduce){.gate-canvas,.gate-ring,.gate-flash{display:none!important}.gate-stage{transition:opacity .4s ease;opacity:var(--reduced-opacity,0)}.gate-paper,#tm-car,#fashion-history{transition:opacity .4s ease}}
+</style>
+<script id="warp-gates-js">
+/* 轉場可調設定：高度、粒子數量、顏色、標題與特效 */
+const GATE_FX={
+  warp:{height:'160vh',particles:{desktop:600,mobile:250},colors:['#9fb3ff','#ffd98a','#d08cff'],text:'啟動時光機 · ENGAGING TIME DRIVE',flash:true,shake:true},
+  landing:{height:'160vh',particles:{desktop:500,mobile:220},colors:['#ffd98a','#c3a96d'],paper:'#f8f6f0',text:'抵達 · 服裝歷史檔案館 ARRIVING AT THE ARCHIVE',iris:true}
+};
+(()=>{
+  'use strict';
+  const clamp=(n,a,b)=>Math.max(a,Math.min(b,n));
+  const gates=[...document.querySelectorAll('.warp-gate[data-gate]')];
+  const active=new Set(),state=new Map();
+  const skipButtons=[...document.querySelectorAll('[data-gate-skip]')];
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)');
+  const firstYear=Number(TM_CASES[0]?.year)||2026;
+  let rafId=0;
+
+  /* 預先配置粒子，避免捲動繪製時反覆建立物件 */
+  function makeParticles(count){return Array.from({length:count},()=>({angle:Math.random()*Math.PI*2,depth:.08+Math.random()*.92,y:Math.random(),size:.5+Math.random()*1.7,color:Math.random()}))}
+
+  /* 初始化各轉場的畫布、文字與快取 */
+  function setup(el){
+    const kind=el.dataset.gate,config=GATE_FX[kind];if(!config)return;
+    el.style.setProperty('--gate-height',config.height);
+    const stage=el.querySelector('.gate-stage'),canvas=el.querySelector('.gate-canvas'),ctx=canvas.getContext('2d',{alpha:true});
+    const item={el,kind,config,stage,canvas,ctx,message:el.querySelector('.gate-message'),year:el.querySelector('.gate-year'),axis:el.querySelector('.gate-axis'),particles:makeParticles(innerWidth<768?config.particles.mobile:config.particles.desktop),width:1,height:1,dpr:1,travel:1,p:0};
+    stage.style.setProperty('--paper-color',config.paper||'#f8f6f0');
+    item.message.textContent='';
+    if(item.axis)item.axis.innerHTML=['1858','1926','1947','1966','1981','2000','2026'].map((y,i)=>`<span data-node="${i}">${y}</span>`).join('');
+    state.set(el,item);resize(item);
+  }
+
+  /* 畫布 DPR 上限為 2；捲動距離只在初始化或 resize 時計算 */
+  function resize(item){
+    item.dpr=Math.min(devicePixelRatio||1,2);item.width=Math.max(innerWidth,1);item.height=Math.max(innerHeight,1);
+    item.canvas.width=Math.round(item.width*item.dpr);item.canvas.height=Math.round(item.height*item.dpr);
+    item.canvas.style.width=`${item.width}px`;item.canvas.style.height=`${item.height}px`;
+    item.ctx.setTransform(item.dpr,0,0,item.dpr,0,0);
+    item.travel=Math.max(1,item.el.offsetHeight-innerHeight);
+  }
+
+  /* Scroll 事件量測進度；RAF 繪製時不查詢任何版面尺寸 */
+  function measure(){
+    active.forEach(el=>{const item=state.get(el);if(item)item.p=clamp(-el.getBoundingClientRect().top/item.travel,0,1)});
+    schedule();
+  }
+  function schedule(){if(!rafId&&active.size)rafId=requestAnimationFrame(draw)}
+
+  /* WARP：放射星線、年份倒轉、逐字標題、蟲洞與末段白閃 */
+  function drawWarp(item,p){
+    const {ctx,width:w,height:h,particles,config}=item,cx=w*.5,cy=h*.5,radius=Math.hypot(w,h)*.56,speed=p*p;
+    ctx.clearRect(0,0,w,h);
+    if(!reduce.matches){
+      ctx.globalCompositeOperation='lighter';
+      particles.forEach(star=>{const r=radius*star.depth*(.04+p*1.55),x=cx+Math.cos(star.angle)*r,y=cy+Math.sin(star.angle)*r,tail=(4+50*speed)*star.depth;ctx.beginPath();ctx.moveTo(x-Math.cos(star.angle)*tail,y-Math.sin(star.angle)*tail);ctx.lineTo(x,y);ctx.strokeStyle=config.colors[Math.floor(star.color*config.colors.length)];ctx.globalAlpha=.18+.75*p;ctx.lineWidth=star.size*(.6+speed*1.8);ctx.stroke()});
+      ctx.globalAlpha=1;ctx.globalCompositeOperation='source-over';
+    }
+    const yearP=clamp((p-.08)/.72,0,1);
+    item.year.textContent=String(Math.round(2026+(firstYear-2026)*yearP));
+    item.message.textContent=config.text.slice(0,Math.floor(config.text.length*clamp((p-.2)/.32,0,1)));
+    item.stage.style.setProperty('--ring-opacity',String(clamp(p*2.3,0,1)*(1-clamp((p-.88)*6,0,1))));
+    item.stage.style.setProperty('--ring-scale',String(.25+p*.95));
+    const flashP=clamp((p-.91)/.07,0,1);
+    item.stage.style.setProperty('--flash-opacity',String(config.flash?Math.sin(flashP*Math.PI)*.78:0));
+    const shake=config.shake?Math.sin(p*190)*4*clamp((p-.88)/.12,0,1):0;
+    item.stage.style.transform=reduce.matches?'none':`translate3d(${shake}px,${-shake*.45}px,0)`;
+    item.stage.style.setProperty('--reduced-opacity',String(clamp(Math.min(p*8,(1-p)*8),0,1)));
+    document.querySelector('#tm-car')?.style.setProperty('--gate-car-opacity',String(clamp((p-.82)/.18,0,1)));
+  }
+
+  /* LANDING：星點匯成金色軸線，紙張與光圈依進度展開 */
+  function drawLanding(item,p){
+    const {ctx,width:w,height:h,particles,config}=item,palette=config.colors,cy=h*.5;
+    ctx.clearRect(0,0,w,h);
+    if(!reduce.matches){
+      ctx.globalCompositeOperation='lighter';
+      particles.forEach((star,i)=>{const x=star.depth*w,scattered=star.y*h,curve=cy+Math.sin(x/Math.max(w,1)*Math.PI*2)*h*.16,gather=clamp((p-.12)/.68,0,1),y=scattered+(curve-scattered)*gather;ctx.beginPath();ctx.arc(x,y,star.size*(1+gather),0,Math.PI*2);ctx.fillStyle=palette[i%palette.length];ctx.globalAlpha=.12+gather*.75;ctx.fill()});
+      const gather=clamp((p-.2)/.6,0,1);ctx.beginPath();
+      for(let x=0;x<=w;x+=8){const curve=cy+Math.sin(x/Math.max(w,1)*Math.PI*2)*h*.16,y=curve+(cy-curve)*gather;x===0?ctx.moveTo(x,y):ctx.lineTo(x,y)}
+      ctx.strokeStyle=palette[0];ctx.globalAlpha=gather*.9;ctx.lineWidth=2+gather*2;ctx.shadowColor=palette[0];ctx.shadowBlur=14;ctx.stroke();ctx.shadowBlur=0;ctx.globalAlpha=1;ctx.globalCompositeOperation='source-over';
+    }
+    item.stage.style.setProperty('--paper-alpha',String(clamp((p-.25)/.68,0,1)));
+    item.stage.style.setProperty('--iris-size',`${p*180}vmax`);
+    item.stage.style.setProperty('--reduced-opacity',String(clamp(Math.min(p*8,(1-p)*8),0,1)));
+    item.message.textContent=config.text.slice(0,Math.floor(config.text.length*clamp((p-.3)/.3,0,1)));
+    item.axis?.querySelectorAll('[data-node]').forEach((node,i)=>node.style.setProperty('--node-lit',String(clamp((p-(.42+i*.075))/.08,0,1))));
+    document.querySelector('#fashion-history')?.style.setProperty('--archive-iris-size',`${p*180}vmax`);
+  }
+
+  /* 共用單一 RAF：每幀只使用快取的進度與畫布尺寸 */
+  function draw(){
+    rafId=0;if(document.hidden||!active.size)return;
+    active.forEach(el=>{const item=state.get(el);if(!item)return;item.kind==='warp'?drawWarp(item,item.p):drawLanding(item,item.p)});
+  }
+
+  /* 觀察器只讓可見轉場參與動畫；不可見時暫停 RAF */
+  const observer=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>entry.isIntersecting?active.add(entry.target):active.delete(entry.target));
+    const current=[...active].at(-1),currentItem=current&&state.get(current);
+    skipButtons.forEach(button=>{button.hidden=!currentItem||button.dataset.gateSkip!==(currentItem.kind==='warp'?'#time-machine':'#fashion-history')});
+    if(!active.size){document.querySelector('#tm-car')?.style.setProperty('--gate-car-opacity','1');document.querySelector('#fashion-history')?.style.setProperty('--archive-iris-size','180vmax')}
+    measure();
+  },{threshold:0});
+
+  gates.forEach(el=>{setup(el);observer.observe(el)});
+  skipButtons.forEach(button=>button.addEventListener('click',()=>document.querySelector(button.dataset.gateSkip)?.scrollIntoView({behavior:reduce.matches?'auto':'smooth',block:'start'})));
+  addEventListener('scroll',measure,{passive:true});
+  addEventListener('resize',()=>{state.forEach(resize);measure()},{passive:true});
+  document.addEventListener('visibilitychange',()=>{if(document.hidden){if(rafId)cancelAnimationFrame(rafId);rafId=0}else measure()});
+})();
 </script>
 </body></html>
