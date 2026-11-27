@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LABEL ATLAS 時光機</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+/* VOICE everyday learning, with the thrill of an occasion
+   IDEA an original retro-futuristic time car: you sit at the wheel, the windshield shows the era, the dash runs the jump
+   PICTURE the windshield: each designer's signature silhouette, drawn from their own proportions, era-graded and turnable in 3D
+   COLOUR night cabin #0e1418, brushed steel #2b343b, LED red #ff4d3d / amber #ffb21e / phosphor green #5ef0b0; logbook on cold steel-white paper
+   TYPE Barlow Condensed (instrument lettering) + Noto Sans TC
+   LAYOUT laptop: windshield over dash in one tilted cabin, 3D year rail below, logbook in two columns; phone: windshield, dash, controls, then logbook */
+#tm{--night:#0e1418;--steel:#2b343b;--steel2:#3a454d;--edge:#56636c;--red:#ff4d3d;--amber:#ffb21e;--green:#5ef0b0;--paper:#e8edf0;--ink:#12181c;--muted:#5a666e;--line:#c7d0d5;color-scheme:dark;background:var(--night);color:#e9eef1;font:16px/1.6 'Noto Sans TC',system-ui,sans-serif;overflow-x:clip}
+#tm *{box-sizing:border-box;min-width:0}
+#tm button,#tm input,#tm select{font:inherit;color:inherit}
+#tm a{color:inherit}
+.tm-top{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:end;justify-content:space-between;padding:clamp(20px,3vw,36px) max(4vw,16px) 12px;max-width:1320px;margin:auto}
+.tm-top h1{margin:0;font:900 clamp(30px,4.4vw,48px)/1.05 'Noto Sans TC',sans-serif;letter-spacing:-.02em}
+.tm-top p{margin:6px 0 0;color:#aab7bf;max-width:46ch}
+.tm-route{display:grid;gap:4px}
+.tm-route label{font-size:14px;color:#aab7bf}
+.tm-sel,.tm-in{height:46px;border-radius:10px;border:1px solid var(--edge);background:#141c21;padding:0 12px;font-size:16px}
+.tm-sel:focus-visible,.tm-in:focus-visible,#tm button:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.tm-car{perspective:1400px;padding:8px max(4vw,16px) 24px;max-width:1320px;margin:auto}
+.tm-cabin{transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transform-style:preserve-3d;transition:transform .25s ease-out;border-radius:28px;background:linear-gradient(180deg,#1a2227,#0b1013);box-shadow:0 0 0 1px #26313a,0 30px 60px -30px #000;padding:clamp(10px,1.6vw,18px)}
+.tm-cabin.shake{animation:tmShake .09s linear infinite}
+@keyframes tmShake{0%{translate:0 0}25%{translate:2px -1px}50%{translate:-2px 1px}75%{translate:1px 2px}}
+.tm-shield{position:relative;aspect-ratio:16/8.2;border-radius:46% 46% 10px 10px/22% 22% 10px 10px;overflow:hidden;background:#0a0f12;transform:translateZ(30px);box-shadow:inset 0 0 0 10px #10171b,inset 0 0 0 12px #3a454d}
+.tm-scene{position:absolute;inset:0;background:radial-gradient(120% 90% at 50% 100%,var(--s1,#2d3b44),var(--s2,#0b1216));transition:filter .9s}
+.tm-scene::before{content:"";position:absolute;left:0;right:0;bottom:0;height:22%;background:linear-gradient(#0000,#0008),repeating-linear-gradient(90deg,#ffffff08 0 2px,#0000 2px 60px);transform:perspective(300px) rotateX(55deg);transform-origin:bottom}
+.tm-scene::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:var(--grain,0);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E");mix-blend-mode:overlay}
+.tm-scene[data-era=sepia]{filter:sepia(.85) contrast(1.05);--grain:.55}
+.tm-scene[data-era=mono]{filter:grayscale(1) contrast(1.15);--grain:.5}
+.tm-scene[data-era=techni]{filter:saturate(1.35) contrast(1.05);--grain:.25}
+.tm-scene[data-era=vhs]{filter:saturate(1.25) hue-rotate(-8deg);--grain:.2}
+.tm-scene[data-era=vhs] .tm-scan{opacity:1}
+.tm-scan{position:absolute;inset:0;opacity:0;pointer-events:none;background:repeating-linear-gradient(0deg,#0003 0 1px,#0000 1px 3px);box-shadow:inset 4px 0 #ff00502a,inset -4px 0 #00d0ff2a}
+.tm-stagewrap{position:absolute;inset:4% 0 0;perspective:900px;display:grid;place-items:center;cursor:grab;touch-action:pan-y}
+.tm-stagewrap:active{cursor:grabbing}
+.tm-stage{position:relative;height:100%;aspect-ratio:200/360;transform-style:preserve-3d;transform:scale(var(--z,1)) rotateY(var(--rot,0deg));transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+.tm-stage.drag{transition:none}
+.tm-face{position:absolute;inset:0;backface-visibility:hidden;display:grid;place-items:center}
+.tm-face svg,.tm-face img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 18px 14px #0008)}
+.tm-face.back{transform:rotateY(180deg);padding:8% 6%;text-align:center}
+.tm-back{background:#0e1418e6;border:1px solid var(--edge);border-radius:14px;padding:14px;font-size:14px;line-height:1.5}
+.tm-back b{display:block;color:var(--amber);font-size:15px;margin-bottom:6px}
+.tm-hud{position:absolute;left:clamp(12px,3%,32px);top:16%;max-width:34%;pointer-events:none;text-shadow:0 2px 12px #000}
+.tm-hud .y{font:700 clamp(40px,8vw,104px)/.9 'Barlow Condensed',sans-serif;color:#fff}
+.tm-hud .n{font-weight:700;font-size:clamp(15px,1.8vw,22px);margin-top:6px}
+.tm-hud .h{color:#c6d1d7;font-size:14px}
+.tm-hint{position:absolute;right:clamp(12px,3%,32px);top:18%;max-width:28%;font-size:14px;color:#c6d1d7;text-align:right;pointer-events:none}
+.tm-glass{position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,#ffffff14 0 18%,#0000 18% 24%,#ffffff0d 24% 27%,#0000 27%)}
+.tm-warp{position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity .2s}
+.tm-flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none}
+.tm-ctl{position:absolute;right:12px;bottom:12px;display:flex;gap:6px}
+.tm-ctl button,.tm-ico{width:44px;height:44px;border-radius:12px;border:1px solid var(--edge);background:#121a1fcc;cursor:pointer;font-size:18px;font-weight:700}
+.tm-ctl button:hover,.tm-ico:hover{background:#1d2a31}
+.tm-dash{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,.7fr) minmax(0,1fr);gap:14px;margin-top:14px;transform:translateZ(10px)}
+.tm-panel{background:linear-gradient(180deg,var(--steel2),var(--steel));border-radius:16px;padding:12px;box-shadow:inset 0 1px #ffffff1f,inset 0 -2px #0006}
+.tm-circ{display:grid;gap:8px}
+.tm-row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:10px;background:#090d10;border-radius:10px;padding:8px 10px;box-shadow:inset 0 2px 6px #000}
+.tm-row small{display:block;font:600 14px/1.2 'Barlow Condensed',sans-serif;color:#9aa7ae}
+.tm-row .who{font-size:14px;color:#d5dde2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tm-row svg{height:clamp(34px,4vw,48px);width:auto;display:block}
+.tm-gauge{display:grid;place-items:center;text-align:center}
+.tm-gauge svg{width:100%;max-width:220px}
+.tm-gauge .lbl{font:600 14px 'Barlow Condensed',sans-serif;color:#9aa7ae}
+.tm-ctrls{display:grid;gap:10px;align-content:start}
+.tm-ctrls label{font-size:14px;color:#aab7bf}
+.tm-search{position:relative}
+.tm-res{position:absolute;z-index:5;left:0;right:0;top:100%;margin:4px 0 0;padding:4px;list-style:none;background:#121a1f;border:1px solid var(--edge);border-radius:10px;max-height:260px;overflow:auto}
+.tm-res button{width:100%;text-align:left;border:0;background:none;padding:8px 10px;border-radius:8px;cursor:pointer;font-size:15px}
+.tm-res button:hover,.tm-res button:focus-visible{background:#1d2a31}
+.tm-res span{color:var(--amber);font-family:'Barlow Condensed',sans-serif;margin-right:8px}
+.tm-go{display:grid;grid-template-columns:44px minmax(0,1fr) 44px;gap:8px}
+.tm-lever{height:58px;border-radius:14px;border:0;cursor:pointer;background:linear-gradient(180deg,#ff6a4d,#c62a1c);color:#fff;font-weight:900;font-size:18px;box-shadow:0 4px 0 #7a1810,inset 0 1px #ffffff55;position:relative;overflow:hidden}
+.tm-lever:active{transform:translateY(3px);box-shadow:0 1px 0 #7a1810}
+.tm-lever:disabled{filter:grayscale(.6);cursor:wait}
+.tm-lever i{position:absolute;left:0;bottom:0;height:5px;width:var(--charge,0%);background:var(--amber)}
+.tm-switch{display:flex;align-items:center;gap:10px;font-size:14px;color:#c6d1d7;background:none;border:0;cursor:pointer;padding:0;min-height:44px}
+.tm-switch b{width:44px;height:24px;border-radius:99px;background:#121a1f;border:1px solid var(--edge);position:relative;flex:none}
+.tm-switch b::after{content:"";position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:var(--green);transition:left .2s}
+.tm-switch[aria-pressed=true] b::after{left:23px;background:var(--amber)}
+.tm-status{font-size:14px;color:#9aa7ae;min-height:1.6em;margin:0}
+.tm-railw{max-width:1320px;margin:auto;padding:0 max(4vw,16px) 28px;display:grid;grid-template-columns:44px minmax(0,1fr) 44px;gap:8px;align-items:center}
+.tm-rail{position:relative;display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:18px 40%;perspective:700px;scrollbar-width:none}
+.tm-rail::-webkit-scrollbar{display:none}
+.tm-stop{flex:none;scroll-snap-align:center;width:128px;min-height:92px;border-radius:14px;border:1px solid var(--edge);background:linear-gradient(180deg,#1b252b,#11181c);cursor:pointer;text-align:left;padding:10px 12px;transform:rotateY(var(--ty,0deg)) scale(var(--ts,1));transition:transform .15s,border-color .2s}
+.tm-stop span{display:block;font:700 28px/1 'Barlow Condensed',sans-serif;color:var(--amber)}
+.tm-stop strong{display:block;font-size:14px;line-height:1.3;margin-top:6px}
+.tm-stop[aria-current=location]{border-color:var(--green);box-shadow:0 0 0 2px #5ef0b055}
+.tm-stop[aria-pressed=true] span{color:var(--red)}
+.tm-log{background:var(--paper);color:var(--ink)}
+.tm-login{max-width:1320px;margin:auto;padding:clamp(28px,4vw,56px) max(4vw,16px);display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.6fr);gap:clamp(20px,4vw,56px)}
+.tm-id{align-self:start;position:sticky;top:16px}
+.tm-id .yr{font:700 72px/.9 'Barlow Condensed',sans-serif;color:#b8331f}
+.tm-id h2{font-size:clamp(30px,3.4vw,42px);line-height:1.05;letter-spacing:-.02em;margin:8px 0 4px}
+.tm-id .hs{color:var(--muted);margin:0}
+.tm-id .ti{font-weight:900;font-size:20px;margin:16px 0 10px}
+.tm-tags{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
+.tm-tags li{font-size:14px;border:1px solid var(--line);border-radius:99px;padding:2px 10px;background:#fff}
+.tm-q{margin-top:18px;padding:14px 16px;background:#12181c;color:#e9eef1;border-radius:12px}
+.tm-q small{display:block;color:var(--amber);font-size:14px}
+.tm-sec{padding:18px 0;border-top:1px solid var(--line)}
+.tm-sec:first-child{border-top:0;padding-top:0}
+.tm-sec h3{font-size:20px;margin:0 0 8px}
+.tm-sec p{margin:0;max-width:68ch}
+.tm-two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
+.tm-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;perspective:1000px}
+.tm-flip{position:relative;min-height:220px;border:0;padding:0;background:none;cursor:pointer;text-align:left;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.tm-flip.on{transform:rotateY(180deg)}
+.tm-flip>div{position:absolute;inset:0;backface-visibility:hidden;border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.tm-flip .f{background:#fff;border:1px solid var(--line);color:var(--ink)}
+.tm-flip .f em{font-style:normal;font:700 40px/1 'Barlow Condensed',sans-serif;color:#b8331f}
+.tm-flip .f b{font-size:18px;line-height:1.3}
+.tm-flip .f small{margin-top:auto;color:var(--muted);font-size:14px}
+.tm-flip .b{transform:rotateY(180deg);background:#12181c;color:#e9eef1;font-size:15px;line-height:1.55}
+.tm-flip .b strong{color:var(--amber);font-size:14px}
+.tm-works{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.tm-works li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 14px;padding:12px 14px;background:#fff;border:1px solid var(--line);border-radius:12px}
+.tm-works .wy{font:700 18px 'Barlow Condensed',sans-serif;color:#b8331f;white-space:nowrap;grid-row:span 2}
+.tm-works b{font-size:16px}
+.tm-works span{color:var(--muted);font-size:15px}
+.tm-vs{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.tm-vs button{border:0;background:none;padding:0;margin-top:8px;color:#1c5d8f;font-weight:700;cursor:pointer;text-decoration:underline;min-height:44px}
+.tm-src{margin:0;padding-left:1.2em;display:grid;gap:6px}
+.tm-src a{color:#1c5d8f;overflow-wrap:anywhere}
+.tm-note{margin-top:10px;font-size:14px;color:#7a4a00;background:#fff4d6;border-radius:10px;padding:8px 12px}
+.tm-foot{max-width:1320px;margin:auto;padding:0 max(4vw,16px) 40px;font-size:14px;color:var(--muted)}
+@media(max-width:900px){.tm-dash{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.tm-ctrls{grid-column:1/-1}.tm-login{grid-template-columns:minmax(0,1fr)}.tm-id{position:static}}
+@media(max-width:600px){.tm-shield{aspect-ratio:4/3.6;border-radius:30% 30% 10px 10px/14% 14% 10px 10px}.tm-hud{max-width:60%;top:8%}.tm-hint{display:none}.tm-dash{grid-template-columns:minmax(0,1fr)}.tm-gauge{grid-template-columns:auto minmax(0,1fr);text-align:left;gap:12px}.tm-gauge svg{max-width:150px}.tm-cards,.tm-two{grid-template-columns:minmax(0,1fr)}.tm-flip{min-height:190px}.tm-rail{padding:18px 30%}}
+@media(prefers-reduced-motion:reduce){.tm-cabin,.tm-stage,.tm-flip,.tm-stop{transition:none}.tm-cabin.shake{animation:none}}
+</style>
+</head>
+<body style="margin:0;background:#0e1418">
+<div id="tm">
+  <header class="tm-top">
+    <div>
+      <h1>坐上時光車，穿越時尚。</h1>
+      <p>選一個年代，拉下啟動桿。窗外是那個時代最具代表性的衣服輪廓，下方航行日誌是你需要知道的歷史。</p>
+    </div>
+    <div class="tm-route">
+      <label for="tm-route">閱讀路線</label>
+      <select class="tm-sel" id="tm-route"></select>
+    </div>
+  </header>
+
+  <section class="tm-car" id="tm-car" aria-label="時光車駕駛艙">
+    <div class="tm-cabin" id="tm-cabin">
+      <div class="tm-shield" id="tm-shield">
+        <div class="tm-scene" id="tm-scene">
+          <div class="tm-stagewrap" id="tm-stagewrap" title="拖曳旋轉、雙擊放大">
+            <div class="tm-stage" id="tm-stage">
+              <div class="tm-face" id="tm-front"></div>
+              <div class="tm-face back" id="tm-backface"></div>
+            </div>
+          </div>
+          <div class="tm-scan"></div>
+          <div class="tm-hud" id="tm-hud"></div>
+          <div class="tm-hint">拖曳輪廓可 360° 轉動，翻到背面看辨識重點</div>
+        </div>
+        <canvas class="tm-warp" id="tm-warp"></canvas>
+        <div class="tm-glass"></div>
+        <div class="tm-flash" id="tm-flash"></div>
+        <div class="tm-ctl">
+          <button id="tm-zout" aria-label="縮小">−</button>
+          <button id="tm-zin" aria-label="放大">+</button>
+          <button id="tm-turn" aria-label="翻面">⟲</button>
+        </div>
+      </div>
+
+      <div class="tm-dash">
+        <div class="tm-panel tm-circ" id="tm-circ"></div>
+        <div class="tm-panel tm-gauge">
+          <svg viewBox="0 0 200 156" aria-hidden="true" id="tm-gsvg"></svg>
+          <div><div class="lbl">時空速度</div><div class="lbl" id="tm-gval">0 %</div></div>
+        </div>
+        <div class="tm-panel tm-ctrls">
+          <div class="tm-search">
+            <label for="tm-q">尋找人物、品牌或風格</label>
+            <input class="tm-in" id="tm-q" type="search" autocomplete="off" placeholder="例如：川久保玲、尼龍、解構" style="width:100%">
+            <ul class="tm-res" id="tm-res" hidden></ul>
+          </div>
+          <label for="tm-dest">目的航站</label>
+          <div class="tm-go">
+            <button class="tm-ico" id="tm-prev" aria-label="上一站">‹</button>
+            <select class="tm-sel" id="tm-dest"></select>
+            <button class="tm-ico" id="tm-next" aria-label="下一站">›</button>
+          </div>
+          <button class="tm-lever" id="tm-launch">拉下啟動桿<i></i></button>
+          <button class="tm-switch" id="tm-motion" aria-pressed="false"><b></b><span>減少轉場動態</span></button>
+          <p class="tm-status" id="tm-status" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="tm-railw">
+    <button class="tm-ico" id="tm-rl" aria-label="時間軸往前">‹</button>
+    <nav class="tm-rail" id="tm-rail" aria-label="年代航站"></nav>
+    <button class="tm-ico" id="tm-rr" aria-label="時間軸往後">›</button>
+  </div>
+
+  <section class="tm-log" aria-label="航行日誌"><div class="tm-login" id="tm-log"></div></section>
+  <p class="tm-foot">內容依各站列出的博物館、學術與媒體資料重新撰寫摘要；圖中為依各設計師代表輪廓繪製的示意圖，不是作品照片。</p>
+</div>
+<script>
+/* LABEL ATLAS · Time Machine 資料庫
+ * 每一站：時代背景 context、人物與品牌 bio、可辨識特色 features（name / desc / clue＝一眼認出的關鍵）、
+ * 代表作 works、影響 legacy、對照 contrast、帶走的問題 question、出處 sources、Met 物件編號 met（選填，用來抓圖）。
+ * 文字皆為依出處重新撰寫的摘要；出處連結為博物館、學術或可信媒體頁面。
+ */
+const TM_CASES = [
+{
+  year: 1858, person: 'Charles Frederick Worth', house: 'House of Worth', city: '巴黎', chapter: 'couture',
+  title: '把裁縫變成「設計師」',
+  tags: ['高級訂製服', '第二帝國', '品牌標籤'],
+  context: '1850 年代的巴黎正處於拿破崙三世的第二帝國，宮廷舞會與奢華排場讓上流社會對新衣需求極大。當時的女裝多由裁縫依顧客指示縫製，裁縫是手藝人，不是決定流行的人。紡織業與百貨商店正在興起，巴黎需要一種能把布料、工藝與名聲整合起來的新角色。',
+  bio: '沃斯（1825–1895）生於英格蘭，年輕時在倫敦布商工作，並常去博物館研究畫作中的服裝。1845 年移居巴黎，在布料商 Gagelin 擔任銷售並開設裁縫部門。1858 年與瑞典商人 Bobergh 合開 Worth et Bobergh，很快得到歐仁妮皇后青睞；1870 年獨立經營，後由兒孫延續到二十世紀中期。',
+  features: [
+    { name: '設計師先決定', desc: '由沃斯預先設計整套服裝，再讓顧客挑選與調整，顛倒了「顧客出主意、裁縫照做」的關係。', clue: '看到「季節性系列」的概念，就是從這裡開始。' },
+    { name: '真人模特兒展示', desc: '在店內讓真人穿上完成的作品走給顧客看，顧客再依喜好訂製。', clue: '今日時裝秀的雛形。' },
+    { name: '布料即奢華', desc: '大量使用里昂絲綢與訂製織品，甚至保留布邊當作裝飾，宣示布料的昂貴與品質。', clue: '外觀相對簡潔、但材質極度講究。' }
+  ],
+  works: [
+    { name: 'Worth & Bobergh 套裝', year: '1862–65', note: 'The Met 典藏，少數留存的合夥時期作品，以優雅的簡潔著稱。' },
+    { name: '舞會禮服', year: '1880 年代', note: '絲綢、水晶與大量裝飾，展現第二帝國之後的華麗風格。' }
+  ],
+  legacy: '沃斯建立的運作方式——設計師署名、季節系列、真人展示、國際客戶——成為後來巴黎高級訂製服體系的藍圖。今天說「設計師品牌」，追溯起點常是他。',
+  contrast: '對照 Chanel：沃斯讓衣服成為權力與財富的展示，Chanel 則在七十年後把奢華簡化成可以日常穿著的衣服。',
+  question: '當設計師開始「決定流行」，顧客失去了什麼、又得到了什麼？',
+  met: 156080,
+  sources: [
+    { label: 'The Met｜Charles Frederick Worth and the House of Worth（Heilbrunn Timeline）', url: 'https://www.metmuseum.org/essays/charles-frederick-worth-1825-1895-and-the-house-of-worth' },
+    { label: 'The Met｜Worth and Bobergh 套裝（2009.300.1372a–d）', url: 'https://www.metmuseum.org/art/collection/search/156080' },
+    { label: 'The Met｜Evening dress, ca. 1882（館藏說明）', url: 'https://www.metmuseum.org/art/collection/search/159187' }
+  ]
+},
+{
+  year: 1926, person: 'Gabrielle Chanel', house: 'Chanel', city: '巴黎', chapter: 'modern',
+  title: '小黑裙：時尚界的福特汽車',
+  tags: ['小黑裙', '針織 jersey', '現代女性'],
+  context: '第一次世界大戰後，女性大量進入職場、運動與城市生活，束腹與繁複裝飾變得不合時宜。1920 年代的「摩登女郎」剪短髮、穿及膝裙，汽車與大量生產改變了人們對「現代」的想像。',
+  bio: 'Chanel（1883–1971）從帽子起家，1910 年代在多維爾與比亞里茨開店，用原本做男性內衣的 jersey 針織布製作女裝。她本人的短髮、曬黑的膚色與經濟獨立，本身就是品牌形象。1921 年推出香水 No.5，1954 年復出後的斜紋軟呢套裝成為另一個代表符號。',
+  features: [
+    { name: '把黑色變日常', desc: '黑色原本多與喪服或店員制服連結，Chanel 把它變成白天到晚上都能穿的基本款。', clue: '直筒、及膝、幾乎沒有裝飾的黑色洋裝。' },
+    { name: '舒適的材質', desc: '用 jersey 等柔軟、好活動的布料取代硬挺布料，讓衣服跟著身體走。', clue: '線條鬆、不強調腰身。' },
+    { name: '借自男裝', desc: '從男性衣櫥與運動服借用剪裁與配色，黑白對比成為品牌標誌。', clue: '套裝＋襯衫、黑配白、人造珍珠串。' }
+  ],
+  works: [
+    { name: '「小黑裙」', year: '1926', note: '美國 Vogue 1926 年 10 月刊出插畫，把它比作福特 T 型車——人人都能擁有的基本款。' },
+    { name: '斜紋軟呢套裝', year: '1954 起', note: '復出後的代表作，無墊肩、可活動的外套成為經典。' }
+  ],
+  legacy: '小黑裙成為二十世紀最普及的女裝基本款之一；「舒適也可以優雅」的想法，影響了之後的成衣與職業女裝。',
+  contrast: '對照 Dior：Chanel 解放腰身，Dior 在 1947 年又把腰收回來；兩人代表了「舒適」與「造型」兩條路線。',
+  question: '為什麼一件「沒有裝飾」的衣服，反而能成為身分的象徵？',
+  met: 81482,
+  sources: [
+    { label: 'The Met｜Gabrielle "Coco" Chanel and the House of Chanel（Heilbrunn Timeline）', url: 'https://www.metmuseum.org/toah/hd/chnl/hd_chnl.htm' },
+    { label: 'The Met｜Ensemble, ca. 1927（小黑裙範例）', url: 'https://www.metmuseum.org/art/collection/search/81482' },
+    { label: 'Smithsonian Magazine｜Why Coco Chanel Created the Little Black Dress', url: 'https://www.smithsonianmag.com/smart-news/why-coco-chanel-created-lbd-180965024/' }
+  ]
+},
+{
+  year: 1938, person: 'Claire McCardell', house: 'Townley Frocks', city: '紐約', chapter: 'modern',
+  title: '美國運動休閒服的起點',
+  tags: ['American Look', '成衣', '可機洗'],
+  context: '1930 年代的美國時裝界仍大量模仿巴黎訂製服。經濟大蕭條讓多數女性需要便宜、耐穿、能自己打理的衣服；二戰期間布料配給，更讓「實用」成為設計條件。',
+  bio: 'McCardell（1905–1958）在紐約 Parsons 讀書，曾在巴黎拆解二手高級訂製服研究結構。她長期為成衣廠 Townley Frocks 設計，被視為「美國運動休閒服（American sportswear）」的奠基者，1943 年獲 Coty 時尚獎。',
+  features: [
+    { name: '無腰線、靠綁帶塑形', desc: 'Monastic 洋裝以斜裁製作，沒有縫死的腰線，穿的人自己用腰帶決定合身度。', clue: '平放像布袋、繫上腰帶才有曲線。' },
+    { name: '可互相搭配的單品', desc: '推動上衣、裙子、褲子可以混搭的「分件式」穿法。', clue: '一個衣櫥、多種組合。' },
+    { name: '平價材料做出好設計', desc: '用棉布、牛仔布、針織等日常材料，搭配外露明線、黃銅扣等細節。', clue: '明線、口袋、綁帶，像工作服又很俐落。' }
+  ],
+  works: [
+    { name: 'Monastic 洋裝', year: '1938', note: '大受歡迎並被大量仿製，仿冒問題一度讓 Townley 停業。' },
+    { name: 'Popover 洋裝', year: '1942', note: '回應 Harper\'s Bazaar 的挑戰：能做家事也能穿去派對，售價 6.95 美元，附隔熱手套。' }
+  ],
+  legacy: '她證明美國可以有自己的時尚語言，而不只是複製巴黎；今天的休閒成衣、分件式衣櫥都可追溯到她。',
+  contrast: '對照 Dior：同一時期，Dior 用大量布料與內襯做出戲劇性輪廓，McCardell 則用最少的結構讓衣服好穿、好洗。',
+  question: '「好穿」能不能成為一種設計標準，而不只是妥協？',
+  met: 84029,
+  sources: [
+    { label: 'The Museum at FIT｜Claire McCardell', url: 'https://fashionmuseum.fitnyc.edu/people/6603/claire-mccardell' },
+    { label: 'The Met｜"Pop-over" 洋裝館藏說明', url: 'https://www.metmuseum.org/art/collection/search/84029' },
+    { label: 'The Met｜American Ingenuity: Sportswear, 1930s–1970s', url: 'https://www.metmuseum.org/essays/american-ingenuity-sportswear-1930s-1970s' }
+  ]
+},
+{
+  year: 1947, person: 'Christian Dior', house: 'Dior', city: '巴黎', chapter: 'couture',
+  title: 'New Look：戰後的新面貌',
+  tags: ['New Look', 'Bar 外套', '沙漏輪廓'],
+  context: '二戰期間布料配給、制服化的服裝讓女裝線條平直、方正。戰後巴黎急需重建時尚之都的地位，也需要一種能象徵「回到美好生活」的形象。',
+  bio: 'Dior（1905–1957）早年開畫廊，戰時在 Lucien Lelong 擔任設計師。1946 年在紡織大亨 Marcel Boussac 支持下創立品牌，1947 年 2 月發表第一個系列，美國媒體稱之為「New Look」。他只以自己名字設計了約十年，卻建立了授權經營等商業模式。',
+  features: [
+    { name: '沙漏輪廓', desc: '圓潤肩線、極細腰、極寬下擺，刻意誇張女性曲線。', clue: '收腰外套＋大圓裙，像一朵倒放的花。' },
+    { name: '用大量布料', desc: '一件裙子可用到十幾碼布，在剛結束配給的年代引起爭議。', clue: '裙擺打褶厚重、會「站」起來。' },
+    { name: '內部結構', desc: '用襯墊、內衣結構與硬挺內裡塑形，靈感部分來自十九世紀的束身服裝。', clue: '外觀柔美，內部其實像建築。' }
+  ],
+  works: [
+    { name: '「Bar」套裝', year: '1947 春夏', note: '象牙色收腰外套配黑色百褶裙，被視為 New Look 最具代表性的單品。' },
+    { name: '「Chérie」洋裝', year: '1947 春夏', note: '裙擺使用超過 13 碼布料，展現新造型的份量。' }
+  ],
+  legacy: 'New Look 主導了整個 1950 年代的女性輪廓；Dior 開創的授權與全球化經營，也成為後來奢侈品牌的商業模型。',
+  contrast: '對照 Balenciaga：同一時代，Dior 強調腰線，Balenciaga 逐步把腰線拿掉，走向更抽象的造型。',
+  question: '在物資剛恢復的年代，「浪費布料」為什麼會被當成希望的象徵？',
+  met: 81460,
+  sources: [
+    { label: 'The Met｜Christian Dior (1905–1957)（Heilbrunn Timeline）', url: 'https://www.metmuseum.org/essays/christian-dior-1905-1957' },
+    { label: 'The Met｜"Bar" 套裝（C.I.58.34.30）', url: 'https://www.metmuseum.org/art/collection/search/81460' }
+  ]
+},
+{
+  year: 1955, person: 'Cristóbal Balenciaga', house: 'Balenciaga', city: '巴黎', chapter: 'couture',
+  title: '把腰線拿掉的建築師',
+  tags: ['Tunic', 'Sack', '雕塑感'],
+  context: '1950 年代中期，Dior 的沙漏輪廓仍是主流。高級訂製服之間競爭激烈，設計師需要用新的「線條」來定義每一季。',
+  bio: 'Balenciaga（1895–1972）出身西班牙巴斯克地區漁村，母親是裁縫。他先在聖塞巴斯蒂安開設時裝屋，西班牙內戰後於 1937 年在巴黎開店。他能親手完成從打版到縫製的每個步驟，被同行稱為「設計師中的設計師」，1968 年關閉時裝屋。',
+  features: [
+    { name: '去掉腰線', desc: '從 1950 年代起逐步放鬆腰部：半合身套裝、tunic 長版上衣、sack 布袋洋裝。', clue: '衣服離開身體，在背後形成空間。' },
+    { name: '結構與材料', desc: '偏好挺括厚實的布料，讓衣服自己撐出形狀，例如後來開發的 gazar。', clue: '剪裁極少、但輪廓像雕塑。' },
+    { name: '西班牙元素', desc: '從鬥牛服、宗教服飾與西班牙繪畫取材，色彩濃烈、黑色深沉。', clue: '深黑、斗篷、刺繡。' }
+  ],
+  works: [
+    { name: 'Tunic 套裝', year: '1955 春夏', note: 'The Met 館藏，由 1952 年的無腰套裝發展而來，是後來 chemise 與 sack 的前身。' },
+    { name: 'Sack 洋裝', year: '1957', note: '完全去除腰線，當時被英國媒體嘲諷「穿布袋很難性感」，卻預告了 1960 年代的直筒洋裝。' }
+  ],
+  legacy: '他的 tunic、sack、baby doll 等輪廓成為現代女裝的基本形；Courrèges、Ungaro、Givenchy 都曾受他影響。',
+  contrast: '對照 Dior：Dior 用內部結構塑造身體曲線，Balenciaga 用布料本身塑造身體以外的空間。',
+  question: '衣服一定要「貼合」身體才算好看嗎？',
+  met: 85421,
+  sources: [
+    { label: 'The Met｜Balenciaga Ensemble, spring/summer 1955（C.I.55.60a–c）', url: 'https://www.metmuseum.org/art/collection/search/85421' },
+    { label: 'V&A｜Introducing Cristóbal Balenciaga', url: 'https://www.vam.ac.uk/articles/introducing-cristobal-balenciaga' },
+    { label: 'V&A｜Wool \'sack\' dress, 1957–8（T.90-1973）', url: 'https://collections.vam.ac.uk/item/O109277/dress-cristobal-balenciaga' }
+  ]
+},
+{
+  year: 1966, person: 'Yves Saint Laurent', house: 'Yves Saint Laurent', city: '巴黎', chapter: 'modern',
+  title: 'Le Smoking：女人穿上燕尾服',
+  tags: ['Le Smoking', 'Rive Gauche', '性別界線'],
+  context: '1960 年代青年文化興起，學運、搖滾樂與女性運動挑戰既有規範。高級訂製服開始顯得老派，年輕人想要更直接、更能反映街頭的衣服。',
+  bio: 'Saint Laurent（1936–2008）生於阿爾及利亞奧蘭，21 歲接替驟逝的 Dior 成為首席設計師。1961 年與伴侶 Pierre Bergé 創立自己的品牌。1966 年開設成衣店 Saint Laurent Rive Gauche，把設計師作品帶向更年輕的顧客。1983 年 The Met 為他舉辦回顧展，是該館首次為在世設計師辦個展。',
+  features: [
+    { name: '把男裝給女性', desc: '燕尾服、獵裝、海軍外套、褲裝——把男性衣櫥的經典單品改造成女裝。', clue: '黑色燕尾服外套＋長褲＋白襯衫。' },
+    { name: '藝術作為圖像', desc: '1965 年以 Mondrian 色塊做成洋裝，之後也向畢卡索、梵谷致敬。', clue: '色塊、幾何、像畫作一樣的衣服。' },
+    { name: '高訂與成衣並行', desc: 'Rive Gauche 讓設計師品牌第一次大規模走進成衣市場。', clue: '同一個名字，同時做訂製與現貨。' }
+  ],
+  works: [
+    { name: 'Le Smoking', year: '1966 秋冬', note: '首次發表時引發爭議，訂製版銷量很少，卻在成衣線成為經典，之後他持續推出不同版本直到 2002 年。' },
+    { name: 'Mondrian 洋裝', year: '1965 秋冬', note: '把畫作的色塊直接轉化為剪裁線。' }
+  ],
+  legacy: '女性褲裝與燕尾服從爭議變成日常；「高級品牌也做成衣」的模式成為業界常態。',
+  contrast: '對照 Chanel：Chanel 從男裝借「舒適」，YSL 從男裝借「權力與態度」。',
+  question: '一件衣服的「性別」是由剪裁決定，還是由社會決定？',
+  met: 130453,
+  sources: [
+    { label: 'The Met｜Yves Saint Laurent: When Fashion Meets Art', url: 'https://www.metmuseum.org/perspectives/yves-saint-laurent' },
+    { label: 'The Met｜Yves Saint Laurent Ensemble（Le Smoking 說明）', url: 'https://www.metmuseum.org/art/collection/search/130453' },
+    { label: 'UAL Fashion Exhibition Making｜Yves Saint Laurent: Smoking Forever (2005)', url: 'https://fashionexhibitionmaking.arts.ac.uk/yves-saint-laurent-smoking-forever/' }
+  ]
+},
+{
+  year: 1971, person: 'Vivienne Westwood', house: 'Let It Rock → SEX → Seditionaries', city: '倫敦', chapter: 'subculture',
+  title: '國王路 430 號：龐克的服裝實驗室',
+  tags: ['龐克', '次文化', '歷史再造'],
+  context: '1970 年代的英國經濟停滯、失業率高，年輕人對嬉皮理想與主流社會都感到失望。音樂與服裝成為反叛的語言，倫敦國王路一帶是次文化的聚集地。',
+  bio: 'Westwood（1941–2022）原本是小學老師，與經紀人 Malcolm McLaren 合作。1971 年兩人在國王路 430 號開設 Let It Rock，販售 1950 年代 Teddy Boy 風格服裝；店名後來改為 Too Fast to Live Too Young to Die（1973）、SEX（1974）、Seditionaries（1976）、Worlds End。1981 年的「Pirate」是兩人第一場正式時裝秀。',
+  features: [
+    { name: '挪用禁忌服裝', desc: '把皮革、拘束服、安全別針、撕裂印字 T 恤變成街頭服裝，刻意挑釁。', clue: '綁帶褲、別針、撕破的標語 T 恤。' },
+    { name: '店就是作品', desc: '一間店反覆改名、改裝潢，每一版都對應一種次文化。', clue: '店名本身就是宣言。' },
+    { name: '回到歷史再反叛', desc: '1980 年代後轉向十八世紀束身衣、英國蘇格蘭格紋與花呢，用傳統顛覆傳統。', clue: '格紋＋束腰＋誇張的歷史輪廓。' }
+  ],
+  works: [
+    { name: 'Seditionaries 綁帶褲', year: '1976–77', note: '以拘束服為靈感，與性手槍樂團形象緊密結合。' },
+    { name: 'Pirate 系列', year: '1981–82 秋冬', note: '第一場正式時裝秀，以海盜、紈褲子弟為主題。' }
+  ],
+  legacy: '她讓次文化成為正式的設計來源，也讓「時裝可以表達政治立場」成為可能；晚年長期投入環保與社會運動。',
+  contrast: '對照 Ralph Lauren：同一時期，Westwood 打破英國傳統，Lauren 則把英美上流傳統包裝成嚮往。',
+  question: '當反叛的衣服被賣到全世界，它還算反叛嗎？',
+  note: '原站此站標示為 1970；依 V&A、The Met 與倫敦博物館資料，Let It Rock 開幕於 1971 年，此處已更正。',
+  sources: [
+    { label: 'V&A｜Vivienne Westwood designs', url: 'https://www.vam.ac.uk/content/articles/v/vivienne-westwood-designs' },
+    { label: 'The Met｜Vivienne Westwood (born 1941)（Heilbrunn Timeline）', url: 'https://www.metmuseum.org/toah/hd/vivw/hd_vivw.htm' },
+    { label: 'London Museum｜Vivienne Westwood & Malcolm McLaren: King\'s Road royalty', url: 'https://londonmuseum.org.uk/collections/london-stories/vivienne-westwood-malcolm-mclaren-kings-road-royalty' }
+  ]
+},
+{
+  year: 1971, person: 'Massimo Osti', house: 'C.P. Company / Stone Island', city: '波隆那', chapter: 'subculture',
+  title: '把實驗室搬進男裝',
+  tags: ['成衣染色', '軍裝檔案', '功能布料'],
+  context: '1970 年代的義大利男裝仍以傳統西裝為核心。另一方面，軍用剩餘物資、工作服與運動服大量流入市面，紡織技術也在快速發展。',
+  bio: 'Osti（1944–2005）出身波隆那，原本是平面設計師，熱愛普普藝術與影印機。1971 年創立 Chester Perry（因 Fred Perry 提出法律異議，1978 年改名 C.P. Company），1982 年推出 Stone Island。他收藏大量軍裝與工作服作為研究檔案，每件 C.P. 衣服的標籤寫著「Ideas from Massimo Osti」。',
+  features: [
+    { name: '成衣染色', desc: '先把衣服縫好再整件染色，不同材質吸色不同，產生同色系的深淺層次。', clue: '縫線、口袋與布身顏色略有差異。' },
+    { name: '布料實驗', desc: 'Stone Island 第一個系列用卡車防水帆布（Tela Stella）；之後有遇冷變色、反光等布料。', clue: '摸起來像工業材料，看起來會「變」。' },
+    { name: '功能細節', desc: '從軍裝與防護裝備研究出可拆、可收納、可保護的設計。', clue: '帽兜上的護目鏡、袖子上的徽章。' }
+  ],
+  works: [
+    { name: 'Mille Miglia 護目鏡外套', year: '1988', note: '為同名古董車賽設計，帽兜上的鏡片可直接觀看。' },
+    { name: 'Stone Island Ice Jacket', year: '1991', note: '用溫感變色材料，讓衣服隨溫度改變顏色。' }
+  ],
+  legacy: '他把「研發」帶進男裝，影響了今天的機能服與街頭品牌；英國足球 casuals 與義大利 paninari 次文化也把他的品牌當成身分標誌。',
+  contrast: '對照 Armani：同樣在義大利改造男裝，Armani 拿掉西裝的硬挺，Osti 則把軍裝與工業材料變成日常服裝。',
+  question: '一件衣服的價值，可以來自「技術」而不是品牌標誌嗎？',
+  sources: [
+    { label: 'Domus｜Massimo Osti: how the founder of Stone Island reshaped fashion (2025)', url: 'https://www.domusweb.it/en/design/2025/06/10/massimo-osti-stone-island-cp-company-exhibition.html' },
+    { label: 'SSENSE｜How Massimo Osti Re-Engineered Menswear', url: 'https://www.ssense.com/en-us/editorial/fashion/how-massimo-osti-re-engineered-menswear' },
+    { label: 'SSENSE｜The A–Z Guide to Stone Island', url: 'https://www.ssense.com/en-us/editorial/fashion/stone-island-brand-history' }
+  ]
+},
+{
+  year: 1972, person: 'Ralph Lauren', house: 'Polo Ralph Lauren', city: '紐約', chapter: 'american',
+  title: '販賣一種生活方式',
+  tags: ['Polo 衫', '學院風', '生活風格品牌'],
+  context: '1960–70 年代的美國郊區中產階級擴大，人們嚮往英國鄉村、常春藤學院與西部牛仔等「美國夢」意象。百貨公司是時尚主要通路。',
+  bio: 'Lauren 1939 年生於紐約布朗克斯，沒有受過正式設計訓練。1967 年在領帶公司 Beau Brummell 以「Polo」為名推出寬版領帶，1968 年發展成完整男裝線。1971 年推出女裝襯衫，首次出現馬球騎士標誌；1972 年推出網眼棉質 Polo 衫，初版有 24 種顏色。',
+  features: [
+    { name: '說故事的品牌', desc: '不只賣衣服，而是賣英倫鄉紳、常春藤、牛仔等完整場景與生活方式。', clue: '店面像住家、廣告像電影劇照。' },
+    { name: '經典再製', desc: '把傳統服裝（牛津襯衫、粗花呢、牛仔布）重新做成高品質商品。', clue: '看起來「一直都在」的衣服。' },
+    { name: '小標誌大辨識', desc: '胸前的馬球騎士讓品牌在遠處也能被認出。', clue: '左胸刺繡標誌。' }
+  ],
+  works: [
+    { name: 'Polo 寬版領帶', year: '1967', note: 'The Met 館藏，比當時流行的窄領帶寬得多，帶有英國風格。' },
+    { name: '網眼 Polo 衫', year: '1972', note: '多色推出，後來成為學院風的代表單品。' }
+  ],
+  legacy: '他示範了「生活風格品牌」的模式：服裝、家具、香水、餐廳都可以屬於同一個世界觀。',
+  contrast: '對照 Westwood：兩人都在重新詮釋英國傳統，一個把它變成嚮往，一個把它變成反諷。',
+  question: '我們買衣服時，是在買衣服，還是在買一個想成為的自己？',
+  met: 156090,
+  sources: [
+    { label: 'The Met｜Polo 領帶館藏說明（Ralph Lauren 1967 年起家）', url: 'https://www.metmuseum.org/art/collection/search/156090' },
+    { label: 'Ralph Lauren｜Making History: the Polo shirt', url: 'https://www.ralphlauren.com/rlmag/ralph-lauren-culture-style-polo-shirt-book.html' }
+  ]
+},
+{
+  year: 1975, person: 'Giorgio Armani', house: 'Giorgio Armani', city: '米蘭', chapter: 'italian',
+  title: '拆掉西裝的盔甲',
+  tags: ['無結構外套', '米蘭成衣', '權力套裝'],
+  context: '1970 年代的男西裝仍以厚墊肩、硬襯為主，像一副盔甲。米蘭正在成為成衣重鎮，與巴黎的高級訂製服形成不同路線。',
+  bio: 'Armani（1934–2025）原本讀醫學，後在米蘭百貨 La Rinascente 擔任櫥窗與採購，再到 Nino Cerruti 設計男裝。1975 年與伴侶 Sergio Galeotti 創立公司，同年發表男裝系列。1980 年電影《美國舞男》的服裝讓他在全球大眾間成名。',
+  features: [
+    { name: '無結構外套', desc: '拿掉硬襯與厚墊肩、改變比例，讓外套像襯衫一樣輕。', clue: '肩線柔軟、布料垂墜、外套會「流動」。' },
+    { name: '低彩度色盤', desc: '偏好灰褐（greige）、米色、海軍藍等安靜的中間色。', clue: '整身沒有強烈顏色。' },
+    { name: '男女共用語言', desc: '把同樣柔軟的西裝語彙用在女裝，成為 1980 年代職業女性的權力套裝。', clue: '寬肩但不僵硬的女性西裝。' }
+  ],
+  works: [
+    { name: '無結構男西裝外套', year: '1975 起', note: '當時男裝普遍硬挺，這種外套被視為男裝的轉捩點。' },
+    { name: '女性無結構外套', year: '1977 起', note: '搭配寬褲或百褶裙，成為職場女性的新選擇。' }
+  ],
+  legacy: '「舒適但專業」的西裝成為現代職場的標準；Guggenheim 2000 年的回顧展也引發「時尚能否進美術館」的討論。',
+  contrast: '對照 YSL：YSL 把男裝的權力給女性，Armani 把男裝的權力「放鬆」，讓男女都能穿得自在。',
+  question: '正式服裝一定要讓人不舒服才顯得專業嗎？',
+  met: 96171,
+  sources: [
+    { label: 'Guggenheim Bilbao｜Giorgio Armani (2001)', url: 'https://guggenheim-bilbao.eus/en/exhibitions/giorgio-armani-2' },
+    { label: 'The Met｜Giorgio Armani Ensemble, ca. 1979（無結構外套說明）', url: 'https://www.metmuseum.org/art/collection/search/96171' },
+    { label: 'V&A｜Five iconic Giorgio Armani looks from the V&A collections', url: 'https://www.vam.ac.uk/articles/five-iconic-giorgio-armani-looks-from-the-vampa-collections' }
+  ]
+},
+{
+  year: 1981, person: 'Rei Kawakubo', house: 'Comme des Garçons', city: '東京 / 巴黎', chapter: 'japan',
+  title: '黑色、破洞與不對稱：巴黎的震撼',
+  tags: ['反時尚', '不對稱', '解構'],
+  context: '1980 年代初的巴黎時尚追求華麗、性感與強烈的肩線。日本經濟正在崛起，但西方對日本設計的認識仍很有限。',
+  bio: '川久保玲 1942 年生於東京，慶應大學主修美學與文學，沒有正式學過服裝設計。1969 年創立 Comme des Garçons（法文意為「像男孩一樣」），1975 年在東京發表，1981 年 4 月首次在巴黎發表。她也創立了 Dover Street Market 等複合店。',
+  features: [
+    { name: '以黑色為主', desc: '大量使用黑與深色，被當時部分評論者形容為悲觀或「後原子彈」風格。', clue: '整場秀幾乎沒有顏色。' },
+    { name: '破洞與未完成', desc: '刻意讓針織有洞、邊緣不收、結構不對稱，挑戰「完美」的標準。', clue: '看起來像壞掉，其實是設計。' },
+    { name: '衣服與身體之間的空間', desc: '不追隨身體曲線，用填充物、超大輪廓重新定義身體形狀。', clue: '不知道哪裡是腰、哪裡是肩。' }
+  ],
+  works: [
+    { name: '巴黎首秀', year: '1981', note: '與山本耀司前後登場，引發巨大爭議，也讓日本設計進入國際視野。' },
+    { name: 'Body Meets Dress, Dress Meets Body', year: '1997 春夏', note: '在洋裝中加入填充物，讓身體出現不尋常的隆起。' }
+  ],
+  legacy: 'The Met 在 2017 年為她舉辦「Art of the In-Between」，是繼 YSL 之後第二位在世時獲該館個展的設計師；她影響了 Margiela 到整個解構主義世代。',
+  contrast: '對照山本耀司：兩人同時來到巴黎、同樣以黑色出名，但川久保玲更偏向概念與造型實驗，山本耀司更重視剪裁與穿著感。',
+  question: '「不美」的衣服，能不能是好的設計？',
+  sources: [
+    { label: 'The Met｜Rei Kawakubo/Comme des Garçons: Art of the In-Between（出版品）', url: 'https://metmuseum.org/met-publications/rei-kawakubo-comme-des-garcons-art-of-the-in-between' },
+    { label: 'The Met｜展覽導覽手冊 PDF（2017）', url: 'https://www.metmuseum.org/-/media/Files/Exhibitions/2017/Rei%20Kawakubo%20Guide.pdf' },
+    { label: 'NGV｜Rei Kawakubo: Reframing fashion', url: 'https://www.ngv.vic.gov.au/collecting-comme/rei-kawakubo-reframing-fashion/' }
+  ]
+},
+{
+  year: 1981, person: 'Yohji Yamamoto', house: 'Yohji Yamamoto', city: '東京 / 巴黎', chapter: 'japan',
+  title: '黑色的詩人',
+  tags: ['黑色', '寬鬆剪裁', '男裝女穿'],
+  context: '與川久保玲同一時期，日本設計師以完全不同於西方的身體觀進入巴黎，挑戰「衣服要展現身材」的前提。',
+  bio: '山本耀司 1943 年生於東京，母親是裁縫，他在慶應大學讀法律後進入文化服裝學院。1972 年創立 Y\'s，1977 年在東京發表，1981 年首次在巴黎發表同名品牌。2002 年與 adidas 合作推出 Y-3，2011 年 V&A 為他舉辦回顧展。',
+  features: [
+    { name: '黑色作為態度', desc: '他曾說黑色既謙虛又傲慢，代表「不打擾別人，也別打擾我」。', clue: '全黑、層次靠材質而不是顏色。' },
+    { name: '寬鬆與垂墜', desc: '超大尺寸、不對稱下擺，讓布料隨動作流動。', clue: '衣服比身體大一圈，走路時會擺動。' },
+    { name: '男裝語彙給女性', desc: '把男性西裝、大衣的剪裁用在女裝，模糊性別。', clue: '女生穿寬大的男式外套。' }
+  ],
+  works: [
+    { name: '巴黎首秀', year: '1981', note: '模特兒素顏、深色寬大服裝，被法國媒體貶為「廣島時尚」，卻改變了時尚的走向。' },
+    { name: 'Y-3', year: '2002', note: '與 adidas 合作，被視為早期設計師與運動品牌結合的重要案例。' }
+  ],
+  legacy: '他讓「寬鬆、不性感、不強調身材」成為一種高級美學，也是設計師跨足運動服的先行者。',
+  contrast: '對照川久保玲：兩人常被並列，但山本耀司更接近「裁縫師」，關注衣服穿在身上的狀態。',
+  question: '如果衣服不再強調身材，它還能表達什麼？',
+  sources: [
+    { label: 'V&A｜Yohji Yamamoto: Poet of Black', url: 'https://www.vam.ac.uk/articles/yohji-yamamoto-poet-of-black' },
+    { label: 'Palais Galliera｜Yohji Yamamoto', url: 'https://www.palaisgalliera.paris.fr/fr/node/1128' },
+    { label: 'UAL Fashion Exhibition Making｜Yohji Yamamoto at Work (2011)', url: 'https://fashionexhibitionmaking.arts.ac.uk/yohji-yamamoto-at-work/' }
+  ]
+},
+{
+  year: 1984, person: 'Miuccia Prada', house: 'Prada', city: '米蘭', chapter: 'italian',
+  title: '尼龍後背包：工業材料的奢華',
+  tags: ['尼龍', '知性', 'ugly chic'],
+  context: '1980 年代的奢侈品以皮革、金飾與炫耀為主。Prada 原本是 1913 年創立的米蘭皮件老店，到 1970 年代已不再受年輕人關注。',
+  bio: 'Miuccia Prada 1949 年生，擁有政治學博士學位，曾學習默劇。1978 年接手家族事業，與丈夫 Patrizio Bertelli 共同經營。1984 年推出用 Pocone 尼龍製作的後背包，1988 年推出第一個女裝成衣系列，1993 年創立 Miu Miu 與 Prada 基金會。',
+  features: [
+    { name: '工業材料變奢侈品', desc: '用原本做軍用帳篷的防水尼龍取代皮革，以高價出售。', clue: '黑色尼龍＋三角形金屬標誌。' },
+    { name: '刻意的「不好看」', desc: '1990 年代起用不協調的花色、老派剪裁製造「ugly chic」，挑戰品味。', clue: '像奶奶衣櫥裡的花色，卻很前衛。' },
+    { name: '知性的女性形象', desc: '設計像在提問：女性、制服、權力與品味是什麼。', clue: '端莊、帶點怪的制服感。' }
+  ],
+  works: [
+    { name: '尼龍後背包（Vela）', year: '1984', note: 'MoMA 已收藏此設計，代表工業材料進入奢侈品的轉折。' },
+    { name: '首個女裝成衣系列', year: '1988 秋冬', note: '奠定 Prada 的極簡、知性路線。' }
+  ],
+  legacy: '她讓奢侈品從「炫富」轉向「品味與觀點」；尼龍、機能材料在今天的高級品牌中已很普遍。',
+  contrast: '對照 Massimo Osti：兩人都把工業與軍用材料帶進時尚，Osti 重視功能與研發，Prada 重視材料的象徵意義。',
+  question: '奢侈品的價值，來自材料本身還是來自想法？',
+  sources: [
+    { label: 'MoMA｜Miuccia Prada, Backpack, designed 1984', url: 'https://www.moma.org/collection/works/275417' },
+    { label: 'W Magazine｜How Prada\'s Nylon Backpack Rewrote the Rules of Luxury', url: 'https://www.wmagazine.com/fashion/prada-nylon-backpack-history-backstory' }
+  ]
+},
+{
+  year: 1986, person: 'Dries Van Noten', house: 'Dries Van Noten', city: '安特衛普', chapter: 'belgian',
+  title: '安特衛普六君子與印花的詩意',
+  tags: ['Antwerp Six', '印花', '刺繡'],
+  context: '1980 年代的國際時尚由巴黎、米蘭、紐約主導，比利時並不被視為時尚重鎮。安特衛普皇家藝術學院卻培養出一批風格強烈的年輕設計師。',
+  bio: 'Van Noten 1958 年生於安特衛普的裁縫世家，就讀皇家藝術學院。1986 年他與 Ann Demeulemeester 等五位同學開著一台貨車到倫敦參加 British Designer Show，英國媒體因唸不出他們的名字，稱之為「Antwerp Six」。他長期不做廣告，2024 年卸任，由 Julian Klausner 接任。',
+  features: [
+    { name: '印花與色彩的拼貼', desc: '把不同文化的印花、刺繡與色彩混搭在同一套衣服上。', clue: '花卉、民族圖案與迷彩同時出現。' },
+    { name: '工藝與在地合作', desc: '長期與印度等地的刺繡工坊合作。', clue: '大量手工刺繡細節。' },
+    { name: '低調經營', desc: '幾乎不買廣告，靠作品與口碑建立品牌。', clue: '一個獨立設計師也能長期存活。' }
+  ],
+  works: [
+    { name: 'British Designer Show 倫敦發表', year: '1986', note: '他的男裝在倫敦獲得國際買手訂單，成為事業起點。' },
+    { name: '安特衛普六君子 40 週年展', year: '2026', note: 'MoMu 以素描、拼貼、邀請卡等檔案，重建 1986 年倫敦之行與六人的發展。' }
+  ],
+  legacy: 'Antwerp Six 讓安特衛普成為時尚重鎮，也示範了不依附大集團的獨立設計師模式。',
+  contrast: '對照 Margiela：同一間學院出身，Van Noten 擁抱色彩與裝飾，Margiela 走向解構與匿名。',
+  question: '一個小城市的設計學院，如何改變世界的時尚地圖？',
+  sources: [
+    { label: 'MoMu｜The Antwerp Six（40 週年展）', url: 'https://www.momu.be/en/magazine/the-antwerp-six-geert-bruloot-kaat-debo-romy-cockx' },
+    { label: 'Google Arts & Culture × MoMu｜EMERGENCE. The Antwerp 6+1', url: 'https://artsandculture.google.com/story/fAWhlnD6KqLGJg' },
+    { label: 'ArtReview｜The Antwerp Six and the Problem of Now', url: 'https://artreview.com/the-antwerp-six-and-the-problem-of-now/' }
+  ]
+},
+{
+  year: 1988, person: 'Martin Margiela', house: 'Maison Martin Margiela', city: '巴黎', chapter: 'belgian',
+  title: '隱形的設計師',
+  tags: ['解構', '匿名', 'Tabi 靴'],
+  context: '1980 年代後期是設計師明星化、商標狂熱的高峰。消費者追逐大 logo，設計師本人也成為媒體焦點。',
+  bio: 'Margiela 1957 年生於比利時，畢業於安特衛普皇家藝術學院，曾任 Jean Paul Gaultier 助理約三年。1988 年與 Jenny Meirens 在巴黎創立品牌，第一場秀（1989 春夏）於 1988 年 10 月舉行。他拒絕露臉與受訪，1997–2003 年同時擔任 Hermès 女裝設計，2009 年離開自己的品牌。',
+  features: [
+    { name: '匿名與白標', desc: '標籤是一塊空白白布，只用四個白色縫線固定，外面看得到線頭。', clue: '衣服背後四個白點。' },
+    { name: '解構與回收', desc: '把舊衣、手套、海報、盤子碎片拆解再組成新衣服，縫份與內裡外露。', clue: '像半成品，看得到製作痕跡。' },
+    { name: 'Tabi 分趾靴', desc: '以日本分趾足袋為靈感，搭配圓柱形鞋跟。', clue: '鞋頭分成兩趾。' }
+  ],
+  works: [
+    { name: '首秀與 Tabi 靴', year: '1989 春夏', note: '模特兒穿著沾紅漆的 Tabi 靴走過白色伸展台，留下腳印。' },
+    { name: '海報背心', year: '1990 春夏', note: '用撕碎的海報疊在棉布上做成背心，Palais Galliera 典藏。' }
+  ],
+  legacy: '他讓「解構」成為主流語言，也讓設計師可以不靠個人明星形象成功；Demna 等後輩都公開承認受他影響。',
+  contrast: '對照川久保玲：兩人都被稱為解構，但川久保玲重造身體輪廓，Margiela 重新思考衣服的製作過程與身分。',
+  question: '如果看不到設計師是誰，我們還會想買他的衣服嗎？',
+  sources: [
+    { label: 'Palais Galliera｜Margiela/Galliera 1989–2009', url: 'https://www.palaisgalliera.paris.fr/en/node/1874' },
+    { label: 'Palais Galliera｜Martin Margiela, Tabi boots（首秀說明）', url: 'https://www.palaisgalliera.paris.fr/en/node/3406' },
+    { label: 'UAL Fashion Exhibition Making｜Margiela/Galliera 1989–2009', url: 'https://fashionexhibitionmaking.arts.ac.uk/margiela-galliera-1989-2009/' }
+  ]
+},
+{
+  year: 1993, person: 'Issey Miyake', house: 'Pleats Please Issey Miyake', city: '東京', chapter: 'japan',
+  title: '先做衣服、再打褶',
+  tags: ['成衣打褶', '一塊布', '科技'],
+  context: '1990 年代的服裝產業開始重視機能、易保養與全球化生產。合成纖維技術成熟，讓「好穿、好洗、好收納」的高級服裝成為可能。',
+  bio: '三宅一生（1938–2022）生於廣島，多摩美術大學畢業後赴巴黎、紐約學習，1970 年成立三宅設計事務所。他長期研究「一塊布（A Piece of Cloth）」的概念，1993 年推出 Pleats Please，之後與藤原大合作 A-POC。',
+  features: [
+    { name: '成衣打褶（garment pleating）', desc: '先把衣服裁成兩到三倍大並縫好，夾在紙中送進熱壓機，形成永久性的褶。', clue: '細密的直條褶，衣服可以拉長、壓扁。' },
+    { name: '幾何與平面', desc: '很多作品平放時是幾何形狀，穿上後才變成立體。', clue: '攤平像一個方形或圓形。' },
+    { name: '易保養', desc: '聚酯材料可直接機洗、不需熨燙，方便旅行收納。', clue: '可以捲起來放進包包。' }
+  ],
+  works: [
+    { name: 'Pleats Please', year: '1993', note: 'The Met 說明他在 1993 年為此製程申請專利，並把它獨立成一條產品線。' },
+    { name: '「Flying Saucer」洋裝', year: '1994 春夏', note: '褶子讓衣服像燈籠一樣伸縮。' }
+  ],
+  legacy: '他把科技研發與傳統工藝結合，示範了「設計就是解決問題」；Pleats Please 至今仍是長銷系列。',
+  contrast: '對照 Massimo Osti：兩人都重視材料研發，Osti 從軍裝出發，三宅一生從身體與布的關係出發。',
+  question: '科技能讓衣服更接近藝術，還是更接近日用品？',
+  met: 762098,
+  sources: [
+    { label: 'The Met｜Issey Miyake Ensemble, ca. 1994（Pleats Please 製程說明）', url: 'https://www.metmuseum.org/art/collection/search/762098' },
+    { label: 'The Met｜Issey Miyake Dress（garment pleating 說明）', url: 'https://www.metmuseum.org/art/collection/search/678868' },
+    { label: 'ASU FIDM Museum｜Issey Miyake Pleats Please', url: 'https://asufidmmuseum.asu.edu/learn/articles/issey-miyake-pleats-please' }
+  ]
+},
+{
+  year: 1994, person: 'Rick Owens', house: 'Rick Owens', city: '洛杉磯 → 巴黎', chapter: 'american',
+  title: '好萊塢大道上的暗黑垂墜',
+  tags: ['暗黑', '垂墜', '另類美學'],
+  context: '1990 年代中期，極簡主義與 grunge 同時流行。洛杉磯不是時尚中心，卻聚集了大量音樂、電影與地下文化。',
+  bio: 'Owens 1961 年生於加州 Porterville，曾就讀 Otis 藝術設計學院，後在洛杉磯職業技術學院學打版，並在成衣廠做仿製版型。1994 年在好萊塢大道旁的店面創立品牌，伴侶 Michèle Lamy 是重要合作夥伴。2002 年在紐約首次走秀，2003 年移居巴黎。',
+  features: [
+    { name: '垂墜的長線條', desc: '用嫘縈 jersey、皮革做出長、窄、向下垂的輪廓。', clue: '又長又瘦、下擺不規則。' },
+    { name: '灰黑色調', desc: '常被形容為「glunge」（glamour＋grunge），大量使用灰、黑、塵土色。', clue: '像被風沙洗過的顏色。' },
+    { name: '挑戰美的標準', desc: '秀場常用非典型的身體與表演，探討包容與極端。', clue: '伸展台像行為藝術。' }
+  ],
+  works: [
+    { name: '紐約首秀', year: '2002 秋冬', note: '在美國 Vogue 支持下舉行，讓他從地下品牌走向國際。' },
+    { name: '「Vicious」踏步秀', year: '2014 春夏', note: '找來大學踏步舞團體走秀，挑戰伸展台的身體標準。' }
+  ],
+  legacy: '他證明另類、暗黑的美學也能成為長期的高級品牌，並延伸到家具設計；2017 年 Triennale di Milano 為他舉辦首次回顧展。',
+  contrast: '對照 Hedi Slimane：兩人都偏好黑色與瘦長線條，Slimane 來自搖滾的銳利，Owens 來自哥德與廢墟般的柔軟垂墜。',
+  question: '時尚可以只為「小眾」存在嗎？',
+  sources: [
+    { label: 'Dazed｜Talking to Rick Owens about his new retrospective (Triennale di Milano, 2017)', url: 'https://www.dazeddigital.com/fashion/article/38413/1/rick-owens-interview-subhuman-inhuman-superhuman-retrospective-exhibition-milan' },
+    { label: 'Palais Galliera｜Rick Owens（館藏說明）', url: 'https://www.palaisgalliera.paris.fr/en/node/3452' },
+    { label: 'Carpenters Workshop Gallery｜Rick Owens Biography (PDF)', url: 'https://carpentersworkshopgallery.com/wp-content/uploads/2019/09/RICK-OWENS_BIOGRAPHY.pdf' }
+  ]
+},
+{
+  year: 1997, person: 'John Galliano', house: 'Dior', city: '巴黎', chapter: 'couture',
+  title: '高級訂製服的「大爆炸」',
+  tags: ['歷史戲劇', '斜裁', '高訂復興'],
+  context: '1990 年代中期，高級訂製服被認為正在沒落。LVMH 收購老牌時裝屋後，大膽任命英國年輕設計師：1996 年 McQueen 接 Givenchy，Galliano 接 Dior。Vogue Paris 把 1997 年春夏高訂季稱為巴黎需要的「Big Bang」。',
+  bio: 'Galliano 1960 年生於直布羅陀，1984 年中央聖馬丁畢業作「Les Incroyables」以法國大革命時期服裝為靈感，全數被精品店買下。1995 年接掌 Givenchy，1996 年轉任 Dior，1997 年 1 月發表第一個 Dior 高訂系列，任期至 2011 年（因公開發表反猶言論被解職）。2014–2024 年擔任 Maison Margiela 創意總監。',
+  features: [
+    { name: '歷史變裝劇', desc: '每一季像一部電影，從美好年代、埃及、中國到各種歷史時期取材。', clue: '誇張妝髮＋完整角色設定。' },
+    { name: '斜裁技術', desc: '擅長 1930 年代式的斜裁，讓布料貼身流動。', clue: '絲緞洋裝像水一樣服貼。' },
+    { name: '戲劇化秀場', desc: '把時裝秀變成大型演出，強化品牌的夢想感。', clue: '場景、音樂、角色都很重。' }
+  ],
+  works: [
+    { name: '首個 Dior 高訂系列', year: '1997 春夏', note: '在 Dior 品牌 50 週年時發表，被視為高訂復興的象徵。' },
+    { name: 'Dior 1997–98 秋冬高訂', year: '1997', note: 'Palais Galliera 指出其靈感來自美好年代（1898–1908）的時尚。' }
+  ],
+  legacy: '他讓高級訂製服重新成為話題，也確立了「老牌由明星設計師翻新」的產業模式。',
+  contrast: '對照 Dior 本人：1947 年的 Dior 創造新輪廓，1997 年的 Galliano 則是用戲劇重新包裝 Dior 的歷史。',
+  question: '老品牌換上新設計師，應該延續傳統，還是打破傳統？',
+  met: 87845,
+  sources: [
+    { label: 'Palais Galliera｜1997 Fashion Big Bang 新聞稿（PDF）', url: 'https://www.palaisgalliera.paris.fr/sites/galliera/files/cp_dp_visuels/dossiers_de_presse/dp_1997_uk_bd_0.pdf' },
+    { label: 'Palais Galliera｜John Galliano for Dior, AW 1997–98', url: 'https://www.palaisgalliera.paris.fr/en/node/3635' },
+    { label: 'The Met｜Galliano for Dior Ensemble, fall/winter 1997–98', url: 'https://www.metmuseum.org/art/collection/search/87845' }
+  ]
+},
+{
+  year: 1999, person: 'Alexander McQueen', house: 'Alexander McQueen', city: '倫敦', chapter: 'subculture',
+  title: '人與機器：No.13 的噴漆洋裝',
+  tags: ['裁縫技術', '秀場表演', '浪漫與暴力'],
+  context: '世紀末的時尚充滿對科技、身體與未來的焦慮。倫敦年輕設計師以挑釁的秀場吸引全球目光，「酷不列顛」成為文化話題。',
+  bio: 'McQueen（1969–2010）16 歲輟學到薩佛街學徒，在 Anderson & Sheppard、Gieves & Hawkes 學會傳統西裝裁縫。1992 年中央聖馬丁碩士畢業作被造型師 Isabella Blow 全數買下。1996–2001 年同時擔任 Givenchy 設計師。The Met 2011 年與 V&A 2015 年的「Savage Beauty」回顧展都創下參觀紀錄。',
+  features: [
+    { name: '薩佛街剪裁', desc: '極精準的西裝結構，是他所有誇張造型的基礎。', clue: '線條銳利、肩線精準。' },
+    { name: '秀場即表演', desc: '把伸展台變成劇場與裝置藝術，引發強烈情緒。', clue: '一場秀被記住的是「事件」。' },
+    { name: '美與暴力並存', desc: '把歷史、自然、死亡與浪漫放在一起，挑戰觀眾的舒適感。', clue: '蕾絲配皮革、羽毛配骨架。' }
+  ],
+  works: [
+    { name: 'No.13 噴漆洋裝', year: '1999 春夏', note: '模特兒 Shalom Harlow 在旋轉台上，被兩台工業機器人噴上黑與黃色顏料。' },
+    { name: '雕花木製義肢', year: '1999 春夏', note: '同場秀中運動員 Aimee Mullins 穿著手工雕刻的木製義肢走秀。' }
+  ],
+  legacy: '他讓時裝秀成為藝術事件，也證明傳統工藝與前衛概念可以並存；「噴漆洋裝」至今仍被不斷引用。',
+  contrast: '對照 Galliano：兩人都在 1990 年代後期接手巴黎老牌，Galliano 偏向歷史幻想，McQueen 偏向黑暗與衝突。',
+  question: '時裝秀如果能讓人落淚，它還只是商品發表嗎？',
+  met: 163152,
+  sources: [
+    { label: 'The Met｜Savage Beauty: Dress, No. 13, spring/summer 1999', url: 'https://blog.metmuseum.org/alexandermcqueen/dress-no-13' },
+    { label: 'V&A｜The Museum of Savage Beauty: No.13', url: 'https://www.vam.ac.uk/museumofsavagebeauty/rel/encyclopedia-of-collections-no-13/' },
+    { label: 'V&A｜Fashion in Motion: Alexander McQueen', url: 'https://www.vam.ac.uk/articles/fashion-in-motion-alexander-mcqueen' }
+  ]
+},
+{
+  year: 2000, person: 'Hedi Slimane', house: 'Dior Homme', city: '巴黎', chapter: 'modern',
+  title: '男裝的「窄」革命',
+  tags: ['Skinny 輪廓', '搖滾', '男裝'],
+  context: '1990 年代男裝以寬鬆西裝與休閒服為主。2000 年代初，獨立搖滾樂團與年輕男性形象改變，時尚開始尋找新的男性身體。',
+  bio: 'Slimane 1968 年生於巴黎，主修藝術史，1997–2000 年負責 YSL Rive Gauche 男裝，2000 年秋冬「Black Tie」系列首次提出極窄輪廓。之後他把 Dior 男裝改名為 Dior Homme，擔任創意總監到 2007 年；後來執掌 Saint Laurent（2012–2016）與 Celine（2018–2024），同時是攝影師。',
+  features: [
+    { name: '極窄輪廓', desc: '窄肩、窄腰、極細長褲，徹底改變男性西裝的比例。', clue: 'Skinny 褲＋短版窄西裝。' },
+    { name: '搖滾樂作為靈感', desc: '從英國獨立搖滾樂團取材，秀場音樂常由樂團創作。', clue: '黑西裝、細領帶、瘦長的樂手形象。' },
+    { name: '黑白影像', desc: '親自拍攝廣告與青年文化，建立強烈統一的視覺。', clue: '高反差黑白照片。' }
+  ],
+  works: [
+    { name: '「Black Tie」系列', year: '2000 秋冬（YSL）', note: '被視為 skinny 男裝輪廓的起點。' },
+    { name: 'Dior Homme 首季', year: '2001 秋冬', note: '把 Dior Monsieur 重新命名，建立整套新男裝語言。' }
+  ],
+  legacy: 'Britannica 指出他的窄輪廓主導男裝十多年；skinny jeans 從伸展台走向全世界的街頭。',
+  contrast: '對照 Armani：Armani 讓男西裝變得寬鬆柔軟，Slimane 讓它變得極窄銳利——兩次男裝革命方向相反。',
+  question: '一個設計師的「理想身材」，會不會變成所有人的壓力？',
+  sources: [
+    { label: 'Britannica｜Hedi Slimane', url: 'https://www.britannica.com/print/article/1249710' },
+    { label: 'Palais Galliera｜Hedi Slimane（館藏說明）', url: 'https://www.palaisgalliera.paris.fr/en/node/3593' },
+    { label: 'UAL Research Online｜McCauley Bowstead, Hedi Slimane & the reinvention of menswear', url: 'https://ualresearchonline.arts.ac.uk/id/eprint/15657/3/McCauley%20Bowstead%20Hedi%20Slimane%20manuscript.pdf' }
+  ]
+},
+{
+  year: 2013, person: 'Virgil Abloh', house: 'Off-White', city: '米蘭 / 芝加哥', chapter: 'american',
+  title: '街頭服裝走進精品殿堂',
+  tags: ['街頭服裝', '引號', '跨界'],
+  context: '2010 年代社群媒體興起，球鞋、嘻哈與街頭文化成為年輕人的主流。精品品牌急需與新世代對話，「限量」與「聯名」成為新的商業語言。',
+  bio: 'Abloh（1980–2021）生於伊利諾州羅克福德，主修土木工程，後取得伊利諾理工學院建築碩士。他長期擔任 Kanye West 的創意總監，2012 年推出 Pyrex Vision，2013 年在米蘭創立 Off-White。2018 年成為 Louis Vuitton 男裝藝術總監，是該職位首位黑人設計師。',
+  features: [
+    { name: '引號與標示', desc: '在商品上加上引號文字（如 "SHOELACES"），讓日常物件變成被評論的對象。', clue: '大寫引號字樣。' },
+    { name: '斜紋與工業符號', desc: '黑白斜紋、工業用束帶，把工地與城市符號變成品牌標誌。', clue: '黑白斜條紋＋紅色束帶。' },
+    { name: '「3% 原則」', desc: '他主張只改動既有設計的一小部分，就能創造新意義。', clue: '經典鞋款上加幾個小改動。' }
+  ],
+  works: [
+    { name: 'Off-White 創立', year: '2013', note: 'MCA Chicago 展出他第一個系列的斜紋風衣。' },
+    { name: 'Louis Vuitton 男裝首秀', year: '2019 春夏', note: '2018 年 6 月於巴黎發表，以多元族群的模特兒陣容引起關注。' }
+  ],
+  legacy: '他打通街頭服裝與精品的界線；2019 年 MCA Chicago 的「Figures of Speech」是第一個以他為主題的博物館展覽。',
+  contrast: '對照 Ralph Lauren：兩人都沒受過正式時裝訓練，Lauren 包裝上流傳統，Abloh 則把街頭文化帶進上流殿堂。',
+  question: '當街頭文化成為奢侈品，誰從中受益？',
+  sources: [
+    { label: 'Britannica｜Virgil Abloh', url: 'https://www.britannica.com/biography/Virgil-Abloh' },
+    { label: 'MCA Chicago｜Virgil Abloh: "Figures of Speech" (2019)', url: 'https://mcachicago.org/Exhibitions/2019/Virgil-Abloh' }
+  ]
+},
+{
+  year: 2017, person: 'Phoebe Philo', house: 'Céline', city: '巴黎 / 倫敦', chapter: 'modern',
+  title: '為女性自己設計的極簡',
+  tags: ['極簡', '女性觀點', 'Old Céline'],
+  context: '2008 年金融危機後，炫耀式消費退燒，「安靜的奢華」開始受重視。2010 年代社群媒體加速潮流循環，也讓實穿、耐看的衣服更顯珍貴。',
+  bio: 'Philo 1973 年生於巴黎，中央聖馬丁畢業，2001–2006 年擔任 Chloé 創意總監。2008 年受 LVMH 邀請接掌 Céline，讓沉寂的品牌重新受到關注，2017 年宣布離開（最後一季為 2018 秋冬）。2023 年推出同名品牌。',
+  features: [
+    { name: '女性視角', desc: '從職業女性的實際生活出發，設計好穿、能工作、不取悅他人的衣服。', clue: '寬褲、平底鞋、大外套。' },
+    { name: '精準的極簡', desc: '色彩安靜、剪裁乾淨，但比例與材質很講究。', clue: '單色、少裝飾、份量感強。' },
+    { name: '反社群', desc: '任內長期抗拒社群媒體與電商，讓品牌保有距離感。', clue: '「沒有 logo 的辨識度」。' }
+  ],
+  works: [
+    { name: 'Céline 首個系列', year: '2010 早春', note: '一推出就獲好評，奠定此後十年的極簡路線。' },
+    { name: 'Joan Didion 廣告', year: '2015', note: '由 Juergen Teller 拍攝作家 Joan Didion，強化知性女性形象。' }
+  ],
+  legacy: '她定義了 2010 年代的女性極簡美學，粉絲甚至以「Old Céline」懷念她的時期；BoF 形容她把 Céline 變成被大量模仿的品牌。',
+  contrast: '對照 Chanel：兩人相隔近一世紀，都主張讓女性穿得自在；Chanel 解放身體，Philo 解放「被觀看」的壓力。',
+  question: '「安靜」的衣服為什麼能在吵鬧的社群時代被記住？',
+  sources: [
+    { label: 'Britannica｜Phoebe Philo', url: 'https://www.britannica.com/print/article/1742163' },
+    { label: 'The Business of Fashion｜Phoebe Philo', url: 'https://businessoffashion.com/tags/people/phoebe-philo/' }
+  ]
+}
+];
+
+/* 原站 22 站中，以下 Westwood 年份已依出處更正為 1971。 */
+const TM_ROUTES = [
+  { id: 'all', name: '新手完整旅程' },
+  { id: 'couture', name: '巴黎高級訂製服' },
+  { id: 'modern', name: '現代衣櫥的誕生' },
+  { id: 'japan', name: '日本前衛' },
+  { id: 'belgian', name: '安特衛普與解構' },
+  { id: 'italian', name: '米蘭與義大利工藝' },
+  { id: 'subculture', name: '次文化與反叛' },
+  { id: 'american', name: '美國與街頭' }
+];
+
+{
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const C=TM_CASES, R=TM_ROUTES;
+const reduce=matchMedia('(prefers-reduced-motion: reduce)');
+let route='all',cur=3,planned=10,prev=1,busy=false,quiet=false,rot=0,zoom=1;
+
+/* ---------- 每位設計師的代表輪廓參數 ---------- */
+const FIG={
+ 'Charles Frederick Worth':{sh:24,wa:16,wy:140,hem:94,hy:332,col:'#7a3d63',sl:'long',x:['bustle','lace']},
+ 'Gabrielle Chanel':{sh:24,wa:24,wy:170,hem:36,hy:258,col:'#151515',sl:'long',x:['pearls','lowbelt']},
+ 'Claire McCardell':{sh:26,wa:18,wy:142,hem:60,hy:282,col:'#3d6ea8',sl:'short',x:['tie','stitch']},
+ 'Christian Dior':{sh:30,wa:13,wy:138,hem:90,hy:300,col:'#141414',jy:168,jcol:'#ebe3d0',sl:'long',x:['peplum']},
+ 'Cristóbal Balenciaga':{sh:31,wa:36,wy:150,hem:46,hy:272,col:'#1c1c24',sl:'mid',x:['cocoon']},
+ 'Yves Saint Laurent':{pants:1,lw:9,sh:28,wa:19,wy:145,jy:192,col:'#111',pcol:'#111',sl:'long',x:['lapels','shirt']},
+ 'Vivienne Westwood':{pants:1,lw:8,sh:25,wa:19,wy:145,jy:190,col:'#a3241f',pcol:'#a3241f',sl:'long',x:['tartan','straps','pins']},
+ 'Massimo Osti':{pants:1,lw:9,sh:33,wa:31,wy:150,jy:206,col:'#5d6b3c',pcol:'#2f343a',sl:'long',x:['goggles','badge']},
+ 'Ralph Lauren':{pants:1,lw:9,sh:28,wa:24,wy:150,jy:178,col:'#1f4f8f',pcol:'#c8b48a',sl:'short',x:['collar','pony']},
+ 'Giorgio Armani':{pants:1,lw:12,sh:31,wa:27,wy:150,jy:196,col:'#9d9183',pcol:'#8b8073',sl:'long',x:['softlapels']},
+ 'Rei Kawakubo':{sh:26,wa:40,wy:152,hem:52,hy:292,col:'#0d0d0d',sl:'long',x:['lumps','holes']},
+ 'Yohji Yamamoto':{sh:40,wa:43,wy:160,hem:64,hy:322,col:'#111',sl:'long',x:['drape']},
+ 'Miuccia Prada':{sh:24,wa:20,wy:145,hem:34,hy:252,col:'#2a2a2a',sl:'none',x:['backpack']},
+ 'Dries Van Noten':{sh:26,wa:22,wy:150,hem:52,hy:302,col:'#2f5a3a',sl:'mid',x:['print']},
+ 'Martin Margiela':{sh:28,wa:24,wy:150,hem:34,hy:240,col:'#ebe8e0',sl:'none',x:['seams','tabi','label4']},
+ 'Issey Miyake':{sh:34,wa:30,wy:160,hem:58,hy:302,col:'#d9512b',sl:'mid',x:['pleats']},
+ 'Rick Owens':{sh:21,wa:17,wy:150,hem:38,hy:336,col:'#3c3b39',sl:'long',x:['drape','hood']},
+ 'John Galliano':{sh:20,wa:13,wy:140,hem:46,hy:336,col:'#c9a46a',sl:'none',x:['bias']},
+ 'Alexander McQueen':{sh:22,wa:22,wy:118,hem:72,hy:292,col:'#f4f1ea',sl:'none',x:['splatter']},
+ 'Hedi Slimane':{pants:1,lw:4.5,sh:21,wa:14,wy:140,jy:165,col:'#0c0c0c',pcol:'#0c0c0c',sl:'long',x:['lapels','tienarrow']},
+ 'Virgil Abloh':{pants:1,lw:9,sh:30,wa:28,wy:150,jy:198,col:'#ebe8e0',pcol:'#2c3036',sl:'long',x:['stripes','quotes','hood']},
+ 'Phoebe Philo':{pants:1,lw:14,sh:30,wa:25,wy:150,jy:240,col:'#c4a986',pcol:'#e6e1d6',sl:'long',x:['coat']}
+};
+const SKIN='#cdb9a2';
+let fid=0;
+function figure(p){
+  const id='c'+(++fid), cx=100, top=80, X=p.x||[];
+  const jy=p.pants?p.jy:p.hy, jhem=p.pants?p.wa+7:p.hem;
+  const body=`M${cx-p.sh},${top} Q${cx},${top-6} ${cx+p.sh},${top} C${cx+p.sh},${p.wy-34} ${cx+p.wa},${p.wy-18} ${cx+p.wa},${p.wy} C${cx+p.wa+(jhem-p.wa)*.35},${p.wy+28} ${cx+jhem},${jy-36} ${cx+jhem},${jy} Q${cx},${jy+(p.pants?4:10)} ${cx-jhem},${jy} C${cx-jhem},${jy-36} ${cx-p.wa-(jhem-p.wa)*.35},${p.wy+28} ${cx-p.wa},${p.wy} C${cx-p.wa},${p.wy-18} ${cx-p.sh},${p.wy-34} ${cx-p.sh},${top}Z`;
+  let s=`<svg viewBox="0 0 200 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="輪廓示意"><defs><clipPath id="${id}"><path d="${body}"/></clipPath>
+  <linearGradient id="${id}g" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".18"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient></defs>`;
+  s+=`<ellipse cx="100" cy="346" rx="${Math.max(40,(p.hem||30)*.9)}" ry="8" fill="#000" opacity=".35"/>`;
+  /* legs */
+  if(p.pants){
+    const lw=p.lw, xl=cx-11-Math.max(0,lw-8)*.7, xr=cx+11+Math.max(0,lw-8)*.7;
+    s+=`<path d="M${cx-p.wa+2},${p.wy+30} L${cx-1},${p.wy+30} L${xl+lw},338 L${xl-lw},338Z M${cx+p.wa-2},${p.wy+30} L${cx+1},${p.wy+30} L${xr-lw},338 L${xr+lw},338Z" fill="${p.pcol}"/>`;
+    s+=`<path d="M${cx-p.wa+2},${p.wy+30} L${cx-1},${p.wy+30} L${xl+lw},338 L${xl-lw},338Z M${cx+p.wa-2},${p.wy+30} L${cx+1},${p.wy+30} L${xr-lw},338 L${xr+lw},338Z" fill="url(#${id}g)"/>`;
+    if(!X.includes('tabi'))s+=`<ellipse cx="${xl}" cy="340" rx="${lw+5}" ry="4" fill="#111"/><ellipse cx="${xr}" cy="340" rx="${lw+5}" ry="4" fill="#111"/>`;
+  }else if(p.hy<334){
+    s+=`<path d="M93,${p.hy-4} L92,338 M107,${p.hy-4} L108,338" stroke="${SKIN}" stroke-width="7" stroke-linecap="round"/>`;
+    if(!X.includes('tabi'))s+=`<ellipse cx="91" cy="340" rx="7" ry="3.5" fill="#111"/><ellipse cx="109" cy="340" rx="7" ry="3.5" fill="#111"/>`;
+  }
+  if(X.includes('tabi'))s+=`<path d="M84,322 h14 v16 h-3 v-3 h-2 v3 h-11Z M102,322 h14 v16 h-11 v-3 h-2 v3 h-1Z" fill="#f1eee7" stroke="#222" stroke-width="1"/><rect x="85" y="337" width="5" height="5" fill="#222"/><rect x="110" y="337" width="5" height="5" fill="#222"/>`;
+  if(X.includes('backpack'))s+=`<rect x="${cx-p.sh-10}" y="86" width="${p.sh*2+20}" height="96" rx="16" fill="#1a1a1a"/><path d="M${cx-8},150 l8,-10 l8,10Z" fill="#c9ccd2"/>`;
+  /* head & neck */
+  s+=`<rect x="94" y="52" width="12" height="26" fill="${SKIN}"/><circle cx="100" cy="38" r="17" fill="${SKIN}"/>`;
+  if(X.includes('hood'))s+=`<path d="M${cx-24},70 Q${cx-28},12 ${cx},14 Q${cx+28},12 ${cx+24},70 Q${cx},60 ${cx-24},70Z" fill="${p.col}" opacity=".96"/>`;
+  if(X.includes('goggles'))s+=`<path d="M${cx-26},74 Q${cx-30},10 ${cx},12 Q${cx+30},10 ${cx+26},74 L${cx+20},74 Q${cx+18},22 ${cx},22 Q${cx-18},22 ${cx-20},74Z" fill="${p.col}"/><circle cx="92" cy="40" r="7" fill="#2f3b40" stroke="#bfc6c9" stroke-width="2"/><circle cx="108" cy="40" r="7" fill="#2f3b40" stroke="#bfc6c9" stroke-width="2"/>`;
+  /* sleeves */
+  const arm=(dir)=>{const sx=cx+dir*p.sh, out=cx+dir*(Math.max(p.sh,p.wa)+15), end=p.sl==='short'?118:p.sl==='mid'?172:212;
+    return `<path d="M${sx},${top} Q${sx+dir*12},${top+4} ${out},${end-6} L${out-dir*12},${end} Q${sx-dir*2},${top+50} ${sx-dir*4},${top+26}Z" fill="${p.jcol||p.col}"/>`+(p.sl!=='short'?`<circle cx="${out-dir*6}" cy="${end+5}" r="5" fill="${SKIN}"/>`:`<path d="M${out-dir*6},${end} L${out-dir*8},${end+40}" stroke="${SKIN}" stroke-width="8" stroke-linecap="round"/>`);};
+  if(p.sl!=='none'){s+=arm(-1)+arm(1)}else{s+=`<path d="M${cx-p.sh+2},${top+4} L${cx-p.sh-6},${top+70} M${cx+p.sh-2},${top+4} L${cx+p.sh+6},${top+70}" stroke="${SKIN}" stroke-width="8" stroke-linecap="round"/>`}
+  /* body */
+  s+=`<path d="${body}" fill="${p.col}"/>`;
+  if(p.jcol)s+=`<g clip-path="url(#${id})"><rect x="0" y="0" width="200" height="${p.jy}" fill="${p.jcol}"/></g>`;
+  /* textures clipped to body */
+  let t='';
+  if(X.includes('tartan'))for(let i=0;i<12;i++)t+=`<rect x="${i*18}" y="0" width="5" height="360" fill="#1d1d1d" opacity=".55"/><rect x="0" y="${70+i*18}" width="200" height="5" fill="#1d1d1d" opacity=".55"/><rect x="${i*18+9}" y="0" width="1.5" height="360" fill="#f2c21b" opacity=".7"/>`;
+  if(X.includes('pleats'))for(let i=0;i<40;i++)t+=`<rect x="${i*5}" y="0" width="2" height="360" fill="#000" opacity=".22"/>`;
+  if(X.includes('stripes'))for(let i=-10;i<20;i++)t+=`<path d="M${i*22},${p.jy} l60,-60 l11,0 l-60,60Z" fill="#111" opacity=".9"/>`;
+  if(X.includes('print'))for(let i=0;i<60;i++){const r=((i*7919)%97)/97, q=((i*104729)%89)/89; t+=`<circle cx="${30+r*140}" cy="${80+q*230}" r="${4+(i%4)*2}" fill="${['#e9c46a','#f4a3a8','#9ad1d4','#e76f51'][i%4]}" opacity=".85"/>`}
+  if(X.includes('holes'))for(let i=0;i<9;i++){const r=((i*48271)%61)/61,q=((i*16807)%53)/53;t+=`<circle cx="${70+r*60}" cy="${100+q*170}" r="${3+(i%3)*3}" fill="#2a3640"/>`}
+  if(X.includes('splatter'))for(let i=0;i<46;i++){const r=((i*48271)%101)/101,q=((i*16807)%89)/89;t+=`<circle cx="${40+r*120}" cy="${150+q*140}" r="${1.5+(i%5)*2.2}" fill="${i%3?'#111':'#e8c21a'}" opacity=".9"/>`}
+  if(X.includes('seams'))t+=`<path d="M100,78 V${p.hy} M${100-p.sh+6},82 L${100-p.hem+4},${p.hy} M${100+p.sh-6},82 L${100+p.hem-4},${p.hy}" stroke="#9a948a" stroke-width="1.4" stroke-dasharray="4 3" fill="none"/>`;
+  if(X.includes('stitch'))t+=`<path d="M${cx-10},84 V${p.hy-6} M${cx+10},84 V${p.hy-6}" stroke="#f3e6c4" stroke-width="1.2" stroke-dasharray="3 3"/>`;
+  if(X.includes('lace'))for(let i=0;i<9;i++)t+=`<path d="M${20+i*18},${300+((i%2)*6)} q9,-14 18,0" stroke="#f2d6e6" stroke-width="2" fill="none" opacity=".8"/>`;
+  if(X.includes('drape'))t+=`<path d="M${cx-p.sh},120 Q${cx+20},200 ${cx+p.hem},${p.hy-30} M${cx-p.sh+10},170 Q${cx+10},240 ${cx+p.hem-14},${p.hy}" stroke="#fff" stroke-opacity=".12" stroke-width="6" fill="none"/>`;
+  if(X.includes('bias'))t+=`<path d="M60,120 Q120,200 150,330 M50,170 Q100,250 120,336" stroke="#fff" stroke-opacity=".28" stroke-width="5" fill="none"/>`;
+  s+=`<g clip-path="url(#${id})">${t}<rect width="200" height="360" fill="url(#${id}g)"/></g>`;
+  /* extras on top */
+  if(X.includes('bustle'))s+=`<path d="M${cx+p.wa},${p.wy+4} q46,10 40,70" stroke="#000" stroke-opacity=".25" stroke-width="6" fill="none"/>`;
+  if(X.includes('pearls'))s+=`<path d="M86,80 Q100,124 114,80" stroke="#f4efe3" stroke-width="3.5" stroke-dasharray=".5 5" stroke-linecap="round" fill="none"/><path d="M90,80 Q100,104 110,80" stroke="#f4efe3" stroke-width="3.5" stroke-dasharray=".5 5" stroke-linecap="round" fill="none"/>`;
+  if(X.includes('lowbelt'))s+=`<rect x="${cx-p.wa}" y="${p.wy-5}" width="${p.wa*2}" height="7" fill="#2b2b2b"/>`;
+  if(X.includes('tie'))s+=`<path d="M${cx-p.wa},${p.wy} H${cx+p.wa} M${cx+4},${p.wy} l6,34 M${cx+4},${p.wy} l-4,30" stroke="#f3e6c4" stroke-width="3" fill="none"/>`;
+  if(X.includes('peplum'))s+=`<path d="M${cx-p.wa},${p.wy} Q${cx-p.wa-26},${p.jy-4} ${cx-p.wa-20},${p.jy+2} Q${cx},${p.jy+12} ${cx+p.wa+20},${p.jy+2} Q${cx+p.wa+26},${p.jy-4} ${cx+p.wa},${p.wy}Z" fill="${p.jcol}"/><path d="M${cx},84 V${p.wy}" stroke="#b9ad93" stroke-width="1.5"/>`;
+  if(X.includes('cocoon'))s+=`<path d="M${cx+p.sh},${top} Q${cx+p.sh+22},170 ${cx+p.hem+6},${p.hy-10}" stroke="#fff" stroke-opacity=".12" stroke-width="8" fill="none"/>`;
+  if(X.includes('lapels')||X.includes('softlapels')){const w=X.includes('softlapels')?20:14;s+=`<path d="M${cx},78 L${cx-w},${p.wy-10} L${cx},${p.wy+16} L${cx+w},${p.wy-10}Z" fill="${X.includes('shirt')||X.includes('tienarrow')?'#f4f1ea':'#d9cfc1'}"/><path d="M${cx-4},78 L${cx-w-4},${p.wy-12} M${cx+4},78 L${cx+w+4},${p.wy-12}" stroke="${X.includes('softlapels')?'#7d7266':'#2a2a2a'}" stroke-width="4"/>`;}
+  if(X.includes('shirt'))s+=`<path d="M${cx-4},86 l4,6 l4,-6" stroke="#111" stroke-width="3" fill="none"/>`;
+  if(X.includes('tienarrow'))s+=`<path d="M${cx},84 L${cx-2},${p.wy+10} L${cx},${p.wy+16} L${cx+2},${p.wy+10}Z" fill="#111"/>`;
+  if(X.includes('straps'))s+=`<path d="M${cx-18},${p.wy+70} H${cx+18} M${cx-16},${p.wy+120} H${cx+16}" stroke="#111" stroke-width="5"/><circle cx="${cx-18}" cy="${p.wy+70}" r="3" fill="#ccc"/><circle cx="${cx+18}" cy="${p.wy+70}" r="3" fill="#ccc"/>`;
+  if(X.includes('pins'))s+=`<path d="M${cx-14},100 l10,8 M${cx+6},120 l10,-6" stroke="#d9dcdf" stroke-width="2.5" stroke-linecap="round"/>`;
+  if(X.includes('badge'))s+=`<circle cx="${cx-p.sh-6}" cy="${top+44}" r="7" fill="#111" stroke="#e9c13b" stroke-width="2"/>`;
+  if(X.includes('collar'))s+=`<path d="M${cx-12},78 L${cx},96 L${cx+12},78 L${cx+6},74 L${cx},84 L${cx-6},74Z" fill="#f3f3f3"/>`;
+  if(X.includes('pony'))s+=`<circle cx="${cx-14}" cy="102" r="3" fill="#e1c25a"/>`;
+  if(X.includes('label4'))s+=`<g fill="#fff">${[0,1,2,3].map(i=>`<circle cx="${cx-6+(i%2)*12}" cy="${88+Math.floor(i/2)*8}" r="1.6"/>`).join('')}</g>`;
+  if(X.includes('quotes'))s+=`<text x="${cx}" y="${p.wy-8}" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-weight="700" font-size="13" fill="#111">"HOODIE"</text>`;
+  if(X.includes('lumps'))s+=`<ellipse cx="${cx+p.wa+4}" cy="${p.wy+10}" rx="18" ry="26" fill="${p.col}"/><ellipse cx="${cx-p.sh+2}" cy="${top+20}" rx="16" ry="20" fill="${p.col}"/>`;
+  if(X.includes('coat'))s+=`<path d="M${cx},80 L${cx},${p.jy}" stroke="#8b7356" stroke-width="2"/><path d="M${cx-4},80 L${cx-22},${p.wy-20}" stroke="#a88e6c" stroke-width="5"/>`;
+  return s+'</svg>';
+}
+
+/* ---------- 七段顯示器 ---------- */
+const SEG={0:'abcdef',1:'bc',2:'abged',3:'abgcd',4:'fgbc',5:'afgcd',6:'afgedc',7:'abc',8:'abcdefg',9:'abcfgd'};
+const H=y=>`10,${y-4} 40,${y-4} 44,${y} 40,${y+4} 10,${y+4} 6,${y}`;
+const V=(x,a,b)=>`${x},${a} ${x+4},${a+4} ${x+4},${b-4} ${x},${b} ${x-4},${b-4} ${x-4},${a+4}`;
+const P={a:H(7),g:H(45),d:H(83),f:V(6,9,43),b:V(44,9,43),e:V(6,47,81),c:V(44,47,81)};
+function seven(str,col){
+  return `<svg viewBox="0 0 ${str.length*54} 90" aria-label="${esc(str)}"><g transform="skewX(-6) translate(6,0)">`+[...str].map((ch,i)=>{const on=SEG[ch]||'';return `<g transform="translate(${i*54},0)">`+Object.keys(P).map(k=>`<polygon points="${P[k]}" fill="${on.includes(k)?col:col}" opacity="${on.includes(k)?1:.09}"${on.includes(k)?` style="filter:drop-shadow(0 0 4px ${col})"`:''}/>`).join('')+'</g>'}).join('')+'</g></svg>';
+}
+const CITY={'巴黎':'PAR','紐約':'NYC','倫敦':'LON','波隆那':'BLQ','米蘭':'MIL','東京':'TYO','安特衛普':'ANR','洛杉磯':'LAX'};
+const code=c=>{for(const k in CITY)if(c.city.startsWith(k))return CITY[k];return'---'};
+
+/* ---------- 儀表 ---------- */
+function gauge(v){
+  const a=-120+v*2.4, ticks=[...Array(11)].map((_,i)=>{const t=(-120+i*24)*Math.PI/180,r1=74,r2=i%5?66:60;return `<line x1="${100+Math.sin(t)*r1}" y1="${102-Math.cos(t)*r1}" x2="${100+Math.sin(t)*r2}" y2="${102-Math.cos(t)*r2}" stroke="${i>=8?'#ff4d3d':'#9aa7ae'}" stroke-width="${i%5?2:3}"/>`}).join('');
+  $('#tm-gsvg').innerHTML=`<path d="M${100+Math.sin(-2.094)*80},${102-Math.cos(-2.094)*80} A80 80 0 1 1 ${100+Math.sin(2.094)*80},${102-Math.cos(2.094)*80}" fill="none" stroke="#090d10" stroke-width="14"/>
+  <path d="M${100+Math.sin(1.257)*80},${102-Math.cos(1.257)*80} A80 80 0 0 1 ${100+Math.sin(2.094)*80},${102-Math.cos(2.094)*80}" fill="none" stroke="#ff4d3d" stroke-width="6" opacity=".8"/>${ticks}
+  <g transform="rotate(${a} 100 102)"><line x1="100" y1="110" x2="100" y2="34" stroke="#ffb21e" stroke-width="4" stroke-linecap="round" style="filter:drop-shadow(0 0 4px #ffb21e)"/></g><circle cx="100" cy="102" r="9" fill="#3a454d" stroke="#56636c" stroke-width="2"/>`;
+  $('#tm-gval').textContent=Math.round(v)+' %';
+}
+
+/* ---------- 年代畫質 ---------- */
+const era=y=>y<1920?'sepia':y<1960?'mono':y<1980?'techni':y<2000?'vhs':'digital';
+const SKY={sepia:['#7a5c3e','#20160e'],mono:['#55606a','#101418'],techni:['#c0623a','#24162a'],vhs:['#2f4f78','#0d1020'],digital:['#3d5a66','#0b1216']};
+
+function list(){return C.map((c,i)=>({c,i})).filter(({c})=>route==='all'||c.chapter===route)}
+
+function render(){
+  const c=C[cur], p=C[planned], d=prev==null?null:C[prev];
+  $('#tm-circ').innerHTML=[['目的年代',p,'#ff4d3d'],['目前所在',c,'#ffb21e'],['上一站',d,'#5ef0b0']].map(([l,x,col])=>`<div class="tm-row"><div><small>${l} · ${x?code(x):'---'}</small><div class="who">${x?esc(x.person):'旅程即將開始'}</div></div>${seven(x?String(x.year):'----',col)}</div>`).join('');
+  const sc=$('#tm-scene'), e=era(c.year);
+  sc.dataset.era=e; sc.style.setProperty('--s1',SKY[e][0]); sc.style.setProperty('--s2',SKY[e][1]);
+  const f=FIG[c.person];
+  $('#tm-front').innerHTML=c.image?`<img src="${esc(c.image)}" alt="${esc(c.works[0].name)}" onerror="this.replaceWith(document.createRange().createContextualFragment(this.dataset.fb))" data-fb="${esc(figure(f))}">`:figure(f);
+  $('#tm-backface').innerHTML=`<div class="tm-back"><b>一眼認出 ${esc(c.person)}</b>${c.features.map(x=>esc(x.clue)).join('<br>')}</div>`;
+  $('#tm-hud').innerHTML=`<div class="y">${c.year}</div><div class="n">${esc(c.person)}</div><div class="h">${esc(c.house)} · ${esc(c.city)}</div>`;
+  renderLog(); renderRail(); renderDest();
+}
+function renderDest(){
+  $('#tm-dest').innerHTML=list().map(({c,i})=>`<option value="${i}"${i===planned?' selected':''}>${c.year} · ${esc(c.person)}</option>`).join('');
+}
+function renderRail(){
+  $('#tm-rail').innerHTML=list().map(({c,i})=>`<button class="tm-stop" data-i="${i}" aria-pressed="${i===planned}"${i===cur?' aria-current="location"':''}><span>${c.year}</span><strong>${esc(c.person)}</strong></button>`).join('');
+  const el=$(`#tm-rail [data-i="${planned}"]`)||$(`#tm-rail [data-i="${cur}"]`);
+  if(el)requestAnimationFrame(()=>{const r=$('#tm-rail');r.scrollTo({left:el.offsetLeft-r.clientWidth/2+el.clientWidth/2});tilt()});
+}
+function renderLog(){
+  const c=C[cur], vn=((c.contrast.match(/對照\s*([^：:]+)[：:]/)||[])[1]||'').replace('本人','').trim().toLowerCase();
+  const vs=vn?C.findIndex(x=>x.person.toLowerCase().includes(vn)||x.house.toLowerCase().includes(vn)||(ALIAS[x.person]||'').toLowerCase().includes(vn)):-1;
+  $('#tm-log').innerHTML=`<aside class="tm-id"><div class="yr">${c.year}</div><h2>${esc(c.person)}</h2><p class="hs">${esc(c.house)} · ${esc(c.city)}</p><div class="ti">${esc(c.title)}</div><ul class="tm-tags">${c.tags.map(t=>`<li>${esc(t)}</li>`).join('')}</ul><div class="tm-q"><small>帶著這個問題看下一站</small>${esc(c.question)}</div></aside>
+  <div>
+   <div class="tm-sec"><h3>時代背景</h3><p>${esc(c.context)}</p></div>
+   <div class="tm-sec"><h3>人物與品牌</h3><p>${esc(c.bio)}</p></div>
+   <div class="tm-sec"><h3>辨識特色 <small style="font-weight:400;color:var(--muted);font-size:14px">點卡片翻面</small></h3><div class="tm-cards">${c.features.map((x,i)=>`<button class="tm-flip" aria-pressed="false"><div class="f"><em>${i+1}</em><b>${esc(x.name)}</b><small>翻面看說明 ⟲</small></div><div class="b">${esc(x.desc)}<strong>辨識關鍵：${esc(x.clue)}</strong></div></button>`).join('')}</div></div>
+   <div class="tm-sec tm-two"><div><h3>代表作</h3><ul class="tm-works">${c.works.map(w=>`<li><span class="wy">${esc(w.year)}</span><b>${esc(w.name)}</b><span>${esc(w.note)}</span></li>`).join('')}</ul></div>
+   <div><h3>影響</h3><p>${esc(c.legacy)}</p><div class="tm-vs" style="margin-top:14px"><b>跟誰不一樣？</b><p>${esc(c.contrast)}</p>${vs>=0&&vs!==cur?`<button data-vs="${vs}">設定目的地：${C[vs].year} ${esc(C[vs].person)} →</button>`:''}</div></div></div>
+   <div class="tm-sec"><h3>文獻與出處</h3><ol class="tm-src">${c.sources.map(s=>`<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a></li>`).join('')}</ol>${c.note?`<div class="tm-note">查證更正：${esc(c.note)}</div>`:''}</div>
+  </div>`;
+  $('#tm-log').querySelectorAll('.tm-flip').forEach(b=>b.onclick=()=>{b.classList.toggle('on');b.setAttribute('aria-pressed',b.classList.contains('on'))});
+  const v=$('#tm-log [data-vs]'); if(v)v.onclick=()=>{plan(+v.dataset.vs);$('#tm-car').scrollIntoView({behavior:reduce.matches?'auto':'smooth'})};
+}
+function plan(i){if(busy)return;planned=+i;render();status('目的地已設定：'+C[planned].year+' · '+C[planned].person+'。拉下啟動桿出發。')}
+function status(t){$('#tm-status').textContent=t}
+
+/* ---------- 3D 時間軸 ---------- */
+function tilt(){
+  const r=$('#tm-rail'), mid=r.getBoundingClientRect().left+r.clientWidth/2;
+  r.querySelectorAll('.tm-stop').forEach(b=>{const bb=b.getBoundingClientRect(),d=(bb.left+bb.width/2-mid)/r.clientWidth;b.style.setProperty('--ty',Math.max(-50,Math.min(50,d*110))+'deg');b.style.setProperty('--ts',1-Math.min(.25,Math.abs(d)*.5))});
+}
+$('#tm-rail').addEventListener('scroll',()=>requestAnimationFrame(tilt),{passive:true});
+$('#tm-rail').addEventListener('click',e=>{const b=e.target.closest('.tm-stop');if(b)plan(b.dataset.i)});
+$('#tm-rl').onclick=()=>$('#tm-rail').scrollBy({left:-280,behavior:'smooth'});
+$('#tm-rr').onclick=()=>$('#tm-rail').scrollBy({left:280,behavior:'smooth'});
+$('#tm-rail').addEventListener('keydown',e=>{if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();$('#tm-rail').scrollBy({left:e.key==='ArrowLeft'?-150:150,behavior:'smooth'})}});
+
+/* ---------- 駕駛艙視差與輪廓轉動 ---------- */
+const car=$('#tm-car'), cab=$('#tm-cabin'), stage=$('#tm-stage');
+car.addEventListener('pointermove',e=>{if(e.pointerType!=='mouse'||quiet||reduce.matches||busy)return;const r=car.getBoundingClientRect();cab.style.setProperty('--ry',((e.clientX-r.left)/r.width-.5)*6+'deg');cab.style.setProperty('--rx',-((e.clientY-r.top)/r.height-.5)*5+'deg')});
+car.addEventListener('pointerleave',()=>{cab.style.setProperty('--rx','0deg');cab.style.setProperty('--ry','0deg')});
+const setStage=()=>{stage.style.setProperty('--rot',rot+'deg');stage.style.setProperty('--z',zoom)};
+let drag=null;
+const sw=$('#tm-stagewrap');
+sw.addEventListener('pointerdown',e=>{drag={x:e.clientX,r:rot};sw.setPointerCapture(e.pointerId);stage.classList.add('drag')});
+sw.addEventListener('pointermove',e=>{if(!drag)return;rot=drag.r+(e.clientX-drag.x)*.6;setStage()});
+const end=()=>{if(!drag)return;drag=null;stage.classList.remove('drag');rot=Math.round(rot/180)*180;setStage()};
+sw.addEventListener('pointerup',end);sw.addEventListener('pointercancel',end);
+sw.addEventListener('dblclick',()=>{zoom=zoom>1?1:1.7;setStage()});
+$('#tm-zin').onclick=()=>{zoom=Math.min(2.4,zoom+.3);setStage()};
+$('#tm-zout').onclick=()=>{zoom=Math.max(.7,zoom-.3);setStage()};
+$('#tm-turn').onclick=()=>{rot+=180;setStage()};
+
+/* ---------- 搜尋 ---------- */
+const norm=s=>String(s||'').toLowerCase().replace(/[\s’'.\-]/g,'');
+const ALIAS={'Rei Kawakubo':'川久保玲','Yohji Yamamoto':'山本耀司','Issey Miyake':'三宅一生','Gabrielle Chanel':'香奈兒 coco','Christian Dior':'迪奧','Yves Saint Laurent':'聖羅蘭 YSL','Giorgio Armani':'亞曼尼','Miuccia Prada':'普拉達','Massimo Osti':'cp company stone island','Martin Margiela':'馬吉拉 mm6','Alexander McQueen':'麥昆','Virgil Abloh':'off white 維吉爾','Hedi Slimane':'艾迪 celine','Phoebe Philo':'菲比 celine'};
+function search(){
+  const q=norm($('#tm-q').value), ul=$('#tm-res');
+  if(!q){ul.hidden=true;return}
+  const hits=C.map((c,i)=>({c,i})).filter(({c})=>norm([c.person,c.house,c.city,c.title,...c.tags,ALIAS[c.person],...c.features.map(f=>f.name)].join(' ')).includes(q)).slice(0,8);
+  ul.innerHTML=hits.length?hits.map(({c,i})=>`<li><button data-i="${i}"><span>${c.year}</span>${esc(c.person)} · ${esc(c.house)}</button></li>`).join(''):'<li style="padding:8px 10px;font-size:14px;color:#9aa7ae">還沒有收錄這個名字，試試品牌名或風格關鍵字。</li>';
+  ul.hidden=false;
+}
+$('#tm-q').addEventListener('input',search);
+$('#tm-q').addEventListener('keydown',e=>{if(e.key==='Enter'){const b=$('#tm-res button');if(b)b.click()}if(e.key==='Escape')$('#tm-res').hidden=true});
+$('#tm-res').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(route!=='all'&&C[+b.dataset.i].chapter!==route){route='all';$('#tm-route').value='all'}plan(b.dataset.i);$('#tm-res').hidden=true;$('#tm-q').value=''});
+
+/* ---------- 路線 ---------- */
+$('#tm-route').innerHTML=R.map(r=>`<option value="${r.id}">${esc(r.name)} · ${r.id==='all'?C.length:C.filter(c=>c.chapter===r.id).length} 站</option>`).join('');
+$('#tm-route').onchange=e=>{route=e.target.value;const l=list();if(!l.some(x=>x.i===planned))planned=(l.find(x=>x.i!==cur)||l[0]).i;render();status('路線：'+R.find(r=>r.id===route).name+'，共 '+l.length+' 站。')};
+$('#tm-dest').onchange=e=>plan(e.target.value);
+function adj(d){const l=list(),k=l.findIndex(x=>x.i===cur),n=l[k+d];if(n){planned=n.i;travel()}}
+$('#tm-prev').onclick=()=>adj(-1);$('#tm-next').onclick=()=>adj(1);
+$('#tm-motion').onclick=()=>{quiet=!quiet;$('#tm-motion').setAttribute('aria-pressed',quiet)};
+
+/* ---------- 穿越 ---------- */
+const cv=$('#tm-warp');
+function tunnel(ms,hue){
+  const ctx=cv.getContext('2d'),dpr=Math.min(devicePixelRatio||1,2),w=cv.width=cv.clientWidth*dpr,h=cv.height=cv.clientHeight*dpr,cx=w/2,cy=h*.55,M=Math.max(w,h);
+  const st=Array.from({length:360},()=>({a:Math.random()*6.283,r:Math.random()*M*.5,h:Math.random()<.5?hue:hue+160,s:.5+Math.random()}));
+  const t0=performance.now();
+  return new Promise(res=>{const fr=now=>{const p=Math.min((now-t0)/ms,1),sp=3+p*p*80;ctx.fillStyle=`rgba(6,9,12,${.35-p*.2})`;ctx.fillRect(0,0,w,h);ctx.lineCap='round';
+    for(const s of st){const r0=s.r;s.r+=sp*s.s*dpr*(.3+s.r/w);if(s.r>M)s.r=Math.random()*20*dpr;ctx.strokeStyle=`hsla(${s.h},90%,${60+p*30}%,${.25+p*.65})`;ctx.lineWidth=(1+p*2.5)*dpr*s.s;ctx.beginPath();ctx.moveTo(cx+Math.cos(s.a)*r0,cy+Math.sin(s.a)*r0);ctx.lineTo(cx+Math.cos(s.a)*s.r,cy+Math.sin(s.a)*s.r);ctx.stroke()}
+    const g=ctx.createRadialGradient(cx,cy,0,cx,cy,w*.3*(.3+p));g.addColorStop(0,`rgba(255,240,210,${.1+p*.55})`);g.addColorStop(1,'rgba(255,240,210,0)');ctx.fillStyle=g;ctx.fillRect(0,0,w,h);
+    p<1?requestAnimationFrame(fr):res()};requestAnimationFrame(fr)});
+}
+function rollYear(from,to,ms){
+  const t0=performance.now(),row=()=>$('#tm-circ .tm-row:nth-child(2) svg');
+  return new Promise(res=>{const st=now=>{const p=Math.min((now-t0)/ms,1),y=Math.round(from+(to-from)*(1-(1-p)**3));const el=row();if(el)el.outerHTML=seven(String(y).padStart(4,'0'),'#ffb21e');p<1?requestAnimationFrame(st):res()};requestAnimationFrame(st)});
+}
+function charge(ms){const t0=performance.now();return new Promise(res=>{const st=now=>{const p=Math.min((now-t0)/ms,1);gauge(p*100);$('#tm-launch').style.setProperty('--charge',p*100+'%');p<1?requestAnimationFrame(st):res()};requestAnimationFrame(st)})}
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+async function travel(){
+  if(busy)return;
+  if(planned===cur){status('你已經在 '+C[cur].year+'。從時代背景開始讀起。');return}
+  busy=true;$('#tm-launch').disabled=true;rot=0;zoom=1;setStage();
+  const from=C[cur].year,to=C[planned].year,target=planned;
+  status('正在穿越至 '+to+' · '+C[target].person+'…');
+  const arrive=()=>{prev=cur;cur=target;const l=list(),k=l.findIndex(x=>x.i===cur);planned=(l[k+1]||l[k-1]||l[k]).i;render()};
+  if(quiet||reduce.matches){arrive();gauge(0)}
+  else{
+    cab.style.setProperty('--rx','0deg');cab.style.setProperty('--ry','0deg');
+    await charge(900);cab.classList.add('shake');cv.style.opacity=1;
+    await Promise.all([tunnel(1500,Math.round(Math.random()*40+20)),rollYear(from,to,1300)]);
+    $('#tm-flash').animate([{opacity:0},{opacity:1},{opacity:0}],{duration:600,easing:'ease-out'});
+    await wait(180);arrive();cab.classList.remove('shake');cv.style.opacity=0;
+    stage.animate([{transform:'scale(1.25) rotateY(-25deg)',opacity:0},{transform:'scale(1) rotateY(0)',opacity:1}],{duration:700,easing:'cubic-bezier(.2,.7,.2,1)'});
+    let v=100;const dn=()=>{v-=4;gauge(Math.max(0,v));$('#tm-launch').style.setProperty('--charge',Math.max(0,v)+'%');if(v>0)requestAnimationFrame(dn)};requestAnimationFrame(dn);
+  }
+  busy=false;$('#tm-launch').disabled=false;
+  status('已抵達 '+C[cur].year+'。往下讀航行日誌，認識 '+C[cur].person+'。');
+}
+$('#tm-launch').onclick=travel;
+addEventListener('resize',()=>requestAnimationFrame(tilt));
+
+gauge(0);render();
+status('目的地已設定：'+C[planned].year+' · '+C[planned].person+'。拉下啟動桿出發。');
+}
+</script>
+</body>
+</html>
