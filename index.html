@@ -1987,11 +1987,16 @@ function drawLogPage(c,vs,dir){
 }
 async function loadChapterImage(c,p){
   const caseId=cur, pageId=logPage;
-  const terms=p===0?`${c.person} ${c.year} fashion history`:p===1?`${c.person} fashion designer`:p===2?`${c.person} ${c.features[0]?.name||'fashion design'}`:p===3?`${c.person} ${c.works[0]?.name||c.house} fashion`:p===4?`${c.person} fashion influence`:`${c.person} fashion archive`;
+  const subject=p===0?`${c.person} ${c.title}`:p===1?`${c.person} designer`:p===2?`${c.features.map(x=>x.name).join(' ')}`:p===3?`${c.works.slice(0,2).map(x=>x.name).join(' ')}`:p===4?`${c.person} ${c.legacy.slice(0,70)}`:`${c.person} fashion archive`;
   try{
-    const api='https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch='+encodeURIComponent(terms)+'&gsrnamespace=6&gsrlimit=5&prop=imageinfo&iiprop=url&iiurlwidth=1200&format=json&origin=*';
+    const api='https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&srsearch='+encodeURIComponent(subject)+'&srlimit=12&format=json&origin=*';
     const res=await fetch(api,{signal:AbortSignal.timeout(9000)});if(!res.ok)return;const data=await res.json();
-    const file=Object.values(data.query?.pages||{}).find(x=>x.imageinfo?.[0]?.thumburl);
+    const terms=subject.toLowerCase().split(/[^a-z0-9\u3400-\u9fff]+/i).filter(x=>x.length>2);
+    const ranked=(data.query?.search||[]).map(x=>({x,score:terms.reduce((n,t)=>n+(x.title.toLowerCase().includes(t)?1:0),0)})).filter(x=>x.score>0).sort((a,b)=>b.score-a.score);
+    const ids=ranked.slice(0,8).map(x=>x.x.pageid).join('|');if(!ids)return;
+    const detail=await fetch('https://commons.wikimedia.org/w/api.php?action=query&pageids='+ids+'&prop=imageinfo&iiprop=url&iiurlwidth=1200&format=json&origin=*',{signal:AbortSignal.timeout(9000)});if(!detail.ok)return;
+    const files=Object.values((await detail.json()).query?.pages||{}).map(x=>({...x,score:ranked.find(r=>r.x.pageid===x.pageid)?.score||0}));
+    const file=files.filter(x=>x.imageinfo?.[0]?.thumburl&&!/\.pdf(?:$|\/)/i.test(x.title)).sort((a,b)=>b.score-a.score)[0];
     if(!file||caseId!==cur||pageId!==logPage)return;
     const info=file.imageinfo[0],page=$('#log-page .log-body');if(!page)return;
     let figure=page.querySelector('.log-visual');if(!figure){figure=document.createElement('figure');figure.className='log-visual';page.append(figure)}
