@@ -456,6 +456,134 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 #tm .tm-face img{border-radius:6px}
 @media(max-width:600px){#tm .tm-cap{max-width:calc(100% - 170px)}}
 </style><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style id="archive-v2">
+/* ===== 穿越服裝史 ARCHIVE v2（時間軸導覽／全部一覽）===== */
+#history-experience{margin:10px 0 56px;border:0;background:transparent}
+#history-experience .timeline-top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px 24px;padding:22px 0 16px;border-top:1px solid var(--line);border-bottom:0}
+.timeline-title{display:flex;flex-direction:column;gap:8px;margin-right:auto}
+.timeline-title .mini{color:#82704b}
+.timeline-title strong{font:400 24px/1.35 Georgia,'Noto Serif TC','Songti TC','Microsoft JhengHei',serif;color:var(--ink)}
+.view-toggle{display:flex;border:1px solid #c9bfa8;padding:3px;gap:3px;background:#fbfaf6}
+.view-toggle button{border:0;background:none;padding:9px 16px;font-size:12px;letter-spacing:.5px;color:var(--ink);cursor:pointer;transition:background .25s,color .25s}
+.view-toggle button[aria-pressed=true]{background:#25332b;color:#fff}
+.view-toggle button:hover:not([aria-pressed=true]){background:#ece7dc}
+#history-experience .timeline-controls{display:flex;align-items:center;gap:8px}
+#history-position{font-variant-numeric:tabular-nums;color:#82704b;margin-right:6px}
+.history-progress{height:2px;background:#e4ded1;position:relative;overflow:hidden;margin-bottom:22px}
+.history-progress i{position:absolute;left:0;top:0;bottom:0;width:0;background:linear-gradient(90deg,#c3a96d,#8d7445);transition:width .5s ease}
+
+/* 導覽：左側完整索引＋右側舞台 */
+#history-body{display:grid;grid-template-columns:minmax(250px,300px) minmax(0,1fr);gap:26px;align-items:start}
+#history-experience #history-rail{display:block;position:sticky;top:18px;max-height:calc(100vh - 60px);overflow-y:auto;overflow-x:hidden;padding:0 8px 12px 0;border:0;scroll-snap-type:none;scrollbar-width:thin;scrollbar-color:#cfc5ae transparent}
+.rail-group{position:relative;padding-left:24px}
+.rail-group:before{content:'';position:absolute;left:8px;top:34px;bottom:8px;width:1px;background:#d2c9b5}
+.rail-period{position:sticky;top:0;z-index:2;display:flex;justify-content:space-between;align-items:baseline;margin-left:-24px;padding:14px 4px 8px 0;background:var(--paper);font:600 10px/1.4 system-ui,sans-serif;letter-spacing:2px;color:#82704b;border-bottom:1px solid #e4ddcd}
+.rail-period small{font-weight:400;letter-spacing:0;color:#a49a85}
+.rail-item{position:relative;display:grid;grid-template-columns:56px minmax(0,1fr);gap:12px;align-items:center;width:100%;margin:4px 0;padding:7px 9px;border:0;background:none;text-align:left;color:#57554c;cursor:pointer;transition:background .25s,color .25s}
+.rail-item:before{content:'';position:absolute;left:-20px;top:50%;width:7px;height:7px;margin-top:-4px;border-radius:50%;background:var(--paper);border:1px solid #ab9b78;transition:all .25s}
+.rail-item:hover{background:#efebe1;color:var(--ink)}
+.rail-item:focus-visible{outline:2px solid #a78b53;outline-offset:1px}
+.rail-item.selected{background:#25332b;color:#f3eee2}
+.rail-item.selected:before{background:#a78b53;border-color:#a78b53;box-shadow:0 0 0 4px #a78b5330}
+.rail-thumb{width:56px;height:56px;display:grid;place-items:center;overflow:hidden;background:#e9e4d9}
+.rail-thumb img{width:100%;height:100%;object-fit:contain;display:block}
+.rail-thumb .garment-study{width:100%;height:100%;max-width:none;color:#56634f;animation:none}
+.rail-thumb .sketch-line{animation:none;stroke-dashoffset:0;stroke-width:3}
+.rail-thumb .garment-study text{display:none}
+.rail-item.selected .rail-thumb{background:#34433a}
+.rail-item.selected .rail-thumb .garment-study{color:#e7ddc4}
+.rail-thumb .image-unavailable{display:none}
+.rail-text{min-width:0;display:block}
+.rail-year{display:block;font:italic 12.5px/1.4 Georgia,serif;color:#8b7548}
+.rail-item.selected .rail-year{color:#d9c391}
+.rail-text strong{display:block;font-size:13.5px;font-weight:500;line-height:1.45}
+.rail-text small{display:block;font-size:11px;line-height:1.5;opacity:.72;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* 舞台：完整呈現圖片 */
+#history-experience #history-stage{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);min-height:580px;border:1px solid #d8d0bf;background:#f6f3ec;box-shadow:0 18px 40px #2a241808;outline-offset:4px}
+#history-stage .history-visual.photo-study{position:relative;display:flex;flex-direction:column;margin:0;padding:0;min-height:580px;background:#1d2420;overflow:hidden;isolation:isolate}
+.archive-backdrop{position:absolute;inset:-40px;width:calc(100% + 80px);height:calc(100% + 80px);object-fit:cover;filter:blur(30px) saturate(.75) brightness(.5);z-index:-1;pointer-events:none}
+.archive-frame{position:relative;flex:1;display:flex;align-items:center;justify-content:center;padding:30px 28px;min-height:0}
+#history-stage .archive-photo{display:block;width:auto;height:auto;max-width:100%;max-height:500px;object-fit:contain;background:none;box-shadow:0 20px 50px #00000070;cursor:zoom-in;animation:ink-in .6s both}
+.zoom-hint{position:absolute;right:16px;bottom:14px;border:1px solid #ffffff40;background:#00000040;color:#f1eadb;font-size:11px;padding:5px 10px;cursor:zoom-in;backdrop-filter:blur(4px);opacity:.8;transition:opacity .2s}
+.zoom-hint:hover{opacity:1}
+#history-stage .history-visual.photo-study .photo-credit{position:relative;background:#11171499;color:#d6cfbf;padding:13px 20px;font-size:10.5px;line-height:1.75;backdrop-filter:blur(6px)}
+#history-stage .photo-credit strong{color:#f1eadb}
+#history-stage .photo-credit a{color:#e3cd98;margin-left:4px}
+#history-stage .history-visual:not(.photo-study){min-height:580px}
+#history-stage .history-story{display:flex;flex-direction:column;padding:38px 8% 30px;min-width:0}
+.story-year{font:italic clamp(40px,4.2vw,62px)/1 Georgia,serif;color:#a08655;letter-spacing:-1px;margin-top:16px}
+#history-stage .history-story h3{font:400 28px/1.45 Georgia,'Noto Serif TC','Microsoft JhengHei',serif;margin:12px 0 10px}
+.story-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.story-chips span{font-size:11px;line-height:1;padding:6px 10px;border:1px solid #d3c7ab;color:#6c5d3d;background:#fbf9f3}
+.stage-more{margin-top:6px;border-top:1px solid #e0d8c7;padding-top:12px}
+.stage-more summary{cursor:pointer;font-size:12.5px;color:var(--ink);list-style:none}
+.stage-more summary::-webkit-details-marker{display:none}
+.stage-more[open] summary{color:#82704b}
+.stage-more .history-detail p{font-size:13.5px;line-height:2}
+.stage-more .history-detail a{display:inline-block;font-size:11.5px;margin:4px 0 10px}
+.stage-nav{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:auto;padding-top:26px}
+.stage-nav button{display:block;text-align:left;border:1px solid #d6ccb6;background:#fbfaf6;padding:12px 14px;font-size:13px;line-height:1.5;color:var(--ink);cursor:pointer;transition:border-color .2s,background .2s;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.stage-nav button small{display:block;font-size:10px;letter-spacing:.5px;color:#8b7548;margin-bottom:3px}
+.stage-nav button.next{text-align:right}
+.stage-nav button:hover:not(:disabled){border-color:#a78b53;background:#fff}
+.stage-nav button:disabled{opacity:.4;cursor:default}
+
+/* 全部一覽 */
+#fashion-history:not(.history-all) #history-list{display:none}
+#fashion-history.history-all #history-body,#fashion-history.history-all .history-progress,#fashion-history.history-all .timeline-controls{display:none}
+#fashion-history.history-all #history-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;margin-top:4px}
+.list-period{grid-column:1/-1;display:flex;align-items:baseline;gap:14px;padding:26px 0 10px;border-bottom:1px solid #d2c9b5}
+.list-period:first-child{padding-top:6px}
+.list-period .mini{color:#82704b}
+.list-period h3{margin:0;font:400 22px/1.3 Georgia,'Noto Serif TC',serif}
+.list-period small{margin-left:auto;color:#9a907b;font-size:11px}
+#fashion-history.history-all .history-row{display:flex;flex-direction:column;gap:0;margin:0;padding:0!important;background:#fff;border:1px solid var(--line);transition:box-shadow .3s,transform .3s}
+#fashion-history.history-all .history-row:hover{box-shadow:0 14px 30px #2a24180f;transform:translateY(-3px)}
+.row-visual{margin:0;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#ece7dc;cursor:pointer}
+.row-visual img{width:100%;height:100%;object-fit:contain;padding:12px;box-sizing:border-box;display:block}
+.row-visual .garment-study{width:80%;height:auto;max-width:none;color:#4c594b;animation:none}
+.row-visual .sketch-line{animation:none;stroke-dashoffset:0}
+.row-body{display:flex;flex-direction:column;flex:1;padding:16px 18px 18px}
+.row-meta{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.row-year{font:italic 22px/1.3 Georgia,serif;color:#8b7548}
+.row-meta .mini{text-align:right}
+#fashion-history.history-all .history-row h3{font-size:18px;line-height:1.5;margin:6px 0 4px}
+#fashion-history.history-all .history-row p{font-size:13px!important;line-height:1.85}
+#fashion-history.history-all .history-row details{margin-top:auto;padding-top:6px}
+#fashion-history.history-all .history-row summary{font-size:12px;cursor:pointer}
+.row-guide{align-self:flex-start;margin-top:10px;border:0;background:none;padding:0;font-size:12px;color:#82704b;cursor:pointer;border-bottom:1px solid #c9b88f}
+
+/* 放大檢視 */
+#history-lightbox{position:fixed;inset:0;z-index:9999;background:#0d1210ee;display:flex;align-items:center;justify-content:center;padding:4vh 4vw;cursor:zoom-out}
+#history-lightbox[hidden]{display:none}
+#history-lightbox figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:12px;max-height:100%}
+#history-lightbox img{max-width:92vw;max-height:84vh;object-fit:contain;box-shadow:0 20px 60px #000a}
+#history-lightbox figcaption{color:#d9d2c1;font-size:12px}
+.lightbox-close{position:absolute;top:16px;right:22px;border:0;background:none;color:#fff;font-size:34px;line-height:1;cursor:pointer}
+
+@media(max-width:960px){
+#history-body{grid-template-columns:1fr;gap:14px}
+#history-experience #history-rail{position:static;max-height:none;display:flex;gap:8px;overflow-x:auto;overflow-y:hidden;padding:2px 0 10px;scroll-snap-type:x proximity}
+.rail-group{display:contents}.rail-group:before,.rail-period,.rail-item:before{display:none}
+.rail-item{flex:0 0 220px;margin:0;border:1px solid #ddd5c4;scroll-snap-align:start}
+#history-experience #history-stage{grid-template-columns:1fr;min-height:0}
+#history-stage .history-visual.photo-study,#history-stage .history-visual:not(.photo-study){min-height:340px}
+#history-stage .archive-photo{max-height:400px}
+}
+@media(max-width:600px){
+.timeline-title strong{font-size:20px}
+#history-experience .timeline-controls{width:100%;justify-content:flex-end}
+.view-toggle{width:100%}.view-toggle button{flex:1}
+#history-stage .history-story{padding:26px 6%}
+#history-stage .history-story h3{font-size:23px}
+.stage-nav{grid-template-columns:1fr}.stage-nav button.next{text-align:left}
+#fashion-history.history-all #history-list{grid-template-columns:1fr 1fr;gap:10px}
+.row-body{padding:12px}
+#fashion-history.history-all .history-row h3{font-size:15px}
+}
+
+</style>
 </head><body><header><a class="logo" href="./">LABEL ATLAS<span>®</span></a><nav><button id="home">探索品牌</button><button id="saved">我的收藏 <span id="count">0</span></button><a class="nav-history" href="#fashion-history">服裝歷史</a><a href="#time-machine" class="nav-time-machine">時尚時光機</a><button id="library-header-link" data-enter-library>品牌圖書館</button></nav><button id="account-button" class="account-trigger">登入 / 個人收藏</button><label class="language-control">◎ <select id="language" aria-label="Language / 語言"><option value="zh-Hant">繁體中文</option><option value="en">English</option><option value="ja">日本語</option></select></label></header><div id="language-note" class="language-note" role="status" aria-live="polite"></div><section id="account-panel" class="account-panel" hidden aria-label="個人帳號"><button id="account-close" class="account-close" aria-label="關閉帳號面板">×</button><span class="mini">YOUR PRIVATE READING ROOM</span><h2 id="account-name">你的個人閱讀室</h2><p id="account-description"></p><a id="account-signin" class="account-primary" href="/signin-with-chatgpt?return_to=%2F" target="_top">使用 ChatGPT 登入 ↗</a><button id="account-import" class="account-secondary" hidden>匯入此瀏覽器的訪客紀錄</button><button id="account-retry" class="account-secondary" hidden>重試同步</button><p id="account-sync-status" role="status" aria-live="polite"></p><a id="account-signout" href="/signout-with-chatgpt?return_to=%2F" target="_top" hidden>登出帳號 ↗</a></section>
 <div class="atlas-shell">
 <main><section id="landing"><div class="hero"><div><div class="mini eyebrow">AN INDEPENDENT FASHION INDEX / VOL. 01</div><h1>Beyond<br> the <em>Label.</em></h1><h2 class="hero-chinese">每個品牌，都有一個故事。</h2><p class="intro">從主理人的第一個想法，到你衣櫃裡的那一件。<br>搜尋品牌，讀懂它的來歷、動態與購買去處。</p><form class="search" id="form"><input id="query" aria-label="品牌或設計師名稱" placeholder="輸入品牌或設計師，翻開研究書" maxlength="80" required minlength="2"><button>翻開研究書</button></form><button class="hero-library-entry" data-enter-library>走進品牌圖書館</button><div class="recent-searches"><div class="recent-label"><span class="mini">RECENT SEARCHES / 最近查詢</span><button id="clear-recent" type="button">清除紀錄</button></div><div id="recent-list"></div><p class="local-note">查詢紀錄與品牌筆記儲存在目前瀏覽器。</p></div></div><div class="art" role="img" aria-label="抽象服裝剪裁插畫"><svg viewBox="0 0 480 420" xmlns="http://www.w3.org/2000/svg"><rect width="480" height="420" fill="#d9d9cb"/><path d="M0 350 480 20M0 420 480 90M100 420 480 160" stroke="#c8c9bb"/><circle cx="370" cy="100" r="100" fill="#cbd64e"/><path d="M160 95 210 75Q240 105 270 75L320 95 380 210 320 242 302 200 313 365 167 365 178 200 160 242 100 210Z" fill="#343e33"/><path d="M210 75Q240 120 270 75L257 155 240 172 223 155Z" fill="#bfc2ac"/><path d="M240 172V365M180 250 220 258V292H178M260 258 301 250 303 292H260" fill="none" stroke="#879079" stroke-width="2"/><path d="M240 180 240 355" stroke="#d6ee3c" stroke-dasharray="2 18" stroke-width="4"/></svg><span class="mini number">STUDY NO. 001 / FORM & IDENTITY</span><div class="artlabel mini">BEYOND THE LABEL ↗</div></div></div><section id="brand-library" class="brand-library" aria-labelledby="library-title">
@@ -611,18 +739,36 @@ function historySketch(x){
  };
  return '<svg class="garment-study" viewBox="0 0 300 300" role="img" aria-label="'+esc(x.en)+' — 服裝輪廓概念示意，非歷史實物"><defs><pattern id="study-grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="currentColor" opacity=".1"/></pattern></defs><rect width="300" height="300" fill="url(#study-grid)"/><circle cx="150" cy="150" r="117" fill="none" stroke="currentColor" opacity=".15"/><path class="sketch-line" d="'+(shapes[x.year]||'M105 75H195V225H105Z M118 90H182 M118 110H182 M118 130H182 M118 150H170')+'" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M30 270H270 M30 266V274 M270 266V274" fill="none" stroke="currentColor" opacity=".4"/><text x="150" y="289" text-anchor="middle" fill="currentColor" font-size="8" letter-spacing="3">SILHOUETTE STUDY / '+esc(x.year)+'</text></svg>';
 }
+/* ===== 穿越服裝史 ARCHIVE v2 =====
+   左側：依時期分組的完整時間軸索引；右側：完整圖片＋故事。
+   「全部一覽」可一次看完所有節點。資料仍來自 fashionHistory / japaneseHistory / regionalArchive / timeMachineCases，
+   新增歷史節點只要在那些陣列加一筆即可，這段不用改。 */
+const historyPeriods=[[0,1799,'1800 年以前','BEFORE 1800'],[1800,1899,'19 世紀','THE 1800s'],[1900,1949,'1900–1949','EARLY 20TH CENTURY'],[1950,1979,'1950–1979','POSTWAR'],[1980,1999,'1980–1999','LATE 20TH CENTURY'],[2000,99999,'2000 年以後','21ST CENTURY']];
+function historyPeriod(x){const n=parseInt(x.year)||0;return historyPeriods.find(p=>n>=p[0]&&n<=p[1])||historyPeriods[0]}
+function historyGroups(list){const out=[];list.forEach((x,i)=>{const p=historyPeriod(x);let g=out[out.length-1];if(!g||g.period!==p){g={period:p,items:[]};out.push(g)}g.items.push([x,i])});return out}
+function historyThumb(x,cls){return x.image?'<img class="'+cls+'" src="'+esc(x.image)+'" alt="'+esc(x.imageTitle||x.title)+'" loading="lazy" decoding="async">':historySketch(x)}
+let historyMode='guide';try{historyMode=localStorage.getItem('label-atlas-history-mode')==='all'?'all':'guide'}catch{}
+function setHistoryMode(mode){historyMode=mode;stopHistoryPlayback();$('#fashion-history').classList.toggle('history-all',mode==='all');document.querySelectorAll('[data-history-mode]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.historyMode===mode));try{localStorage.setItem('label-atlas-history-mode',mode)}catch{}}
+function renderHistoryRail(){$('#history-rail').innerHTML=historyGroups(historyMatches).map(g=>'<div class="rail-group"><div class="rail-period"><span>'+esc(g.period[2])+'</span><small>'+g.items.length+'</small></div>'+g.items.map(([x,i])=>{const t=String(x.title).split('：');return '<button class="rail-item" data-era-stop="'+i+'" aria-current="false"><span class="rail-thumb">'+historyThumb(x,'rail-photo')+'</span><span class="rail-text"><span class="rail-year">'+esc(x.year)+'</span><strong>'+esc(t[0])+'</strong><small>'+esc(t[1]||x.en)+'</small></span></button>'}).join('')+'</div>').join('');document.querySelectorAll('#history-rail [data-era-stop]').forEach(b=>b.onclick=()=>{stopHistoryPlayback();selectHistory(Number(b.dataset.eraStop))})}
+function openHistoryLightbox(src,caption){let box=$('#history-lightbox');if(!box){box=document.createElement('div');box.id='history-lightbox';box.setAttribute('role','dialog');box.setAttribute('aria-modal','true');box.setAttribute('aria-label','放大檢視圖片');box.innerHTML='<button class="lightbox-close" aria-label="關閉">×</button><figure><img alt=""><figcaption></figcaption></figure>';document.body.append(box);box.onclick=e=>{if(e.target===box||e.target.classList.contains('lightbox-close'))box.hidden=true};addEventListener('keydown',e=>{if(e.key==='Escape')box.hidden=true})}box.querySelector('img').src=src;box.querySelector('img').alt=caption;box.querySelector('figcaption').textContent=caption;box.hidden=false;box.querySelector('.lightbox-close').focus()}
 function selectHistory(index,focus=false){
- if(!historyMatches.length)return;historySelection=(index+historyMatches.length)%historyMatches.length;const x=historyMatches[historySelection];
- $('#history-stage').innerHTML=(x.image?'<div class="history-visual photo-study"><img class="archive-photo" src="'+esc(x.image)+'" alt="'+esc(x.imageTitle)+'" decoding="async"><div class="photo-credit"><strong>'+esc(x.imageTitle)+' · '+esc(x.imageDate)+'</strong>'+esc(x.credit)+'<br><a href="'+esc(x.imageSource||x.url)+'" target="_blank" rel="noopener noreferrer">查看圖片典藏來源 ↗</a></div></div>':'<div class="history-visual"><span class="mini">THE EVOLUTION OF DRESS</span><span class="stage-year">'+esc(x.year)+'</span>'+historySketch(x)+'<span class="study-caption">服裝輪廓概念示意 · 非歷史實物</span></div>')+'<div class="history-story"><span class="mini">'+String(historySelection+1).padStart(2,'0')+' / '+String(historyMatches.length).padStart(2,'0')+' — '+esc(x.en)+'</span><h3>'+esc(x.title)+'</h3><p>'+esc(x.intro)+'</p><div class="history-observe"><span class="mini">LOOK CLOSER</span><p>'+esc(x.piece)+'</p></div><a href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer">閱讀原始來源 ↗</a><button class="outline" id="stage-details">展開這段歷史 ＋</button></div>';
- $('#history-rail').innerHTML=historyMatches.map(railCard).join('');
- document.querySelectorAll('[data-era-stop]').forEach(b=>b.onclick=()=>{stopHistoryPlayback();selectHistory(Number(b.dataset.eraStop))});
- $('#stage-details').onclick=()=>{const row=[...document.querySelectorAll('.history-row')][historySelection];if(row){row.querySelector('details').open=true;row.scrollIntoView({behavior:reduceMotion.matches?'instant':'smooth',block:'center'})}};
- $('#history-prev').disabled=historyMatches.length<2;$('#history-next').disabled=historyMatches.length<2;$('#history-play').disabled=historyMatches.length<2;
- bindHistoryPhotos();const rail=$('#history-rail'),selected=rail.querySelector('.selected');if(selected){const left=selected.offsetLeft-rail.offsetLeft;if(left<rail.scrollLeft||left+selected.offsetWidth>rail.scrollLeft+rail.clientWidth)rail.scrollTo({left:Math.max(0,left-rail.clientWidth/2+selected.offsetWidth/2),behavior:reduceMotion.matches?'instant':'smooth'})}if(focus)$('#history-stage').focus({preventScroll:true});
+ if(!historyMatches.length)return;historySelection=(index+historyMatches.length)%historyMatches.length;const x=historyMatches[historySelection],total=historyMatches.length;
+ const prev=historyMatches[(historySelection-1+total)%total],next=historyMatches[(historySelection+1)%total],p=historyPeriod(x);
+ const visual=x.image?'<figure class="history-visual photo-study"><img class="archive-backdrop" src="'+esc(x.image)+'" alt="" aria-hidden="true"><div class="archive-frame"><img class="archive-photo" src="'+esc(x.image)+'" alt="'+esc(x.imageTitle)+'" decoding="async" title="點圖放大"><button class="zoom-hint" type="button">⤢ 放大檢視</button></div><figcaption class="photo-credit"><strong>'+esc(x.imageTitle)+' · '+esc(x.imageDate)+'</strong>'+esc(x.credit)+' <a href="'+esc(x.imageSource||x.url)+'" target="_blank" rel="noopener noreferrer">典藏來源 ↗</a></figcaption></figure>':'<div class="history-visual"><span class="mini">THE EVOLUTION OF DRESS</span><span class="stage-year">'+esc(x.year)+'</span>'+historySketch(x)+'<span class="study-caption">服裝輪廓概念示意 · 非歷史實物</span></div>';
+ $('#history-stage').innerHTML=visual+'<div class="history-story"><span class="mini">'+String(historySelection+1).padStart(2,'0')+' / '+String(total).padStart(2,'0')+' — '+esc(x.en)+'</span><div class="story-year">'+esc(x.year)+'</div><h3>'+esc(x.title)+'</h3><div class="story-chips"><span>'+esc(p[2])+'</span><span>'+esc(x.category)+'</span>'+(x.brand?'<span>'+esc(x.brand)+'</span>':'')+'</div><p>'+esc(x.intro)+'</p><div class="history-observe"><span class="mini">LOOK CLOSER</span><p>'+esc(x.piece)+'</p></div><details class="stage-more"><summary>展開這段歷史 ＋</summary><div class="history-detail"><p>'+esc(x.detail)+'</p><a href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer">閱讀來源：'+esc(x.source||'原始來源')+' ↗</a>'+(x.brand?'<button class="outline history-brand" data-history-brand="'+esc(x.brand)+'">探索相關品牌／設計師：'+esc(x.brand)+' ↗</button>':'')+'</div></details><div class="stage-nav"><button type="button" data-stage-step="-1"'+(total<2?' disabled':'')+'><small>← 上一段 · '+esc(prev.year)+'</small>'+esc(String(prev.title).split('：')[0])+'</button><button type="button" class="next" data-stage-step="1"'+(total<2?' disabled':'')+'><small>下一段 · '+esc(next.year)+' →</small>'+esc(String(next.title).split('：')[0])+'</button></div></div>';
+ $('#history-progress').style.width=((historySelection+1)/total*100)+'%';$('#history-position').textContent=String(historySelection+1).padStart(2,'0')+' / '+String(total).padStart(2,'0');
+ document.querySelectorAll('#history-rail [data-era-stop]').forEach(b=>{const on=Number(b.dataset.eraStop)===historySelection;b.classList.toggle('selected',on);b.setAttribute('aria-current',on?'true':'false')});
+ document.querySelectorAll('#history-stage [data-stage-step]').forEach(b=>b.onclick=()=>{stopHistoryPlayback();selectHistory(historySelection+Number(b.dataset.stageStep))});
+ document.querySelectorAll('#history-stage [data-history-brand]').forEach(b=>b.onclick=()=>{search(b.dataset.historyBrand);window.scrollTo({top:0,behavior:'smooth'})});
+ const photo=$('#history-stage .archive-photo');if(photo){const zoom=()=>openHistoryLightbox(x.image,x.imageTitle+' · '+x.imageDate);photo.onclick=zoom;$('#history-stage .zoom-hint').onclick=zoom}
+ $('#history-prev').disabled=total<2;$('#history-next').disabled=total<2;$('#history-play').disabled=total<2;
+ bindHistoryPhotos();const rail=$('#history-rail'),sel=rail.querySelector('.selected');if(sel){const r=rail.getBoundingClientRect(),s=sel.getBoundingClientRect(),behavior=reduceMotion.matches?'instant':'smooth';if(rail.scrollHeight>rail.clientHeight+2&&(s.top<r.top+36||s.bottom>r.bottom))rail.scrollBy({top:s.top-r.top-r.height/2+s.height/2,behavior});if(rail.scrollWidth>rail.clientWidth+2&&(s.left<r.left||s.right>r.right))rail.scrollBy({left:s.left-r.left-r.width/2+s.width/2,behavior})}if(focus)$('#history-stage').focus({preventScroll:true});
 }
-function updateHistoryStage(matched){stopHistoryPlayback();historyMatches=matched;$('#history-experience').hidden=!matched.length;if(matched.length)selectHistory(0);document.querySelectorAll('.history-row').forEach((el,i)=>{el.style.setProperty('--delay',Math.min(i,5)*65+'ms');el.classList.add('result-enter')})}
-const experience=document.createElement('div');experience.id='history-experience';experience.innerHTML='<div class="timeline-top"><span class="mini">EXPLORE THE ARCHIVE / 穿越服裝史</span><div class="timeline-controls"><button id="history-prev" aria-label="上一段歷史">←</button><button id="history-play" aria-pressed="false">播放時間軸</button><button id="history-next" aria-label="下一段歷史">→</button></div></div><div id="history-rail" aria-label="服裝歷史時間軸"></div><div id="history-stage" tabindex="-1"></div>';
+function updateHistoryStage(matched){stopHistoryPlayback();historyMatches=matched;$('#history-experience').hidden=!matched.length;if(matched.length){renderHistoryRail();selectHistory(0)}document.querySelectorAll('.history-row').forEach((el,i)=>{el.style.setProperty('--delay',Math.min(i,5)*65+'ms');el.classList.add('result-enter')})}
+const experience=document.createElement('div');experience.id='history-experience';experience.innerHTML='<div class="timeline-top"><div class="timeline-title"><span class="mini">EXPLORE THE ARCHIVE / 穿越服裝史</span><strong>沿著時間，一段一段讀。</strong></div><div class="view-toggle" role="group" aria-label="切換閱讀方式"><button data-history-mode="guide" aria-pressed="true">時間軸導覽</button><button data-history-mode="all" aria-pressed="false">全部一覽</button></div><div class="timeline-controls"><span id="history-position" class="mini"></span><button id="history-prev" aria-label="上一段歷史">←</button><button id="history-play" aria-pressed="false">播放時間軸</button><button id="history-next" aria-label="下一段歷史">→</button></div></div><div class="history-progress" aria-hidden="true"><i id="history-progress"></i></div><div id="history-body"><nav id="history-rail" aria-label="服裝歷史時間軸"></nav><div id="history-stage" tabindex="-1"></div></div>';
 $('#history-list').before(experience);
+document.querySelectorAll('[data-history-mode]').forEach(b=>b.onclick=()=>setHistoryMode(b.dataset.historyMode));setHistoryMode(historyMode);
+$('#history-stage').addEventListener('keydown',e=>{if(e.target.closest('input,textarea,select'))return;if(e.key==='ArrowRight'){stopHistoryPlayback();selectHistory(historySelection+1)}if(e.key==='ArrowLeft'){stopHistoryPlayback();selectHistory(historySelection-1)}});
 $('#history-prev').onclick=()=>{stopHistoryPlayback();selectHistory(historySelection-1)};$('#history-next').onclick=()=>{stopHistoryPlayback();selectHistory(historySelection+1)};
 $('#history-play').onclick=()=>{if(historyTimer){stopHistoryPlayback();return}if(reduceMotion.matches){selectHistory(historySelection+1);return}$('#history-play').textContent='暫停播放';$('#history-play').setAttribute('aria-pressed','true');historyTimer=setInterval(()=>{if($('#landing').hidden){stopHistoryPlayback();return}selectHistory(historySelection+1)},6500)};
 document.addEventListener('visibilitychange',()=>{if(document.hidden)stopHistoryPlayback()});reduceMotion.addEventListener('change',stopHistoryPlayback);
@@ -653,10 +799,9 @@ document.querySelector('.history-tools').before(historySwitcher);const regionalN
 function currentHistory(){return {japan:japaneseHistory,europe:europeHistory,america:americaHistory,asia:regionalArchive.asia,modern:globalHistory}[historyCollection]||globalHistory}
 function setHistoryCollection(kind){stopHistoryPlayback();historyCollection=kind;$('#history-japan').setAttribute('aria-pressed',kind==='japan');$('#history-modern').setAttribute('aria-pressed',kind==='modern');for(const region of ['europe','america','asia'])$('#history-'+region).setAttribute('aria-pressed',kind===region);$('#history-query').value='';const entries=currentHistory();$('#history-era').innerHTML='<option value="">所有年代</option>'+[...new Set(entries.map(x=>x.era))].map(x=>'<option value="'+esc(x)+'">'+esc(x)+'</option>').join('');$('#history-category').innerHTML='<option value="">所有主題</option>'+[...new Set(entries.map(x=>x.category))].map(x=>'<option value="'+esc(x)+'">'+esc(x)+'</option>').join('');renderHistory()}
 $('#history-japan').onclick=()=>setHistoryCollection('japan');$('#history-modern').onclick=()=>setHistoryCollection('modern');for(const region of ['europe','america','asia'])$('#history-'+region).onclick=()=>setHistoryCollection(region);
-function railCard(v,i){return '<button class="era-stop '+(i===historySelection?'selected':'')+'" data-era-stop="'+i+'" aria-pressed="'+(i===historySelection)+'"><span>'+esc(v.year)+'</span><i></i>'+(v.image?'<img class="era-photo" src="'+esc(v.image)+'" alt="'+esc(v.imageTitle)+'" loading="lazy" decoding="async">':'<div class="era-diagram">'+historySketch(v)+'</div>')+'<strong>'+esc(v.title.split('：')[0])+'</strong><small>'+esc(v.en)+'</small>'+(v.image?'<span class="era-image-date">圖像：'+esc(v.imageDate)+'</span>':'<span class="era-image-date">輪廓概念示意</span>')+'</button>'}
-function bindHistoryPhotos(){document.querySelectorAll('.era-photo,.archive-photo').forEach(img=>{img.onerror=()=>{img.hidden=true;const label=document.createElement('span');label.className='image-unavailable';label.textContent='圖片暫時無法載入，仍可閱讀故事與來源。';img.after(label)}})}
+function bindHistoryPhotos(){document.querySelectorAll('.rail-photo,.row-photo,.archive-photo').forEach(img=>{img.onerror=()=>{img.hidden=true;const label=document.createElement('span');label.className='image-unavailable';label.textContent='圖片暫時無法載入，仍可閱讀故事與來源。';img.after(label)}})}
 
-function renderHistory(){const term=$('#history-query').value.trim().toLocaleLowerCase();const era=$('#history-era').value,category=$('#history-category').value;const matched=currentHistory().filter(x=>(!era||x.era===era)&&(!category||x.category===category)&&(!term||[x.year,x.title,x.en,x.tags,x.intro,x.detail,x.category].join(' ').toLocaleLowerCase().includes(term)));$('#history-count').textContent=matched.length+' / '+currentHistory().length+' 個歷史節點';$('#history-empty').hidden=matched.length>0;$('#history-list').innerHTML=matched.map(x=>'<article class="history-row"><div class="history-year">'+esc(x.year)+'<small>'+esc(x.category)+'</small></div><div><span class="mini">'+esc(x.en)+'</span><h3>'+esc(x.title)+'</h3><p>'+esc(x.intro)+'</p><details><summary>閱讀故事與設計細節 ＋</summary><div class="history-detail"><h4>為什麼值得認識</h4><p>'+esc(x.detail)+'</p><h4>觀察服裝</h4><p>'+esc(x.piece)+'</p><a href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer">閱讀來源：'+esc(x.source)+' ↗</a>'+(x.brand?'<button class="outline history-brand" data-history-brand="'+esc(x.brand)+'">探索相關品牌／設計師：'+esc(x.brand)+' ↗</button>':'')+'</div></details></div></article>').join('');document.querySelectorAll('[data-history-brand]').forEach(b=>b.onclick=()=>{search(b.dataset.historyBrand);window.scrollTo({top:0,behavior:'smooth'})});updateHistoryStage(matched)}
+function renderHistory(){const term=$('#history-query').value.trim().toLocaleLowerCase();const era=$('#history-era').value,category=$('#history-category').value;const matched=currentHistory().filter(x=>(!era||x.era===era)&&(!category||x.category===category)&&(!term||[x.year,x.title,x.en,x.tags,x.intro,x.detail,x.category].join(' ').toLocaleLowerCase().includes(term)));$('#history-count').textContent=matched.length+' / '+currentHistory().length+' 個歷史節點';$('#history-empty').hidden=matched.length>0;$('#history-list').innerHTML=historyGroups(matched).map(g=>'<div class="list-period"><span class="mini">'+esc(g.period[3])+'</span><h3>'+esc(g.period[2])+'</h3><small>'+g.items.length+' 個節點</small></div>'+g.items.map(([x,i])=>'<article class="history-row"><figure class="row-visual" data-open-stage="'+i+'" title="在導覽中閱讀">'+historyThumb(x,'row-photo')+'</figure><div class="row-body"><div class="row-meta"><span class="row-year">'+esc(x.year)+'</span><span class="mini">'+esc(x.category)+'</span></div><span class="mini">'+esc(x.en)+'</span><h3>'+esc(x.title)+'</h3><p>'+esc(x.intro)+'</p><details><summary>閱讀故事與設計細節 ＋</summary><div class="history-detail"><h4>為什麼值得認識</h4><p>'+esc(x.detail)+'</p><h4>觀察服裝</h4><p>'+esc(x.piece)+'</p><a href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer">閱讀來源：'+esc(x.source)+' ↗</a>'+(x.brand?'<button class="outline history-brand" data-history-brand="'+esc(x.brand)+'">探索相關品牌／設計師：'+esc(x.brand)+' ↗</button>':'')+'</div></details><button class="row-guide" data-open-stage="'+i+'">在導覽中閱讀 →</button></div></article>').join('')).join('');document.querySelectorAll('#history-list [data-open-stage]').forEach(b=>b.onclick=()=>{setHistoryMode('guide');selectHistory(Number(b.dataset.openStage));$('#history-experience').scrollIntoView({behavior:reduceMotion.matches?'instant':'smooth',block:'start'})});document.querySelectorAll('[data-history-brand]').forEach(b=>b.onclick=()=>{search(b.dataset.historyBrand);window.scrollTo({top:0,behavior:'smooth'})});updateHistoryStage(matched)}
 $('#history-query').addEventListener('input',renderHistory);$('#history-era').addEventListener('change',renderHistory);$('#history-category').addEventListener('change',renderHistory);$('#history-reset').onclick=()=>{$('#history-query').value='';$('#history-era').value='';$('#history-category').value='';renderHistory()};setHistoryCollection('modern');
 const discoveryGroups={everyday:['UNIQLO','Nike','adidas','Levi’s'],japan:['Needles','sacai','JieDa','Issey Miyake'],europe:['Maison Margiela','Dior','Prada','Lemaire'],select:['BEAMS','JOURNAL STANDARD','UNITED ARROWS','SHIPS']};
 function renderRailBrands(){if(!$('#rail-category'))return;const brands=discoveryGroups[$('#rail-category').value]||discoveryGroups.everyday;$('#rail-brands').innerHTML=brands.map(q=>'<button data-rail-brand="'+esc(q)+'">'+esc(q)+' <span>↗</span></button>').join('');document.querySelectorAll('[data-rail-brand]').forEach(b=>b.onclick=()=>{search(b.dataset.railBrand);window.scrollTo({top:0,behavior:reduceMotion.matches?'instant':'smooth'})})}
@@ -869,7 +1014,7 @@ const interfaceText={"把好奇心，":["Stay curious,", "好奇心を、"],"留
 '登入 / 個人收藏':['Sign in / My library','ログイン / ライブラリー'],'我的帳號':['My account','マイアカウント'],'使用 ChatGPT 登入 ↗':['Sign in with ChatGPT ↗','ChatGPT でログイン ↗'],'登出帳號 ↗':['Sign out ↗','ログアウト ↗'],'匯入此瀏覽器的訪客紀錄':['Import guest records from this browser','このブラウザのゲスト履歴を取り込む'],'重試同步':['Retry sync','同期を再試行'],
 '探索導覽':['Explore index','探索ガイド'],'閱讀工具':['Reading tools','読書ツール'],'品牌搜尋':['Brand search','ブランド検索'],'下一個想認識的品牌':['Discover your next label','次に出会うブランド'],'探索方向':['Explore by collection','ジャンルから探す'],'最近的閱讀路徑':['Your recent path','最近の閲覧'],'文字大小':['Text size','文字サイズ'],'專注閱讀模式':['Focus reading','集中して読む'],'結束專注閱讀':['Exit focus reading','集中モードを終了'],'結束專注閱讀 ×':['Exit focus reading ×','集中モードを終了 ×'],'複製目前頁面連結 ↗':['Copy page link ↗','ページリンクをコピー ↗'],'服裝小辭典':['Fashion vocabulary','ファッション用語'],'選擇詞彙':['Choose a term','用語を選ぶ'],'跳進一段歷史':['Step into history','歴史をたどる'],'回到頁首 ↑':['Back to top ↑','ページ上部へ ↑'],'日常與運動':['Everyday & sport','日常とスポーツ'],'日本設計':['Japanese design','日本のデザイン'],'歐洲設計':['European design','ヨーロッパのデザイン'],'選品店':['Select shops','セレクトショップ'],
 '日本服裝史':['Japanese clothing history','日本の服装史'],'近代時裝節點':['Modern fashion milestones','近代ファッションの節目'],'從服飾、工藝到文化，沿著時間閱讀。':['Read clothing, craft and culture through time.','衣服、工芸、文化を時代に沿って読む。'],'查看圖片典藏來源 ↗':['View the museum image record ↗','画像の収蔵情報を見る ↗'],
-'播放時間軸':['Play timeline','タイムラインを再生'],'暫停播放':['Pause','一時停止'],'展開這段歷史 ＋':['Explore this chapter ＋','この時代を詳しく読む ＋'],'閱讀原始來源 ↗':['Read the original source ↗','出典を読む ↗'],'服裝輪廓概念示意 · 非歷史實物':['Silhouette study · Concept illustration','シルエットの概念図 · 実物資料ではありません'],'EXPLORE THE ARCHIVE / 穿越服裝史':['EXPLORE THE ARCHIVE','EXPLORE THE ARCHIVE / 服の歴史を辿る'],
+'播放時間軸':['Play timeline','タイムラインを再生'],'時間軸導覽':['Guided timeline','タイムライン'],'全部一覽':['View all','一覧表示'],'沿著時間，一段一段讀。':['Read through time, one chapter at a time.','時代をひとつずつ辿る。'],'⤢ 放大檢視':['⤢ Enlarge','⤢ 拡大表示'],'在導覽中閱讀 →':['Read in the timeline →','タイムラインで読む →'],'暫停播放':['Pause','一時停止'],'展開這段歷史 ＋':['Explore this chapter ＋','この時代を詳しく読む ＋'],'閱讀原始來源 ↗':['Read the original source ↗','出典を読む ↗'],'服裝輪廓概念示意 · 非歷史實物':['Silhouette study · Concept illustration','シルエットの概念図 · 実物資料ではありません'],'EXPLORE THE ARCHIVE / 穿越服裝史':['EXPLORE THE ARCHIVE','EXPLORE THE ARCHIVE / 服の歴史を辿る'],
 '探索品牌':['Discover','ブランドを探す'],'我的收藏':['My collection','コレクション'],'服裝歷史':['Clothing history','服の歴史'],'每個品牌，都有一個故事。':['Every label has a story.','すべてのブランドには、物語がある。'],'輸入品牌、設計師或選品店名稱':['Search brands, designers or select shops','ブランド・デザイナー・セレクトショップを検索'],'探索品牌 ↗':['Discover ↗','ブランドを探す ↗'],'清除紀錄':['Clear history','履歴を削除'],'RECENT SEARCHES / 最近查詢':['RECENT SEARCHES','RECENT SEARCHES / 最近の検索'],'查詢紀錄與品牌筆記儲存在目前瀏覽器。':['Search history and notes are saved in this browser.','検索履歴とメモはこのブラウザに保存されます。'],'還沒有查詢紀錄。搜尋品牌後，會在這裡留下可點選的紀錄。':['Your recent searches will appear here.','検索したブランドがここに表示されます。'],'故事與代表單品':['Stories & signature pieces','ストーリーと代表作'],'市場觀察':['Market insights','マーケット動向'],'哪裡購買':['Where to buy','取扱店'],'所有來源':['All sources','すべての出典'],'品牌故事':['Brand story','ブランドストーリー'],'設計特色':['Design signatures','デザインの特徴'],'代表單品與故事':['Signature pieces & stories','代表作とその物語'],'旗下支線':['Labels & lines','レーベルとライン'],'衣服如何走到今天。':['How we came to dress.','服は、どう進化してきたのか。'],'搜尋歷史':['Search history','服の歴史を検索'],'年代':['Period','年代'],'主題':['Theme','テーマ'],'所有年代':['All periods','すべての年代'],'所有主題':['All themes','すべてのテーマ'],'閱讀故事與設計細節 ＋':['Read the story & details ＋','ストーリーとディテールを読む ＋'],'為什麼值得認識':['Why it matters','知っておきたいこと'],'觀察服裝':['Look closer','服を観察する'],'探索服裝歷史 ↗':['Explore clothing history ↗','服の歴史を探る ↗'],'取消搜尋':['Cancel search','検索を中止'],'搜尋其他名稱':['Search another name','別の名前を検索'],'↻ 更新資料':['↻ Refresh','↻ 更新'],'↓ 匯出研究資料':['↓ Export research','↓ リサーチを書き出す'],'✎ 記錄品牌筆記':['✎ Add a note','✎ メモを追加'],'☆ 收藏項目':['☆ Save','☆ 保存'],'★ 已收藏':['★ Saved','★ 保存済み'],'重試':['Retry','再試行'],'返回搜尋':['Back to search','検索に戻る'],'儲存筆記並收藏':['Save note & collect','メモとブランドを保存'],'我的品牌筆記':['My brand notes','ブランドのメモ'],'記下你喜歡的設計、單品或觀察':['Write down designs, pieces or observations','気になったデザイン、アイテムや発見を記録'],'從主理人的第一個想法，到你衣櫃裡的那一件。':['From a designer’s first idea to the piece in your wardrobe.','デザイナーの最初の着想から、あなたのワードローブの一着まで。'],'搜尋品牌，讀懂它的來歷、動態與購買去處。':['Discover the stories, design and places to find each label.','ブランドの背景、デザイン、取扱店を読み解く。'],'LABEL ATLAS — 服飾品牌研究索引':['LABEL ATLAS — An independent fashion index','LABEL ATLAS — ファッションブランドの索引'],'品牌故事 · 設計語言 · 購買去處':['Stories · Design language · Where to buy','ストーリー · デザイン · 取扱店']};
 document.querySelectorAll('#history-era option,#history-category option,#rail-category option,#glossary-select option').forEach(o=>o.setAttribute('value',o.value));
 const originals=new WeakMap(),attributeOriginals=new WeakMap();let translationCache={en:{},ja:{}};try{const c=JSON.parse(sessionStorage.getItem('label-atlas-translations')||'{}');for(const l of ['en','ja'])if(c[l]&&typeof c[l]==='object')translationCache[l]=c[l]}catch{}
