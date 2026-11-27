@@ -455,7 +455,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 #tm .tm-cap a{color:#ffcf7a}
 #tm .tm-face img{border-radius:6px}
 @media(max-width:600px){#tm .tm-cap{max-width:calc(100% - 170px)}}
-</style><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+</style><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">
 <style id="archive-v2">
 /* ===== 穿越服裝史 ARCHIVE v2（時間軸導覽／全部一覽）===== */
 #history-experience{margin:10px 0 56px;border:0;background:transparent}
@@ -583,6 +583,113 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 #fashion-history.history-all .history-row h3{font-size:15px}
 }
 
+</style>
+<style id="cosmos-log">
+/* ===== 航行日誌 COSMIC LOG ===== */
+.tm-log{position:relative;isolation:isolate;overflow:hidden;color:#e6e9f2;background:radial-gradient(1100px 620px at 12% 8%,#1a2352 0,#0000 62%),radial-gradient(900px 640px at 92% 85%,#3a1442 0,#0000 60%),#04060c}
+.tm-log::before{content:'';position:absolute;inset:-25%;z-index:-2;pointer-events:none;background:radial-gradient(38% 28% at 28% 38%,#3b5bdb38,#0000 70%),radial-gradient(34% 26% at 72% 62%,#c2255c2e,#0000 70%),radial-gradient(28% 22% at 56% 18%,#f59f0024,#0000 70%);filter:blur(34px);animation:log-nebula 38s ease-in-out infinite alternate}
+@keyframes log-nebula{to{transform:translate(5%,-4%) rotate(9deg) scale(1.1)}}
+.log-sky{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+.tm-log .tm-login{display:block;max-width:1320px;margin:auto;padding:clamp(34px,5vw,72px) max(4vw,16px)}
+.log-book{position:relative;display:grid;grid-template-columns:minmax(0,.85fr) 22px minmax(0,1.55fr);border-radius:20px;background:linear-gradient(180deg,#0e1430d9,#090c1ae6);border:1px solid #9fb3ff2b;box-shadow:0 50px 140px #000c,0 0 0 1px #ffffff08 inset,0 0 90px #5b6cff1c;backdrop-filter:blur(8px);animation:log-rise 1s cubic-bezier(.2,.7,.2,1)}
+.log-book::after{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:radial-gradient(520px circle at var(--mx,30%) var(--my,20%),#a9bbff16,#0000 60%)}
+@keyframes log-rise{from{opacity:0;transform:translateY(30px) scale(.985)}}
+.log-spine{background:linear-gradient(90deg,#0000,#0009 38%,#ffffff12 50%,#0009 62%,#0000)}
+
+/* 左頁 */
+.log-left{padding:clamp(26px,3vw,44px) clamp(20px,2.6vw,38px);align-self:start;position:sticky;top:12px}
+.log-kicker{display:block;font:600 11px/1 'Barlow Condensed',sans-serif;letter-spacing:.34em;color:#8fa3ff}
+.log-yr{margin-top:12px;font:700 clamp(76px,9vw,132px)/.82 'Barlow Condensed',sans-serif;letter-spacing:-.01em;background:linear-gradient(100deg,#fff 0%,#ffd98a 30%,#9fb3ff 58%,#fff 80%);background-size:260% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 26px #ffcf7a3d);animation:log-shine 9s linear infinite,log-materialize 1.3s cubic-bezier(.2,.7,.2,1)}
+@keyframes log-shine{to{background-position:-260% 0}}
+@keyframes log-materialize{from{opacity:0;letter-spacing:.35em;filter:blur(14px)}}
+.log-left h2{margin:14px 0 4px;font:700 clamp(28px,3vw,40px)/1.1 'Noto Serif TC','Noto Sans TC',serif;color:#fff;letter-spacing:-.01em;animation:log-fade .9s .15s both}
+.log-left .hs{margin:0;color:#9aa6c7;animation:log-fade .9s .25s both}
+@keyframes log-fade{from{opacity:0;transform:translateY(10px)}}
+.log-portrait{margin:28px auto 14px;width:min(200px,62%);text-align:center}
+.log-portrait .ring{position:relative;aspect-ratio:1}
+.log-portrait .orbit{position:absolute;inset:-10px;border:1px solid #9fb3ff45;border-radius:50%;animation:log-spin 22s linear infinite}
+.log-portrait .orbit i{position:absolute;top:-4px;left:calc(50% - 4px);width:8px;height:8px;border-radius:50%;background:#ffd98a;box-shadow:0 0 14px #ffd98a}
+.log-portrait .o2{inset:-24px;border-style:dashed;border-color:#d08cff33;animation-duration:44s;animation-direction:reverse}
+.log-portrait .o2 i{background:#b9a4ff;box-shadow:0 0 12px #b9a4ff}
+@keyframes log-spin{to{transform:rotate(360deg)}}
+.log-portrait .face{position:absolute;inset:0;border-radius:50%;overflow:hidden;background:radial-gradient(circle at 35% 30%,#2a3878,#0a0d1d 72%);box-shadow:0 0 60px #5b6cff45,inset 0 0 34px #000c}
+.log-portrait .face img,.log-portrait .face svg{width:100%;height:100%;object-fit:cover;display:block}
+.log-portrait figcaption{margin-top:30px;font-size:11px;color:#6f7ba0;letter-spacing:.08em}
+.log-portrait figcaption a{color:#9fc0ff}
+.tm-log .ti{font:700 20px/1.5 'Noto Serif TC',serif;color:#fff;margin:14px 0 10px}
+.tm-log .tm-tags li{background:#ffffff0a;border-color:#9fb3ff40;color:#cfd6ea}
+.tm-log .tm-q{margin-top:18px;background:linear-gradient(135deg,#221846,#0f1530);border:1px solid #ffd98a33;border-radius:14px;color:#eef0fa;line-height:1.7;box-shadow:0 0 30px #7c5cff1a}
+.tm-log .tm-q small{color:#ffd98a;letter-spacing:.06em}
+.log-toc{margin-top:24px;padding-top:14px;border-top:1px solid #ffffff14;display:grid;gap:2px}
+.log-toc button{display:grid;grid-template-columns:34px 1fr auto;align-items:center;gap:8px;background:none;border:0;border-radius:9px;color:#8390b4;text-align:left;padding:9px 10px;cursor:pointer;font-size:15px;transition:background .25s,color .25s}
+.log-toc button i{font:600 12px 'Barlow Condensed',sans-serif;letter-spacing:.15em;font-style:normal;color:#5f6b92}
+.log-toc button.read{color:#c3cae0}
+.log-toc button.read::after{content:'·';color:#8fa3ff}
+.log-toc button:hover{background:#ffffff08;color:#fff}
+.log-toc button[aria-current=true]{background:#ffffff10;color:#fff}
+.log-toc button[aria-current=true] i{color:#ffd98a}
+.log-toc button[aria-current=true]::after{content:'✦';color:#ffd98a;text-shadow:0 0 10px #ffd98a}
+
+/* 右頁：一次一章 */
+.log-right{display:flex;padding:clamp(28px,3.6vw,54px) clamp(22px,4vw,60px) 30px;perspective:1800px;min-height:640px}
+#log-page{flex:1;display:flex;flex-direction:column;min-width:0;transform-origin:left center}
+#log-page.turn-f{animation:log-page-f .75s cubic-bezier(.2,.7,.2,1)}
+#log-page.turn-b{animation:log-page-b .75s cubic-bezier(.2,.7,.2,1)}
+@keyframes log-page-f{from{opacity:0;transform:rotateY(-26deg) translateX(40px);filter:blur(7px)}}
+@keyframes log-page-b{from{opacity:0;transform:rotateY(20deg) translateX(-40px);filter:blur(7px)}}
+.log-ch{display:flex;justify-content:space-between;gap:12px;font:600 12px/1 'Barlow Condensed',sans-serif;letter-spacing:.3em;color:#8fa3ff}
+.log-meter{height:1px;background:#ffffff14;margin:14px 0 26px;position:relative}
+.log-meter i{position:absolute;left:0;top:-1px;height:3px;border-radius:3px;background:linear-gradient(90deg,#9fb3ff,#ffd98a);box-shadow:0 0 12px #ffd98a88;transition:width .6s}
+#log-page h3{margin:0 0 22px;font:700 clamp(28px,3vw,38px)/1.3 'Noto Serif TC',serif;color:#fff;letter-spacing:.02em}
+.log-body{font-family:'Noto Serif TC','Songti TC',serif;color:#dde2ef}
+.log-body>p{margin:0;font-size:clamp(16px,1.25vw,18px);line-height:2.15;max-width:36em;text-align:justify}
+.log-drop::first-letter{float:left;font:700 3.3em/1 'Noto Serif TC',serif;margin:.08em .14em 0 0;color:#ffd98a;text-shadow:0 0 20px #ffcf7a80}
+.log-hint{margin:-8px 0 18px!important;font:14px 'Noto Sans TC',sans-serif!important;color:#8fa3ff}
+.tm-log .tm-cards{grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+.tm-log .tm-flip{min-height:250px;font-family:'Noto Sans TC',sans-serif}
+.tm-log .tm-flip>div{border-radius:16px;padding:18px}
+.tm-log .tm-flip .f{background:radial-gradient(circle at 80% 15%,#ffd98a1c,#0000 40%),linear-gradient(160deg,#18224e,#0b0f22);border:1px solid #9fb3ff33;color:#eef1fa;box-shadow:inset 0 0 40px #5b6cff1c;transition:border-color .3s,box-shadow .3s}
+.tm-log .tm-flip:hover .f{border-color:#ffd98a88;box-shadow:inset 0 0 40px #5b6cff1c,0 0 34px #ffd98a24}
+.tm-log .tm-flip .f em{color:#ffd98a;font-size:50px;text-shadow:0 0 22px #ffcf7a66}
+.tm-log .tm-flip .f b{font-family:'Noto Serif TC',serif;font-size:19px}
+.tm-log .tm-flip .f small{color:#8f9bc0}
+.tm-log .tm-flip .b{background:linear-gradient(160deg,#2b1744,#0e1024);border:1px solid #d08cff38;color:#ece8f6;font-size:15px;line-height:1.7}
+.tm-log .tm-flip .b strong{color:#ffd98a;margin-top:auto}
+.log-works{list-style:none;margin:0;padding:0 0 0 30px;position:relative}
+.log-works::before{content:'';position:absolute;left:7px;top:10px;bottom:10px;width:1px;background:linear-gradient(#ffd98a,#9fb3ff 60%,#0000)}
+.log-works li{position:relative;padding:0 0 30px;animation:log-fade .7s both}
+.log-works li:nth-child(2){animation-delay:.12s}.log-works li:nth-child(3){animation-delay:.24s}
+.log-works li::before{content:'';position:absolute;left:-27px;top:9px;width:9px;height:9px;border-radius:50%;background:#ffd98a;box-shadow:0 0 0 4px #ffd98a22,0 0 16px #ffd98a}
+.log-works .wy{font:700 21px 'Barlow Condensed',sans-serif;color:#ffd98a;letter-spacing:.04em}
+.log-works b{display:block;font-size:20px;line-height:1.5;color:#fff;margin:2px 0 4px}
+.log-works p{margin:0;color:#c3c9da;font-size:16px;line-height:2;max-width:36em}
+.tm-log .tm-vs{margin-top:26px;background:#ffffff08;border:1px solid #9fb3ff33;border-radius:16px;color:#dde2ef;padding:20px 22px;line-height:1.95}
+.tm-log .tm-vs b{color:#ffd98a}
+.tm-log .tm-vs p{margin:6px 0 0}
+.tm-log .tm-vs button{color:#9fc0ff;font-family:'Noto Sans TC',sans-serif}
+.tm-log .tm-src{font-family:'Noto Sans TC',sans-serif;line-height:1.9}
+.tm-log .tm-src a{color:#9fc0ff}
+.tm-log .tm-note{background:#3a2a0a;color:#ffd98a;border:1px solid #ffd98a33}
+.log-turn{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:auto;padding-top:38px;font-family:'Noto Sans TC',sans-serif}
+.log-turn button{background:#ffffff06;border:1px solid #9fb3ff30;color:#eef1fa;border-radius:12px;padding:13px 16px;text-align:left;cursor:pointer;font-size:15px;transition:border-color .25s,background .25s,box-shadow .25s}
+.log-turn button small{display:block;color:#8fa3ff;font-size:11px;letter-spacing:.14em;margin-bottom:3px}
+.log-turn .nx{grid-column:2;text-align:right}
+.log-turn button:hover{border-color:#ffd98a88;background:#ffd98a0d;box-shadow:0 0 26px #ffd98a1c}
+.log-turn .warp{background:linear-gradient(90deg,#3b2a70,#17234f);border-color:#ffd98a66;animation:log-pulse 2.6s ease-in-out infinite}
+@keyframes log-pulse{50%{box-shadow:0 0 30px #ffd98a33}}
+.log-folio{margin-top:18px;text-align:center;color:#56618a;font:12px 'Noto Serif TC',serif;letter-spacing:.22em}
+
+@media(max-width:900px){
+.log-book{grid-template-columns:minmax(0,1fr)}.log-spine{display:none}
+.log-left{position:static;border-bottom:1px solid #ffffff12}
+.log-portrait{width:min(170px,50%)}
+.log-toc{display:flex;overflow-x:auto;gap:6px;padding-bottom:4px}
+.log-toc button{flex:0 0 auto;grid-template-columns:auto auto auto;border:1px solid #ffffff14}
+.log-right{min-height:0}
+}
+.log-ch span:last-child{white-space:nowrap}
+@media(max-width:520px){.log-ch{letter-spacing:.16em}.tm-log .tm-flip{min-height:210px}.log-turn{grid-template-columns:1fr}.log-turn .nx{grid-column:1}.log-body>p{text-align:left}}
+@media(prefers-reduced-motion:reduce){.tm-log::before,.log-yr,.log-portrait .orbit,.log-turn .warp{animation:none!important}#log-page.turn-f,#log-page.turn-b{animation:none}}
 </style>
 </head><body><header><a class="logo" href="./">LABEL ATLAS<span>®</span></a><nav><button id="home">探索品牌</button><button id="saved">我的收藏 <span id="count">0</span></button><a class="nav-history" href="#fashion-history">服裝歷史</a><a href="#time-machine" class="nav-time-machine">時尚時光機</a><button id="library-header-link" data-enter-library>品牌圖書館</button></nav><button id="account-button" class="account-trigger">登入 / 個人收藏</button><label class="language-control">◎ <select id="language" aria-label="Language / 語言"><option value="zh-Hant">繁體中文</option><option value="en">English</option><option value="ja">日本語</option></select></label></header><div id="language-note" class="language-note" role="status" aria-live="polite"></div><section id="account-panel" class="account-panel" hidden aria-label="個人帳號"><button id="account-close" class="account-close" aria-label="關閉帳號面板">×</button><span class="mini">YOUR PRIVATE READING ROOM</span><h2 id="account-name">你的個人閱讀室</h2><p id="account-description"></p><a id="account-signin" class="account-primary" href="/signin-with-chatgpt?return_to=%2F" target="_top">使用 ChatGPT 登入 ↗</a><button id="account-import" class="account-secondary" hidden>匯入此瀏覽器的訪客紀錄</button><button id="account-retry" class="account-secondary" hidden>重試同步</button><p id="account-sync-status" role="status" aria-live="polite"></p><a id="account-signout" href="/signout-with-chatgpt?return_to=%2F" target="_top" hidden>登出帳號 ↗</a></section>
 <div class="atlas-shell">
@@ -1740,20 +1847,85 @@ function renderRail(){
   const el=$(`#tm-rail [data-i="${planned}"]`)||$(`#tm-rail [data-i="${cur}"]`);
   if(el)requestAnimationFrame(()=>{const r=$('#tm-rail');r.scrollTo({left:el.offsetLeft-r.clientWidth/2+el.clientWidth/2});tilt()});
 }
+/* ===== 航行日誌 COSMIC LOG：宇宙書頁版 =====
+   左頁：年份、人物、星圖肖像、問題、章節目錄；右頁：一次一章，像翻書一樣閱讀。
+   肖像：在 TM_CASES 某一站加上 portrait:{src:'圖片網址',credit:'攝影／典藏',url:'來源頁'} 就會顯示照片，沒有則顯示依姓名生成的星圖。 */
+const LOG_CH=[['I','時代背景','CONTEXT'],['II','人物與品牌','THE PERSON'],['III','辨識特色','HOW TO SPOT IT'],['IV','代表作','KEY WORKS'],['V','影響與對照','LEGACY'],['VI','文獻與出處','SOURCES']];
+let logPage=0,logCase=-1,logSky=null,logRead=new Set();
+function logMonogram(c){
+  const ini=c.person.replace(/（.*?）|\(.*?\)/g,'').trim().split(/\s+/).filter(Boolean).map(w=>w[0]).join('').slice(0,2).toUpperCase();
+  let h=7;for(const ch of c.person)h=(h*31+ch.charCodeAt(0))>>>0;const rnd=()=>(h=(h*1664525+1013904223)>>>0)/4294967296;
+  const pts=Array.from({length:8},()=>[24+rnd()*152,24+rnd()*152].map(n=>n.toFixed(1)));
+  const dust=Array.from({length:34},()=>`<circle cx="${(rnd()*200).toFixed(1)}" cy="${(rnd()*200).toFixed(1)}" r="${(rnd()*.9+.2).toFixed(2)}" fill="#dfe8ff" opacity="${(rnd()*.6+.2).toFixed(2)}"/>`).join('');
+  return `<svg viewBox="0 0 200 200" class="log-mono" role="img" aria-label="${esc(c.person)} 星圖肖像"><defs><linearGradient id="lgm${cur}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".5" stop-color="#ffd98a"/><stop offset="1" stop-color="#9fb3ff"/></linearGradient></defs>${dust}<polyline points="${pts.map(p=>p.join(',')).join(' ')}" fill="none" stroke="#9fb3ff" stroke-opacity=".45" stroke-width=".8"/>${pts.map(p=>`<circle cx="${p[0]}" cy="${p[1]}" r="2.2" fill="#ffd98a"/>`).join('')}<text x="100" y="118" text-anchor="middle" font-family="'Noto Serif TC',Georgia,serif" font-size="54" font-weight="700" fill="url(#lgm${cur})">${esc(ini)}</text></svg>`;
+}
+function logNextStop(){const L=list(),k=L.findIndex(o=>o.i===cur);return k>=0?L[(k+1)%L.length].i:(cur+1)%C.length}
 function renderLog(){
   const c=C[cur], vn=((c.contrast.match(/對照\s*([^：:]+)[：:]/)||[])[1]||'').replace('本人','').trim().toLowerCase();
   const vs=vn?C.findIndex(x=>x.person.toLowerCase().includes(vn)||x.house.toLowerCase().includes(vn)||(ALIAS[x.person]||'').toLowerCase().includes(vn)):-1;
-  $('#tm-log').innerHTML=`<aside class="tm-id"><div class="yr">${c.year}</div><h2>${esc(c.person)}</h2><p class="hs">${esc(c.house)} · ${esc(c.city)}</p><div class="ti">${esc(c.title)}</div><ul class="tm-tags">${c.tags.map(t=>`<li>${esc(t)}</li>`).join('')}</ul><div class="tm-q"><small>帶著這個問題看下一站</small>${esc(c.question)}</div></aside>
-  <div>
-   <div class="tm-sec"><h3>時代背景</h3><p>${esc(c.context)}</p></div>
-   <div class="tm-sec"><h3>人物與品牌</h3><p>${esc(c.bio)}</p></div>
-   <div class="tm-sec"><h3>辨識特色 <small style="font-weight:400;color:var(--muted);font-size:14px">點卡片翻面</small></h3><div class="tm-cards">${c.features.map((x,i)=>`<button class="tm-flip" aria-pressed="false"><div class="f"><em>${i+1}</em><b>${esc(x.name)}</b><small>翻面看說明 ⟲</small></div><div class="b">${esc(x.desc)}<strong>辨識關鍵：${esc(x.clue)}</strong></div></button>`).join('')}</div></div>
-   <div class="tm-sec tm-two"><div><h3>代表作</h3><ul class="tm-works">${c.works.map(w=>`<li><span class="wy">${esc(w.year)}</span><b>${esc(w.name)}</b><span>${esc(w.note)}</span></li>`).join('')}</ul></div>
-   <div><h3>影響</h3><p>${esc(c.legacy)}</p><div class="tm-vs" style="margin-top:14px"><b>跟誰不一樣？</b><p>${esc(c.contrast)}</p>${vs>=0&&vs!==cur?`<button data-vs="${vs}">設定目的地：${C[vs].year} ${esc(C[vs].person)} →</button>`:''}</div></div></div>
-   <div class="tm-sec"><h3>文獻與出處</h3><ol class="tm-src">${c.sources.map(s=>`<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a></li>`).join('')}</ol>${c.note?`<div class="tm-note">查證更正：${esc(c.note)}</div>`:''}</div>
+  if(logCase!==cur){logPage=0;logCase=cur;logRead=new Set([0])}
+  const pr=c.portrait;
+  const face=pr?`<img src="${esc(pr.src)}" alt="${esc(c.person)} 肖像" loading="lazy">`:logMonogram(c);
+  $('#tm-log').innerHTML=`<div class="log-book">
+   <aside class="log-left">
+    <span class="log-kicker">FLIGHT LOG · 航行日誌</span>
+    <div class="log-yr">${c.year}</div>
+    <h2>${esc(c.person)}</h2><p class="hs">${esc(c.house)} · ${esc(c.city)}</p>
+    <figure class="log-portrait"><div class="ring"><span class="orbit"><i></i></span><span class="orbit o2"><i></i></span><div class="face">${face}</div></div><figcaption>${pr?esc(pr.credit||'')+(pr.url?` <a href="${esc(pr.url)}" target="_blank" rel="noopener">來源 ↗</a>`:''):'星圖肖像 · 依姓名生成'}</figcaption></figure>
+    <div class="ti">${esc(c.title)}</div>
+    <ul class="tm-tags">${c.tags.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>
+    <div class="tm-q"><small>帶著這個問題閱讀</small>${esc(c.question)}</div>
+    <nav class="log-toc" aria-label="本站章節">${LOG_CH.map((ch,i)=>`<button data-page="${i}"><i>${ch[0]}</i><span>${ch[1]}</span></button>`).join('')}</nav>
+   </aside>
+   <div class="log-spine" aria-hidden="true"></div>
+   <article class="log-right"><div id="log-page" aria-live="polite"></div></article>
   </div>`;
-  $('#tm-log').querySelectorAll('.tm-flip').forEach(b=>b.onclick=()=>{b.classList.toggle('on');b.setAttribute('aria-pressed',b.classList.contains('on'))});
-  const v=$('#tm-log [data-vs]'); if(v)v.onclick=()=>{plan(+v.dataset.vs);$('#tm-car').scrollIntoView({behavior:reduce.matches?'auto':'smooth'})};
+  drawLogPage(c,vs,0);
+  $('#tm-log').querySelectorAll('[data-page]').forEach(b=>b.onclick=()=>turnLog(+b.dataset.page-logPage));
+  const book=$('#tm-log .log-book');
+  book.onpointermove=e=>{const r=book.getBoundingClientRect();book.style.setProperty('--mx',(e.clientX-r.left)+'px');book.style.setProperty('--my',(e.clientY-r.top)+'px')};
+  $('#tm-log').onkeydown=e=>{if(e.target.closest('input,select,textarea'))return;if(e.key==='ArrowRight'&&logPage<LOG_CH.length-1){e.preventDefault();turnLog(1)}if(e.key==='ArrowLeft'&&logPage>0){e.preventDefault();turnLog(-1)}};
+  initLogSky();
+}
+function turnLog(d){
+  const n=Math.max(0,Math.min(LOG_CH.length-1,logPage+d));if(n===logPage)return;logPage=n;logRead.add(n);
+  const c=C[cur], vn=((c.contrast.match(/對照\s*([^：:]+)[：:]/)||[])[1]||'').replace('本人','').trim().toLowerCase();
+  const vs=vn?C.findIndex(x=>x.person.toLowerCase().includes(vn)||x.house.toLowerCase().includes(vn)||(ALIAS[x.person]||'').toLowerCase().includes(vn)):-1;
+  drawLogPage(c,vs,d);
+  const r=$('#tm-log .log-right').getBoundingClientRect();if(r.top<0||r.top>innerHeight*.6)$('#tm-log .log-right').scrollIntoView({behavior:reduce.matches?'auto':'smooth',block:'start'});
+}
+function drawLogPage(c,vs,dir){
+  const p=logPage,ch=LOG_CH[p],next=logNextStop();let body='';
+  if(p===0)body=`<p class="log-drop">${esc(c.context)}</p>`;
+  if(p===1)body=`<p class="log-drop">${esc(c.bio)}</p>`;
+  if(p===2)body=`<p class="log-hint">點星卡翻面，看說明與辨識關鍵 ⟲</p><div class="tm-cards">${c.features.map((x,i)=>`<button class="tm-flip" aria-pressed="false"><div class="f"><em>${i+1}</em><b>${esc(x.name)}</b><small>翻面看說明 ⟲</small></div><div class="b">${esc(x.desc)}<strong>辨識關鍵：${esc(x.clue)}</strong></div></button>`).join('')}</div>`;
+  if(p===3)body=`<ol class="log-works">${c.works.map(w=>`<li><span class="wy">${esc(w.year)}</span><b>${esc(w.name)}</b><p>${esc(w.note)}</p></li>`).join('')}</ol>`;
+  if(p===4)body=`<p class="log-drop">${esc(c.legacy)}</p><div class="tm-vs"><b>跟誰不一樣？</b><p>${esc(c.contrast)}</p>${vs>=0&&vs!==cur?`<button data-vs="${vs}">設定目的地：${C[vs].year} ${esc(C[vs].person)} →</button>`:''}</div>`;
+  if(p===5)body=`<ol class="tm-src">${c.sources.map(s=>`<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a></li>`).join('')}</ol>${c.note?`<div class="tm-note">查證更正：${esc(c.note)}</div>`:''}`;
+  const prev=p>0?`<button data-turn="-1"><small>← 上一章</small>${LOG_CH[p-1][1]}</button>`:'<span></span>';
+  const nx=p<LOG_CH.length-1?`<button data-turn="1" class="nx"><small>下一章 →</small>${LOG_CH[p+1][1]}</button>`:`<button data-next-stop class="nx warp"><small>前往下一站 →</small>${C[next].year} ${esc(C[next].person)}</button>`;
+  const pg=$('#log-page');
+  pg.innerHTML=`<div class="log-ch"><span>CHAPTER ${ch[0]} · ${ch[2]}</span><span>${p+1} / ${LOG_CH.length}</span></div><div class="log-meter"><i style="width:${(p+1)/LOG_CH.length*100}%"></i></div><h3>${ch[1]}</h3><div class="log-body">${body}</div><div class="log-turn">${prev}${nx}</div><div class="log-folio">— ${c.year} · ${p+1} —</div>`;
+  pg.classList.remove('turn-f','turn-b');if(dir){void pg.offsetWidth;pg.classList.add(dir>0?'turn-f':'turn-b')}
+  $('#tm-log').querySelectorAll('[data-page]').forEach(b=>{const i=+b.dataset.page;b.setAttribute('aria-current',i===p?'true':'false');b.classList.toggle('read',logRead.has(i))});
+  pg.querySelectorAll('.tm-flip').forEach(b=>b.onclick=()=>{b.classList.toggle('on');b.setAttribute('aria-pressed',b.classList.contains('on'))});
+  pg.querySelectorAll('[data-turn]').forEach(b=>b.onclick=()=>turnLog(+b.dataset.turn));
+  const v=pg.querySelector('[data-vs]');if(v)v.onclick=()=>{plan(+v.dataset.vs);$('#tm-car').scrollIntoView({behavior:reduce.matches?'auto':'smooth'})};
+  const ns=pg.querySelector('[data-next-stop]');if(ns)ns.onclick=()=>{plan(next);$('#tm-car').scrollIntoView({behavior:reduce.matches?'auto':'smooth'})};
+}
+function initLogSky(){
+  if(logSky)return;const sec=$('#tm-log').closest('.tm-log');if(!sec)return;
+  const cv=document.createElement('canvas');cv.className='log-sky';cv.setAttribute('aria-hidden','true');sec.prepend(cv);logSky=cv;
+  const ctx=cv.getContext('2d'),stars=Array.from({length:340},()=>({x:Math.random(),y:Math.random(),r:Math.random()*1.3+.2,t:Math.random()*6.28,s:Math.random()*.02+.004,v:Math.random()*.00004+.00001,w:Math.random()<.12}));
+  let W=0,H=0,run=false,raf=0,shoot=null;
+  const size=()=>{const d=Math.min(devicePixelRatio||1,2);W=sec.clientWidth;H=sec.clientHeight;cv.width=W*d;cv.height=H*d;ctx.setTransform(d,0,0,d,0,0)};
+  const draw=()=>{ctx.clearRect(0,0,W,H);for(const s of stars){s.t+=s.s;s.y-=s.v;if(s.y<0){s.y=1;s.x=Math.random()}ctx.globalAlpha=.3+.7*Math.abs(Math.sin(s.t));ctx.fillStyle=s.w?'#ffe2a8':'#dfe8ff';ctx.beginPath();ctx.arc(s.x*W,s.y*H,s.r,0,6.283);ctx.fill()}
+    if(run&&!shoot&&Math.random()<.005)shoot={x:Math.random()*W*.7+W*.05,y:Math.random()*H*.5,l:0};
+    if(shoot){shoot.l+=16;const L=Math.min(shoot.l,170),x1=shoot.x+shoot.l,y1=shoot.y+shoot.l*.42,x0=x1-L,y0=y1-L*.42,g=ctx.createLinearGradient(x1,y1,x0,y0);g.addColorStop(0,'#fff');g.addColorStop(1,'#fff0');ctx.globalAlpha=Math.max(0,1-shoot.l/520);ctx.strokeStyle=g;ctx.lineWidth=1.3;ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x0,y0);ctx.stroke();if(shoot.l>520)shoot=null}
+    ctx.globalAlpha=1;if(run)raf=requestAnimationFrame(draw)};
+  size();draw();
+  new ResizeObserver(()=>{size();if(!run)draw()}).observe(sec);
+  new IntersectionObserver(([e])=>{cancelAnimationFrame(raf);run=e.isIntersecting&&!reduce.matches;if(run)raf=requestAnimationFrame(draw)}).observe(sec);
 }
 function plan(i){if(busy)return;planned=+i;render();status('目的地已設定：'+C[planned].year+' · '+C[planned].person+'。拉下啟動桿出發。')}
 function status(t){$('#tm-status').textContent=t}
