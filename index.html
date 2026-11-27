@@ -1977,12 +1977,26 @@ function drawLogPage(c,vs,dir){
   const visual=visualUrl?`<figure class="log-visual"><img src="${esc(visualUrl)}" alt="${esc(c.person)}：${esc(ch[1])}" loading="lazy"><figcaption>${esc(c.portrait?.credit||c.person+' · '+ch[1])}${c.portrait?.url?` · <a href="${esc(c.portrait.url)}" target="_blank" rel="noopener">影像來源 ↗</a>`:''}</figcaption></figure>`:'';
   const pvisual=(p===0||p===1||p===2||p===3||p===4)?visual:'';
   pg.innerHTML=`<div class="log-ch"><span>CHAPTER ${ch[0]} · ${ch[2]}</span><span>${p+1} / ${LOG_CH.length}</span></div><div class="log-meter"><i style="width:${(p+1)/LOG_CH.length*100}%"></i></div><h3>${ch[1]}</h3><div class="log-body">${body}${pvisual}</div><div class="log-turn">${prev}${nx}</div><div class="log-folio">— ${c.year} · ${p+1} —</div>`;
+  loadChapterImage(c,p);
   pg.classList.remove('turn-f','turn-b');if(dir){void pg.offsetWidth;pg.classList.add(dir>0?'turn-f':'turn-b')}
   $('#tm-log').querySelectorAll('[data-page]').forEach(b=>{const i=+b.dataset.page;b.setAttribute('aria-current',i===p?'true':'false');b.classList.toggle('read',logRead.has(i))});
   pg.querySelectorAll('.tm-flip').forEach(b=>b.onclick=()=>{b.classList.toggle('on');b.setAttribute('aria-pressed',b.classList.contains('on'))});
   pg.querySelectorAll('[data-turn]').forEach(b=>b.onclick=()=>turnLog(+b.dataset.turn));
   const v=pg.querySelector('[data-vs]');if(v)v.onclick=()=>{plan(+v.dataset.vs);$('#tm-car').scrollIntoView({behavior:reduce.matches?'auto':'smooth'})};
   const ns=pg.querySelector('[data-next-stop]');if(ns)ns.onclick=()=>{plan(next);$('#tm-car').scrollIntoView({behavior:reduce.matches?'auto':'smooth'})};
+}
+async function loadChapterImage(c,p){
+  const caseId=cur, pageId=logPage;
+  const terms=p===0?`${c.person} ${c.year} fashion history`:p===1?`${c.person} fashion designer`:p===2?`${c.person} ${c.features[0]?.name||'fashion design'}`:p===3?`${c.person} ${c.works[0]?.name||c.house} fashion`:p===4?`${c.person} fashion influence`:`${c.person} fashion archive`;
+  try{
+    const api='https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch='+encodeURIComponent(terms)+'&gsrnamespace=6&gsrlimit=5&prop=imageinfo&iiprop=url&iiurlwidth=1200&format=json&origin=*';
+    const res=await fetch(api,{signal:AbortSignal.timeout(9000)});if(!res.ok)return;const data=await res.json();
+    const file=Object.values(data.query?.pages||{}).find(x=>x.imageinfo?.[0]?.thumburl);
+    if(!file||caseId!==cur||pageId!==logPage)return;
+    const info=file.imageinfo[0],page=$('#log-page .log-body');if(!page)return;
+    let figure=page.querySelector('.log-visual');if(!figure){figure=document.createElement('figure');figure.className='log-visual';page.append(figure)}
+    figure.innerHTML=`<img src="${esc(info.thumburl)}" alt="${esc(file.title.replace(/^File:/,''))}" loading="lazy"><figcaption>${esc(file.title.replace(/^File:/,''))} · Wikimedia Commons <a href="${esc(info.descriptionurl||'https://commons.wikimedia.org/wiki/'+encodeURIComponent(file.title.replaceAll(' ','_')))}" target="_blank" rel="noopener">影像來源 ↗</a></figcaption>`;
+  }catch{}
 }
 function initLogSky(){
   if(logSky)return;const sec=$('#tm-log').closest('.tm-log');if(!sec)return;
