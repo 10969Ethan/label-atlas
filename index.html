@@ -337,7 +337,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 .tm-top{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:end;justify-content:space-between;padding:clamp(20px,3vw,36px) max(4vw,16px) 12px;max-width:1320px;margin:auto}
 #tm .tm-top .tm-h{margin:0;font:900 clamp(30px,4.4vw,48px)/1.05 'Noto Sans TC',sans-serif;letter-spacing:-.02em}
 .tm-top p{margin:6px 0 0;color:#aab7bf;max-width:46ch}
-.tm-top-controls{display:grid;grid-template-columns:minmax(220px,1fr);width:min(270px,36%);gap:8px;align-items:end;flex:none}
+.tm-top-controls{display:grid;grid-template-columns:minmax(220px,1fr);width:min(310px,40%);gap:8px;align-items:end;flex:none}
 .tm-route{display:grid;gap:4px}
 .tm-route .tm-sel{width:100%;min-width:0}
 .tm-route label{font-size:14px;color:#aab7bf}
@@ -361,7 +361,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 .tm-stagewrap:active{cursor:grabbing}
 .tm-stage{position:relative;height:100%;aspect-ratio:200/360;transform-style:preserve-3d;transform:scale(var(--z,1)) rotateY(var(--rot,0deg));transition:transform .45s cubic-bezier(.2,.7,.2,1)}
 .tm-stage.drag{transition:none}
-.tm-face{position:absolute;inset:0;backface-visibility:hidden;display:grid;place-items:center}
+.tm-face{position:absolute;inset:0;-webkit-backface-visibility:hidden;backface-visibility:hidden;display:grid;place-items:center}
 .tm-face svg,.tm-face img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 18px 14px #0008)}
 .tm-face.back{transform:rotateY(180deg);padding:8% 6%;text-align:center}
 .tm-back{background:#0e1418e6;border:1px solid var(--edge);border-radius:14px;padding:14px;font-size:14px;line-height:1.5}
@@ -404,12 +404,13 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 .tm-switch b::after{content:"";position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:var(--green);transition:left .2s}
 .tm-switch[aria-pressed=true] b::after{left:23px;background:var(--amber)}
 .tm-status{font-size:14px;color:#9aa7ae;min-height:1.6em;margin:0}
-.tm-railw{max-width:1320px;margin:auto;padding:0 max(4vw,16px) 28px;display:grid;grid-template-columns:44px minmax(0,1fr) 44px;gap:8px;align-items:center}
-.tm-rail{position:relative;display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:18px 40%;perspective:700px;scrollbar-width:none}
+.tm-railw{width:100%;display:grid;grid-template-columns:32px minmax(0,1fr) 32px;gap:4px;align-items:center;overflow:hidden;padding:2px 0 0}
+.tm-railw>.tm-ico{width:32px;height:38px;border-radius:9px;font-size:18px}
+.tm-rail{position:relative;display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding:8px 34%;perspective:700px;scrollbar-width:none;overscroll-behavior-inline:contain}
 .tm-rail::-webkit-scrollbar{display:none}
-.tm-stop{flex:none;scroll-snap-align:center;width:128px;min-height:92px;border-radius:14px;border:1px solid var(--edge);background:linear-gradient(180deg,#1b252b,#11181c);cursor:pointer;text-align:left;padding:10px 12px;transform:rotateY(var(--ty,0deg)) scale(var(--ts,1));transition:transform .15s,border-color .2s}
-.tm-stop span{display:block;font:700 28px/1 'Barlow Condensed',sans-serif;color:var(--amber)}
-.tm-stop strong{display:block;font-size:14px;line-height:1.3;margin-top:6px}
+.tm-stop{flex:none;scroll-snap-align:center;width:108px;min-height:66px;border-radius:11px;border:1px solid var(--edge);background:linear-gradient(180deg,#1b252b,#11181c);cursor:pointer;text-align:left;padding:7px 9px;transform:rotateY(var(--ty,0deg)) scale(var(--ts,1));transition:transform .15s,border-color .2s}
+.tm-stop span{display:block;font:700 23px/1 'Barlow Condensed',sans-serif;color:var(--amber)}
+.tm-stop strong{display:block;font-size:12px;line-height:1.25;margin-top:4px}
 .tm-stop[aria-current=location]{border-color:var(--green);box-shadow:0 0 0 2px #5ef0b055}
 .tm-stop[aria-pressed=true] span{color:var(--red)}
 .tm-log{background:var(--paper);color:var(--ink)}
@@ -646,7 +647,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 #log-page h3{margin:0 0 22px;font:700 clamp(28px,3vw,38px)/1.3 'Noto Serif TC',serif;color:#fff;letter-spacing:.02em}
 .log-body{font-family:'Noto Serif TC','Songti TC',serif;color:#dde2ef}
 .log-body>p{margin:0;font-size:clamp(16px,1.25vw,18px);line-height:2.15;max-width:36em;text-align:justify}
-.log-drop::first-letter{float:left;font:700 3.3em/1 'Noto Serif TC',serif;margin:.08em .14em 0 0;color:#ffd98a;text-shadow:0 0 20px #ffcf7a80}
+.log-drop::first-letter{float:none;font:inherit;margin:0;color:inherit;text-shadow:none}
 .log-hint{margin:-8px 0 18px!important;font:14px 'Noto Sans TC',sans-serif!important;color:#8fa3ff}
 .tm-log .tm-cards{grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
 .tm-log .tm-flip{min-height:250px;font-family:'Noto Sans TC',sans-serif}
@@ -698,6 +699,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 .log-shortcuts button[aria-current=true]{border-color:#ffd98a;color:#fff;background:#25203a;box-shadow:0 0 16px #ffd98a22}
 .log-visual{margin:22px 0 0;max-width:700px;border:1px solid #9fb3ff2b;background:#080d1c;border-radius:12px;overflow:hidden}
 .log-visual img{display:block;width:100%;height:clamp(170px,25vh,300px);object-fit:cover}
+.log-visual.log-person-art img{height:clamp(220px,34vh,380px);object-fit:contain;object-position:center top;background:#080d1c}
 .log-visual>svg{display:block;width:100%;height:190px}
 .log-visual figcaption{padding:8px 12px;color:#929dbd;font:11px/1.6 'Noto Sans TC',sans-serif}
 .log-visual figcaption a{color:#a9bcff}
@@ -753,6 +755,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 #tm .log-body>p{font-size:15px;line-height:1.9}
 #tm .log-visual{margin-top:14px}
 #tm .log-visual img{height:clamp(110px,17vh,190px)}
+#tm .log-visual.log-person-art img{height:clamp(200px,30vh,320px);object-fit:contain;object-position:center top}
 #tm .log-visual svg{display:block;width:100%;height:clamp(110px,17vh,190px)}
 #tm .log-visual figcaption{padding:6px 10px;font-size:9px}
 #tm .log-folio{margin-top:8px}
@@ -821,6 +824,11 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       <div class="tm-route">
         <label for="tm-dest">直接選擇設計師</label>
         <select class="tm-sel" id="tm-dest"></select>
+      </div>
+      <div class="tm-railw" aria-label="旋轉瀏覽設計師年代">
+        <button class="tm-ico" id="tm-rl" aria-label="上一位設計師">‹</button>
+        <nav class="tm-rail" id="tm-rail" aria-label="設計師年代輪播"></nav>
+        <button class="tm-ico" id="tm-rr" aria-label="下一位設計師">›</button>
       </div>
     </div>
   </div>
@@ -1948,14 +1956,31 @@ function render(){
   const sc=$('#tm-scene'), e=era(c.year);
   sc.dataset.era=e; sc.style.setProperty('--s1',SKY[e][0]); sc.style.setProperty('--s2',SKY[e][1]);
   const f=FIG[c.person];
+  rot=0; zoom=1; setStage();
   $('#tm-front').innerHTML=c.image?`<img src="${esc(c.image)}" alt="${esc(c.caption||c.person)}" referrerpolicy="no-referrer" onerror="this.replaceWith(document.createRange().createContextualFragment(this.dataset.fb))" data-fb="${esc(figure(f))}">`:figure(f);
   $('#tm-backface').innerHTML=`<div class="tm-back"><b>一眼認出 ${esc(c.person)}</b>${c.features.map(x=>esc(x.clue)).join('<br>')}</div>`;
   $('#tm-hud').innerHTML=`<div class="y">${c.year}</div><div class="n">${esc(c.person)}</div><div class="h">${esc(c.house)} · ${esc(c.city)}</div>`;
-  renderLog(); renderDest();
+  renderLog(); renderDest(); renderRail();
 }
 function renderDest(){
   $('#tm-dest').innerHTML=list().map(({c,i})=>`<option value="${i}"${i===planned?' selected':''}>${c.year} · ${esc(c.person)}</option>`).join('');
 }
+function renderRail(){
+  const rail=$('#tm-rail');
+  rail.innerHTML=list().map(({c,i})=>`<button class="tm-stop" data-i="${i}" aria-pressed="${i===planned}"${i===cur?' aria-current="location"':''}><span>${c.year}</span><strong>${esc(c.person)}</strong></button>`).join('');
+  const chosen=rail.querySelector(`[data-i="${planned}"]`)||rail.querySelector(`[data-i="${cur}"]`);
+  if(chosen)requestAnimationFrame(()=>{rail.scrollTo({left:chosen.offsetLeft-rail.clientWidth/2+chosen.clientWidth/2});tilt()});
+}
+function tilt(){
+  const rail=$('#tm-rail'); if(!rail)return;
+  const mid=rail.scrollLeft+rail.clientWidth/2;
+  rail.querySelectorAll('.tm-stop').forEach(el=>{const d=(el.offsetLeft+el.offsetWidth/2-mid)/Math.max(rail.clientWidth/2,1);el.style.setProperty('--ty',`${d*22}deg`);el.style.setProperty('--ts',String(1-Math.min(Math.abs(d)*.16,.22)))});
+}
+$('#tm-rail').addEventListener('scroll',()=>requestAnimationFrame(tilt),{passive:true});
+$('#tm-rail').addEventListener('click',e=>{const b=e.target.closest('.tm-stop');if(b)plan(b.dataset.i)});
+$('#tm-rail').addEventListener('keydown',e=>{if(e.key==='ArrowRight')$('#tm-rail').scrollBy({left:150,behavior:'smooth'});if(e.key==='ArrowLeft')$('#tm-rail').scrollBy({left:-150,behavior:'smooth'})});
+$('#tm-rl').onclick=()=>$('#tm-rail').scrollBy({left:-180,behavior:'smooth'});
+$('#tm-rr').onclick=()=>$('#tm-rail').scrollBy({left:180,behavior:'smooth'});
 /* ===== 航行日誌 COSMIC LOG：宇宙書頁版 =====
    左頁：年份、人物、星圖肖像、問題、章節目錄；右頁：一次一章，像翻書一樣閱讀。
    肖像：在 TM_CASES 某一站加上 portrait:{src:'圖片網址',credit:'攝影／典藏',url:'來源頁'} 就會顯示照片，沒有則顯示依姓名生成的星圖。 */
@@ -2038,7 +2063,7 @@ function drawLogPage(c,vs,dir){
 function chapterVisual(c,vs,p){
   const label=esc(c.person+' · '+LOG_CH[p][1]);
   if(p===0)return `<figure class="log-visual log-context-art"><svg viewBox="0 0 720 250" role="img" aria-label="${label}：年代脈絡圖"><defs><linearGradient id="postwar" x2="1"><stop stop-color="#9fb3ff" stop-opacity=".14"/><stop offset="1" stop-color="#ffd98a" stop-opacity=".2"/></linearGradient></defs><rect width="720" height="250" fill="#0c142b"/><path d="M54 178H666" stroke="#9fb3ff" stroke-opacity=".45"/><path d="M140 178V112M360 178V73M580 178V45" stroke="#ffd98a" stroke-width="3"/><circle cx="140" cy="112" r="7" fill="#9fb3ff"/><circle cx="360" cy="73" r="8" fill="#ffd98a"/><circle cx="580" cy="45" r="7" fill="#ffd98a"/><path d="M140 112Q250 112 360 73T580 45" fill="none" stroke="url(#postwar)" stroke-width="22"/><text x="140" y="212" fill="#aab6d7" text-anchor="middle" font-size="18">時代環境</text><text x="360" y="212" fill="#ffd98a" text-anchor="middle" font-size="18">${esc(c.year)} · ${esc(c.person)}</text><text x="580" y="212" fill="#aab6d7" text-anchor="middle" font-size="18">設計影響</text></svg><figcaption>${label} · 時代脈絡圖</figcaption></figure>`;
-  if(p===1)return c.portrait?.src?`<figure class="log-visual"><img src="${esc(c.portrait.src)}" alt="${label}" loading="lazy"><figcaption>${esc(c.portrait.credit||c.person)}${c.portrait.url?` · <a href="${esc(c.portrait.url)}" target="_blank" rel="noopener">人物影像來源 ↗</a>`:''}</figcaption></figure>`:`<figure class="log-visual log-bio-art"><div class="log-placeholder">${esc(c.person)}<small>${esc(c.year)} · DESIGNER PROFILE</small></div><figcaption>人物肖像載入中 · Wikipedia</figcaption></figure>`;
+  if(p===1)return c.portrait?.src?`<figure class="log-visual log-person-art"><img src="${esc(c.portrait.src)}" alt="${label}" loading="lazy"><figcaption>${esc(c.portrait.credit||c.person)}${c.portrait.url?` · <a href="${esc(c.portrait.url)}" target="_blank" rel="noopener">人物影像來源 ↗</a>`:''}</figcaption></figure>`:`<figure class="log-visual log-bio-art"><div class="log-placeholder">${esc(c.person)}<small>${esc(c.year)} · DESIGNER PROFILE</small></div><figcaption>人物肖像載入中 · Wikipedia</figcaption></figure>`;
   if(p===2)return `<figure class="log-visual log-silhouette">${figure(FIG[c.person])}<figcaption>${label} · 本站設計輪廓示意，非歷史實物</figcaption></figure>`;
   if(p===3)return c.image?`<figure class="log-visual"><img src="${esc(c.image)}" alt="${esc(c.caption||label)}" loading="lazy"><figcaption>${esc(c.caption||label)}${c.imageSource?` · <a href="${esc(c.imageSource)}" target="_blank" rel="noopener">典藏影像來源 ↗</a>`:''}</figcaption></figure>`:`<figure class="log-visual log-work-art"><div class="log-placeholder">${esc(c.works[0]?.name||c.title)}<small>${esc(c.works[0]?.year||c.year)} · KEY WORK</small></div><figcaption>${label} · 代表作索引卡</figcaption></figure>`;
   if(p===4){const other=vs>=0&&vs!==cur?C[vs]:null;return other?.image?`<figure class="log-visual"><img src="${esc(other.image)}" alt="${esc(other.caption||other.person)}" loading="lazy"><figcaption>${esc(other.caption||other.person)} · 對照作品${other.imageSource?` · <a href="${esc(other.imageSource)}" target="_blank" rel="noopener">影像來源 ↗</a>`:''}</figcaption></figure>`:`<figure class="log-visual log-silhouette">${figure(FIG[c.person])}<figcaption>${label} · 設計脈絡示意圖</figcaption></figure>`;}
