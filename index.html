@@ -337,7 +337,10 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 .tm-top{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:end;justify-content:space-between;padding:clamp(20px,3vw,36px) max(4vw,16px) 12px;max-width:1320px;margin:auto}
 #tm .tm-top .tm-h{margin:0;font:900 clamp(30px,4.4vw,48px)/1.05 'Noto Sans TC',sans-serif;letter-spacing:-.02em}
 .tm-top p{margin:6px 0 0;color:#aab7bf;max-width:46ch}
+.tm-top-controls{display:grid;grid-template-columns:repeat(2,minmax(200px,1fr));gap:10px;align-items:end}
 .tm-route{display:grid;gap:4px}
+.tm-route .tm-sel{width:100%;min-width:0}
+.tm-cap{background:#090e14d9;padding:4px 8px;border-radius:8px}
 .tm-route label{font-size:14px;color:#aab7bf}
 .tm-sel,.tm-in{height:46px;border-radius:10px;border:1px solid var(--edge);background:#141c21;padding:0 12px;font-size:16px}
 .tm-sel:focus-visible,.tm-in:focus-visible,#tm button:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
@@ -637,7 +640,11 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 #log-page.turn-b{animation:log-page-b .75s cubic-bezier(.2,.7,.2,1)}
 @keyframes log-page-f{from{opacity:0;transform:rotateY(-26deg) translateX(40px);filter:blur(7px)}}
 @keyframes log-page-b{from{opacity:0;transform:rotateY(20deg) translateX(-40px);filter:blur(7px)}}
-.log-ch{display:flex;justify-content:space-between;gap:12px;font:600 12px/1 'Barlow Condensed',sans-serif;letter-spacing:.3em;color:#8fa3ff}
+.log-ch{display:flex;justify-content:space-between;align-items:center;gap:12px;font:600 12px/1 'Barlow Condensed',sans-serif;letter-spacing:.3em;color:#8fa3ff}
+.log-ch-actions{display:flex;align-items:center;gap:10px;flex:none}
+.log-rocket{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:34px;padding:5px 10px;border:1px solid #ffd98a55;border-radius:999px;background:#171d34;color:#fff;cursor:pointer;font:600 11px/1.2 'Noto Sans TC',sans-serif;letter-spacing:0;white-space:nowrap}
+.log-rocket:hover{background:#25203a;border-color:#ffd98a}
+.log-rocket-icon{font-size:16px;line-height:1}
 .log-meter{height:1px;background:#ffffff14;margin:14px 0 26px;position:relative}
 .log-meter i{position:absolute;left:0;top:-1px;height:3px;border-radius:3px;background:linear-gradient(90deg,#9fb3ff,#ffd98a);box-shadow:0 0 12px #ffd98a88;transition:width .6s}
 #log-page h3{margin:0 0 22px;font:700 clamp(28px,3vw,38px)/1.3 'Noto Serif TC',serif;color:#fff;letter-spacing:.02em}
@@ -705,7 +712,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 .log-portrait .face img{width:100%;height:100%;object-fit:cover;border-radius:50%}
 @media(min-width:960px){
 #tm .tm-workspace{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);grid-template-rows:minmax(0,1fr);gap:clamp(14px,1.8vw,26px);height:clamp(560px,calc(100svh - 255px),900px);padding:0 max(2vw,18px) 18px;align-items:stretch}
-#tm .tm-control-column{display:grid;grid-template-rows:minmax(0,1fr) 92px;gap:8px;min-width:0;min-height:0}
+#tm .tm-control-column{display:block;min-width:0;min-height:0}
 #tm .tm-car{height:100%;min-height:0;padding:0;margin:0;max-width:none}
 #tm .tm-cabin{height:100%;padding:10px;display:flex;flex-direction:column;gap:8px;border-radius:20px}
 #tm .tm-shield{height:clamp(210px,31vh,360px);min-height:0;flex:0 0 auto;aspect-ratio:auto;border-radius:34% 34% 10px 10px/18% 18% 10px 10px}
@@ -713,6 +720,8 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 #tm .tm-panel{padding:8px;border-radius:12px}
 #tm .tm-row{padding:6px 7px;gap:5px}
 #tm .tm-row .who{font-size:12px}
+#tm .tm-row{align-items:start}
+#tm .tm-row .who{white-space:normal;overflow:visible;text-overflow:clip;overflow-wrap:anywhere;line-height:1.25}
 #tm .tm-row small,.tm-gauge .lbl{font-size:11px}
 #tm .tm-gauge svg{max-height:120px}
 #tm .tm-ctrls{gap:6px}
@@ -726,37 +735,34 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 #tm .tm-switch b::after{width:12px;height:12px}
 #tm .tm-switch[aria-pressed=true] b::after{left:19px}
 #tm .tm-status{font-size:10px;min-height:1em}
-#tm .tm-railw{height:92px;padding:0;grid-template-columns:34px minmax(0,1fr) 34px;gap:5px;overflow:hidden}
-#tm .tm-rail{padding:8px 24%;gap:8px}
-#tm .tm-stop{width:108px;min-height:72px;padding:8px}
-#tm .tm-stop span{font-size:23px}
-#tm .tm-stop strong{font-size:11px}
+#tm .tm-hud{max-width:42%;left:5%;top:12%}
+#tm .tm-hud .y{font-size:clamp(42px,5vw,76px)}
+#tm .tm-hud .n{font-size:clamp(14px,1.4vw,20px);overflow-wrap:anywhere}
 #tm .tm-log{height:100%;min-height:0;overflow:hidden;border-radius:18px;background:transparent}
 #tm .tm-log .tm-login{height:100%;max-width:none;padding:0}
 #tm .log-book{height:100%;grid-template-columns:minmax(210px,.8fr) 14px minmax(0,1.2fr);overflow:hidden;border-radius:18px}
-#tm .log-left{position:relative;top:auto;align-self:stretch;overflow-y:auto;padding:14px}
+#tm .log-left{position:relative;top:auto;align-self:stretch;overflow:hidden;padding:12px}
 #tm .log-yr{font-size:clamp(62px,6vw,92px)}
-#tm .log-left h2{font-size:clamp(24px,2.2vw,32px)}
-#tm .log-portrait{width:min(128px,55%);margin:10px auto 6px}
-#tm .log-portrait figcaption{margin-top:16px;font-size:9px}
+#tm .log-left h2{font-size:clamp(21px,1.9vw,28px);overflow-wrap:anywhere}
+#tm .log-portrait{width:min(104px,48%);margin:8px auto 4px}
+#tm .log-portrait figcaption{margin-top:6px;font-size:9px}
 #tm .tm-log .ti{font-size:16px;margin:8px 0}
 #tm .tm-q{margin-top:10px;padding:10px 12px;font-size:12px}
 #tm .log-right{height:100%;min-height:0;overflow:hidden;padding:12px 16px;}
-#tm .log-shortcuts{position:static;flex-wrap:nowrap;gap:5px;padding:2px 0 8px}
-#tm .log-shortcuts button{padding:6px 9px;font-size:10px}
 #tm #log-page{min-height:0;overflow-y:auto;padding-right:4px}
+#tm .log-ch{display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
+#tm .log-ch>span:first-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#tm .log-ch-actions{display:flex;align-items:center;gap:10px;flex:none}
 #tm #log-page h3{margin-bottom:12px}
 #tm .log-body>p{font-size:15px;line-height:1.9}
 #tm .log-visual{margin-top:14px}
 #tm .log-visual img{height:clamp(110px,17vh,190px)}
 #tm .log-visual svg{display:block;width:100%;height:clamp(110px,17vh,190px)}
 #tm .log-visual figcaption{padding:6px 10px;font-size:9px}
-#tm .log-turn{padding-top:16px;gap:8px}
-#tm .log-turn button{padding:9px 11px;font-size:12px}
 #tm .log-folio{margin-top:8px}
 #tm .tm-foot{padding:4px 2vw 14px;font-size:10px}
 }
-@media(max-width:959px){#tm .tm-workspace{display:flex;flex-direction:column;gap:0;height:auto;padding:0}.tm-control-column{display:contents}.tm-log{width:100%}.tm-login{padding:24px 16px}.log-shortcuts{position:sticky;top:0}}
+@media(max-width:959px){#tm .tm-workspace{display:flex;flex-direction:column;gap:0;height:auto;padding:0}.tm-control-column{display:contents}.tm-top-controls{width:100%;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}.tm-log{width:100%}.tm-login{padding:24px 16px}.log-shortcuts{position:sticky;top:0}}
 @media(max-width:520px){.log-ch{letter-spacing:.16em}.tm-log .tm-flip{min-height:210px}.log-turn{grid-template-columns:1fr}.log-turn .nx{grid-column:1}.log-body>p{text-align:left}}
 @media(prefers-reduced-motion:reduce){.tm-log::before,.log-yr,.log-portrait .orbit,.log-turn .warp{animation:none!important}#log-page.turn-f,#log-page.turn-b{animation:none}}
 /* 主理人與作品 / image-led editorial profile */
@@ -811,9 +817,15 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       <h2 class="tm-h">坐上時光車，穿越時尚。</h2>
       <p>選一個年代，拉下啟動桿。窗外是那個時代最具代表性的衣服輪廓，下方航行日誌是你需要知道的歷史。</p>
     </div>
-    <div class="tm-route">
-      <label for="tm-route">閱讀路線</label>
-      <select class="tm-sel" id="tm-route"></select>
+    <div class="tm-top-controls">
+      <div class="tm-route">
+        <label for="tm-route">閱讀路線</label>
+        <select class="tm-sel" id="tm-route"></select>
+      </div>
+      <div class="tm-route">
+        <label for="tm-dest">直接選擇設計師</label>
+        <select class="tm-sel" id="tm-dest"></select>
+      </div>
     </div>
   </div>
 
@@ -855,12 +867,6 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
             <input class="tm-in" id="tm-q" type="search" autocomplete="off" placeholder="例如：川久保玲、尼龍、解構" style="width:100%">
             <ul class="tm-res" id="tm-res" hidden></ul>
           </div>
-          <label for="tm-dest">目的航站</label>
-          <div class="tm-go">
-            <button class="tm-ico" id="tm-prev" aria-label="上一站">‹</button>
-            <select class="tm-sel" id="tm-dest"></select>
-            <button class="tm-ico" id="tm-next" aria-label="下一站">›</button>
-          </div>
           <button class="tm-lever" id="tm-launch">拉下啟動桿<i></i></button>
           <button class="tm-switch" id="tm-motion" aria-pressed="false"><b></b><span>減少轉場動態</span></button>
           <p class="tm-status" id="tm-status" aria-live="polite"></p>
@@ -869,11 +875,6 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     </div>
   </section>
 
-  <div class="tm-railw">
-    <button class="tm-ico" id="tm-rl" aria-label="時間軸往前">‹</button>
-    <nav class="tm-rail" id="tm-rail" aria-label="年代航站"></nav>
-    <button class="tm-ico" id="tm-rr" aria-label="時間軸往後">›</button>
-  </div>
   </div>
   <section class="tm-log" aria-label="航行日誌"><div class="tm-login" id="tm-log"></div></section>
   </div>
@@ -1955,15 +1956,10 @@ function render(){
   const cap=$('#tm-cap'); cap.hidden=!c.image; cap.innerHTML=c.image?`${esc(c.caption||'')}${c.imageSource?` · <a href="${esc(c.imageSource)}" target="_blank" rel="noopener">典藏來源</a>`:''}`:'';
   $('#tm-backface').innerHTML=`<div class="tm-back"><b>一眼認出 ${esc(c.person)}</b>${c.features.map(x=>esc(x.clue)).join('<br>')}</div>`;
   $('#tm-hud').innerHTML=`<div class="y">${c.year}</div><div class="n">${esc(c.person)}</div><div class="h">${esc(c.house)} · ${esc(c.city)}</div>`;
-  renderLog(); renderRail(); renderDest();
+  renderLog(); renderDest();
 }
 function renderDest(){
   $('#tm-dest').innerHTML=list().map(({c,i})=>`<option value="${i}"${i===planned?' selected':''}>${c.year} · ${esc(c.person)}</option>`).join('');
-}
-function renderRail(){
-  $('#tm-rail').innerHTML=list().map(({c,i})=>`<button class="tm-stop" data-i="${i}" aria-pressed="${i===planned}"${i===cur?' aria-current="location"':''}><span>${c.year}</span><strong>${esc(c.person)}</strong></button>`).join('');
-  const el=$(`#tm-rail [data-i="${planned}"]`)||$(`#tm-rail [data-i="${cur}"]`);
-  if(el)requestAnimationFrame(()=>{const r=$('#tm-rail');r.scrollTo({left:el.offsetLeft-r.clientWidth/2+el.clientWidth/2});tilt()});
 }
 /* ===== 航行日誌 COSMIC LOG：宇宙書頁版 =====
    左頁：年份、人物、星圖肖像、問題、章節目錄；右頁：一次一章，像翻書一樣閱讀。
@@ -1995,10 +1991,9 @@ function renderLog(){
     <div class="tm-q"><small>帶著這個問題閱讀</small>${esc(c.question)}</div>
    </aside>
    <div class="log-spine" aria-hidden="true"></div>
-   <article class="log-right"><div class="log-shortcuts" aria-label="快速前往章節">${LOG_CH.map((ch,i)=>`<button type="button" data-page="${i}" aria-label="第 ${ch[0]} 章：${ch[1]}">${ch[0]} · ${ch[1]}</button>`).join('')}</div><div id="log-page" aria-live="polite"></div></article>
+   <article class="log-right"><div id="log-page" aria-live="polite"></div></article>
   </div>`;
   drawLogPage(c,vs,0);
-  $('#tm-log').querySelectorAll('[data-page]').forEach(b=>b.onclick=()=>turnLog(+b.dataset.page-logPage));
   const book=$('#tm-log .log-book');
   book.onpointermove=e=>{const r=book.getBoundingClientRect();book.style.setProperty('--mx',(e.clientX-r.left)+'px');book.style.setProperty('--my',(e.clientY-r.top)+'px')};
   $('#tm-log').onkeydown=e=>{if(e.target.closest('input,select,textarea'))return;if(e.key==='ArrowRight'&&logPage<LOG_CH.length-1){e.preventDefault();turnLog(1)}if(e.key==='ArrowLeft'&&logPage>0){e.preventDefault();turnLog(-1)}};
@@ -2033,18 +2028,17 @@ function drawLogPage(c,vs,dir){
   if(p===3)body=`<ol class="log-works">${c.works.map(w=>`<li><span class="wy">${esc(w.year)}</span><b>${esc(w.name)}</b><p>${esc(w.note)}</p></li>`).join('')}</ol>`;
   if(p===4)body=`<p class="log-drop">${esc(c.legacy)}</p><div class="tm-vs"><b>跟誰不一樣？</b><p>${esc(c.contrast)}</p>${vs>=0&&vs!==cur?`<button data-vs="${vs}">設定目的地：${C[vs].year} ${esc(C[vs].person)} →</button>`:''}</div>`;
   if(p===5)body=`<ol class="tm-src">${c.sources.map(s=>`<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a></li>`).join('')}</ol>${c.note?`<div class="tm-note">查證更正：${esc(c.note)}</div>`:''}`;
-  const prev=p>0?`<button data-turn="-1"><small>← 上一章</small>${LOG_CH[p-1][1]}</button>`:'<span></span>';
-  const nx=p<LOG_CH.length-1?`<button data-turn="1" class="nx"><small>下一章 →</small>${LOG_CH[p+1][1]}</button>`:`<button data-next-stop class="nx warp"><small>前往下一站 →</small>${C[next].year} ${esc(C[next].person)}</button>`;
+  const rocketLabel=p<LOG_CH.length-1?`下一章：${LOG_CH[p+1][1]}`:`下一站：${C[next].person}`;
+  const rocket=p<LOG_CH.length-1?`<button class="log-rocket" type="button" aria-label="${rocketLabel}" title="${rocketLabel}" data-rocket-next><span class="log-rocket-icon" aria-hidden="true">🚀</span><span>${esc(rocketLabel)}</span></button>`:`<button class="log-rocket" type="button" aria-label="${rocketLabel}" title="${rocketLabel}" data-rocket-stop><span class="log-rocket-icon" aria-hidden="true">🚀</span><span>${esc(rocketLabel)}</span></button>`;
   const pg=$('#log-page');
   const pvisual=chapterVisual(c,vs,p);
-  pg.innerHTML=`<div class="log-ch"><span>CHAPTER ${ch[0]} · ${ch[2]}</span><span>${p+1} / ${LOG_CH.length}</span></div><div class="log-meter"><i style="width:${(p+1)/LOG_CH.length*100}%"></i></div><h3>${ch[1]}</h3><div class="log-body">${body}${pvisual}</div><div class="log-turn">${prev}${nx}</div><div class="log-folio">— ${c.year} · ${p+1} —</div>`;
+  pg.innerHTML=`<div class="log-ch"><span>CHAPTER ${ch[0]} · ${ch[2]}</span><div class="log-ch-actions"><span>${p+1} / ${LOG_CH.length}</span>${rocket}</div></div><div class="log-meter"><i style="width:${(p+1)/LOG_CH.length*100}%"></i></div><h3>${ch[1]}</h3><div class="log-body">${body}${pvisual}</div><div class="log-folio">— ${c.year} · ${p+1} —</div>`;
   if(p===1)loadLogPortrait(c);
   pg.classList.remove('turn-f','turn-b');if(dir){void pg.offsetWidth;pg.classList.add(dir>0?'turn-f':'turn-b')}
-  $('#tm-log').querySelectorAll('[data-page]').forEach(b=>{const i=+b.dataset.page;b.setAttribute('aria-current',i===p?'true':'false');b.classList.toggle('read',logRead.has(i))});
   pg.querySelectorAll('.tm-flip').forEach(b=>b.onclick=()=>{b.classList.toggle('on');b.setAttribute('aria-pressed',b.classList.contains('on'))});
-  pg.querySelectorAll('[data-turn]').forEach(b=>b.onclick=()=>turnLog(+b.dataset.turn));
+  const rocketNext=pg.querySelector('[data-rocket-next]');if(rocketNext)rocketNext.onclick=()=>turnLog(1);
+  const rocketStop=pg.querySelector('[data-rocket-stop]');if(rocketStop)rocketStop.onclick=()=>plan(next);
   const v=pg.querySelector('[data-vs]');if(v)v.onclick=()=>{plan(+v.dataset.vs);$('#tm-car').scrollIntoView({behavior:reduce.matches?'auto':'smooth'})};
-  const ns=pg.querySelector('[data-next-stop]');if(ns)ns.onclick=()=>{plan(next);$('#tm-car').scrollIntoView({behavior:reduce.matches?'auto':'smooth'})};
 }
 function chapterVisual(c,vs,p){
   const label=esc(c.person+' · '+LOG_CH[p][1]);
@@ -2073,15 +2067,6 @@ function plan(i){if(busy)return;planned=+i;render();status('目的地已設定�
 function status(t){$('#tm-status').textContent=t}
 
 /* ---------- 3D 時間軸 ---------- */
-function tilt(){
-  const r=$('#tm-rail'), mid=r.getBoundingClientRect().left+r.clientWidth/2;
-  r.querySelectorAll('.tm-stop').forEach(b=>{const bb=b.getBoundingClientRect(),d=(bb.left+bb.width/2-mid)/r.clientWidth;b.style.setProperty('--ty',Math.max(-50,Math.min(50,d*110))+'deg');b.style.setProperty('--ts',1-Math.min(.25,Math.abs(d)*.5))});
-}
-$('#tm-rail').addEventListener('scroll',()=>requestAnimationFrame(tilt),{passive:true});
-$('#tm-rail').addEventListener('click',e=>{const b=e.target.closest('.tm-stop');if(b)plan(b.dataset.i)});
-$('#tm-rl').onclick=()=>$('#tm-rail').scrollBy({left:-280,behavior:'smooth'});
-$('#tm-rr').onclick=()=>$('#tm-rail').scrollBy({left:280,behavior:'smooth'});
-$('#tm-rail').addEventListener('keydown',e=>{if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();$('#tm-rail').scrollBy({left:e.key==='ArrowLeft'?-150:150,behavior:'smooth'})}});
 
 /* ---------- 駕駛艙視差與輪廓轉動 ---------- */
 const car=$('#tm-car'), cab=$('#tm-cabin'), stage=$('#tm-stage');
@@ -2117,8 +2102,6 @@ $('#tm-res').addEventListener('click',e=>{const b=e.target.closest('button');if(
 $('#tm-route').innerHTML=R.map(r=>`<option value="${r.id}">${esc(r.name)} · ${r.id==='all'?C.length:C.filter(c=>c.chapter===r.id).length} 站</option>`).join('');
 $('#tm-route').onchange=e=>{route=e.target.value;const l=list();if(!l.some(x=>x.i===planned))planned=(l.find(x=>x.i!==cur)||l[0]).i;render();status('路線：'+R.find(r=>r.id===route).name+'，共 '+l.length+' 站。')};
 $('#tm-dest').onchange=e=>plan(e.target.value);
-function adj(d){const l=list(),k=l.findIndex(x=>x.i===cur),n=l[k+d];if(n){planned=n.i;travel()}}
-$('#tm-prev').onclick=()=>adj(-1);$('#tm-next').onclick=()=>adj(1);
 $('#tm-motion').onclick=()=>{quiet=!quiet;$('#tm-motion').setAttribute('aria-pressed',quiet)};
 
 /* ---------- 穿越 ---------- */
