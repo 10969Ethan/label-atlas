@@ -688,6 +688,14 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 .log-right{min-height:0}
 }
 .log-ch span:last-child{white-space:nowrap}
+.log-shortcuts{position:sticky;top:0;z-index:5;display:flex;gap:8px;overflow-x:auto;padding:8px 0 12px;background:linear-gradient(#0b1020 78%,transparent);scrollbar-width:thin}
+.log-shortcuts button{flex:0 0 auto;border:1px solid #9fb3ff36;border-radius:999px;padding:7px 12px;background:#10172deF;color:#aab4d5;font:12px 'Noto Sans TC',sans-serif;white-space:nowrap}
+.log-shortcuts button[aria-current=true]{border-color:#ffd98a;color:#fff;background:#25203a;box-shadow:0 0 16px #ffd98a22}
+.log-visual{margin:22px 0 0;max-width:700px;border:1px solid #9fb3ff2b;background:#080d1c;border-radius:12px;overflow:hidden}
+.log-visual img{display:block;width:100%;height:clamp(170px,25vh,300px);object-fit:cover}
+.log-visual figcaption{padding:8px 12px;color:#929dbd;font:11px/1.6 'Noto Sans TC',sans-serif}
+.log-visual figcaption a{color:#a9bcff}
+.log-portrait .face img{width:100%;height:100%;object-fit:cover;border-radius:50%}
 @media(max-width:520px){.log-ch{letter-spacing:.16em}.tm-log .tm-flip{min-height:210px}.log-turn{grid-template-columns:1fr}.log-turn .nx{grid-column:1}.log-body>p{text-align:left}}
 @media(prefers-reduced-motion:reduce){.tm-log::before,.log-yr,.log-portrait .orbit,.log-turn .warp{animation:none!important}#log-page.turn-f,#log-page.turn-b{animation:none}}
 /* 主理人與作品 / image-led editorial profile */
@@ -1924,7 +1932,7 @@ function renderLog(){
     <nav class="log-toc" aria-label="本站章節">${LOG_CH.map((ch,i)=>`<button data-page="${i}"><i>${ch[0]}</i><span>${ch[1]}</span></button>`).join('')}</nav>
    </aside>
    <div class="log-spine" aria-hidden="true"></div>
-   <article class="log-right"><div id="log-page" aria-live="polite"></div></article>
+   <article class="log-right"><div class="log-shortcuts" aria-label="快速前往章節">${LOG_CH.map((ch,i)=>`<button type="button" data-page="${i}" aria-label="第 ${ch[0]} 章：${ch[1]}">${ch[0]} · ${ch[1]}</button>`).join('')}</div><div id="log-page" aria-live="polite"></div></article>
   </div>`;
   drawLogPage(c,vs,0);
   $('#tm-log').querySelectorAll('[data-page]').forEach(b=>b.onclick=()=>turnLog(+b.dataset.page-logPage));
@@ -1932,6 +1940,20 @@ function renderLog(){
   book.onpointermove=e=>{const r=book.getBoundingClientRect();book.style.setProperty('--mx',(e.clientX-r.left)+'px');book.style.setProperty('--my',(e.clientY-r.top)+'px')};
   $('#tm-log').onkeydown=e=>{if(e.target.closest('input,select,textarea'))return;if(e.key==='ArrowRight'&&logPage<LOG_CH.length-1){e.preventDefault();turnLog(1)}if(e.key==='ArrowLeft'&&logPage>0){e.preventDefault();turnLog(-1)}};
   initLogSky();
+  loadLogPortrait(c);
+}
+async function loadLogPortrait(c){
+  const key=cur, name=c.person.replace(/\s*\([^)]*\)/g,'').trim();
+  if(c.portrait?.src)return;
+  try{
+    const res=await fetch('https://en.wikipedia.org/api/rest_v1/page/summary/'+encodeURIComponent(name),{headers:{accept:'application/json'},signal:AbortSignal.timeout(8000)});
+    if(!res.ok)return;const data=await res.json(),url=data.thumbnail?.source;if(!url||key!==cur)return;
+    const face=$('#tm-log .log-portrait .face');if(!face)return;
+    face.innerHTML=`<img src="${esc(url)}" alt="${esc(name)} 肖像" loading="lazy">`;
+    const cap=$('#tm-log .log-portrait figcaption');if(cap)cap.innerHTML=`${esc(data.title||name)} · Wikipedia <a href="${esc(data.content_urls?.desktop?.page||'https://en.wikipedia.org/wiki/'+encodeURIComponent(name))}" target="_blank" rel="noopener">來源 ↗</a>`;
+    const page=$('#log-page .log-body');
+    if(page&&!page.querySelector('.log-visual')&&logPage<5)page.insertAdjacentHTML('beforeend',`<figure class="log-visual"><img src="${esc(url)}" alt="${esc(name)}：${esc(LOG_CH[logPage][1])}" loading="lazy"><figcaption>${esc(data.title||name)} · Wikipedia <a href="${esc(data.content_urls?.desktop?.page||'https://en.wikipedia.org/wiki/'+encodeURIComponent(name))}" target="_blank" rel="noopener">影像來源 ↗</a></figcaption></figure>`);
+  }catch{}
 }
 function turnLog(d){
   const n=Math.max(0,Math.min(LOG_CH.length-1,logPage+d));if(n===logPage)return;logPage=n;logRead.add(n);
@@ -1951,7 +1973,10 @@ function drawLogPage(c,vs,dir){
   const prev=p>0?`<button data-turn="-1"><small>← 上一章</small>${LOG_CH[p-1][1]}</button>`:'<span></span>';
   const nx=p<LOG_CH.length-1?`<button data-turn="1" class="nx"><small>下一章 →</small>${LOG_CH[p+1][1]}</button>`:`<button data-next-stop class="nx warp"><small>前往下一站 →</small>${C[next].year} ${esc(C[next].person)}</button>`;
   const pg=$('#log-page');
-  pg.innerHTML=`<div class="log-ch"><span>CHAPTER ${ch[0]} · ${ch[2]}</span><span>${p+1} / ${LOG_CH.length}</span></div><div class="log-meter"><i style="width:${(p+1)/LOG_CH.length*100}%"></i></div><h3>${ch[1]}</h3><div class="log-body">${body}</div><div class="log-turn">${prev}${nx}</div><div class="log-folio">— ${c.year} · ${p+1} —</div>`;
+  const visualUrl=c.portrait?.src||c.image||'';
+  const visual=visualUrl?`<figure class="log-visual"><img src="${esc(visualUrl)}" alt="${esc(c.person)}：${esc(ch[1])}" loading="lazy"><figcaption>${esc(c.portrait?.credit||c.person+' · '+ch[1])}${c.portrait?.url?` · <a href="${esc(c.portrait.url)}" target="_blank" rel="noopener">影像來源 ↗</a>`:''}</figcaption></figure>`:'';
+  const pvisual=(p===0||p===1||p===2||p===3||p===4)?visual:'';
+  pg.innerHTML=`<div class="log-ch"><span>CHAPTER ${ch[0]} · ${ch[2]}</span><span>${p+1} / ${LOG_CH.length}</span></div><div class="log-meter"><i style="width:${(p+1)/LOG_CH.length*100}%"></i></div><h3>${ch[1]}</h3><div class="log-body">${body}${pvisual}</div><div class="log-turn">${prev}${nx}</div><div class="log-folio">— ${c.year} · ${p+1} —</div>`;
   pg.classList.remove('turn-f','turn-b');if(dir){void pg.offsetWidth;pg.classList.add(dir>0?'turn-f':'turn-b')}
   $('#tm-log').querySelectorAll('[data-page]').forEach(b=>{const i=+b.dataset.page;b.setAttribute('aria-current',i===p?'true':'false');b.classList.toggle('read',logRead.has(i))});
   pg.querySelectorAll('.tm-flip').forEach(b=>b.onclick=()=>{b.classList.toggle('on');b.setAttribute('aria-pressed',b.classList.contains('on'))});
