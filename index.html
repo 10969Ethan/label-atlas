@@ -756,6 +756,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 #tm .log-visual{margin-top:14px}
 #tm .log-visual img{height:clamp(110px,17vh,190px)}
 #tm .log-visual.log-person-art img{height:clamp(200px,30vh,320px);object-fit:contain;object-position:center top}
+#tm .log-portrait .face img{object-fit:contain;background:#080d1c}
 #tm .log-visual svg{display:block;width:100%;height:clamp(110px,17vh,190px)}
 #tm .log-visual figcaption{padding:6px 10px;font-size:9px}
 #tm .log-folio{margin-top:8px}
@@ -2030,7 +2031,7 @@ async function loadLogPortrait(c){
     face.innerHTML=`<img src="${esc(url)}" alt="${esc(name)} 肖像" loading="lazy">`;
     const cap=$('#tm-log .log-portrait figcaption');if(cap)cap.innerHTML=`${esc(data.title||name)} · Wikipedia <a href="${esc(data.content_urls?.desktop?.page||'https://en.wikipedia.org/wiki/'+encodeURIComponent(name))}" target="_blank" rel="noopener">來源 ↗</a>`;
     const page=$('#log-page .log-body');
-    if(page&&logPage===1){let art=page.querySelector('.log-visual');if(!art){page.insertAdjacentHTML('beforeend',`<figure class="log-visual"><img src="${esc(url)}" alt="${esc(name)} 肖像" loading="lazy"><figcaption>${esc(data.title||name)} · Wikipedia <a href="${esc(data.content_urls?.desktop?.page||'https://en.wikipedia.org/wiki/'+encodeURIComponent(name))}" target="_blank" rel="noopener">人物影像來源 ↗</a></figcaption></figure>`)}else if(art.classList.contains('log-bio-art'))art.outerHTML=`<figure class="log-visual"><img src="${esc(url)}" alt="${esc(name)} 肖像" loading="lazy"><figcaption>${esc(data.title||name)} · Wikipedia <a href="${esc(data.content_urls?.desktop?.page||'https://en.wikipedia.org/wiki/'+encodeURIComponent(name))}" target="_blank" rel="noopener">人物影像來源 ↗</a></figcaption></figure>`;}
+    if(page&&logPage===1){let art=page.querySelector('.log-visual');if(!art){page.insertAdjacentHTML('beforeend',`<figure class="log-visual log-person-art"><img src="${esc(url)}" alt="${esc(name)} 肖像" loading="lazy"><figcaption>${esc(data.title||name)} · Wikipedia <a href="${esc(data.content_urls?.desktop?.page||'https://en.wikipedia.org/wiki/'+encodeURIComponent(name))}" target="_blank" rel="noopener">人物影像來源 ↗</a></figcaption></figure>`)}else if(art.classList.contains('log-bio-art'))art.outerHTML=`<figure class="log-visual log-person-art"><img src="${esc(url)}" alt="${esc(name)} 肖像" loading="lazy"><figcaption>${esc(data.title||name)} · Wikipedia <a href="${esc(data.content_urls?.desktop?.page||'https://en.wikipedia.org/wiki/'+encodeURIComponent(name))}" target="_blank" rel="noopener">人物影像來源 ↗</a></figcaption></figure>`;}
   }catch{}
 }
 function turnLog(d){
