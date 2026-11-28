@@ -1,0 +1,45 @@
+name: Fetch designer media
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 全部重抓
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths: [tools/fetch_media.py]
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: fetch-media
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pillow
+      - run: python tools/fetch_media.py ${{ inputs.force && '--force' || '' }}
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git add designers.json assets/designers tools/wiki-src
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git commit -m "Download designer portraits, works and Wikipedia sources"
+          git pull --rebase origin main
+          git push
+      - name: Redeploy site
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main
