@@ -52,8 +52,7 @@ async function render(d){
  portrait(d).catch(()=>null).then(m=>{if(seq===serial)photo.replaceWith(mediaFigure(d,m,true))});
  gallery(d).catch(()=>[]).then(items=>{if(seq===serial)works.replaceChildren(...(items.length?items:[null]).map(m=>mediaFigure(d,m,false)))});
  const display=p=>{bodyFor(d,p,body);meta.textContent=[p.country,p.life,d.brand].filter(Boolean).join('　／　')};
- if(d.profile){display(d.profile);return}const msg=el('small','正在整理人物史料…');body.prepend(msg);
- try{const p=await cached('profile-v1:'+d.id,async()=>{const r=await fetch('/api/designer-profile?id='+encodeURIComponent(d.id));if(!r.ok)throw Error();return r.json()});if(seq===serial)display(p)}catch{if(seq===serial)msg.textContent='專文暫時無法載入，可查閱下方資料來源。'}
+ if(d.profile)display(d.profile);
 }
 function route(){const id=location.hash.replace(/^#designer\//,'');const d=books.find(x=>x.id===id);if(d){render(d);return}++serial;if(dialog.open)dialog.close()}
 filter();setMotion();route();window.addEventListener('hashchange',route);

@@ -1556,6 +1556,17 @@
   "works": []
  },
  {
+  "id": "charles-frederick-worth",
+  "name": "Charles Frederick Worth",
+  "zh": "查爾斯·佛萊德里克·沃斯",
+  "region": "歐洲",
+  "brand": "House of Worth",
+  "wiki": "Charles Frederick Worth",
+  "collective": false,
+  "zhWiki": "查爾斯·佛萊德里克·沃斯",
+  "decades": []
+ },
+ {
   "id": "coco-chanel",
   "name": "Coco Chanel",
   "zh": "可可・香奈兒",
@@ -2911,6 +2922,21 @@
   "works": []
  },
  {
+  "id": "hedi-slimane",
+  "name": "Hedi Slimane",
+  "zh": "艾迪·斯理曼",
+  "region": "歐洲",
+  "brand": "Saint Laurent / Celine",
+  "wiki": "Hedi Slimane",
+  "collective": false,
+  "zhWiki": "艾迪·斯理曼",
+  "decades": [
+   2000,
+   2010,
+   2020
+  ]
+ },
+ {
   "id": "demna",
   "name": "Demna",
   "zh": "德姆納",
@@ -3459,16 +3485,14 @@
   "zh": "湯米・希爾費格",
   "region": "美洲",
   "brand": "Tommy Hilfiger",
-  "wiki": "Tommy Hilfiger (designer)",
+  "wiki": "Tommy Hilfiger",
   "collective": false,
   "decades": [
    1990
   ],
   "source": "https://www.pvh.com/brands/tommy-hilfiger",
   "sourceLabel": "PVH 品牌檔案",
-  "note": "美國設計師 Tommy Hilfiger 在 1985 年推出同名品牌，將美式學院服裝的經典樣式引入大眾生活風格市場，並透過流行文化讓休閒裝成為品牌的視覺語言。",
-  "portraitUnavailable": true,
-  "works": []
+  "note": "美國設計師 Tommy Hilfiger 在 1985 年推出同名品牌，將美式學院服裝的經典樣式引入大眾生活風格市場，並透過流行文化讓休閒裝成為品牌的視覺語言。"
  },
  {
   "id": "oscar-de-la-renta",
