@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>洗滌保養｜LABEL ATLAS</title>
+<meta name="description" content="看懂洗標、依材質洗衣、去漬速查、熨燙與收納：給日常與家政課使用的衣物保養指南。">
+<style>
+:root{--ink:#22261f;--muted:#6c6a5f;--paper:#fbfaf6;--cream:#f2efe6;--line:#d8d3c7;--green:#25332b;--gold:#9a7b3c;--warn:#9b3d2c;--ok:#3d6b4f}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.85 "Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif}
+a{color:inherit}
+h1,h2,h3{font-family:"Noto Serif TC","Songti TC",Georgia,serif;font-weight:600;letter-spacing:.01em;line-height:1.35}
+.mini{font:11px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+header.top{position:sticky;top:0;z-index:20;background:#fbfaf6ee;backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .in{max-width:1180px;margin:auto;display:flex;align-items:center;gap:18px;padding:12px 22px}
+.brand{font:19px Georgia,serif;letter-spacing:.24em;text-decoration:none;white-space:nowrap}
+.top nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;margin-left:auto}
+.top nav a{white-space:nowrap;text-decoration:none;font-size:14px;padding:6px 12px;border-radius:99px}
+.top nav a:hover,.top nav a[aria-current]{background:#e8eee5}
+main{max-width:1180px;margin:auto;padding:0 22px 80px}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end;padding:56px 0 34px;border-bottom:1px solid var(--line)}
+.hero h1{font-size:clamp(34px,5vw,58px);margin:10px 0 14px}
+.hero p{color:var(--muted);max-width:56ch;margin:0}
+.toc{display:grid;gap:8px}
+.toc a{display:flex;justify-content:space-between;text-decoration:none;border-bottom:1px solid var(--line);padding:7px 0;font-size:15px}
+.toc a span{color:var(--muted);font-size:12px}
+section.block{padding:54px 0 10px}
+section.block>h2{font-size:clamp(26px,3vw,36px);margin:6px 0 6px}
+.lead{color:var(--muted);max-width:70ch;margin:0 0 24px}
+/* label decoder */
+.decoder{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(280px,.9fr);gap:26px;align-items:start}
+.cat{margin-bottom:20px}
+.cat h3{font-size:17px;margin:0 0 8px;display:flex;gap:10px;align-items:baseline}
+.cat h3 small{font:12px system-ui;color:var(--muted)}
+.syms{display:flex;flex-wrap:wrap;gap:8px}
+.sym{width:66px;height:66px;border:1px solid var(--line);background:#fff;border-radius:10px;display:grid;place-items:center;cursor:pointer;padding:6px;transition:.15s}
+.sym:hover{border-color:var(--gold)}
+.sym[aria-pressed=true]{border-color:var(--green);box-shadow:0 0 0 2px var(--green) inset;background:#eef3ec}
+.sym svg{width:50px;height:50px;stroke:var(--ink);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.sym svg text{fill:var(--ink);stroke:none;font:700 15px system-ui;text-anchor:middle}
+.panel{position:sticky;top:84px;background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:22px}
+.panel h3{margin:4px 0 8px;font-size:21px}
+.panel .chosen{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}
+.panel .chosen .sym{width:48px;height:48px;cursor:default}
+.panel .chosen .sym svg{width:32px;height:32px}
+.panel ol{padding-left:20px;margin:8px 0}
+.btn{font:inherit;font-size:14px;border:1px solid var(--green);background:var(--green);color:#fff;padding:8px 16px;border-radius:99px;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--green)}
+.hint{font-size:13px;color:var(--muted)}
+/* fabrics */
+.filter{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.filter input{flex:1 1 260px;font:inherit;padding:10px 14px;border:1px solid var(--line);border-radius:99px;background:#fff}
+.chip{font:inherit;font-size:14px;border:1px solid var(--line);background:#fff;padding:7px 14px;border-radius:99px;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--green);color:#fff;border-color:var(--green)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.card h3{margin:0;font-size:20px}
+.card .en{font:12px ui-monospace,Menlo,monospace;color:var(--gold);letter-spacing:.08em}
+.card dl{margin:12px 0 0;display:grid;grid-template-columns:70px 1fr;gap:6px 10px;font-size:14.5px}
+.card dt{color:var(--muted);font-size:13px;padding-top:2px}
+.card dd{margin:0}
+.card .no{color:var(--warn)}
+.card details{margin-top:10px;font-size:14px}
+.card summary{cursor:pointer;color:var(--green)}
+/* stains */
+.stain-wrap{display:grid;grid-template-columns:260px 1fr;gap:20px}
+.stain-list{display:flex;flex-direction:column;gap:6px}
+.stain-list button{text-align:left;font:inherit;font-size:15px;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 14px;cursor:pointer}
+.stain-list button[aria-pressed=true]{border-color:var(--green);background:#eef3ec}
+.stain-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 26px}
+.stain-card h3{margin:0 0 6px;font-size:24px}
+.warnbox{border-left:3px solid var(--warn);background:#f8ece8;padding:10px 14px;border-radius:0 10px 10px 0;margin:12px 0;font-size:14.5px}
+.okbox{border-left:3px solid var(--ok);background:#ebf2ec;padding:10px 14px;border-radius:0 10px 10px 0;margin:12px 0;font-size:14.5px}
+/* steps & tables */
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;padding:0;list-style:none}
+.steps li{counter-increment:s;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.steps li::before{content:counter(s,decimal-leading-zero);font:12px ui-monospace,Menlo,monospace;color:var(--gold);letter-spacing:.15em;display:block;margin-bottom:4px}
+.steps b{display:block;font-size:16px;margin-bottom:2px}
+.steps span{font-size:14.5px;color:#3e423a}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:15px}
+th,td{padding:11px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:var(--cream);font-weight:600;font-size:14px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+/* quiz */
+.quiz{background:var(--green);color:#f4efe4;border-radius:18px;padding:28px 30px}
+.quiz h3{margin:0 0 4px}
+.quiz .q{font-size:18px;margin:16px 0 10px}
+.quiz .opts{display:grid;gap:8px}
+.quiz .opts button{font:inherit;text-align:left;padding:10px 14px;border-radius:10px;border:1px solid #ffffff40;background:#ffffff12;color:inherit;cursor:pointer}
+.quiz .opts button.right{background:#3d6b4f;border-color:#8fc5a2}
+.quiz .opts button.wrong{background:#7a3426;border-color:#e09a88}
+.quiz .exp{margin-top:10px;font-size:14.5px;opacity:.9}
+.quiz .nav{display:flex;justify-content:space-between;align-items:center;margin-top:16px;font-size:14px}
+.quiz .btn{background:#f4efe4;color:var(--green);border-color:#f4efe4}
+.video-slot{border:1px dashed var(--line);border-radius:14px;padding:16px;background:#fff;display:flex;gap:16px;align-items:center}
+.video-slot video{width:min(420px,100%);border-radius:10px;background:#000}
+footer{border-top:1px solid var(--line);padding:26px 22px;color:var(--muted);font-size:13px;max-width:1180px;margin:auto}
+@media(max-width:860px){.hero,.decoder,.stain-wrap,.two{grid-template-columns:1fr}.panel{position:static}.stain-list{flex-direction:row;flex-wrap:wrap}}
+@media print{header.top,.filter,.quiz,.panel .btn{display:none}.card{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="top"><div class="in">
+ <a class="brand" href="../">LABEL ATLAS</a>
+ <nav aria-label="主選單">
+  <a href="../">首頁</a><a href="../#brand-library">品牌圖書館</a><a href="../designers/">設計師</a><a href="../#fashion-history">服裝歷史</a><a href="./" aria-current="page">洗滌保養</a>
+ </nav>
+</div></header>
+<main>
+<section class="hero">
+ <div>
+  <div class="mini">Care Guide / 洗滌保養</div>
+  <h1>好好洗，衣服才會陪你更久。</h1>
+  <p>從看懂衣服上的洗標開始，依照材質選擇洗法、處理污漬、熨燙與收納。內容整理自國際洗標標準 ISO 3758 與常見織品保養原則；實際仍以衣服上的洗標為準。</p>
+ </div>
+ <nav class="toc" aria-label="本頁目錄">
+  <a href="#label">01 看懂洗標 <span>點符號立即解釋</span></a>
+  <a href="#fabric">02 依材質保養 <span>16 種材質與單品</span></a>
+  <a href="#stain">03 去漬速查 <span>12 種常見污漬</span></a>
+  <a href="#howto">04 洗衣步驟與機器設定</a>
+  <a href="#dry">05 晾曬、熨燙與收納</a>
+  <a href="#quiz">06 課堂小測驗</a>
+ </nav>
+</section>
+
+<section class="block" id="label">
+ <div class="mini">01 / Care Symbols</div>
+ <h2>看懂洗標</h2>
+ <p class="lead">洗標通常依序有五種符號：水洗、漂白、乾燥、熨燙、專業清洗。點選你衣服上出現的符號，右側會整理成一份洗衣說明。打叉代表「不可以」，點和橫線越多，代表溫度越高或處理要越溫和。</p>
+ <div class="decoder">
+  <div id="symbol-cats"></div>
+  <aside class="panel" aria-live="polite">
+   <div class="mini">My Label / 我的洗標</div>
+   <h3 id="sym-title">點選左邊的符號</h3>
+   <p id="sym-desc" class="hint">可以一次選多個，像是拼出衣服上那一排洗標。</p>
+   <div class="chosen" id="chosen"></div>
+   <div id="summary"></div>
+   <button class="btn ghost" id="sym-clear" type="button">清除重選</button>
+  </aside>
+ </div>
+</section>
+
+<section class="block" id="fabric">
+ <div class="mini">02 / By Fabric</div>
+ <h2>依材質保養</h2>
+ <p class="lead">同樣是一件毛衣，羊毛、羊絨和壓克力纖維的洗法都不一樣。先看衣服內側的成分標示，再找對應的材質。混紡衣物以「最嬌貴的成分」為準。</p>
+ <div class="filter">
+  <input id="fabric-q" type="search" placeholder="搜尋材質或單品，例如：羊毛、羽絨外套、牛仔褲" aria-label="搜尋材質">
+  <div id="fabric-chips"></div>
+ </div>
+ <div class="grid" id="fabric-grid"></div>
+</section>
+
+<section class="block" id="stain">
+ <div class="mini">03 / Stain Removal</div>
+ <h2>去漬速查</h2>
+ <p class="lead">處理污漬的三個原則：<b>越快越好</b>、<b>用吸的不要用搓的</b>、<b>先在不明顯處試</b>。從布料背面往外推，避免污漬擴散。</p>
+ <div class="stain-wrap">
+  <div class="stain-list" id="stain-list" role="tablist" aria-label="污漬種類"></div>
+  <article class="stain-card" id="stain-card" aria-live="polite"></article>
+ </div>
+ <div class="warnbox"><b>安全提醒：</b>含氯漂白水絕對不要和其他清潔劑（特別是酸性清潔劑或含氨產品）混用，會產生有毒氣體；使用時保持通風、戴手套。</div>
+</section>
+
+<section class="block" id="howto">
+ <div class="mini">04 / Washing</div>
+ <h2>洗衣步驟與機器設定</h2>
+ <ol class="steps">
+  <li><b>看洗標</b><span>確認能不能水洗、最高水溫和要不要手洗。</span></li>
+  <li><b>分類</b><span>深色、淺色、白色分開；毛巾等會掉毛的和針織衣分開；髒污程度相近的一起洗。</span></li>
+  <li><b>檢查口袋</b><span>拿出面紙、硬幣、原子筆，避免整桶沾滿紙屑或墨水。</span></li>
+  <li><b>翻面、拉上拉鍊</b><span>印花、牛仔、深色衣物翻面洗可減少褪色和摩擦；拉鍊和魔鬼氈要扣好，避免勾壞其他衣服。</span></li>
+  <li><b>使用洗衣袋</b><span>內衣、針織衫、有裝飾的衣服放進洗衣袋，減少拉扯變形。</span></li>
+  <li><b>洗劑適量</b><span>依說明的份量，過多反而洗不乾淨、殘留在布料上。羊毛與絲用中性洗劑。</span></li>
+  <li><b>選擇行程與水溫</b><span>大多數日常衣物用 30–40°C 或冷水即可；毛巾、床單等可依洗標用較高溫。</span></li>
+  <li><b>洗完立刻取出</b><span>放在洗衣機裡悶太久容易有異味、皺摺和霉味，洗好就晾。</span></li>
+ </ol>
+ <div class="two" style="margin-top:18px">
+  <table>
+   <caption class="hint" style="text-align:left;padding:0 0 6px">洗衣機行程怎麼選</caption>
+   <tr><th>行程</th><th>適合</th></tr>
+   <tr><td>標準</td><td>棉 T、襯衫、毛巾、床單等耐洗衣物</td></tr>
+   <tr><td>輕柔／精緻</td><td>雪紡、嫘縈、蕾絲、可機洗的針織衣（洗標有一條或兩條底線）</td></tr>
+   <tr><td>羊毛／手洗</td><td>標示可機洗的羊毛衣；洗衣機的手洗行程轉速低、水流溫和</td></tr>
+   <tr><td>快洗</td><td>只穿過一下、沒有明顯髒污的衣服</td></tr>
+   <tr><td>大物</td><td>被單、厚外套；羽絨要看洗標</td></tr>
+  </table>
+  <table>
+   <caption class="hint" style="text-align:left;padding:0 0 6px">水溫的作用</caption>
+   <tr><th>水溫</th><th>說明</th></tr>
+   <tr><td>冷水／30°C</td><td>最省電、最不傷布料，適合深色與大部分日常衣物</td></tr>
+   <tr><td>40°C</td><td>一般髒污、皮脂與汗漬較容易洗掉</td></tr>
+   <tr><td>60°C 以上</td><td>毛巾、寢具、抹布等需要較強清潔時使用，須洗標允許</td></tr>
+  </table>
+ </div>
+</section>
+
+<section class="block" id="dry">
+ <div class="mini">05 / Drying · Ironing · Storage</div>
+ <h2>晾曬、熨燙與收納</h2>
+ <div class="two">
+  <div class="card">
+   <h3>晾曬</h3>
+   <dl>
+    <dt>一般衣物</dt><dd>甩平後用衣架晾，領口、袖口拉整齊，乾了比較不皺。</dd>
+    <dt>針織毛衣</dt><dd>平放在網架或毛巾上陰乾，用衣架掛會被水的重量拉長。</dd>
+    <dt>深色衣物</dt><dd>翻面、陰乾，避免陽光直曬褪色。</dd>
+    <dt>白色棉麻</dt><dd>可以曬太陽，陽光有助於殺菌與漂白。</dd>
+    <dt>梅雨季</dt><dd>衣服之間保持距離，搭配除濕機或電風扇，避免半乾產生霉味。</dd>
+   </dl>
+  </div>
+  <div class="card">
+   <h3>熨燙溫度</h3>
+   <dl>
+    <dt>1 點 ・110°C</dt><dd>壓克力、尼龍、聚酯纖維等合成纖維；蒸氣可能造成損傷</dd>
+    <dt>2 點 ・150°C</dt><dd>羊毛、絲、聚酯混紡</dd>
+    <dt>3 點 ・200°C</dt><dd>棉、麻</dd>
+    <dt>小技巧</dt><dd>深色與有光澤的布料翻面燙或墊一塊布，避免燙出亮面；羊毛用蒸氣「懸空燙」即可。</dd>
+   </dl>
+  </div>
+  <div class="card">
+   <h3>收納</h3>
+   <dl>
+    <dt>先洗再收</dt><dd>換季前一定要洗乾淨並完全乾燥，殘留的汗漬和皮屑會招來蟲和霉菌，也會慢慢變黃。</dd>
+    <dt>摺 or 掛</dt><dd>針織衣、重的毛衣摺起來放；西裝、大衣、襯衫用寬肩衣架掛。</dd>
+    <dt>防蟲</dt><dd>羊毛、羊絨、絲容易被衣蛾蛀，可使用樟木、防蟲劑，並定期拿出來通風。</dd>
+    <dt>防潮</dt><dd>衣櫃放除濕盒，不要用塑膠袋長期密封，選擇透氣的防塵套。</dd>
+   </dl>
+  </div>
+  <div class="card">
+   <h3>讓衣服穿更久</h3>
+   <dl>
+    <dt>少洗一點</dt><dd>外套、牛仔褲、毛衣不必每穿必洗，掛起來通風、局部清潔即可。</dd>
+    <dt>用冷水</dt><dd>多數衣物冷水就洗得乾淨，也比較節能、不易縮水褪色。</dd>
+    <dt>即時修補</dt><dd>掉扣、脫線、小破洞早點處理，損壞才不會擴大。</dd>
+    <dt>交換與二手</dt><dd>不穿的衣服可以交換、捐贈或改造，讓衣服延續使用。</dd>
+   </dl>
+  </div>
+ </div>
+ <div class="video-slot" id="video-slot" hidden></div>
+</section>
+
+<section class="block" id="quiz">
+ <div class="mini">06 / Quiz</div>
+ <h2>課堂小測驗</h2>
+ <p class="lead">適合家政課或自學後的複習，共 8 題。</p>
+ <div class="quiz" id="quiz-box"></div>
+</section>
+</main>
+<footer>內容依 ISO 3758 洗標標準與常見織品保養原則整理，整理日期 2026.11.28。不同品牌、染整方式和混紡比例會影響結果，請以衣服洗標為準，特殊或貴重衣物建議交給專業洗衣店。 · <a href="../">回到 LABEL ATLAS</a></footer>
+
+<script>
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+/* ---------- 洗標符號（ISO 3758） ---------- */
+const TUB='<path d="M6 16h36l-4 22H10z"/><path d="M6 16c4-4 8 4 12 0s8 4 12 0 8 4 12 0"/>';
+const BARS=n=>n>=1?'<path d="M9 42h30"/>'+(n>=2?'<path d="M9 46h30" transform="translate(0,0)"/>':''):'';
+const CROSS='<path d="M6 6l36 36M42 6L6 42"/>';
+const TRI='<path d="M24 6l19 33H5z"/>';
+const SQ='<rect x="7" y="7" width="34" height="34"/>';
+const IRON='<path d="M7 37h35l-4-11c-2-4-5-6-9-6H10z"/><path d="M13 20v-5h17"/>';
+const dots=(n,y=31,cx=24)=>Array.from({length:n},(_,i)=>`<circle cx="${cx-(n-1)*4+i*8}" cy="${y}" r="2" fill="currentColor" stroke="none"/>`).join('');
+const svg=b=>`<svg viewBox="0 0 48 52" aria-hidden="true">${b}</svg>`;
+const S=[
+ {cat:'wash',id:'w30',svg:TUB+'<text x="24" y="33">30</text>',t:'水洗 30°C',d:'可以機洗，水溫最高 30°C。'},
+ {cat:'wash',id:'w30g',svg:TUB+'<text x="24" y="33">30</text>'+BARS(1),t:'水洗 30°C・輕柔',d:'最高 30°C，使用輕柔行程、減少脫水時間。'},
+ {cat:'wash',id:'w30vg',svg:TUB+'<text x="24" y="33">30</text>'+BARS(2),t:'水洗 30°C・非常輕柔',d:'最高 30°C，非常輕柔的行程（例如羊毛行程），盡量減少攪動。'},
+ {cat:'wash',id:'w40',svg:TUB+'<text x="24" y="33">40</text>',t:'水洗 40°C',d:'可以機洗，水溫最高 40°C。'},
+ {cat:'wash',id:'w40g',svg:TUB+'<text x="24" y="33">40</text>'+BARS(1),t:'水洗 40°C・輕柔',d:'最高 40°C，輕柔行程。'},
+ {cat:'wash',id:'w60',svg:TUB+'<text x="24" y="33">60</text>',t:'水洗 60°C',d:'可以用較高溫清洗，水溫最高 60°C，適合毛巾、寢具。'},
+ {cat:'wash',id:'w95',svg:TUB+'<text x="24" y="33">95</text>',t:'水洗 95°C',d:'可高溫煮洗，常見於白色棉質寢具與醫療用布品。'},
+ {cat:'wash',id:'hand',svg:TUB+'<path d="M17 33v-7m4 7v-9m4 9v-8m4 8v-6m-12 6c0 4 3 6 7 6s6-2 7-6"/>',t:'手洗',d:'只能手洗，水溫最高 40°C。輕輕按壓，不要搓揉或扭乾。'},
+ {cat:'wash',id:'nowash',svg:TUB+CROSS,t:'不可水洗',d:'不能用水洗，通常需要乾洗或交給專業洗衣店。'},
+ {cat:'bleach',id:'b-any',svg:TRI,t:'可漂白',d:'可以使用任何漂白劑，包括含氯漂白水。'},
+ {cat:'bleach',id:'b-oxy',svg:TRI+'<path d="M19 32l6-12M25 32l6-12"/>',t:'只能用氧系漂白',d:'只能使用氧系（非氯）漂白劑，例如過碳酸鈉類產品；不可用含氯漂白水。'},
+ {cat:'bleach',id:'b-no',svg:TRI+CROSS,t:'不可漂白',d:'不能使用任何漂白劑。'},
+ {cat:'dry',id:'t-low',svg:SQ+'<circle cx="24" cy="24" r="12"/>'+dots(1,24),t:'可烘乾・低溫',d:'可以用烘衣機，選擇低溫（出風最高約 60°C）。'},
+ {cat:'dry',id:'t-norm',svg:SQ+'<circle cx="24" cy="24" r="12"/>'+dots(2,24),t:'可烘乾・一般溫度',d:'可以用烘衣機一般溫度（出風最高約 80°C）。'},
+ {cat:'dry',id:'t-no',svg:SQ+'<circle cx="24" cy="24" r="12"/>'+CROSS,t:'不可烘乾',d:'不能使用烘衣機，容易縮水或變形。'},
+ {cat:'dry',id:'line',svg:SQ+'<path d="M24 12v24"/>',t:'吊掛晾乾',d:'脫水後用衣架或曬衣繩吊掛晾乾。'},
+ {cat:'dry',id:'drip',svg:SQ+'<path d="M18 12v24M24 12v24M30 12v24"/>',t:'不脫水吊掛滴乾',d:'不要脫水，直接濕濕地吊掛，讓水自然滴乾，可減少皺摺。'},
+ {cat:'dry',id:'flat',svg:SQ+'<path d="M13 24h22"/>',t:'平放晾乾',d:'脫水後平放晾乾，避免針織衣被拉長變形。'},
+ {cat:'dry',id:'shade',svg:SQ+'<path d="M7 17L17 7"/><path d="M24 14v22"/>',t:'陰乾（吊掛）',d:'左上角的斜線代表要在陰涼處晾乾，避免陽光直射褪色。'},
+ {cat:'iron',id:'i1',svg:IRON+dots(1),t:'熨燙 ・ 低溫 110°C',d:'熨斗底板最高 110°C，蒸氣可能造成損傷。常見於合成纖維。'},
+ {cat:'iron',id:'i2',svg:IRON+dots(2),t:'熨燙 ・ 中溫 150°C',d:'熨斗底板最高 150°C，常見於羊毛、絲、聚酯混紡。'},
+ {cat:'iron',id:'i3',svg:IRON+dots(3),t:'熨燙 ・ 高溫 200°C',d:'熨斗底板最高 200°C，常見於棉、麻。'},
+ {cat:'iron',id:'i-no',svg:IRON+CROSS,t:'不可熨燙',d:'不能熨燙。可用掛燙機懸空蒸氣處理前，也要先看清楚洗標。'},
+ {cat:'pro',id:'p',svg:'<circle cx="24" cy="24" r="17"/><text x="24" y="30">P</text>',t:'可乾洗（P）',d:'可交給乾洗店，使用四氯乙烯或碳氫溶劑等一般乾洗溶劑。'},
+ {cat:'pro',id:'f',svg:'<circle cx="24" cy="24" r="17"/><text x="24" y="30">F</text>',t:'可乾洗（F）',d:'只能使用碳氫溶劑乾洗，比 P 更溫和。'},
+ {cat:'pro',id:'pg',svg:'<circle cx="24" cy="22" r="15"/><text x="24" y="28">P</text><path d="M10 45h28"/>',t:'溫和乾洗',d:'可乾洗，但需要溫和的處理程序。圓形下方的橫線代表「要更溫和」。'},
+ {cat:'pro',id:'wpro',svg:'<circle cx="24" cy="24" r="17"/><text x="24" y="30">W</text>',t:'專業濕洗',d:'可交給洗衣店做專業濕洗（以水和專用設備處理），不是在家水洗的意思。'},
+ {cat:'pro',id:'p-no',svg:'<circle cx="24" cy="24" r="17"/>'+CROSS,t:'不可乾洗',d:'不能乾洗。'}
+];
+const CATS={wash:['水洗','洗衣桶'],bleach:['漂白','三角形'],dry:['乾燥','正方形'],iron:['熨燙','熨斗'],pro:['專業清洗','圓形']};
+const picked=new Map();
+$('#symbol-cats').innerHTML=Object.entries(CATS).map(([k,[n,shape]])=>`<div class="cat"><h3>${n}<small>${shape}</small></h3><div class="syms">${S.filter(s=>s.cat===k).map(s=>`<button class="sym" type="button" data-id="${s.id}" aria-pressed="false" title="${esc(s.t)}" aria-label="${esc(s.t)}">${svg(s.svg)}</button>`).join('')}</div></div>`).join('');
+function drawSummary(last){
+ const list=[...picked.values()];
+ $('#chosen').innerHTML=list.map(s=>`<span class="sym" title="${esc(s.t)}">${svg(s.svg)}</span>`).join('');
+ if(last){$('#sym-title').textContent=last.t;$('#sym-desc').textContent=last.d}
+ if(!list.length){$('#sym-title').textContent='點選左邊的符號';$('#sym-desc').textContent='可以一次選多個，像是拼出衣服上那一排洗標。';$('#summary').innerHTML='';return}
+ const order=['wash','bleach','dry','iron','pro'];
+ $('#summary').innerHTML='<div class="mini" style="margin-top:6px">洗衣說明</div><ol>'+order.flatMap(c=>list.filter(s=>s.cat===c)).map(s=>`<li><b>${esc(s.t)}</b>：${esc(s.d)}</li>`).join('')+'</ol>';
+}
+document.querySelectorAll('.sym[data-id]').forEach(b=>b.onclick=()=>{
+ const s=S.find(x=>x.id===b.dataset.id);
+ if(picked.has(s.id)){picked.delete(s.id);b.setAttribute('aria-pressed','false');drawSummary(null);return}
+ if(['wash','bleach','iron'].includes(s.cat)){for(const o of S.filter(x=>x.cat===s.cat&&picked.has(x.id))){picked.delete(o.id);document.querySelector(`[data-id="${o.id}"]`).setAttribute('aria-pressed','false')}}
+ picked.set(s.id,s);b.setAttribute('aria-pressed','true');drawSummary(s);
+});
+$('#sym-clear').onclick=()=>{picked.clear();document.querySelectorAll('.sym[data-id]').forEach(b=>b.setAttribute('aria-pressed','false'));drawSummary(null)};
+
+/* ---------- 材質 ---------- */
+const F=[
+ {g:'天然纖維',n:'棉',en:'Cotton',k:'T恤 襯衫 毛巾',wash:'可機洗，冷水到 40°C；白色寢具和毛巾可用較高溫（依洗標）。',dry:'吊掛晾乾，白色可曬太陽；烘乾機容易縮水，第一次洗特別明顯。',iron:'高溫（3 點），微濕時最好燙。',store:'摺疊或吊掛皆可。',no:'深色棉衣避免長時間曝曬，會褪色。',tip:'新衣第一次洗可能縮 3–5%，買合身款時要預留。'},
+ {g:'天然纖維',n:'麻',en:'Linen',k:'亞麻 苧麻 夏季襯衫',wash:'冷水或 30–40°C 輕柔行程，可放洗衣袋。',dry:'甩平後吊掛晾乾，半乾時拉平皺摺。',iron:'高溫（3 點），半乾時熨燙效果最好。',store:'吊掛，摺痕處長期受壓容易斷裂。',no:'避免高速脫水和烘乾，會產生很深的皺褶。',tip:'麻本來就容易皺，自然的皺褶也是它的特色。'},
+ {g:'天然纖維',n:'羊毛',en:'Wool',k:'毛衣 西裝 大衣 美麗諾',wash:'看洗標：多數需手洗或「羊毛行程」，冷水、中性洗劑（羊毛專用）。',dry:'用毛巾捲起壓出水分，平放陰乾。',iron:'中溫（2 點），用蒸氣懸空燙或墊布燙。',store:'毛衣摺疊收納；西裝、大衣用寬肩衣架；放防蟲用品。',no:'不要用熱水、不要搓揉、不要烘乾，否則會「氈化」縮成一團。',tip:'羊毛有自潔能力，穿完掛起來通風就好，不需要每次洗。'},
+ {g:'天然纖維',n:'羊絨（喀什米爾）',en:'Cashmere',k:'喀什米爾 圍巾 高級毛衣',wash:'冷水手洗，用羊毛專用中性洗劑或嬰兒洗髮精，輕輕按壓。',dry:'毛巾吸水後平放陰乾。',iron:'中溫蒸氣懸空處理，避免直接壓燙。',store:'摺疊放在透氣袋，加上防蟲用品。',no:'不可擰乾、不可吊掛晾乾、不可烘乾。',tip:'起毛球是正常現象，用毛球梳順著同一方向輕梳。'},
+ {g:'天然纖維',n:'絲',en:'Silk',k:'真絲 襯衫 領帶 絲巾',wash:'多數建議乾洗；可水洗的用冷水、中性洗劑快速手洗。',dry:'毛巾吸水後吊掛陰乾，不可曝曬。',iron:'中低溫，翻面或墊布燙；避免噴水，可能留下水痕。',store:'吊掛或捲起，避免銳利摺痕；防蟲。',no:'避免香水、止汗劑直接接觸，汗漬會讓絲變黃變脆。',tip:'領帶不可水洗，髒了交給乾洗店。'},
+ {g:'天然纖維',n:'丹寧（牛仔）',en:'Denim',k:'牛仔褲 原色 赤耳',wash:'翻面、扣好鈕扣與拉鍊，冷水、少量洗劑，可單獨洗。',dry:'翻面吊掛晾乾，避免直曬。',iron:'通常不需要；需要時中高溫翻面燙。',store:'摺疊或掛在褲架。',no:'原色牛仔第一次洗會大量掉色，不要和淺色衣服一起洗。',tip:'穿久了再洗，能保留自己穿出來的褪色紋路。'},
+ {g:'合成與再生纖維',n:'聚酯纖維',en:'Polyester',k:'運動服 快乾 排汗衫 刷毛',wash:'可機洗，冷水到 40°C；運動衣翻面洗。',dry:'乾得很快，吊掛即可；烘乾用低溫。',iron:'低溫（1 點）或不需要。',store:'摺疊或吊掛皆可。',no:'避免柔軟精，會堵住排汗布料的毛細孔、降低吸濕排汗。',tip:'洗合成纖維會釋放微塑膠纖維，可用細網洗衣袋減少流出。'},
+ {g:'合成與再生纖維',n:'尼龍',en:'Nylon',k:'風衣 包包 絲襪 泳衣',wash:'冷水輕柔洗，放洗衣袋。',dry:'吊掛陰乾，避免陽光直曬變黃。',iron:'低溫（1 點），最好不燙。',store:'摺疊或吊掛。',no:'不耐高溫，靠近熨斗或烘乾機高溫會融化、發亮。',tip:'泳衣游完要先用清水沖掉氯和鹽分。'},
+ {g:'合成與再生纖維',n:'嫘縈／天絲',en:'Rayon / Lyocell',k:'人造絲 黏膠纖維 莫代爾 Tencel',wash:'冷水輕柔或手洗，放洗衣袋。',dry:'吊掛陰乾，不要擰。',iron:'中溫，翻面燙。',store:'吊掛。',no:'濕的時候強度變弱，用力搓或扭容易變形、縮水。',tip:'由木漿再生製成，觸感涼爽垂墜，夏季服裝常見。'},
+ {g:'合成與再生纖維',n:'壓克力纖維',en:'Acrylic',k:'仿羊毛 平價毛衣 毛帽',wash:'冷水輕柔洗，放洗衣袋。',dry:'平放晾乾。',iron:'低溫或不燙，高溫會讓纖維失去彈性。',store:'摺疊。',no:'避免烘乾和熱水，容易起毛球、變形。',tip:'外觀像羊毛但比較便宜，保暖度和透氣度較低。'},
+ {g:'特殊單品',n:'羽絨外套',en:'Down jacket',k:'羽絨衣 羽絨被 鵝絨',wash:'看洗標：可水洗的用羽絨專用洗劑、冷水輕柔行程，扣好拉鍊。',dry:'低溫烘乾並放 2–3 顆網球或烘乾球拍打，或平放晾乾並不時拍鬆。',iron:'不可熨燙。',store:'洗淨乾透後寬鬆收納，不要長期真空壓縮。',no:'沒有完全乾就收起來，羽毛會結塊發臭。',tip:'平常局部髒污用濕布沾中性洗劑擦拭即可，不要常洗。'},
+ {g:'特殊單品',n:'機能防水外套',en:'Waterproof shell',k:'Gore-Tex 防水透氣 衝鋒衣 登山',wash:'依洗標用專用洗劑或少量中性洗劑，冷水或溫水，不加柔軟精。',dry:'吊掛晾乾；部分洗標允許低溫烘乾，可幫助恢復表面撥水。',iron:'多數不建議，依洗標處理。',store:'吊掛，避免長期擠壓。',no:'柔軟精和一般洗衣粉殘留會降低撥水與透氣效果。',tip:'髒污和油脂反而會讓防水外套「不透氣」，適度清洗是必要的。'},
+ {g:'特殊單品',n:'針織毛衣',en:'Knitwear',k:'毛衣 開襟衫 針織',wash:'翻面放洗衣袋，冷水羊毛行程或手洗。',dry:'整理成原本形狀平放晾乾。',iron:'蒸氣懸空整理。',store:'一定要摺疊，用衣架掛會把肩膀撐出凸角、衣身拉長。',no:'不要吊掛晾乾和收納。',tip:'起毛球用毛球梳或除毛球機輕輕處理。'},
+ {g:'特殊單品',n:'西裝外套',en:'Tailored jacket',k:'西裝 正式外套 學校制服外套',wash:'大多需要乾洗，但一季乾洗 1–2 次就夠，太常乾洗會傷布料。',dry:'穿後掛在寬肩衣架通風一晚。',iron:'用蒸氣整理，不要直接壓燙翻領。',store:'寬肩木衣架，套上透氣防塵套。',no:'口袋不要裝太多東西，會撐壞形狀。',tip:'日常用衣物刷順著布紋刷掉灰塵，就能保持乾淨。'},
+ {g:'特殊單品',n:'皮革',en:'Leather',k:'皮衣 皮鞋 皮包',wash:'不可水洗。表面用微濕布擦拭，定期使用皮革保養油。',dry:'淋濕後用毛巾吸乾，放陰涼處自然乾，不要用吹風機。',iron:'不可熨燙。',store:'寬肩衣架吊掛，用透氣布袋，不要用塑膠袋。',no:'不要曝曬和放在潮濕處，容易乾裂和發霉。',tip:'嚴重髒污交給專業皮件清洗。'},
+ {g:'特殊單品',n:'麂皮',en:'Suede',k:'翻毛皮 麂皮鞋 絨面皮',wash:'不可水洗，用麂皮刷順著毛的方向刷，局部用麂皮專用橡皮擦。',dry:'淋濕後用紙巾吸水，自然陰乾，乾了再刷。',iron:'不可熨燙。',store:'透氣布袋。',no:'怕水和油，新買可先噴防水噴霧。',tip:'定期刷毛，能讓絨面恢復蓬鬆和顏色。'}
+];
+const groups=['全部',...new Set(F.map(f=>f.g))];let fg='全部';
+$('#fabric-chips').innerHTML=groups.map(g=>`<button class="chip" type="button" data-g="${g}" aria-pressed="${g===fg}">${g}</button>`).join(' ');
+function drawFabrics(){
+ const q=$('#fabric-q').value.trim().toLowerCase();
+ const list=F.filter(f=>(fg==='全部'||f.g===fg)&&(!q||[f.n,f.en,f.k].join(' ').toLowerCase().includes(q)));
+ $('#fabric-grid').innerHTML=list.length?list.map(f=>`<article class="card"><div class="en">${esc(f.en)} · ${esc(f.g)}</div><h3>${esc(f.n)}</h3><dl><dt>清洗</dt><dd>${esc(f.wash)}</dd><dt>乾燥</dt><dd>${esc(f.dry)}</dd><dt>熨燙</dt><dd>${esc(f.iron)}</dd><dt>收納</dt><dd>${esc(f.store)}</dd><dt class="no">避免</dt><dd class="no">${esc(f.no)}</dd></dl><details><summary>小知識</summary>${esc(f.tip)}</details></article>`).join(''):'<p class="hint">找不到這個材質，試試「羊毛」「牛仔」「羽絨」。</p>';
+}
+$('#fabric-q').oninput=drawFabrics;
+document.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{fg=b.dataset.g;document.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));drawFabrics()});
+drawFabrics();
+
+/* ---------- 污漬 ---------- */
+const ST=[
+ {n:'咖啡、茶',steps:['用紙巾從外往內吸掉多餘液體。','從布料背面用冷水沖洗。','沾一點洗衣精或洗碗精輕輕按壓，靜置 5–10 分鐘。','依洗標正常清洗；白色衣物可用氧系漂白劑浸泡。'],no:'加了牛奶的咖啡不要用熱水，蛋白質遇熱會固定在布上。'},
+ {n:'醬油、咖哩',steps:['先用湯匙刮掉固體，紙巾吸乾。','冷水從背面沖。','洗衣精直接塗在污漬上輕輕搓揉，靜置 15 分鐘再洗。','咖哩的黃色可以曬太陽，紫外線有助於分解薑黃色素。'],no:'不要用熱水先沖，顏色會更難去除。'},
+ {n:'油漬',steps:['用紙巾吸掉表面油脂，不要擦開。','在污漬上撒一點小蘇打粉或玉米粉吸油 10 分鐘，再撥掉。','塗上洗碗精（去油力強）輕輕搓揉。','用洗標允許的最高水溫清洗。'],no:'洗完確認油漬消失再烘乾或熨燙，熱會讓油漬固定。'},
+ {n:'血漬',steps:['立刻用冷水從背面沖洗。','用洗衣精或含酵素的洗劑輕搓。','乾掉的血漬先用冷水加洗劑浸泡 30 分鐘以上。','白色棉質衣物可再用氧系漂白劑處理。'],no:'絕對不要用熱水，血液中的蛋白質遇熱凝固後幾乎洗不掉。'},
+ {n:'汗漬黃斑',steps:['腋下與領口的黃斑用小蘇打加少量水調成糊狀塗上。','靜置 30 分鐘後輕刷。','用氧系漂白劑加溫水浸泡（需洗標允許）。','正常清洗。'],no:'含鋁的止汗劑會讓黃斑更明顯；白襯衫最好穿過就洗，不要累積。'},
+ {n:'原子筆、麥克筆',steps:['在污漬下面墊一張紙巾。','用棉花棒沾消毒用酒精，從外往內輕點。','墨水轉移到紙巾上就換一張，重複到變淡。','用洗衣精搓洗後正常清洗。'],no:'酒精可能讓某些染料或合成纖維褪色，先在內側試；不要大面積搓。'},
+ {n:'口紅、粉底',steps:['用卸妝水或卸妝油沾在棉花上輕點。','再用洗碗精溶解油脂。','清水沖洗後正常清洗。'],no:'不要用面紙用力擦，會把顏色推進纖維裡。'},
+ {n:'紅酒、果汁',steps:['立刻用紙巾吸乾。','冷水從背面沖洗。','洗衣精輕搓，白色衣物可用氧系漂白劑浸泡。','正常清洗並確認乾淨後才晾乾。'],no:'撒鹽只能暫時吸水，還是要盡快清洗。'},
+ {n:'草漬',steps:['用含酵素的洗衣精直接塗抹污漬。','靜置 15–30 分鐘。','用軟刷輕刷後清洗。'],no:'草漬含色素和蛋白質，避免熱水。'},
+ {n:'泥巴',steps:['先讓泥巴完全乾掉。','用刷子把乾泥刷掉。','剩下的痕跡用洗衣精搓洗。'],no:'泥巴濕的時候擦會越抹越大片。'},
+ {n:'口香糖',steps:['把衣服放進塑膠袋，放冷凍庫 1–2 小時（或用冰塊敷）。','口香糖變硬後用湯匙或指甲刮掉。','殘留的黏膠用洗碗精或少量食用油搓開，再清洗。'],no:'不要在軟的時候拉，會黏得更深。'},
+ {n:'霉斑',steps:['先在戶外刷掉表面霉斑，避免孢子在屋內飛散。','白色可漂白衣物依洗標用漂白劑處理；有色衣物用氧系漂白劑浸泡。','清洗後在陽光下曬乾。','衣櫃一起清潔並除濕。'],no:'發霉通常代表收納環境太潮濕，要找出原因，否則會再發生。'}
+];
+$('#stain-list').innerHTML=ST.map((s,i)=>`<button type="button" role="tab" data-i="${i}" aria-pressed="false">${esc(s.n)}</button>`).join('');
+function drawStain(i){
+ const s=ST[i];document.querySelectorAll('#stain-list button').forEach(b=>b.setAttribute('aria-pressed',String(+b.dataset.i===i)));
+ $('#stain-card').innerHTML=`<div class="mini">Stain / 污漬</div><h3>${esc(s.n)}</h3><ol>${s.steps.map(x=>`<li>${esc(x)}</li>`).join('')}</ol><div class="warnbox"><b>注意：</b>${esc(s.no)}</div><p class="hint">處理後確認污漬已經去除，再烘乾或熨燙；乾洗衣物或貴重衣物請交給專業洗衣店。</p>`;
+}
+document.querySelectorAll('#stain-list button').forEach(b=>b.onclick=()=>drawStain(+b.dataset.i));drawStain(0);
+
+/* ---------- 測驗 ---------- */
+const Q=[
+ {q:'洗標上的洗衣桶下方有兩條橫線，代表什麼？',o:['可以用兩倍洗劑','要用非常輕柔的行程','可以洗兩次','要分兩次脫水'],a:1,e:'洗衣桶下的橫線越多，代表處理要越溫和；兩條是「非常輕柔」。'},
+ {q:'三角形裡面有兩條斜線，代表？',o:['任何漂白劑都可以','只能用氧系（非氯）漂白劑','不可漂白','漂白兩次'],a:1,e:'兩條斜線代表只能使用氧系漂白劑，不可用含氯漂白水。'},
+ {q:'熨斗符號裡有三個點，最高溫度大約是？',o:['110°C','150°C','200°C','250°C'],a:2,e:'1 點 110°C、2 點 150°C、3 點 200°C；三個點常見於棉、麻。'},
+ {q:'不小心沾到血漬，第一步應該？',o:['用熱水沖','用冷水從背面沖','直接放進烘衣機','用吹風機吹乾'],a:1,e:'血液含蛋白質，遇熱會凝固，所以要用冷水。'},
+ {q:'羊毛毛衣洗完最好怎麼晾？',o:['用衣架吊掛曬太陽','平放陰乾','放烘衣機高溫烘','擰乾後掛起來'],a:1,e:'吊掛會被水的重量拉長；羊毛不耐熱，平放陰乾最安全。'},
+ {q:'正方形裡有一個圓圈打叉，代表？',o:['不可烘乾','不可乾洗','不可晾曬','不可熨燙'],a:0,e:'正方形加圓圈是烘衣機，打叉就是不可以用烘衣機。'},
+ {q:'為什麼排汗衣不建議使用柔軟精？',o:['會讓衣服變重','會堵住布料、降低吸濕排汗','會讓顏色變深','會產生靜電'],a:1,e:'柔軟精會在纖維表面形成一層膜，影響排汗功能。'},
+ {q:'換季收納毛衣前，最重要的是？',o:['噴香水','洗乾淨並完全乾燥','用衣架掛起來','用塑膠袋密封'],a:1,e:'殘留汗漬和濕氣會招來蟲、霉菌並讓衣服變黃。'}
+];
+let qi=0,score=0,answered=false;
+function drawQuiz(){
+ if(qi>=Q.length){$('#quiz-box').innerHTML=`<h3>完成！答對 ${score} / ${Q.length} 題</h3><p>${score>=7?'太厲害了，你已經是洗衣達人。':score>=5?'很不錯！可以回去看看答錯的部分。':'再讀一次上面的洗標與材質說明，下次一定更好。'}</p><button class="btn" id="q-again" type="button">再做一次</button>`;$('#q-again').onclick=()=>{qi=0;score=0;drawQuiz()};return}
+ const x=Q[qi];answered=false;
+ $('#quiz-box').innerHTML=`<div class="mini" style="color:#d9c48e">Question ${qi+1} / ${Q.length}</div><div class="q">${esc(x.q)}</div><div class="opts">${x.o.map((o,i)=>`<button type="button" data-i="${i}">${esc(o)}</button>`).join('')}</div><div class="exp" id="q-exp"></div><div class="nav"><span>目前答對 ${score} 題</span><button class="btn" id="q-next" type="button" hidden>下一題 →</button></div>`;
+ document.querySelectorAll('.quiz .opts button').forEach(b=>b.onclick=()=>{if(answered)return;answered=true;const i=+b.dataset.i;if(i===x.a)score++;b.classList.add(i===x.a?'right':'wrong');document.querySelector(`.quiz .opts button[data-i="${x.a}"]`).classList.add('right');$('#q-exp').textContent=(i===x.a?'答對了！':'差一點。')+x.e;$('#q-next').hidden=false;$('#q-next').onclick=()=>{qi++;drawQuiz()}});
+}
+drawQuiz();
+
+/* ---------- 影片（若 assets/care/care-intro.mp4 存在就顯示） ---------- */
+fetch('../assets/care/care-intro.mp4',{method:'HEAD'}).then(r=>{if(!r.ok)return;const v=$('#video-slot');v.hidden=false;v.innerHTML='<video src="../assets/care/care-intro.mp4" controls muted playsinline preload="metadata"></video><div><div class="mini">Video</div><p>短片：一件衣服從洗標到收納的保養流程。</p><p class="hint">AI 生成示意影片，實際做法以本頁文字說明與洗標為準。</p></div>'}).catch(()=>{});
+</script>
+</body>
+</html>

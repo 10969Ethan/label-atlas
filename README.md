@@ -15,6 +15,12 @@
 - `assets/`：品牌標誌與圖片
 - `time-machine/index.html`：時光機獨立預覽版（輪廓示意圖，無外部圖片）
 
+## 頁面
+- `/`：首頁（品牌圖書館、時光機、服裝歷史、小辭典）
+- `/designers/`：設計師宇宙書庫，91 位設計師的人物誌、職涯經歷與聯名合作
+- `/care/`：洗滌保養（洗標解讀、材質保養、去漬速查、洗衣步驟、晾曬熨燙收納、課堂測驗）
+- 同步到 chatgpt.site：見 `docs/GPT-PROMPT.md`
+
 ## 靜態版（GitHub Pages）
 GitHub Pages 沒有伺服器，所以這個版本所有資料都存在 repo 裡，不呼叫任何 API：
 - **設計師人物誌**：91 位設計師的完整人物誌都在 `designers.json` 的 `profile` 欄位（原始稿在 `tools/profiles/*.json`，改完執行 `python3 tools/merge_profiles.py` 合併）。

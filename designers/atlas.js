@@ -39,6 +39,8 @@ function bodyFor(d,p,parent){
  if(p.tags?.length||p.language){right.append(el('h3','設計語言'));(p.tags||[]).forEach(t=>right.append(el('span',t,'tag')));if(p.language)right.append(el('p',p.language))}
  spread.append(left,right);parent.append(spread);
  section(parent,'影響與傳承',p.influence);const rel=el('div',null,'related');for(const l of p.links||[]){const other=books.find(b=>b.id===l.id);if(!other)continue;const b=el('button',other.brand+' ／ '+other.name);b.title=l.text;b.onclick=()=>location.hash='designer/'+other.id;rel.append(b)}parent.append(rel);
+ if(p.career?.length){parent.append(el('h3','職涯經歷：待過哪些品牌'));const ol=el('ol',null,'career');p.career.forEach(c=>{const li=el('li');li.append(el('span',c.years||'—','yr'),el('strong',c.org||''),el('span',c.role,'role'));ol.append(li)});parent.append(ol)}
+ if(p.collabs?.length){parent.append(el('h3','聯名與合作'));const ul=el('ul',null,'collabs');p.collabs.forEach(c=>{const li=el('li');li.append(el('strong',c.partner),el('span',(c.year?c.year+'　':'')+c.note));ul.append(li)});parent.append(ul)}
  if(p.timeline?.length){parent.append(el('h3','年表'));const ol=el('ol');p.timeline.forEach(e=>ol.append(el('li',e.year+' 年　'+e.text)));parent.append(ol)}
  if(p.quote?.zh){const q=el('blockquote','「'+p.quote.zh+'」');q.append(el('small','　中文意譯 · '));q.append(link('查看原文出處',d.source||wiki(d)));parent.append(q)}
 }

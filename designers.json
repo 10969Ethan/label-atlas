@@ -132,7 +132,56 @@
      "text": "曾在 Comme des Garçons 擔任打版師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1964",
+     "role": "廣告部門",
+     "org": "旭化成"
+    },
+    {
+     "years": "1969",
+     "role": "開始以 Comme des Garçons 為名設計",
+     "org": ""
+    },
+    {
+     "years": "1973",
+     "role": "創辦人",
+     "org": "Comme des Garçons"
+    },
+    {
+     "years": "2004",
+     "role": "開設",
+     "org": "Dover Street Market"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2008",
+     "partner": "H&M",
+     "note": "設計師聯名系列"
+    },
+    {
+     "year": "2008",
+     "partner": "Louis Vuitton",
+     "note": "包款合作"
+    },
+    {
+     "year": "2009",
+     "partner": "Converse",
+     "note": "PLAY 系列帆布鞋"
+    },
+    {
+     "year": "",
+     "partner": "Nike",
+     "note": "多次球鞋合作"
+    },
+    {
+     "year": "",
+     "partner": "Supreme",
+     "note": "多次聯名"
+    }
+   ]
   },
   "portraitUnavailable": true,
   "rejectedPortraits": [
@@ -216,7 +265,36 @@
    "quote": {
     "zh": "我認為女士穿我的男裝看起來和穿我的女裝一樣好看…當我開始設計的時候，我希望為女士製作男裝。",
     "original": "I think that my men's clothes look as good on women as my women's clothing […] When I started designing, I wanted to make men's clothes for women."
-   }
+   },
+   "career": [
+    {
+     "years": "1972",
+     "role": "創辦人",
+     "org": "Y's"
+    },
+    {
+     "years": "1981",
+     "role": "創辦人・首次巴黎發表",
+     "org": "Yohji Yamamoto"
+    },
+    {
+     "years": "2002–",
+     "role": "創意總監",
+     "org": "Y-3（與 adidas）"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2002",
+     "partner": "adidas",
+     "note": "共同推出 Y-3，結合前衛設計與運動機能"
+    },
+    {
+     "year": "1989",
+     "partner": "Wim Wenders",
+     "note": "紀錄片《都市時裝速記》（Notebook on Cities and Clothes）記錄他的創作"
+    }
+   ]
   },
   "works": [
    {
@@ -318,7 +396,61 @@
    "quote": {
     "zh": "設計不是為了哲學——它是為了生活。",
     "original": "Design is not for philosophy—it's for life."
-   }
+   },
+   "career": [
+    {
+     "years": "1966",
+     "role": "助理",
+     "org": "Guy Laroche"
+    },
+    {
+     "years": "1968",
+     "role": "助理",
+     "org": "Givenchy"
+    },
+    {
+     "years": "1969",
+     "role": "設計師",
+     "org": "Geoffrey Beene（紐約）"
+    },
+    {
+     "years": "1970",
+     "role": "創辦人",
+     "org": "Miyake Design Studio"
+    },
+    {
+     "years": "1993",
+     "role": "推出",
+     "org": "PLEATS PLEASE"
+    },
+    {
+     "years": "1998",
+     "role": "與藤原大推出",
+     "org": "A-POC"
+    },
+    {
+     "years": "2010",
+     "role": "推出",
+     "org": "132 5. ISSEY MIYAKE"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1987–1999",
+     "partner": "Irving Penn",
+     "note": "攝影師長期拍攝他的作品，出版多本攝影集"
+    },
+    {
+     "year": "1991",
+     "partner": "William Forsythe",
+     "note": "為法蘭克福芭蕾舞團設計舞衣，催生了褶皺服裝"
+    },
+    {
+     "year": "",
+     "partner": "Steve Jobs",
+     "note": "為賈伯斯製作招牌的黑色高領衫"
+    }
+   ]
   },
   "works": [
    {
@@ -445,7 +577,41 @@
    "quote": {
     "zh": "當我五年前停止工作時，我去度假、休息、旅行。當我決定再次工作時，我告訴自己要在裝飾設計領域，而不僅僅是時尚。",
     "original": "when I stopped working five years ago, I went on vacation, I rested, I traveled. And when I decided to work again, I told myself it would be in decoration, more than fashion."
-   }
+   },
+   "career": [
+    {
+     "years": "1964",
+     "role": "移居巴黎",
+     "org": ""
+    },
+    {
+     "years": "1970",
+     "role": "開設 Jungle Jap 精品店",
+     "org": "KENZO"
+    },
+    {
+     "years": "1993",
+     "role": "品牌售予 LVMH",
+     "org": "KENZO"
+    },
+    {
+     "years": "1999",
+     "role": "退休",
+     "org": ""
+    },
+    {
+     "years": "2020",
+     "role": "推出生活品牌",
+     "org": "K-3"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2019",
+     "partner": "Roche Bobois",
+     "note": "為家具品牌設計 Mah Jong 沙發布料"
+    }
+   ]
   },
   "works": []
  },
@@ -519,7 +685,41 @@
      "text": "客戶關係：森英惠在成為Coco Chanel的客戶時獲得啟發，決定繼續追求高級訂製時裝。"
     }
    ],
-   "quote": null
+   "quote": null,
+   "career": [
+    {
+     "years": "1951",
+     "role": "開設工作室",
+     "org": "東京"
+    },
+    {
+     "years": "1965",
+     "role": "首次在紐約發表",
+     "org": "Hanae Mori"
+    },
+    {
+     "years": "1977",
+     "role": "成為巴黎高級訂製時裝公會成員",
+     "org": "Hanae Mori Haute Couture"
+    },
+    {
+     "years": "2004",
+     "role": "舉辦最後一場高級訂製秀",
+     "org": ""
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1950–60 年代",
+     "partner": "日本電影",
+     "note": "為數百部電影設計戲服"
+    },
+    {
+     "year": "",
+     "partner": "日本航空",
+     "note": "設計空服員制服"
+    }
+   ]
   },
   "works": [
    {
@@ -638,7 +838,56 @@
      "text": "前下屬"
     }
    ],
-   "quote": null
+   "quote": null,
+   "career": [
+    {
+     "years": "1984",
+     "role": "打版師",
+     "org": "Comme des Garçons"
+    },
+    {
+     "years": "1987",
+     "role": "設計師",
+     "org": "Comme des Garçons Tricot"
+    },
+    {
+     "years": "1992",
+     "role": "推出",
+     "org": "JUNYA WATANABE COMME des GARÇONS"
+    },
+    {
+     "years": "2001",
+     "role": "推出",
+     "org": "JUNYA WATANABE MAN"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "",
+     "partner": "Levi's",
+     "note": "長期改造經典牛仔單品"
+    },
+    {
+     "year": "",
+     "partner": "The North Face",
+     "note": "機能外套改造系列"
+    },
+    {
+     "year": "",
+     "partner": "Carhartt",
+     "note": "工作服拼接系列"
+    },
+    {
+     "year": "",
+     "partner": "New Balance",
+     "note": "球鞋合作"
+    },
+    {
+     "year": "",
+     "partner": "Nike",
+     "note": "球鞋合作"
+    }
+   ]
   },
   "portraitUnavailable": true,
   "works": [
@@ -783,7 +1032,46 @@
      "text": "年輕時的龐克偶像"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1993",
+     "role": "創辦人",
+     "org": "UNDERCOVER"
+    },
+    {
+     "years": "1993",
+     "role": "與 NIGO 合開",
+     "org": "NOWHERE"
+    },
+    {
+     "years": "2002",
+     "role": "首次巴黎發表",
+     "org": "UNDERCOVER"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2010",
+     "partner": "Nike",
+     "note": "GYAKUSOU 跑步系列"
+    },
+    {
+     "year": "2010",
+     "partner": "UNIQLO",
+     "note": "UU 系列"
+    },
+    {
+     "year": "2019",
+     "partner": "Valentino",
+     "note": "男裝系列合作"
+    },
+    {
+     "year": "",
+     "partner": "Supreme",
+     "note": "多次聯名"
+    }
+   ]
   }
  },
  {
@@ -891,7 +1179,51 @@
      "text": "受邀設計其高級訂製系列"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "",
+     "role": "企劃",
+     "org": "World"
+    },
+    {
+     "years": "",
+     "role": "打版師",
+     "org": "Comme des Garçons"
+    },
+    {
+     "years": "",
+     "role": "打版",
+     "org": "JUNYA WATANABE"
+    },
+    {
+     "years": "1999",
+     "role": "創辦人",
+     "org": "sacai"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2015",
+     "partner": "Nike",
+     "note": "首次球鞋與服裝合作"
+    },
+    {
+     "year": "2019",
+     "partner": "Nike",
+     "note": "LDWaffle"
+    },
+    {
+     "year": "2021",
+     "partner": "Jean Paul Gaultier",
+     "note": "客座設計高級訂製系列"
+    },
+    {
+     "year": "2022",
+     "partner": "Carhartt WIP",
+     "note": "工作服合作"
+    }
+   ]
   }
  },
  {
@@ -948,7 +1280,41 @@
      "text": "裏原宿文化的夥伴"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1990",
+     "role": "參與創立",
+     "org": "GOODENOUGH"
+    },
+    {
+     "years": "2003",
+     "role": "創辦人",
+     "org": "fragment design"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2002",
+     "partner": "Nike",
+     "note": "與 Mark Parker、Tinker Hatfield 組成 HTM"
+    },
+    {
+     "year": "2017",
+     "partner": "Louis Vuitton",
+     "note": "聯名系列"
+    },
+    {
+     "year": "2018",
+     "partner": "Moncler",
+     "note": "Moncler Genius 7 FRAGMENT"
+    },
+    {
+     "year": "2021",
+     "partner": "寶可夢",
+     "note": "THUNDERBOLT PROJECT"
+    }
+   ]
   }
  },
  {
@@ -1028,7 +1394,51 @@
      "text": "合作關係：與 Virgil Abloh 共同為 Louis Vuitton 創作膠囊系列。"
     }
    ],
-   "quote": null
+   "quote": null,
+   "career": [
+    {
+     "years": "1993",
+     "role": "創辦人",
+     "org": "A BATHING APE"
+    },
+    {
+     "years": "2003",
+     "role": "與 Pharrell 共同創立",
+     "org": "Billionaire Boys Club／ICECREAM"
+    },
+    {
+     "years": "2010",
+     "role": "創辦人",
+     "org": "HUMAN MADE"
+    },
+    {
+     "years": "2014",
+     "role": "創意總監",
+     "org": "UNIQLO UT"
+    },
+    {
+     "years": "2021–",
+     "role": "藝術總監",
+     "org": "KENZO"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2003",
+     "partner": "Pharrell Williams",
+     "note": "共同創立 BBC／ICECREAM"
+    },
+    {
+     "year": "2020",
+     "partner": "Louis Vuitton",
+     "note": "與 Virgil Abloh 推出 LV² 系列"
+    },
+    {
+     "year": "",
+     "partner": "UNIQLO",
+     "note": "UT 系列"
+    }
+   ]
   },
   "qid": "Q967645",
   "works": [],
@@ -1104,7 +1514,31 @@
     }
    ],
    "links": [],
-   "quote": null
+   "quote": null,
+   "career": [
+    {
+     "years": "1997",
+     "role": "創辦人",
+     "org": "玫瑰坊"
+    },
+    {
+     "years": "2016",
+     "role": "巴黎高級訂製時裝公會客座會員",
+     "org": "Guo Pei"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2008",
+     "partner": "北京奧運",
+     "note": "設計頒獎禮服"
+    },
+    {
+     "year": "2015",
+     "partner": "Rihanna",
+     "note": "大都會博物館慈善晚宴的黃色長披風"
+    }
+   ]
   },
   "qid": "Q20984058",
   "works": []
@@ -1161,7 +1595,26 @@
     }
    ],
    "links": [],
-   "quote": null
+   "quote": null,
+   "career": [
+    {
+     "years": "1996",
+     "role": "共同創立",
+     "org": "例外 EXCEPTION de MIXMIND"
+    },
+    {
+     "years": "2006",
+     "role": "創辦人・巴黎發表",
+     "org": "無用 WUYONG"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2007",
+     "partner": "賈樟柯",
+     "note": "紀錄片《無用》記錄她的創作"
+    }
+   ]
   },
   "qid": "Q2181383",
   "portraitUnavailable": true,
@@ -1225,7 +1678,26 @@
      "text": "同樣重視布料的中國設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "2009",
+     "role": "創辦人",
+     "org": "UMA WANG"
+    },
+    {
+     "years": "2017",
+     "role": "進入巴黎官方時裝週",
+     "org": ""
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2022",
+     "partner": "聯合國難民署",
+     "note": "公益合作"
+    }
+   ]
   }
  },
  {
@@ -1316,7 +1788,26 @@
      "text": "同時期在紐約發展的亞裔設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1981",
+     "role": "移居紐約",
+     "org": ""
+    },
+    {
+     "years": "1990 年代",
+     "role": "創辦人",
+     "org": "Vivienne Tam"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2009",
+     "partner": "惠普 HP",
+     "note": "設計筆記型電腦外殼"
+    }
+   ]
   }
  },
  {
@@ -1376,7 +1867,25 @@
     }
    ],
    "links": [],
-   "quote": null
+   "quote": null,
+   "career": [
+    {
+     "years": "1978",
+     "role": "創辦人",
+     "org": "夏姿・陳"
+    },
+    {
+     "years": "2001",
+     "role": "開設巴黎旗艦店",
+     "org": ""
+    },
+    {
+     "years": "2008",
+     "role": "進入巴黎時裝週",
+     "org": ""
+    }
+   ],
+   "collabs": []
   },
   "qid": "Q7495988",
   "works": []
@@ -1429,7 +1938,21 @@
      "text": "同時代的台灣設計品牌"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1985",
+     "role": "創辦人",
+     "org": "洪麗芬"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "",
+     "partner": "音樂、戲劇與舞蹈團體",
+     "note": "設計表演服裝"
+    }
+   ]
   }
  },
  {
@@ -1541,7 +2064,31 @@
      "text": "同時代的印度設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1997",
+     "role": "創辦人",
+     "org": "Manish Arora"
+    },
+    {
+     "years": "2001",
+     "role": "推出",
+     "org": "Fish Fry"
+    },
+    {
+     "years": "2011–2012",
+     "role": "女裝創意總監",
+     "org": "Paco Rabanne"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2001",
+     "partner": "Reebok",
+     "note": "合作推出運動風副牌 Fish Fry"
+    }
+   ]
   }
  },
  {
@@ -1612,7 +2159,31 @@
      "text": "同時代的印度設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1999",
+     "role": "創辦人",
+     "org": "Sabyasachi"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2017",
+     "partner": "Christian Louboutin",
+     "note": "鞋款合作"
+    },
+    {
+     "year": "2018",
+     "partner": "Estée Lauder",
+     "note": "彩妝合作"
+    },
+    {
+     "year": "2021",
+     "partner": "H&M",
+     "note": "設計師聯名系列"
+    }
+   ]
   }
  },
  {
@@ -1706,7 +2277,20 @@
      "text": "在巴黎高級訂製週發表的中國設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "2010",
+     "role": "首個系列",
+     "org": "Yiqing Yin"
+    },
+    {
+     "years": "2011",
+     "role": "巴黎高級訂製時裝公會客座會員",
+     "org": ""
+    }
+   ],
+   "collabs": []
   }
  },
  {
@@ -1781,7 +2365,15 @@
      "text": "同樣在高級訂製週發表的華人設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "2014",
+     "role": "創辦人",
+     "org": "Robert Wun"
+    }
+   ],
+   "collabs": []
   }
  },
  {
@@ -1845,7 +2437,26 @@
      "text": "同樣把韓服帶向國際的設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1952",
+     "role": "創辦人",
+     "org": "House of Nora Noh"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1959",
+     "partner": "環球小姐選美",
+     "note": "阿里郎禮服"
+    },
+    {
+     "year": "1960 年代",
+     "partner": "尹福姬",
+     "note": "歌手造型與迷你裙"
+    }
+   ]
   }
  },
  {
@@ -1910,7 +2521,21 @@
      "text": "同樣參與首爾奧運服裝設計"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1962",
+     "role": "創辦人",
+     "org": "Salon André"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1988",
+     "partner": "首爾奧運",
+     "note": "韓國選手服裝"
+    }
+   ]
   }
  },
  {
@@ -1967,7 +2592,20 @@
      "text": "同樣以韓國文化為靈感"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1970 年代",
+     "role": "開始設計韓服",
+     "org": ""
+    },
+    {
+     "years": "2004",
+     "role": "創辦人",
+     "org": "紐約韓國文化博物館"
+    }
+   ],
+   "collabs": []
   }
  },
  {
@@ -2054,7 +2692,20 @@
      "text": "同時期在巴黎發表的韓國設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1993",
+     "role": "首爾時裝週首次發表",
+     "org": "LIE SANGBONG"
+    },
+    {
+     "years": "2002",
+     "role": "首次巴黎發表",
+     "org": ""
+    }
+   ],
+   "collabs": []
   }
  },
  {
@@ -2114,7 +2765,26 @@
      "text": "同樣參與首爾奧運服裝設計"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1965",
+     "role": "創辦人",
+     "org": "Francoise"
+    },
+    {
+     "years": "1990",
+     "role": "組織",
+     "org": "首爾時裝藝術家協會"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1988",
+     "partner": "首爾奧運",
+     "note": "典禮服裝"
+    }
+   ]
   }
  },
  {
@@ -2173,7 +2843,20 @@
      "text": "同時期在巴黎發表的韓國設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1988",
+     "role": "創辦人",
+     "org": "SOLID HOMME"
+    },
+    {
+     "years": "2002",
+     "role": "創辦人",
+     "org": "WOOYOUNGMI"
+    }
+   ],
+   "collabs": []
   }
  },
  {
@@ -2224,7 +2907,21 @@
      "text": "同樣以寬大輪廓見長"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "2007",
+     "role": "首次巴黎發表",
+     "org": "JUUN.J"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2020",
+     "partner": "adidas",
+     "note": "球鞋與服裝合作"
+    }
+   ]
   }
  },
  {
@@ -2279,7 +2976,15 @@
      "text": "同世代的韓國設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "2010",
+     "role": "創辦人",
+     "org": "KYE"
+    }
+   ],
+   "collabs": []
   }
  },
  {
@@ -2333,7 +3038,26 @@
      "text": "同世代的韓國設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "2015",
+     "role": "創辦人",
+     "org": "MINJUKIM"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "",
+     "partner": "Red Velvet",
+     "note": "女團舞台服裝"
+    },
+    {
+     "year": "2020",
+     "partner": "Netflix",
+     "note": "《Next in Fashion》冠軍"
+    }
+   ]
   }
  },
  {
@@ -2375,7 +3099,26 @@
      "text": "同樣來自首爾的設計品牌"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "2014",
+     "role": "成立",
+     "org": "ADER ERROR"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "",
+     "partner": "PUMA",
+     "note": "球鞋合作"
+    },
+    {
+     "year": "2022",
+     "partner": "ZARA",
+     "note": "聯名系列"
+    }
+   ]
   }
  },
  {
@@ -2422,7 +3165,15 @@
      "text": "同樣來自首爾的設計品牌"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "2014",
+     "role": "成立",
+     "org": "Andersson Bell"
+    }
+   ],
+   "collabs": []
   }
  },
  {
@@ -2469,7 +3220,15 @@
      "text": "韓國男裝的前輩"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "",
+     "role": "創辦人",
+     "org": "KIMSEORYONG"
+    }
+   ],
+   "collabs": []
   }
  },
  {
@@ -2567,7 +3326,26 @@
      "text": "後來推翻華服傳統的設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1840 年代",
+     "role": "店員",
+     "org": "Gagelin（巴黎）"
+    },
+    {
+     "years": "1858",
+     "role": "與 Otto Bobergh 創立",
+     "org": "House of Worth"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "",
+     "partner": "歐仁妮皇后",
+     "note": "成為皇后的御用設計師"
+    }
+   ]
   }
  },
  {
@@ -2676,7 +3454,41 @@
      "text": "戰後風格的對照"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1910",
+     "role": "開設帽店",
+     "org": "Chanel Modes（康朋街）"
+    },
+    {
+     "years": "1913",
+     "role": "開設精品店",
+     "org": "杜維爾"
+    },
+    {
+     "years": "1915",
+     "role": "開設時裝屋",
+     "org": "比亞里茨"
+    },
+    {
+     "years": "1939",
+     "role": "關閉時裝店",
+     "org": ""
+    },
+    {
+     "years": "1954",
+     "role": "重返時裝界",
+     "org": "Chanel"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1921",
+     "partner": "調香師 Ernest Beaux",
+     "note": "推出 N°5 香水"
+    }
+   ]
   },
   "rejectedWorks": [
    "Collections of Musée de la Monnaie de Paris 5€ coco chanel verso.jpg",
@@ -2787,7 +3599,31 @@
      "text": "1996 年起擔任 Dior 創意總監"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1938",
+     "role": "設計師",
+     "org": "Robert Piguet"
+    },
+    {
+     "years": "1941",
+     "role": "設計師",
+     "org": "Lucien Lelong"
+    },
+    {
+     "years": "1946",
+     "role": "創辦人",
+     "org": "Christian Dior"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1946",
+     "partner": "Marcel Boussac",
+     "note": "紡織業鉅子出資成立時裝屋"
+    }
+   ]
   },
   "rejectedWorks": [
    "Chanel-Iman Runway 2009.jpg",
@@ -2906,7 +3742,46 @@
      "text": "後來擔任 Saint Laurent 創意總監"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1955",
+     "role": "助理",
+     "org": "Christian Dior"
+    },
+    {
+     "years": "1957–1960",
+     "role": "首席設計師",
+     "org": "Christian Dior"
+    },
+    {
+     "years": "1961",
+     "role": "與 Pierre Bergé 創立",
+     "org": "Yves Saint Laurent"
+    },
+    {
+     "years": "1966",
+     "role": "推出成衣線",
+     "org": "Saint Laurent Rive Gauche"
+    },
+    {
+     "years": "2002",
+     "role": "退休",
+     "org": ""
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1965",
+     "partner": "蒙德里安（藝術）",
+     "note": "以其畫作為靈感的洋裝"
+    },
+    {
+     "year": "1966",
+     "partner": "Catherine Deneuve",
+     "note": "長期為其設計電影與私人服裝"
+    }
+   ]
   },
   "rejectedWorks": [
    "Lyon 2e - Musée des Tissus - Yves Saint Laurent, les coulisses de la haute couture à Lyon - Livre d'inventaire, collection haute couture printemps-été 1996.jpg",
@@ -3019,7 +3894,31 @@
      "text": "後來擔任 Balenciaga 創意總監"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1917",
+     "role": "開店",
+     "org": "聖塞巴斯蒂安"
+    },
+    {
+     "years": "1937",
+     "role": "開設時裝屋",
+     "org": "巴黎"
+    },
+    {
+     "years": "1968",
+     "role": "關閉時裝屋",
+     "org": ""
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1969",
+     "partner": "法國航空",
+     "note": "設計空服員制服，是他最後的作品之一"
+    }
+   ]
   },
   "portraitUnavailable": true,
   "rejectedPortraits": [
@@ -3126,7 +4025,31 @@
      "text": "同樣以幽默與流行文化見長"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1927",
+     "role": "開始設計",
+     "org": "Schiaparelli"
+    },
+    {
+     "years": "1954",
+     "role": "關閉時裝屋",
+     "org": ""
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1937",
+     "partner": "Salvador Dalí",
+     "note": "龍蝦洋裝、鞋子帽"
+    },
+    {
+     "year": "1937",
+     "partner": "Jean Cocteau",
+     "note": "刺繡圖案設計"
+    }
+   ]
   }
  },
  {
@@ -3225,7 +4148,46 @@
      "text": "後來接任紀梵希設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1945",
+     "role": "助理",
+     "org": "Jacques Fath"
+    },
+    {
+     "years": "",
+     "role": "設計師",
+     "org": "Robert Piguet、Lucien Lelong"
+    },
+    {
+     "years": "1947–1951",
+     "role": "設計師",
+     "org": "Schiaparelli"
+    },
+    {
+     "years": "1952",
+     "role": "創辦人",
+     "org": "Givenchy"
+    },
+    {
+     "years": "1995",
+     "role": "退休",
+     "org": ""
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1954",
+     "partner": "Audrey Hepburn",
+     "note": "《龍鳳配》等多部電影服裝"
+    },
+    {
+     "year": "1961",
+     "partner": "Audrey Hepburn",
+     "note": "《第凡內早餐》小黑裙"
+    }
+   ]
   }
  },
  {
@@ -3297,7 +4259,41 @@
      "text": "同時代放鬆女性輪廓的設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1898",
+     "role": "設計師",
+     "org": "Jacques Doucet"
+    },
+    {
+     "years": "1901",
+     "role": "設計師",
+     "org": "House of Worth"
+    },
+    {
+     "years": "1903",
+     "role": "創辦人",
+     "org": "Paul Poiret"
+    },
+    {
+     "years": "1911",
+     "role": "推出香水",
+     "org": "Parfums de Rosine"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1908",
+     "partner": "Paul Iribe",
+     "note": "插畫集《Les Robes de Paul Poiret》"
+    },
+    {
+     "year": "1911",
+     "partner": "Raoul Dufy",
+     "note": "布料印花設計"
+    }
+   ]
   }
  },
  {
@@ -3363,7 +4359,36 @@
      "text": "同時代放鬆女性輪廓的設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "",
+     "role": "設計師",
+     "org": "Callot Sœurs"
+    },
+    {
+     "years": "1907–1911",
+     "role": "設計師",
+     "org": "Jacques Doucet"
+    },
+    {
+     "years": "1912",
+     "role": "創辦人",
+     "org": "Vionnet"
+    },
+    {
+     "years": "1939",
+     "role": "關閉時裝屋",
+     "org": ""
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1919",
+     "partner": "Thayaht",
+     "note": "設計品牌標誌與時裝插畫"
+    }
+   ]
   }
  },
  {
@@ -3472,7 +4497,41 @@
      "text": "同屬 1960 年代未來主義設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "",
+     "role": "學徒",
+     "org": "Paquin"
+    },
+    {
+     "years": "",
+     "role": "設計師",
+     "org": "Schiaparelli"
+    },
+    {
+     "years": "1947",
+     "role": "工坊主管",
+     "org": "Christian Dior"
+    },
+    {
+     "years": "1950",
+     "role": "創辦人",
+     "org": "Pierre Cardin"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1959",
+     "partner": "Printemps 百貨",
+     "note": "推出設計師成衣"
+    },
+    {
+     "year": "1972",
+     "partner": "AMC",
+     "note": "設計 Javelin 汽車內裝"
+    }
+   ]
   }
  },
  {
@@ -3587,7 +4646,26 @@
      "text": "後來擔任品牌創意總監"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1966",
+     "role": "創辦人",
+     "org": "Paco Rabanne"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1968",
+     "partner": "電影《太空英雌芭芭麗娜》",
+     "note": "服裝設計"
+    },
+    {
+     "year": "1969",
+     "partner": "Puig",
+     "note": "推出 Calandre 香水"
+    }
+   ]
   }
  },
  {
@@ -3702,7 +4780,31 @@
      "text": "同時期推出年輕化設計"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1955",
+     "role": "與 Alexander Plunket Greene 開設",
+     "org": "Bazaar"
+    },
+    {
+     "years": "1963",
+     "role": "推出",
+     "org": "Ginger Group"
+    },
+    {
+     "years": "1966",
+     "role": "推出化妝品",
+     "org": "Mary Quant Cosmetics"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1962",
+     "partner": "J.C. Penney",
+     "note": "在美國百貨推出系列"
+    }
+   ]
   }
  },
  {
@@ -3780,7 +4882,56 @@
      "text": "同年獲國際羊毛局獎項"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1955",
+     "role": "助理",
+     "org": "Pierre Balmain"
+    },
+    {
+     "years": "1958–1963",
+     "role": "藝術總監",
+     "org": "Jean Patou"
+    },
+    {
+     "years": "1964–1983",
+     "role": "設計師",
+     "org": "Chloé"
+    },
+    {
+     "years": "1965–2019",
+     "role": "創意總監",
+     "org": "Fendi"
+    },
+    {
+     "years": "1983–2019",
+     "role": "創意總監",
+     "org": "Chanel"
+    },
+    {
+     "years": "1984",
+     "role": "創辦人",
+     "org": "Karl Lagerfeld"
+    },
+    {
+     "years": "1992–1997",
+     "role": "設計師（再度）",
+     "org": "Chloé"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2004",
+     "partner": "H&M",
+     "note": "首個精品設計師聯名系列"
+    },
+    {
+     "year": "2011",
+     "partner": "Coca-Cola",
+     "note": "Diet Coke 瓶身設計"
+    }
+   ]
   },
   "rejectedWorks": [
    "KarlLagerfeld.jpg",
@@ -3901,7 +5052,51 @@
      "text": "同樣以英國歷史與叛逆為靈感"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1971",
+     "role": "與 Malcolm McLaren 開店",
+     "org": "Let It Rock（國王路 430 號）"
+    },
+    {
+     "years": "1974",
+     "role": "店名改為",
+     "org": "SEX"
+    },
+    {
+     "years": "1976",
+     "role": "店名改為",
+     "org": "Seditionaries"
+    },
+    {
+     "years": "1980",
+     "role": "店名改為",
+     "org": "Worlds End"
+    },
+    {
+     "years": "1981",
+     "role": "首次時裝秀",
+     "org": "Vivienne Westwood"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1970 年代",
+     "partner": "Sex Pistols",
+     "note": "樂團的龐克造型"
+    },
+    {
+     "year": "",
+     "partner": "Melissa",
+     "note": "塑膠鞋合作"
+    },
+    {
+     "year": "2018",
+     "partner": "Burberry",
+     "note": "聯名系列"
+    }
+   ]
   }
  },
  {
@@ -4028,7 +5223,51 @@
      "text": "受其影響的年輕設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "",
+     "role": "學徒",
+     "org": "Anderson & Sheppard（薩佛街）"
+    },
+    {
+     "years": "",
+     "role": "學徒",
+     "org": "Gieves & Hawkes"
+    },
+    {
+     "years": "",
+     "role": "助理",
+     "org": "Koji Tatsuno、Romeo Gigli"
+    },
+    {
+     "years": "1992",
+     "role": "創辦人",
+     "org": "Alexander McQueen"
+    },
+    {
+     "years": "1996–2001",
+     "role": "首席設計師",
+     "org": "Givenchy"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1997",
+     "partner": "Björk",
+     "note": "專輯《Homogenic》封面造型"
+    },
+    {
+     "year": "2005",
+     "partner": "Puma",
+     "note": "球鞋合作"
+    },
+    {
+     "year": "2009",
+     "partner": "Target",
+     "note": "McQ 平價系列"
+    }
+   ]
   }
  },
  {
@@ -4149,7 +5388,30 @@
      "text": "同樣以斜裁見長"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1984",
+     "role": "創辦人",
+     "org": "John Galliano"
+    },
+    {
+     "years": "1995",
+     "role": "設計師",
+     "org": "Givenchy"
+    },
+    {
+     "years": "1996–2011",
+     "role": "創意總監",
+     "org": "Dior"
+    },
+    {
+     "years": "2014–2024",
+     "role": "創意總監",
+     "org": "Maison Margiela"
+    }
+   ],
+   "collabs": []
   }
  },
  {
@@ -4257,7 +5519,56 @@
      "text": "受邀擔任客座設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1970",
+     "role": "助理",
+     "org": "Pierre Cardin"
+    },
+    {
+     "years": "",
+     "role": "設計師",
+     "org": "Jacques Esterel、Jean Patou"
+    },
+    {
+     "years": "1976",
+     "role": "創辦人",
+     "org": "Jean Paul Gaultier"
+    },
+    {
+     "years": "2003–2010",
+     "role": "女裝創意總監",
+     "org": "Hermès"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1990",
+     "partner": "Madonna",
+     "note": "Blond Ambition 巡迴演唱會服裝"
+    },
+    {
+     "year": "1997",
+     "partner": "電影《第五元素》",
+     "note": "服裝設計"
+    },
+    {
+     "year": "2010",
+     "partner": "Target",
+     "note": "平價聯名系列"
+    },
+    {
+     "year": "2012",
+     "partner": "Diet Coke",
+     "note": "瓶身設計"
+    },
+    {
+     "year": "2019",
+     "partner": "Supreme",
+     "note": "聯名系列"
+    }
+   ]
   }
  },
  {
@@ -4336,7 +5647,31 @@
      "text": "曾短暫在迪奧時裝屋任職"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1957",
+     "role": "短暫任職",
+     "org": "Christian Dior"
+    },
+    {
+     "years": "",
+     "role": "設計師",
+     "org": "Guy Laroche"
+    },
+    {
+     "years": "1980 年代初",
+     "role": "推出自己的系列",
+     "org": "Alaïa"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1991",
+     "partner": "Tati",
+     "note": "以平價百貨招牌的粉紅格紋做系列"
+    }
+   ]
   }
  },
  {
@@ -4450,7 +5785,30 @@
      "text": "後來擔任品牌創意總監"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1984–1987",
+     "role": "助理",
+     "org": "Jean Paul Gaultier"
+    },
+    {
+     "years": "1988",
+     "role": "與 Jenny Meirens 創立",
+     "org": "Maison Martin Margiela"
+    },
+    {
+     "years": "1997–2003",
+     "role": "女裝設計師",
+     "org": "Hermès"
+    },
+    {
+     "years": "2009",
+     "role": "離開品牌",
+     "org": ""
+    }
+   ],
+   "collabs": []
   },
   "portraitUnavailable": true,
   "rejectedPortraits": [
@@ -4512,7 +5870,26 @@
      "text": "同樣出身安特衛普皇家藝術學院"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1985",
+     "role": "與 Patrick Robyn 創立",
+     "org": "Ann Demeulemeester"
+    },
+    {
+     "years": "2013",
+     "role": "離開品牌",
+     "org": ""
+    }
+   ],
+   "collabs": [
+    {
+     "year": "",
+     "partner": "Patti Smith",
+     "note": "長期的靈感與友誼"
+    }
+   ]
   }
  },
  {
@@ -4623,7 +6000,31 @@
      "text": "同樣出身安特衛普皇家藝術學院"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1986",
+     "role": "創辦人",
+     "org": "Dries Van Noten"
+    },
+    {
+     "years": "2018",
+     "role": "品牌由 Puig 收購多數股權",
+     "org": ""
+    },
+    {
+     "years": "2024",
+     "role": "退休",
+     "org": ""
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2020",
+     "partner": "Christian Lacroix",
+     "note": "2020 春夏共同設計系列"
+    }
+   ]
   }
  },
  {
@@ -4752,7 +6153,61 @@
      "text": "擔任其品牌創意總監"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1995",
+     "role": "創辦人",
+     "org": "Raf Simons"
+    },
+    {
+     "years": "2005–2012",
+     "role": "創意總監",
+     "org": "Jil Sander"
+    },
+    {
+     "years": "2012–2015",
+     "role": "創意總監",
+     "org": "Christian Dior"
+    },
+    {
+     "years": "2016–2018",
+     "role": "創意總監",
+     "org": "Calvin Klein"
+    },
+    {
+     "years": "2020–",
+     "role": "共同創意總監",
+     "org": "Prada"
+    },
+    {
+     "years": "2022",
+     "role": "關閉同名品牌",
+     "org": ""
+    }
+   ],
+   "collabs": [
+    {
+     "year": "",
+     "partner": "adidas",
+     "note": "Ozweego 等球鞋"
+    },
+    {
+     "year": "",
+     "partner": "Fred Perry",
+     "note": "Polo 衫系列"
+    },
+    {
+     "year": "",
+     "partner": "Eastpak",
+     "note": "後背包系列"
+    },
+    {
+     "year": "",
+     "partner": "Sterling Ruby",
+     "note": "藝術家合作"
+    }
+   ]
   },
   "portraitUnavailable": true,
   "rejectedPortraits": [
@@ -4824,7 +6279,36 @@
      "text": "同時代的極簡風格"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1986",
+     "role": "首次巴黎發表",
+     "org": "Helmut Lang"
+    },
+    {
+     "years": "1998",
+     "role": "品牌移至紐約",
+     "org": ""
+    },
+    {
+     "years": "1999",
+     "role": "Prada 集團入股",
+     "org": ""
+    },
+    {
+     "years": "2005",
+     "role": "離開品牌",
+     "org": ""
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1990 年代",
+     "partner": "Jenny Holzer",
+     "note": "藝術裝置合作"
+    }
+   ]
   }
  },
  {
@@ -4890,7 +6374,46 @@
      "text": "Prada 集團曾收購其品牌"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1968",
+     "role": "開設精品店",
+     "org": "漢堡"
+    },
+    {
+     "years": "1973",
+     "role": "創辦人",
+     "org": "Jil Sander"
+    },
+    {
+     "years": "1999",
+     "role": "Prada 集團收購",
+     "org": ""
+    },
+    {
+     "years": "2003–2004",
+     "role": "回歸品牌",
+     "org": "Jil Sander"
+    },
+    {
+     "years": "2012–2013",
+     "role": "再度回歸",
+     "org": "Jil Sander"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2009–2011",
+     "partner": "UNIQLO",
+     "note": "+J 系列"
+    },
+    {
+     "year": "2020",
+     "partner": "UNIQLO",
+     "note": "+J 系列回歸"
+    }
+   ]
   },
   "portraitUnavailable": true,
   "rejectedPortraits": [
@@ -4993,7 +6516,41 @@
      "text": "曾與其在展覽中對照展出"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1978",
+     "role": "接手家族品牌",
+     "org": "Prada"
+    },
+    {
+     "years": "1993",
+     "role": "推出",
+     "org": "Miu Miu"
+    },
+    {
+     "years": "1993",
+     "role": "成立",
+     "org": "Prada 基金會"
+    },
+    {
+     "years": "2020–",
+     "role": "與 Raf Simons 共同創意總監",
+     "org": "Prada"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2001",
+     "partner": "Rem Koolhaas／OMA",
+     "note": "紐約 Prada Epicenter 旗艦店"
+    },
+    {
+     "year": "2019",
+     "partner": "adidas",
+     "note": "聯名球鞋與包款"
+    }
+   ]
   }
  },
  {
@@ -5063,7 +6620,36 @@
      "text": "同時代的義大利設計大師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "",
+     "role": "櫥窗設計與採購",
+     "org": "La Rinascente 百貨"
+    },
+    {
+     "years": "1960 年代",
+     "role": "男裝設計師",
+     "org": "Nino Cerruti"
+    },
+    {
+     "years": "1975",
+     "role": "與 Sergio Galeotti 創立",
+     "org": "Giorgio Armani"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1980",
+     "partner": "電影《美國舞男》",
+     "note": "男主角服裝"
+    },
+    {
+     "year": "2012–",
+     "partner": "義大利奧運代表團",
+     "note": "設計開閉幕與選手服裝"
+    }
+   ]
   }
  },
  {
@@ -5124,7 +6710,31 @@
      "text": "同樣大膽的流行文化風格"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1970 年代",
+     "role": "設計師",
+     "org": "Genny、Complice、Callaghan"
+    },
+    {
+     "years": "1978",
+     "role": "創辦人",
+     "org": "Versace"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "",
+     "partner": "Maurice Béjart、斯卡拉歌劇院",
+     "note": "芭蕾與歌劇服裝"
+    },
+    {
+     "year": "",
+     "partner": "Richard Avedon",
+     "note": "品牌形象攝影"
+    }
+   ]
   },
   "rejectedWorks": [
    "Adelina Patti by Lucien Francois Penet.jpg"
@@ -5212,7 +6822,36 @@
      "text": "同時代的優雅派設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1950 年代",
+     "role": "助理",
+     "org": "Jean Dessès、Guy Laroche"
+    },
+    {
+     "years": "1959",
+     "role": "創辦人",
+     "org": "Valentino（羅馬）"
+    },
+    {
+     "years": "2008",
+     "role": "退休",
+     "org": ""
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1960",
+     "partner": "Giancarlo Giammetti",
+     "note": "成為一生的事業夥伴"
+    },
+    {
+     "year": "1968",
+     "partner": "賈桂琳·甘迺迪",
+     "note": "婚禮禮服"
+    }
+   ]
   }
  },
  {
@@ -5275,7 +6914,31 @@
      "text": "同樣重視機能與街頭"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1971",
+     "role": "創辦人",
+     "org": "Chester Perry（後改名 C.P. Company）"
+    },
+    {
+     "years": "1982",
+     "role": "創辦人",
+     "org": "Stone Island"
+    },
+    {
+     "years": "1990 年代",
+     "role": "離開 C.P. Company",
+     "org": ""
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1988",
+     "partner": "Mille Miglia 賽車",
+     "note": "護目鏡外套"
+    }
+   ]
   }
  },
  {
@@ -5352,7 +7015,30 @@
      "text": "接任 Celine 創意總監"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1997–2001",
+     "role": "助理",
+     "org": "Chloé（Stella McCartney）"
+    },
+    {
+     "years": "2001–2006",
+     "role": "創意總監",
+     "org": "Chloé"
+    },
+    {
+     "years": "2008–2017",
+     "role": "創意總監",
+     "org": "Céline"
+    },
+    {
+     "years": "2023",
+     "role": "創辦人",
+     "org": "Phoebe Philo"
+    }
+   ],
+   "collabs": []
   }
  },
  {
@@ -5435,7 +7121,30 @@
      "text": "同時代以青年文化見長的男裝設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1997–2000",
+     "role": "男裝設計",
+     "org": "Yves Saint Laurent"
+    },
+    {
+     "years": "2000–2007",
+     "role": "創意總監",
+     "org": "Dior Homme"
+    },
+    {
+     "years": "2012–2016",
+     "role": "創意總監",
+     "org": "Saint Laurent"
+    },
+    {
+     "years": "2018–2024",
+     "role": "創意總監",
+     "org": "Celine"
+    }
+   ],
+   "collabs": []
   }
  },
  {
@@ -5507,7 +7216,61 @@
      "text": "同時代結合街頭與精品的設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "2009–2013",
+     "role": "設計師",
+     "org": "Maison Martin Margiela"
+    },
+    {
+     "years": "2013",
+     "role": "資深設計師",
+     "org": "Louis Vuitton"
+    },
+    {
+     "years": "2014",
+     "role": "共同創辦",
+     "org": "VETEMENTS"
+    },
+    {
+     "years": "2015–2025",
+     "role": "創意總監",
+     "org": "Balenciaga"
+    },
+    {
+     "years": "2025–",
+     "role": "創意總監",
+     "org": "Gucci"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2017",
+     "partner": "Crocs",
+     "note": "Balenciaga 厚底布希鞋"
+    },
+    {
+     "year": "2021",
+     "partner": "Gucci",
+     "note": "The Hacker Project"
+    },
+    {
+     "year": "2021",
+     "partner": "《要塞英雄》Fortnite",
+     "note": "遊戲虛擬服裝"
+    },
+    {
+     "year": "2021",
+     "partner": "《辛普森家庭》",
+     "note": "時裝秀特別篇"
+    },
+    {
+     "year": "2022",
+     "partner": "adidas",
+     "note": "聯名系列"
+    }
+   ]
   },
   "rejectedWorks": [
    "Tunisia-4816 - In Memory to all the Dead and Injured (7864574958).jpg"
@@ -5623,7 +7386,26 @@
      "text": "同樣代表美式簡約"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1930 年代",
+     "role": "設計師",
+     "org": "Townley Frocks"
+    },
+    {
+     "years": "1938",
+     "role": "短暫任職",
+     "org": "Hattie Carnegie"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "",
+     "partner": "Capezio",
+     "note": "芭蕾平底鞋"
+    }
+   ]
   }
  },
  {
@@ -5735,7 +7517,41 @@
      "text": "同樣代表美式簡約"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1959",
+     "role": "帽子設計師",
+     "org": "Bergdorf Goodman"
+    },
+    {
+     "years": "1968",
+     "role": "創辦人",
+     "org": "Halston"
+    },
+    {
+     "years": "1983",
+     "role": "授權合作",
+     "org": "J.C. Penney"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1961",
+     "partner": "賈桂琳·甘迺迪",
+     "note": "就職典禮藥盒帽"
+    },
+    {
+     "year": "1977",
+     "partner": "Braniff 航空",
+     "note": "空服員制服"
+    },
+    {
+     "year": "1978",
+     "partner": "美國女童軍",
+     "note": "制服設計"
+    }
+   ]
   },
   "portraitUnavailable": true,
   "rejectedPortraits": [
@@ -5808,7 +7624,21 @@
      "text": "同為非裔美國設計先驅"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1970",
+     "role": "開設專櫃",
+     "org": "Stephen Burrows' World（Henri Bendel）"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1973",
+     "partner": "凡爾賽之戰時裝秀",
+     "note": "代表美國參展"
+    }
+   ]
   },
   "portraitUnavailable": true,
   "rejectedPortraits": [
@@ -5867,7 +7697,26 @@
      "text": "後來結合街頭與時尚的設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1976",
+     "role": "與 Laurie Mallet 創立",
+     "org": "WilliWear"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1983",
+     "partner": "Christo & Jeanne-Claude",
+     "note": "為《被包圍的島嶼》工作人員設計制服"
+    },
+    {
+     "year": "",
+     "partner": "Butterick",
+     "note": "可自己縫製的紙型系列"
+    }
+   ]
   }
  },
  {
@@ -5967,7 +7816,25 @@
      "text": "後來在巴黎發表的非裔美國設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1979",
+     "role": "移居巴黎",
+     "org": ""
+    },
+    {
+     "years": "1987",
+     "role": "與 Warnaco 簽約",
+     "org": "Patrick Kelly Paris"
+    },
+    {
+     "years": "1988",
+     "role": "加入法國成衣設計師公會",
+     "org": ""
+    }
+   ],
+   "collabs": []
   }
  },
  {
@@ -6035,7 +7902,26 @@
      "text": "同樣與嘻哈文化關係密切"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1982",
+     "role": "創辦人",
+     "org": "Dapper Dan's Boutique（哈林區）"
+    },
+    {
+     "years": "2018",
+     "role": "開設工作室",
+     "org": "Dapper Dan's of Harlem"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2017",
+     "partner": "Gucci",
+     "note": "聯名系列與工作室合作"
+    }
+   ]
   }
  },
  {
@@ -6141,7 +8027,26 @@
      "text": "同時代的極簡風格"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1968",
+     "role": "與 Barry Schwartz 創立",
+     "org": "Calvin Klein"
+    },
+    {
+     "years": "2003",
+     "role": "品牌售予",
+     "org": "PVH"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1980",
+     "partner": "Brooke Shields",
+     "note": "牛仔褲廣告"
+    }
+   ]
   },
   "rejectedWorks": [
    "Calvin Klein Collection flagship store 654 Madison Avenue New York City USA.jpg"
@@ -6239,7 +8144,41 @@
      "text": "曾在其公司工作"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1967",
+     "role": "推出",
+     "org": "Polo 領帶"
+    },
+    {
+     "years": "1971",
+     "role": "推出女裝",
+     "org": "Ralph Lauren"
+    },
+    {
+     "years": "1972",
+     "role": "推出 Polo 衫",
+     "org": "Polo Ralph Lauren"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1974",
+     "partner": "電影《大亨小傳》",
+     "note": "男裝"
+    },
+    {
+     "year": "2006–",
+     "partner": "溫布頓網球賽",
+     "note": "工作人員服裝"
+    },
+    {
+     "year": "2008–",
+     "partner": "美國奧運代表團",
+     "note": "開閉幕服裝"
+    }
+   ]
   }
  },
  {
@@ -6350,7 +8289,25 @@
      "text": "同時代為職業女性設計"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1968–1984",
+     "role": "設計師・首席設計師",
+     "org": "Anne Klein"
+    },
+    {
+     "years": "1984",
+     "role": "與 Stephan Weiss 創立",
+     "org": "Donna Karan New York"
+    },
+    {
+     "years": "1989",
+     "role": "推出",
+     "org": "DKNY"
+    }
+   ],
+   "collabs": []
   }
  },
  {
@@ -6447,7 +8404,26 @@
      "text": "同時代的紐約設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1970",
+     "role": "創辦人",
+     "org": "DVF"
+    },
+    {
+     "years": "2006–2019",
+     "role": "主席",
+     "org": "美國時裝設計師協會 CFDA"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2014",
+     "partner": "Google Glass",
+     "note": "眼鏡框設計"
+    }
+   ]
   },
   "rejectedWorks": [
    "Joan Smalls 2013 (facecrop).jpg"
@@ -6516,7 +8492,41 @@
      "text": "同樣與嘻哈文化關係密切"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1969",
+     "role": "開設",
+     "org": "People's Place"
+    },
+    {
+     "years": "1985",
+     "role": "創辦人",
+     "org": "Tommy Hilfiger"
+    },
+    {
+     "years": "2010",
+     "role": "品牌由 PVH 收購",
+     "org": ""
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2016–2018",
+     "partner": "Gigi Hadid",
+     "note": "TommyXGigi 系列"
+    },
+    {
+     "year": "2018",
+     "partner": "Lewis Hamilton",
+     "note": "TommyXLewis 系列"
+    },
+    {
+     "year": "2019",
+     "partner": "Zendaya",
+     "note": "TommyXZendaya 系列"
+    }
+   ]
   }
  },
  {
@@ -6631,7 +8641,35 @@
      "text": "同樣出身拉丁美洲的紐約設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1950 年代",
+     "role": "助理",
+     "org": "Balenciaga（馬德里）"
+    },
+    {
+     "years": "1961",
+     "role": "助理",
+     "org": "Lanvin"
+    },
+    {
+     "years": "1963",
+     "role": "設計師",
+     "org": "Elizabeth Arden"
+    },
+    {
+     "years": "1965",
+     "role": "創辦人",
+     "org": "Oscar de la Renta"
+    },
+    {
+     "years": "1993–2002",
+     "role": "高級訂製設計師",
+     "org": "Balmain"
+    }
+   ],
+   "collabs": []
   }
  },
  {
@@ -6737,7 +8775,26 @@
      "text": "童年時的時尚啟蒙"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1980",
+     "role": "創辦人",
+     "org": "Carolina Herrera"
+    },
+    {
+     "years": "2018",
+     "role": "交棒創意總監",
+     "org": "Wes Gordon"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "1986",
+     "partner": "Caroline Kennedy",
+     "note": "婚紗"
+    }
+   ]
   }
  },
  {
@@ -6844,7 +8901,26 @@
      "text": "同時期的紐約設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1991",
+     "role": "首場時裝秀",
+     "org": "Anna Sui"
+    },
+    {
+     "years": "1992",
+     "role": "開設蘇活區首家店",
+     "org": ""
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2009",
+     "partner": "Target",
+     "note": "以《花邊教主》為靈感的系列"
+    }
+   ]
   }
  },
  {
@@ -6951,7 +9027,36 @@
      "text": "同為華裔設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1971–1987",
+     "role": "時尚編輯",
+     "org": "Vogue"
+    },
+    {
+     "years": "1987–1989",
+     "role": "設計總監",
+     "org": "Ralph Lauren"
+    },
+    {
+     "years": "1990",
+     "role": "創辦人",
+     "org": "Vera Wang（婚紗）"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2007",
+     "partner": "Kohl's",
+     "note": "Simply Vera 平價系列"
+    },
+    {
+     "year": "",
+     "partner": "花式滑冰選手",
+     "note": "比賽服設計"
+    }
+   ]
   }
  },
  {
@@ -7019,7 +9124,36 @@
      "text": "較早嘗試平價百貨合作的設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "",
+     "role": "設計師",
+     "org": "Perry Ellis、Calvin Klein"
+    },
+    {
+     "years": "1987",
+     "role": "創辦人",
+     "org": "Isaac Mizrahi"
+    },
+    {
+     "years": "2008–2009",
+     "role": "創意總監",
+     "org": "Liz Claiborne"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2003–2008",
+     "partner": "Target",
+     "note": "平價設計師系列"
+    },
+    {
+     "year": "1995",
+     "partner": "紀錄片《Unzipped》",
+     "note": "記錄他的創作過程"
+    }
+   ]
   }
  },
  {
@@ -7134,7 +9268,51 @@
      "text": "同時期的紐約設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1984",
+     "role": "創辦人",
+     "org": "Marc Jacobs"
+    },
+    {
+     "years": "1988–1992",
+     "role": "設計師",
+     "org": "Perry Ellis"
+    },
+    {
+     "years": "1997–2013",
+     "role": "創意總監",
+     "org": "Louis Vuitton"
+    },
+    {
+     "years": "2001",
+     "role": "推出副牌",
+     "org": "Marc by Marc Jacobs"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2001",
+     "partner": "Stephen Sprouse",
+     "note": "LV 塗鴉包"
+    },
+    {
+     "year": "2003",
+     "partner": "村上隆",
+     "note": "LV 彩色老花"
+    },
+    {
+     "year": "2008",
+     "partner": "Richard Prince",
+     "note": "LV 系列"
+    },
+    {
+     "year": "2012",
+     "partner": "草間彌生",
+     "note": "LV 圓點系列"
+    }
+   ]
   }
  },
  {
@@ -7247,7 +9425,41 @@
      "text": "其後接任 CFDA 主席"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1990",
+     "role": "女裝設計師",
+     "org": "Gucci"
+    },
+    {
+     "years": "1994–2004",
+     "role": "創意總監",
+     "org": "Gucci"
+    },
+    {
+     "years": "2000–2004",
+     "role": "創意總監",
+     "org": "Yves Saint Laurent"
+    },
+    {
+     "years": "2005",
+     "role": "創辦人",
+     "org": "Tom Ford"
+    },
+    {
+     "years": "2019–2022",
+     "role": "主席",
+     "org": "CFDA"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2008–",
+     "partner": "007 電影",
+     "note": "詹姆士·龐德的西裝"
+    }
+   ]
   }
  },
  {
@@ -7352,7 +9564,46 @@
      "text": "同樣以黑色與垂墜見長"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1994",
+     "role": "創辦人",
+     "org": "Rick Owens（洛杉磯）"
+    },
+    {
+     "years": "2003–2006",
+     "role": "藝術總監",
+     "org": "Revillon"
+    },
+    {
+     "years": "2003",
+     "role": "移居巴黎",
+     "org": ""
+    }
+   ],
+   "collabs": [
+    {
+     "year": "",
+     "partner": "adidas",
+     "note": "球鞋合作"
+    },
+    {
+     "year": "",
+     "partner": "Moncler",
+     "note": "羽絨系列"
+    },
+    {
+     "year": "2018",
+     "partner": "Birkenstock",
+     "note": "涼鞋合作"
+    },
+    {
+     "year": "",
+     "partner": "Converse",
+     "note": "DRKSHDW 系列"
+    }
+   ]
   }
  },
  {
@@ -7461,7 +9712,41 @@
      "text": "同時代改變男裝輪廓的設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "",
+     "role": "業務",
+     "org": "Club Monaco"
+    },
+    {
+     "years": "2001",
+     "role": "創辦人",
+     "org": "Thom Browne"
+    },
+    {
+     "years": "2007–2015",
+     "role": "設計師",
+     "org": "Brooks Brothers Black Fleece"
+    },
+    {
+     "years": "2009",
+     "role": "設計師",
+     "org": "Moncler Gamme Bleu"
+    },
+    {
+     "years": "2023–",
+     "role": "主席",
+     "org": "CFDA"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "",
+     "partner": "FC Barcelona",
+     "note": "球隊正式服裝"
+    }
+   ]
   }
  },
  {
@@ -7540,7 +9825,31 @@
      "text": "同樣大膽張揚的風格"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "1997",
+     "role": "創辦人",
+     "org": "Jeremy Scott"
+    },
+    {
+     "years": "2013–2023",
+     "role": "創意總監",
+     "org": "Moschino"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2000 年代起",
+     "partner": "adidas",
+     "note": "翅膀運動鞋等長期合作"
+    },
+    {
+     "year": "",
+     "partner": "Longchamp",
+     "note": "包款合作"
+    }
+   ]
   }
  },
  {
@@ -7648,7 +9957,31 @@
      "text": "同樣強調腰線與裙擺"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "2001",
+     "role": "創辦人",
+     "org": "Zac Posen"
+    },
+    {
+     "years": "2014–2020",
+     "role": "女裝創意總監",
+     "org": "Brooks Brothers"
+    },
+    {
+     "years": "2024–",
+     "role": "創意總監／首席創意長",
+     "org": "Gap／Old Navy"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2018",
+     "partner": "Delta 航空",
+     "note": "空服員與地勤制服"
+    }
+   ]
   }
  },
  {
@@ -7743,7 +10076,41 @@
      "text": "同樣來自台灣的設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "",
+     "role": "娃娃服裝設計",
+     "org": "Integrity Toys"
+    },
+    {
+     "years": "",
+     "role": "設計助理",
+     "org": "Narciso Rodriguez"
+    },
+    {
+     "years": "2006",
+     "role": "創辦人",
+     "org": "Jason Wu"
+    },
+    {
+     "years": "2013–2016",
+     "role": "女裝藝術總監",
+     "org": "Hugo Boss"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2009",
+     "partner": "蜜雪兒·歐巴馬",
+     "note": "就職舞會禮服"
+    },
+    {
+     "year": "2012",
+     "partner": "Target",
+     "note": "平價聯名系列"
+    }
+   ]
   }
  },
  {
@@ -7816,7 +10183,31 @@
      "text": "同世代的台裔美國設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "2005",
+     "role": "創辦人",
+     "org": "Alexander Wang"
+    },
+    {
+     "years": "2012–2015",
+     "role": "創意總監",
+     "org": "Balenciaga"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2014",
+     "partner": "H&M",
+     "note": "設計師聯名系列"
+    },
+    {
+     "year": "2016",
+     "partner": "adidas",
+     "note": "聯名系列"
+    }
+   ]
   }
  },
  {
@@ -7899,7 +10290,51 @@
      "text": "同時代結合街頭與精品的設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "2009",
+     "role": "實習",
+     "org": "Fendi（與 Kanye West）"
+    },
+    {
+     "years": "2010",
+     "role": "創意總監",
+     "org": "DONDA"
+    },
+    {
+     "years": "2012",
+     "role": "創辦人",
+     "org": "Pyrex Vision"
+    },
+    {
+     "years": "2013",
+     "role": "創辦人",
+     "org": "Off-White"
+    },
+    {
+     "years": "2018–2021",
+     "role": "男裝藝術總監",
+     "org": "Louis Vuitton"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2017",
+     "partner": "Nike",
+     "note": "The Ten 球鞋系列"
+    },
+    {
+     "year": "2019",
+     "partner": "IKEA",
+     "note": "MARKERAD 家居系列"
+    },
+    {
+     "year": "2021",
+     "partner": "Mercedes-Benz",
+     "note": "Project MAYBACH 概念車"
+    }
+   ]
   }
  },
  {
@@ -7966,7 +10401,26 @@
      "text": "同時代的非裔美國設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "2013",
+     "role": "創辦人",
+     "org": "Pyer Moss"
+    },
+    {
+     "years": "2020–2022",
+     "role": "全球創意總監",
+     "org": "Reebok"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2018",
+     "partner": "Reebok",
+     "note": "聯名系列"
+    }
+   ]
   }
  },
  {
@@ -8020,7 +10474,21 @@
      "text": "同時代的非裔美國設計師"
     }
    ],
-   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28",
+   "career": [
+    {
+     "years": "2018",
+     "role": "首個系列",
+     "org": "Christopher John Rogers"
+    }
+   ],
+   "collabs": [
+    {
+     "year": "2021",
+     "partner": "賀錦麗",
+     "note": "總統就職典禮服裝"
+    }
+   ]
   }
  }
 ]

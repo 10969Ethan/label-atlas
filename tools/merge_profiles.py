@@ -26,7 +26,8 @@ for key, p in profiles.items():
     p.setdefault('method', METHOD)
 for b in books:
     if b['id'] in profiles:
-        b['profile'] = profiles[b['id']]
+        keep = {k: v for k, v in (b.get('profile') or {}).items() if k in ('career', 'collabs')}
+        b['profile'] = {**profiles[b['id']], **keep}
 
 json.dump(books, open(DATA, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 print('人物誌', sum('profile' in b for b in books), '/', len(books))
