@@ -828,7 +828,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
   <div class="gate-stage"><canvas class="gate-canvas"></canvas><div class="gate-vignette"></div><div class="gate-ring"></div><div class="gate-flash"></div><div class="gate-copy"><span class="gate-kicker">WARP TRANSIT</span><strong class="gate-year">2026</strong><span class="gate-message"></span></div></div>
 </section>
 <button class="gate-skip" type="button" data-gate-skip="#time-machine" hidden>略過轉場 ↓</button>
-<section id="time-machine" aria-label="時光機"><figure class="ai-video tm-video"><video src="assets/time-machine/warp.mp4" muted loop playsinline preload="metadata" aria-label="時光機示意影片：人台上的服裝隨光束穿越不同年代"></video><figcaption>AI 生成示意影片（Grok）</figcaption></figure><div id="tm">
+<section id="time-machine" aria-label="時光機"><figure class="ai-video tm-video"><video src="assets/time-machine/warp.mp4" autoplay muted loop playsinline preload="auto" aria-label="時光機影片：人台上的服裝隨光束穿越不同年代"></video></figure><div id="tm">
   <div class="tm-top">
     <div>
       <h2 class="tm-h">坐上時光車，穿越時尚。</h2>
@@ -2333,4 +2333,4 @@ const GATE_FX={
   document.addEventListener('visibilitychange',()=>{if(document.hidden){if(rafId)cancelAnimationFrame(rafId);rafId=0}else measure()});
 })();
 </script>
-<script>(()=>{const rm=matchMedia('(prefers-reduced-motion: reduce)');document.querySelectorAll('.ai-video video').forEach(v=>{const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting&&!rm.matches)v.play().catch(()=>{});else v.pause()}),{threshold:.3});io.observe(v);v.controls=rm.matches})})();</script></body></html>
+<script>document.querySelectorAll('.ai-video video').forEach(v=>{v.loop=true;v.muted=true;v.play().catch(()=>{})})</script></body></html>

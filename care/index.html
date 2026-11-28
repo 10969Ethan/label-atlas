@@ -96,6 +96,19 @@ th{background:var(--cream);font-weight:600;font-size:14px}
 .quiz .btn{background:#f4efe4;color:var(--green);border-color:#f4efe4}
 .video-slot{border:1px dashed var(--line);border-radius:14px;padding:16px;background:#fff;display:flex;gap:16px;align-items:center}
 .video-slot video{width:min(420px,100%);border-radius:10px;background:#000}
+.pics{display:grid;gap:6px;margin:-18px -20px 14px}
+.pics-2{grid-template-columns:1fr 1fr}
+.pics figure{margin:0;position:relative;background:#eee}
+.pics img{display:block;width:100%;height:190px;object-fit:cover}
+.pics-1 img{height:220px}
+.pics figcaption,.label-strip figcaption{font-size:11px;line-height:1.4;color:var(--muted);padding:5px 10px 0}
+.pics figcaption a,.label-strip figcaption a{color:var(--muted)}
+.card{overflow:hidden}
+.card .more{border-top:1px dashed var(--line);padding-top:10px}
+.real-labels{margin-top:26px}
+.label-strip{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:10px}
+.label-strip figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;padding-bottom:8px}
+.label-strip img{display:block;width:100%;height:200px;object-fit:cover}
 footer{border-top:1px solid var(--line);padding:26px 22px;color:var(--muted);font-size:13px;max-width:1180px;margin:auto}
 @media(max-width:860px){.hero,.decoder,.stain-wrap,.two{grid-template-columns:1fr}.panel{position:static}.stain-list{flex-direction:row;flex-wrap:wrap}}
 @media print{header.top,.filter,.quiz,.panel .btn{display:none}.card{break-inside:avoid}}
@@ -117,7 +130,7 @@ footer{border-top:1px solid var(--line);padding:26px 22px;color:var(--muted);fon
  </div>
  <nav class="toc" aria-label="本頁目錄">
   <a href="#label">01 看懂洗標 <span>點符號立即解釋</span></a>
-  <a href="#fabric">02 依材質保養 <span>16 種材質與單品</span></a>
+  <a href="#fabric">02 依材質保養 <span>19 種材質，含 5 種皮革</span></a>
   <a href="#stain">03 去漬速查 <span>12 種常見污漬</span></a>
   <a href="#howto">04 洗衣步驟與機器設定</a>
   <a href="#dry">05 晾曬、熨燙與收納</a>
@@ -140,6 +153,7 @@ footer{border-top:1px solid var(--line);padding:26px 22px;color:var(--muted);fon
    <button class="btn ghost" id="sym-clear" type="button">清除重選</button>
   </aside>
  </div>
+ <div class="real-labels" id="real-labels"></div>
 </section>
 
 <section class="block" id="fabric">
@@ -314,34 +328,42 @@ $('#sym-clear').onclick=()=>{picked.clear();document.querySelectorAll('.sym[data
 
 /* ---------- 材質 ---------- */
 const F=[
- {g:'天然纖維',n:'棉',en:'Cotton',k:'T恤 襯衫 毛巾',wash:'可機洗，冷水到 40°C；白色寢具和毛巾可用較高溫（依洗標）。',dry:'吊掛晾乾，白色可曬太陽；烘乾機容易縮水，第一次洗特別明顯。',iron:'高溫（3 點），微濕時最好燙。',store:'摺疊或吊掛皆可。',no:'深色棉衣避免長時間曝曬，會褪色。',tip:'新衣第一次洗可能縮 3–5%，買合身款時要預留。'},
- {g:'天然纖維',n:'麻',en:'Linen',k:'亞麻 苧麻 夏季襯衫',wash:'冷水或 30–40°C 輕柔行程，可放洗衣袋。',dry:'甩平後吊掛晾乾，半乾時拉平皺摺。',iron:'高溫（3 點），半乾時熨燙效果最好。',store:'吊掛，摺痕處長期受壓容易斷裂。',no:'避免高速脫水和烘乾，會產生很深的皺褶。',tip:'麻本來就容易皺，自然的皺褶也是它的特色。'},
- {g:'天然纖維',n:'羊毛',en:'Wool',k:'毛衣 西裝 大衣 美麗諾',wash:'看洗標：多數需手洗或「羊毛行程」，冷水、中性洗劑（羊毛專用）。',dry:'用毛巾捲起壓出水分，平放陰乾。',iron:'中溫（2 點），用蒸氣懸空燙或墊布燙。',store:'毛衣摺疊收納；西裝、大衣用寬肩衣架；放防蟲用品。',no:'不要用熱水、不要搓揉、不要烘乾，否則會「氈化」縮成一團。',tip:'羊毛有自潔能力，穿完掛起來通風就好，不需要每次洗。'},
- {g:'天然纖維',n:'羊絨（喀什米爾）',en:'Cashmere',k:'喀什米爾 圍巾 高級毛衣',wash:'冷水手洗，用羊毛專用中性洗劑或嬰兒洗髮精，輕輕按壓。',dry:'毛巾吸水後平放陰乾。',iron:'中溫蒸氣懸空處理，避免直接壓燙。',store:'摺疊放在透氣袋，加上防蟲用品。',no:'不可擰乾、不可吊掛晾乾、不可烘乾。',tip:'起毛球是正常現象，用毛球梳順著同一方向輕梳。'},
- {g:'天然纖維',n:'絲',en:'Silk',k:'真絲 襯衫 領帶 絲巾',wash:'多數建議乾洗；可水洗的用冷水、中性洗劑快速手洗。',dry:'毛巾吸水後吊掛陰乾，不可曝曬。',iron:'中低溫，翻面或墊布燙；避免噴水，可能留下水痕。',store:'吊掛或捲起，避免銳利摺痕；防蟲。',no:'避免香水、止汗劑直接接觸，汗漬會讓絲變黃變脆。',tip:'領帶不可水洗，髒了交給乾洗店。'},
- {g:'天然纖維',n:'丹寧（牛仔）',en:'Denim',k:'牛仔褲 原色 赤耳',wash:'翻面、扣好鈕扣與拉鍊，冷水、少量洗劑，可單獨洗。',dry:'翻面吊掛晾乾，避免直曬。',iron:'通常不需要；需要時中高溫翻面燙。',store:'摺疊或掛在褲架。',no:'原色牛仔第一次洗會大量掉色，不要和淺色衣服一起洗。',tip:'穿久了再洗，能保留自己穿出來的褪色紋路。'},
- {g:'合成與再生纖維',n:'聚酯纖維',en:'Polyester',k:'運動服 快乾 排汗衫 刷毛',wash:'可機洗，冷水到 40°C；運動衣翻面洗。',dry:'乾得很快，吊掛即可；烘乾用低溫。',iron:'低溫（1 點）或不需要。',store:'摺疊或吊掛皆可。',no:'避免柔軟精，會堵住排汗布料的毛細孔、降低吸濕排汗。',tip:'洗合成纖維會釋放微塑膠纖維，可用細網洗衣袋減少流出。'},
- {g:'合成與再生纖維',n:'尼龍',en:'Nylon',k:'風衣 包包 絲襪 泳衣',wash:'冷水輕柔洗，放洗衣袋。',dry:'吊掛陰乾，避免陽光直曬變黃。',iron:'低溫（1 點），最好不燙。',store:'摺疊或吊掛。',no:'不耐高溫，靠近熨斗或烘乾機高溫會融化、發亮。',tip:'泳衣游完要先用清水沖掉氯和鹽分。'},
- {g:'合成與再生纖維',n:'嫘縈／天絲',en:'Rayon / Lyocell',k:'人造絲 黏膠纖維 莫代爾 Tencel',wash:'冷水輕柔或手洗，放洗衣袋。',dry:'吊掛陰乾，不要擰。',iron:'中溫，翻面燙。',store:'吊掛。',no:'濕的時候強度變弱，用力搓或扭容易變形、縮水。',tip:'由木漿再生製成，觸感涼爽垂墜，夏季服裝常見。'},
- {g:'合成與再生纖維',n:'壓克力纖維',en:'Acrylic',k:'仿羊毛 平價毛衣 毛帽',wash:'冷水輕柔洗，放洗衣袋。',dry:'平放晾乾。',iron:'低溫或不燙，高溫會讓纖維失去彈性。',store:'摺疊。',no:'避免烘乾和熱水，容易起毛球、變形。',tip:'外觀像羊毛但比較便宜，保暖度和透氣度較低。'},
- {g:'特殊單品',n:'羽絨外套',en:'Down jacket',k:'羽絨衣 羽絨被 鵝絨',wash:'看洗標：可水洗的用羽絨專用洗劑、冷水輕柔行程，扣好拉鍊。',dry:'低溫烘乾並放 2–3 顆網球或烘乾球拍打，或平放晾乾並不時拍鬆。',iron:'不可熨燙。',store:'洗淨乾透後寬鬆收納，不要長期真空壓縮。',no:'沒有完全乾就收起來，羽毛會結塊發臭。',tip:'平常局部髒污用濕布沾中性洗劑擦拭即可，不要常洗。'},
- {g:'特殊單品',n:'機能防水外套',en:'Waterproof shell',k:'Gore-Tex 防水透氣 衝鋒衣 登山',wash:'依洗標用專用洗劑或少量中性洗劑，冷水或溫水，不加柔軟精。',dry:'吊掛晾乾；部分洗標允許低溫烘乾，可幫助恢復表面撥水。',iron:'多數不建議，依洗標處理。',store:'吊掛，避免長期擠壓。',no:'柔軟精和一般洗衣粉殘留會降低撥水與透氣效果。',tip:'髒污和油脂反而會讓防水外套「不透氣」，適度清洗是必要的。'},
- {g:'特殊單品',n:'針織毛衣',en:'Knitwear',k:'毛衣 開襟衫 針織',wash:'翻面放洗衣袋，冷水羊毛行程或手洗。',dry:'整理成原本形狀平放晾乾。',iron:'蒸氣懸空整理。',store:'一定要摺疊，用衣架掛會把肩膀撐出凸角、衣身拉長。',no:'不要吊掛晾乾和收納。',tip:'起毛球用毛球梳或除毛球機輕輕處理。'},
- {g:'特殊單品',n:'西裝外套',en:'Tailored jacket',k:'西裝 正式外套 學校制服外套',wash:'大多需要乾洗，但一季乾洗 1–2 次就夠，太常乾洗會傷布料。',dry:'穿後掛在寬肩衣架通風一晚。',iron:'用蒸氣整理，不要直接壓燙翻領。',store:'寬肩木衣架，套上透氣防塵套。',no:'口袋不要裝太多東西，會撐壞形狀。',tip:'日常用衣物刷順著布紋刷掉灰塵，就能保持乾淨。'},
- {g:'特殊單品',n:'皮革',en:'Leather',k:'皮衣 皮鞋 皮包',wash:'不可水洗。表面用微濕布擦拭，定期使用皮革保養油。',dry:'淋濕後用毛巾吸乾，放陰涼處自然乾，不要用吹風機。',iron:'不可熨燙。',store:'寬肩衣架吊掛，用透氣布袋，不要用塑膠袋。',no:'不要曝曬和放在潮濕處，容易乾裂和發霉。',tip:'嚴重髒污交給專業皮件清洗。'},
- {g:'特殊單品',n:'麂皮',en:'Suede',k:'翻毛皮 麂皮鞋 絨面皮',wash:'不可水洗，用麂皮刷順著毛的方向刷，局部用麂皮專用橡皮擦。',dry:'淋濕後用紙巾吸水，自然陰乾，乾了再刷。',iron:'不可熨燙。',store:'透氣布袋。',no:'怕水和油，新買可先噴防水噴霧。',tip:'定期刷毛，能讓絨面恢復蓬鬆和顏色。'}
+ {g:'天然纖維',id:'cotton',n:'棉',en:'Cotton',k:'T恤 襯衫 毛巾',wash:'可機洗，冷水到 40°C；白色寢具和毛巾可用較高溫（依洗標）。',dry:'吊掛晾乾，白色可曬太陽；烘乾機容易縮水，第一次洗特別明顯。',iron:'高溫（3 點），微濕時最好燙。',store:'摺疊或吊掛皆可。',no:'深色棉衣避免長時間曝曬，會褪色。',tip:'新衣第一次洗可能縮 3–5%，買合身款時要預留。'},
+ {g:'天然纖維',id:'linen',n:'麻',en:'Linen',k:'亞麻 苧麻 夏季襯衫',wash:'冷水或 30–40°C 輕柔行程，可放洗衣袋。',dry:'甩平後吊掛晾乾，半乾時拉平皺摺。',iron:'高溫（3 點），半乾時熨燙效果最好。',store:'吊掛，摺痕處長期受壓容易斷裂。',no:'避免高速脫水和烘乾，會產生很深的皺褶。',tip:'麻本來就容易皺，自然的皺褶也是它的特色。'},
+ {g:'天然纖維',id:'wool',n:'羊毛',en:'Wool',k:'毛衣 西裝 大衣 美麗諾',wash:'看洗標：多數需手洗或「羊毛行程」，冷水、中性洗劑（羊毛專用）。',dry:'用毛巾捲起壓出水分，平放陰乾。',iron:'中溫（2 點），用蒸氣懸空燙或墊布燙。',store:'毛衣摺疊收納；西裝、大衣用寬肩衣架；放防蟲用品。',no:'不要用熱水、不要搓揉、不要烘乾，否則會「氈化」縮成一團。',tip:'羊毛有自潔能力，穿完掛起來通風就好，不需要每次洗。'},
+ {g:'天然纖維',id:'cashmere',n:'羊絨（喀什米爾）',en:'Cashmere',k:'喀什米爾 圍巾 高級毛衣',wash:'冷水手洗，用羊毛專用中性洗劑或嬰兒洗髮精，輕輕按壓。',dry:'毛巾吸水後平放陰乾。',iron:'中溫蒸氣懸空處理，避免直接壓燙。',store:'摺疊放在透氣袋，加上防蟲用品。',no:'不可擰乾、不可吊掛晾乾、不可烘乾。',tip:'起毛球是正常現象，用毛球梳順著同一方向輕梳。'},
+ {g:'天然纖維',id:'silk',n:'絲',en:'Silk',k:'真絲 襯衫 領帶 絲巾',wash:'多數建議乾洗；可水洗的用冷水、中性洗劑快速手洗。',dry:'毛巾吸水後吊掛陰乾，不可曝曬。',iron:'中低溫，翻面或墊布燙；避免噴水，可能留下水痕。',store:'吊掛或捲起，避免銳利摺痕；防蟲。',no:'避免香水、止汗劑直接接觸，汗漬會讓絲變黃變脆。',tip:'領帶不可水洗，髒了交給乾洗店。'},
+ {g:'天然纖維',id:'denim',n:'丹寧（牛仔）',en:'Denim',k:'牛仔褲 原色 赤耳',wash:'翻面、扣好鈕扣與拉鍊，冷水、少量洗劑，可單獨洗。',dry:'翻面吊掛晾乾，避免直曬。',iron:'通常不需要；需要時中高溫翻面燙。',store:'摺疊或掛在褲架。',no:'原色牛仔第一次洗會大量掉色，不要和淺色衣服一起洗。',tip:'穿久了再洗，能保留自己穿出來的褪色紋路。'},
+ {g:'合成與再生纖維',id:'polyester',n:'聚酯纖維',en:'Polyester',k:'運動服 快乾 排汗衫 刷毛',wash:'可機洗，冷水到 40°C；運動衣翻面洗。',dry:'乾得很快，吊掛即可；烘乾用低溫。',iron:'低溫（1 點）或不需要。',store:'摺疊或吊掛皆可。',no:'避免柔軟精，會堵住排汗布料的毛細孔、降低吸濕排汗。',tip:'洗合成纖維會釋放微塑膠纖維，可用細網洗衣袋減少流出。'},
+ {g:'合成與再生纖維',id:'nylon',n:'尼龍',en:'Nylon',k:'風衣 包包 絲襪 泳衣',wash:'冷水輕柔洗，放洗衣袋。',dry:'吊掛陰乾，避免陽光直曬變黃。',iron:'低溫（1 點），最好不燙。',store:'摺疊或吊掛。',no:'不耐高溫，靠近熨斗或烘乾機高溫會融化、發亮。',tip:'泳衣游完要先用清水沖掉氯和鹽分。'},
+ {g:'合成與再生纖維',id:'rayon',n:'嫘縈／天絲',en:'Rayon / Lyocell',k:'人造絲 黏膠纖維 莫代爾 Tencel',wash:'冷水輕柔或手洗，放洗衣袋。',dry:'吊掛陰乾，不要擰。',iron:'中溫，翻面燙。',store:'吊掛。',no:'濕的時候強度變弱，用力搓或扭容易變形、縮水。',tip:'由木漿再生製成，觸感涼爽垂墜，夏季服裝常見。'},
+ {g:'合成與再生纖維',id:'acrylic',n:'壓克力纖維',en:'Acrylic',k:'仿羊毛 平價毛衣 毛帽',wash:'冷水輕柔洗，放洗衣袋。',dry:'平放晾乾。',iron:'低溫或不燙，高溫會讓纖維失去彈性。',store:'摺疊。',no:'避免烘乾和熱水，容易起毛球、變形。',tip:'外觀像羊毛但比較便宜，保暖度和透氣度較低。'},
+ {g:'特殊單品',id:'down',n:'羽絨外套',en:'Down jacket',k:'羽絨衣 羽絨被 鵝絨',wash:'看洗標：可水洗的用羽絨專用洗劑、冷水輕柔行程，扣好拉鍊。',dry:'低溫烘乾並放 2–3 顆網球或烘乾球拍打，或平放晾乾並不時拍鬆。',iron:'不可熨燙。',store:'洗淨乾透後寬鬆收納，不要長期真空壓縮。',no:'沒有完全乾就收起來，羽毛會結塊發臭。',tip:'平常局部髒污用濕布沾中性洗劑擦拭即可，不要常洗。'},
+ {g:'特殊單品',id:'shell',n:'機能防水外套',en:'Waterproof shell',k:'Gore-Tex 防水透氣 衝鋒衣 登山',wash:'依洗標用專用洗劑或少量中性洗劑，冷水或溫水，不加柔軟精。',dry:'吊掛晾乾；部分洗標允許低溫烘乾，可幫助恢復表面撥水。',iron:'多數不建議，依洗標處理。',store:'吊掛，避免長期擠壓。',no:'柔軟精和一般洗衣粉殘留會降低撥水與透氣效果。',tip:'髒污和油脂反而會讓防水外套「不透氣」，適度清洗是必要的。'},
+ {g:'特殊單品',id:'knit',n:'針織毛衣',en:'Knitwear',k:'毛衣 開襟衫 針織',wash:'翻面放洗衣袋，冷水羊毛行程或手洗。',dry:'整理成原本形狀平放晾乾。',iron:'蒸氣懸空整理。',store:'一定要摺疊，用衣架掛會把肩膀撐出凸角、衣身拉長。',no:'不要吊掛晾乾和收納。',tip:'起毛球用毛球梳或除毛球機輕輕處理。'},
+ {g:'特殊單品',id:'tailored',n:'西裝外套',en:'Tailored jacket',k:'西裝 正式外套 學校制服外套',wash:'大多需要乾洗，但一季乾洗 1–2 次就夠，太常乾洗會傷布料。',dry:'穿後掛在寬肩衣架通風一晚。',iron:'用蒸氣整理，不要直接壓燙翻領。',store:'寬肩木衣架，套上透氣防塵套。',no:'口袋不要裝太多東西，會撐壞形狀。',tip:'日常用衣物刷順著布紋刷掉灰塵，就能保持乾淨。'},
+ {id:'leather',g:'皮革',n:'真皮（光面皮）',en:'Smooth leather',k:'皮衣 皮鞋 皮包 牛皮 羊皮 全粒面',wash:'不可水洗。平常用乾的軟布擦掉灰塵；髒污用擰到幾乎乾的濕布沾一點皮革清潔劑，小範圍輕擦，再用乾布擦乾。',dry:'淋濕後用毛巾按壓吸水，塞入紙團或用寬肩衣架撐住形狀，放在陰涼通風處自然乾，不可用吹風機、暖氣或曬太陽。',iron:'不可熨燙。皺摺可掛在浴室利用蒸氣讓它慢慢舒展。',store:'寬肩衣架吊掛、套透氣布袋；包包塞紙維持形狀；不要用塑膠袋密封。',no:'酒精、去漬油、一般洗碗精會讓皮革乾裂褪色；長期潮濕會發霉，長期乾燥會龜裂。',tip:'每 3–6 個月用皮革保養油或保養乳薄擦一層，保持油分與柔軟；新品先在不明顯處試擦，確認不會變色。',more:[['怎麼認','表面有不規則的毛孔與細紋，摸起來溫暖柔軟；邊緣切面是纖維狀，不是布底或塑膠層。'],['發霉','用乾布在室外擦掉白色霉斑，再用皮革清潔劑擦拭，放通風處；嚴重時交給皮件保養店。'],['掉色','淺色衣服和深色真皮包互相摩擦會染色，雨天特別明顯。']]},
+ {id:'suede',g:'皮革',n:'麂皮（翻毛皮）',en:'Suede',k:'翻毛皮 麂皮鞋 絨面皮 沙漠靴',wash:'不可水洗。用麂皮專用刷（銅刷或橡膠刷）順著毛的方向刷掉灰塵；局部髒污用麂皮專用橡皮擦輕擦，再刷順。',dry:'淋濕後用紙巾吸水，塞紙團撐形，陰乾，完全乾了再用刷子把毛刷起來。',iron:'不可熨燙。毛被壓扁時，可用蒸氣距離 20 公分輕噴，再刷起。',store:'透氣布袋，避免重壓把絨毛壓扁。',no:'最怕水和油：不要用濕布用力擦、不要上一般皮革保養油，會讓絨毛結塊、顏色變深。',tip:'新買時先噴一層麂皮專用防水噴霧，之後每季補噴一次。',more:[['怎麼認','表面是短短的絨毛，用手指往不同方向撥，顏色會一深一淺。它是皮革的內面（肉面）磨出來的。'],['油漬','立刻撒玉米粉或爽身粉吸油，靜置一晚後刷掉，不要用水擦。']]},
+ {id:'nubuck',g:'皮革',n:'牛巴戈（磨砂皮）',en:'Nubuck',k:'磨砂皮 nubuck 工作靴 黃靴',wash:'不可水洗。用牛巴戈／麂皮專用刷輕刷，髒污用專用橡皮擦或專用清潔泡沫處理。',dry:'淋濕後塞紙團、陰乾，乾了再刷。',iron:'不可熨燙。',store:'透氣布袋，避免陽光直射褪色。',no:'和麂皮一樣怕油和水漬；不要用一般鞋油或皮革油。',tip:'定期補噴防水噴霧；它比麂皮更細緻，刷的力道要更輕。',more:[['怎麼認','是皮革的外面（粒面）輕輕磨過，絨毛比麂皮更短更細，摸起來像絲絨，常見於工作靴。'],['和麂皮的差別','麂皮磨的是皮的內面，毛較長較鬆；牛巴戈磨的是外面，較耐用也較緊密。']]},
+ {id:'patent',g:'皮革',n:'漆皮',en:'Patent leather',k:'漆皮鞋 亮皮 鏡面皮 正式皮鞋',wash:'不可水洗。用微濕的軟布擦拭，再用乾布擦乾；指紋可用漆皮專用亮光劑。',dry:'淋濕後用軟布擦乾即可。',iron:'不可熨燙，高溫會讓塗層起泡或變黏。',store:'每隻鞋分開放入布袋，避免漆面互相黏住或染色。',no:'不要和深色物品、塑膠袋長時間接觸，顏色會轉印到漆面上；避免高溫車內。',tip:'漆皮是在皮革或布底上塗一層亮面塗層，所以重點是保護塗層、不要刮傷。',more:[['怎麼認','表面像鏡子一樣亮、沒有毛孔，摸起來滑順冰涼。底材可能是真皮，也可能是合成材料，要看成分標示。']]},
+ {id:'faux-leather',g:'皮革',n:'合成皮（人造皮）',en:'Faux leather · PU / PVC',k:'PU 皮 PVC 人造皮 仿皮 素食皮革 皮衣 皮褲',wash:'大部分不可機洗，用沾了少量中性清潔劑的濕布擦拭；少數洗標標示可水洗的 PU 衣物，用冷水、手洗或輕柔行程並放洗衣袋。',dry:'吊掛陰乾，遠離陽光與暖氣。',iron:'不可熨燙或只能低溫墊布（依洗標）；高溫會讓表面融化、發黏。',store:'寬鬆吊掛，不要摺疊壓出深摺痕；放在通風乾燥處。',no:'不要上真皮保養油，油分會讓 PU 表層變軟脫落；不要用酒精和去光水。',tip:'PU 合成皮會隨時間「水解」，表面出現龜裂、脫皮，潮濕悶熱會加快這個過程，台灣夏天收納要特別注意除濕。',more:[['怎麼認','表面紋路很規則、每一處都一樣；翻到背面或邊緣常可看到布料底層；聞起來有塑膠味。'],['PU 和 PVC','PU 較柔軟透氣、常用在衣物，但較容易水解脫皮；PVC 較硬、防水，常見於雨衣和包包。']]}
 ];
+let IMG={};
+const credit=m=>`<a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.artist)} · ${esc(m.license)}</a>`;
+function pics(id){const l=IMG[id]||[];if(!l.length)return '';return `<div class="pics pics-${Math.min(l.length,2)}">${l.slice(0,2).map(m=>`<figure><img src="../${esc(m.src)}" alt="${esc(m.caption||m.title)}" loading="lazy"><figcaption>${m.caption?esc(m.caption)+' · ':''}${credit(m)}</figcaption></figure>`).join('')}</div>`}
 const groups=['全部',...new Set(F.map(f=>f.g))];let fg='全部';
 $('#fabric-chips').innerHTML=groups.map(g=>`<button class="chip" type="button" data-g="${g}" aria-pressed="${g===fg}">${g}</button>`).join(' ');
 function drawFabrics(){
  const q=$('#fabric-q').value.trim().toLowerCase();
  const list=F.filter(f=>(fg==='全部'||f.g===fg)&&(!q||[f.n,f.en,f.k].join(' ').toLowerCase().includes(q)));
- $('#fabric-grid').innerHTML=list.length?list.map(f=>`<article class="card"><div class="en">${esc(f.en)} · ${esc(f.g)}</div><h3>${esc(f.n)}</h3><dl><dt>清洗</dt><dd>${esc(f.wash)}</dd><dt>乾燥</dt><dd>${esc(f.dry)}</dd><dt>熨燙</dt><dd>${esc(f.iron)}</dd><dt>收納</dt><dd>${esc(f.store)}</dd><dt class="no">避免</dt><dd class="no">${esc(f.no)}</dd></dl><details><summary>小知識</summary>${esc(f.tip)}</details></article>`).join(''):'<p class="hint">找不到這個材質，試試「羊毛」「牛仔」「羽絨」。</p>';
+ $('#fabric-grid').innerHTML=list.length?list.map(f=>`<article class="card">${pics(f.id)}<div class="en">${esc(f.en)} · ${esc(f.g)}</div><h3>${esc(f.n)}</h3><dl><dt>清洗</dt><dd>${esc(f.wash)}</dd><dt>乾燥</dt><dd>${esc(f.dry)}</dd><dt>熨燙</dt><dd>${esc(f.iron)}</dd><dt>收納</dt><dd>${esc(f.store)}</dd><dt class="no">避免</dt><dd class="no">${esc(f.no)}</dd></dl>${(f.more||[]).map(([h,t])=>`<dt>${esc(h)}</dt><dd>${esc(t)}</dd>`).join('')?`<dl class="more">${(f.more||[]).map(([h,t])=>`<dt>${esc(h)}</dt><dd>${esc(t)}</dd>`).join('')}</dl>`:''}<details><summary>小知識</summary>${esc(f.tip)}</details></article>`).join(''):'<p class="hint">找不到這個材質，試試「羊毛」「牛仔」「羽絨」。</p>';
 }
 $('#fabric-q').oninput=drawFabrics;
 document.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{fg=b.dataset.g;document.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));drawFabrics()});
+fetch('../data/care-images.json').then(r=>r.json()).then(j=>{IMG=j;drawFabrics();drawLabels()}).catch(()=>{});
 drawFabrics();
 
+function drawLabels(){const l=[...(IMG.labels||[]),...(IMG.wool||[]).filter(m=>m.caption.includes('洗標')),...(IMG.nylon||[]).filter(m=>m.caption.includes('洗標'))];if(!l.length)return;$('#real-labels').innerHTML='<div class="mini">Real labels / 實際洗標照片</div><p class="hint">衣服內側通常有兩種標籤：成分標（例如 100% WOOL）和洗標（符號）。對照看看，左邊的符號在真實衣服上長什麼樣子。</p><div class="label-strip">'+l.map(m=>`<figure><img src="../${esc(m.src)}" alt="${esc(m.caption||m.title)}" loading="lazy"><figcaption>${esc(m.caption||'洗標')} · ${credit(m)}</figcaption></figure>`).join('')+'</div>'}
 /* ---------- 污漬 ---------- */
 const ST=[
  {n:'咖啡、茶',steps:['用紙巾從外往內吸掉多餘液體。','從布料背面用冷水沖洗。','沾一點洗衣精或洗碗精輕輕按壓，靜置 5–10 分鐘。','依洗標正常清洗；白色衣物可用氧系漂白劑浸泡。'],no:'加了牛奶的咖啡不要用熱水，蛋白質遇熱會固定在布上。'},
@@ -385,7 +407,7 @@ function drawQuiz(){
 drawQuiz();
 
 /* ---------- 影片（若 assets/care/care-intro.mp4 存在就顯示） ---------- */
-fetch('../assets/care/care-intro.mp4',{method:'HEAD'}).then(r=>{if(!r.ok)return;const v=$('#video-slot');v.hidden=false;v.innerHTML='<video src="../assets/care/care-intro.mp4" controls muted loop playsinline preload="metadata" aria-label="洗滌保養示意影片：檢查洗標並平放晾乾毛衣"></video><div><div class="mini">Video</div><p>短片：一件衣服從洗標到收納的保養流程。</p><p class="hint">AI 生成示意影片（Grok），實際做法以本頁文字說明與洗標為準。</p></div>'}).catch(()=>{});
+fetch('../assets/care/care-intro.mp4',{method:'HEAD'}).then(r=>{if(!r.ok)return;const v=$('#video-slot');v.hidden=false;v.innerHTML='<video src="../assets/care/care-intro.mp4" autoplay muted loop playsinline preload="auto" aria-label="洗滌保養影片：檢查洗標並平放晾乾毛衣"></video><div><div class="mini">Video</div><p>一件毛衣的保養：先看洗標，再平放晾乾。</p></div>';const vid=v.querySelector('video');vid.muted=true;vid.play().catch(()=>{})}).catch(()=>{});
 </script>
 </body>
 </html>

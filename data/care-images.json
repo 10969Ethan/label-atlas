@@ -1,0 +1,294 @@
+{
+ "cotton": [
+  {
+   "src": "assets/care/fabrics/cotton-1.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Ironed_blue_T-shirt_(001).JPG",
+   "title": "Ironed blue T-shirt (001).JPG",
+   "artist": "Juan de Vojníkov",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "caption": ""
+  }
+ ],
+ "linen": [
+  {
+   "src": "assets/care/fabrics/linen-1.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:White_linen_shirt_-_DPLA_-_98a0086f55b5e7cbbdc779ee97df5beb_(page_2).jpg",
+   "title": "White linen shirt - DPLA - 98a0086f55b5e7cbbdc779ee97df5beb (page 2).jpg",
+   "artist": "File URL IIIF manifest Catalog record",
+   "license": "Public domain",
+   "licenseUrl": "",
+   "caption": ""
+  }
+ ],
+ "wool": [
+  {
+   "src": "assets/care/fabrics/wool-1.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Swiss_Army_Wool_Sweater_(15695462777).jpg",
+   "title": "Swiss Army Wool Sweater (15695462777).jpg",
+   "artist": "Andrew Toskin",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "caption": ""
+  },
+  {
+   "src": "assets/care/fabrics/wool-2.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Label_with_care_symbols.JPG",
+   "title": "Label with care symbols.JPG",
+   "artist": "Elkagye",
+   "license": "Public domain",
+   "licenseUrl": "",
+   "caption": "羊毛衣上的實際洗標"
+  }
+ ],
+ "cashmere": [
+  {
+   "src": "assets/care/fabrics/cashmere-1.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Cashmere_Sweater.jpg",
+   "title": "Cashmere Sweater.jpg",
+   "artist": "Ssblucky7",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "caption": ""
+  },
+  {
+   "src": "assets/care/fabrics/cashmere-2.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:100%25_Kaschmir_Wolle_vonk_kaschmirprodukte.de.jpg",
+   "title": "100% Kaschmir Wolle vonk kaschmirprodukte.de.jpg",
+   "artist": "https://www.kaschmirprodukte.de",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "caption": "100% 羊絨圍巾"
+  }
+ ],
+ "silk": [
+  {
+   "src": "assets/care/fabrics/silk-1.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Blouse_MET_CI63.38.3_F.jpg",
+   "title": "Blouse MET CI63.38.3 F.jpg",
+   "artist": "Jeanne Lanvin / Lanvin",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "caption": ""
+  }
+ ],
+ "denim": [
+  {
+   "src": "assets/care/fabrics/denim-1.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Close-Up_of_Denim_Jeans.jpg",
+   "title": "Close-Up of Denim Jeans.jpg",
+   "artist": "Partonez",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "caption": ""
+  }
+ ],
+ "polyester": [
+  {
+   "src": "assets/care/fabrics/polyester-1.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Polar_ecwcs_gen._III.jpg",
+   "title": "Polar ecwcs gen. III.jpg",
+   "artist": "MAx 92",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "caption": ""
+  }
+ ],
+ "nylon": [
+  {
+   "src": "assets/care/fabrics/nylon-1.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Angles_Nylon_Jacket_-_DPLA_-_dee348f6b22f86f0915f930448685bca_(page_8).jpg",
+   "title": "Angles Nylon Jacket - DPLA - dee348f6b22f86f0915f930448685bca (page 8).jpg",
+   "artist": "Dunbrooke Sportswear",
+   "license": "Public domain",
+   "licenseUrl": "",
+   "caption": ""
+  },
+  {
+   "src": "assets/care/fabrics/nylon-2.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Angles_Nylon_Jacket_-_DPLA_-_dee348f6b22f86f0915f930448685bca_(page_16).jpg",
+   "title": "Angles Nylon Jacket - DPLA - dee348f6b22f86f0915f930448685bca (page 16).jpg",
+   "artist": "Dunbrooke Sportswear",
+   "license": "Public domain",
+   "licenseUrl": "",
+   "caption": "尼龍外套內側的洗標"
+  }
+ ],
+ "rayon": [
+  {
+   "src": "assets/care/fabrics/rayon-1.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:1996-97_Cavin_Klein_blue_rayon_jersey_evening_dress_01.jpg",
+   "title": "1996-97 Cavin Klein blue rayon jersey evening dress 01.jpg",
+   "artist": "Staff photographer for Rhode Island School of Design Museum of Art",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "caption": ""
+  }
+ ],
+ "acrylic": [
+  {
+   "src": "assets/care/fabrics/acrylic-1.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Cotton-acrylic_yarn.jpg",
+   "title": "Cotton-acrylic yarn.jpg",
+   "artist": "Breibeest",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "caption": ""
+  }
+ ],
+ "down": [
+  {
+   "src": "assets/care/fabrics/down-1.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Adidas_Helionic_Down_Jacket.jpg",
+   "title": "Adidas Helionic Down Jacket.jpg",
+   "artist": "Adenosine Triphosphate",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "caption": ""
+  }
+ ],
+ "shell": [
+  {
+   "src": "assets/care/fabrics/shell-1.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Hard-shell-jacket.jpg",
+   "title": "Hard-shell-jacket.jpg",
+   "artist": "No machine-readable author provided. Skarkkai assumed (based on copyright claims",
+   "license": "Public domain",
+   "licenseUrl": "",
+   "caption": ""
+  }
+ ],
+ "knit": [
+  {
+   "src": "assets/care/fabrics/knit-1.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Cardigan,_sweater.JPG",
+   "title": "Cardigan, sweater.JPG",
+   "artist": "Rovdyr",
+   "license": "CC BY 2.5",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+   "caption": ""
+  }
+ ],
+ "tailored": [
+  {
+   "src": "assets/care/fabrics/tailored-1.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Grey_and_navy_suit_on_mannequin.jpg",
+   "title": "Grey and navy suit on mannequin.jpg",
+   "artist": "Paul Goyette",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "caption": ""
+  }
+ ],
+ "leather": [
+  {
+   "src": "assets/care/fabrics/leather-1.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Black_worn_leather_jacket_detail_1.jpg",
+   "title": "Black worn leather jacket detail 1.jpg",
+   "artist": "W.carter",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "caption": "穿了多年的真皮外套表面"
+  },
+  {
+   "src": "assets/care/fabrics/leather-2.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Leather_jacket.jpg",
+   "title": "Leather jacket.jpg",
+   "artist": "Own work Alec Xander",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "caption": "真皮騎士外套"
+  }
+ ],
+ "suede": [
+  {
+   "src": "assets/care/fabrics/suede-1.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Tricker%27s_Robert_derby_shoes_in_brown_suede.jpg",
+   "title": "Tricker's Robert derby shoes in brown suede.jpg",
+   "artist": "Nick-D",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "caption": ""
+  }
+ ],
+ "nubuck": [
+  {
+   "src": "assets/care/fabrics/nubuck-1.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Velvety_texture_of_nubuck_leather.jpg",
+   "title": "Velvety texture of nubuck leather.jpg",
+   "artist": "Best For My Feet",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "caption": "牛巴戈表面的絨感細節"
+  },
+  {
+   "src": "assets/care/fabrics/nubuck-2.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Timberland_Pro_Splitrock_work_boots.jpg",
+   "title": "Timberland Pro Splitrock work boots.jpg",
+   "artist": "Best For My Feet",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "caption": ""
+  }
+ ],
+ "patent": [
+  {
+   "src": "assets/care/fabrics/patent-1.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Herrenschuh078.jpg",
+   "title": "Herrenschuh078.jpg",
+   "artist": "Oliver1983",
+   "license": "Public domain",
+   "licenseUrl": "",
+   "caption": ""
+  }
+ ],
+ "faux-leather": [
+  {
+   "src": "assets/care/fabrics/faux-leather-1.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Synthetic_Leather.jpg",
+   "title": "Synthetic Leather.jpg",
+   "artist": "Tuanvn291089",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "caption": "合成皮表面紋理"
+  },
+  {
+   "src": "assets/care/fabrics/faux-leather-2.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Faux_Leather_Cap_Sleeve_Detailing_(21694357244).jpg",
+   "title": "Faux Leather Cap Sleeve Detailing (21694357244).jpg",
+   "artist": "Jamie",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "caption": "合成皮袖口細節"
+  }
+ ],
+ "labels": [
+  {
+   "src": "assets/care/fabrics/labels-1.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Laundry_symbols_on_a_care_label_attached_to_a_shirt.JPG",
+   "title": "Laundry symbols on a care label attached to a shirt.JPG",
+   "artist": "Mk2010",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "caption": "襯衫上的洗標符號"
+  },
+  {
+   "src": "assets/care/fabrics/labels-2.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:CARE_LABEL.jpg",
+   "title": "CARE LABEL.jpg",
+   "artist": "Surya palanisami",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "caption": "洗標範例"
+  },
+  {
+   "src": "assets/care/fabrics/labels-3.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Tracksuit_pants_(AM_2017.66.26-13).jpg",
+   "title": "Tracksuit pants (AM 2017.66.26-13).jpg",
+   "artist": "Adidas",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "caption": "運動褲內側的洗標"
+  }
+ ]
+}

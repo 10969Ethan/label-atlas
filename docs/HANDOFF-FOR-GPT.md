@@ -30,9 +30,12 @@ B. 設計師頁 designers/
    - media.js：圖片只讀本地資料，不即時呼叫維基 API。
    - people.js（新檔）：在首頁品牌研究書裡顯示相關設計師卡片。
    - atlas.css：新增 .career 與 .collabs 樣式。
+   - universe.js（新檔）：設計師宇宙，用 CSS 3D 把 91 位設計師的人像排成兩圈環繞書牆，可拖曳、方向鍵環視、點人像翻開人物誌。原本這個檔案缺少，宇宙區塊是空的。
 C. 新頁面 care/index.html：洗滌保養
    - 看懂洗標：28 個 ISO 3758 洗標符號（水洗、漂白、乾燥、熨燙、專業清洗），點選後右側組合成洗衣說明。
-   - 依材質保養：16 種材質與單品（棉、麻、羊毛、羊絨、絲、丹寧、聚酯、尼龍、嫘縈、壓克力、羽絨、防水外套、針織、西裝、皮革、麂皮），可搜尋與分類。
+   - 依材質保養：19 種材質與單品，每種都有維基共享資源的實物照片（附作者與授權），照片清單在 data/care-images.json、檔案在 assets/care/fabrics/。
+   - 皮革獨立成一類，共 5 種：真皮（光面皮）、麂皮、牛巴戈、漆皮、合成皮（PU／PVC），各有清洗、乾燥、收納、禁忌，以及「怎麼認」與常見問題（發霉、掉色、油漬、水解脫皮）。
+   - 洗標區下方有「實際洗標照片」，讓學生對照符號在真實衣服上的樣子。
    - 去漬速查：12 種污漬步驟與禁忌；洗衣步驟、洗衣機行程、晾曬、熨燙溫度、收納；8 題測驗。
    - 影片區塊：若 assets/care/care-intro.mp4 存在會自動顯示，否則隱藏。
 D. 首頁 index.html
@@ -49,13 +52,13 @@ D. 首頁 index.html
 三、請你做的事
 ━━━━━━━━━━━━━━━━━━
 1. 從 GitHub repo 取得最新檔案，覆蓋到這個網站（路徑保持不變）：
-   index.html、designers.json、designers/（整個資料夾）、care/index.html、data/glossary.json、assets/designers/（整個資料夾，約 16MB），以及三支 Grok 影片：assets/care/care-intro.mp4、assets/time-machine/warp.mp4、assets/designers-universe/universe-intro.mp4。
+   index.html、designers.json、designers/（整個資料夾）、care/index.html、data/glossary.json、data/care-images.json、assets/designers/（整個資料夾，約 16MB）、assets/care/fabrics/（材質照片），以及三支 Grok 影片：assets/care/care-intro.mp4、assets/time-machine/warp.mp4、assets/designers-universe/universe-intro.mp4。
    不需要：tools/、.github/、docs/、README.md。
 2. 影片已經在 repo 裡並接好，不需要另外寫程式：
-   - 洗滌保養頁：assets/care/care-intro.mp4（晾曬收納段落，有播放控制）。
-   - 首頁時光機區塊開頭：assets/time-machine/warp.mp4（.tm-video，捲到畫面內自動靜音播放，離開即暫停）。
+   - 洗滌保養頁：assets/care/care-intro.mp4（晾曬收納段落，自動靜音、無限循環）。
+   - 首頁時光機區塊開頭：assets/time-machine/warp.mp4（.tm-video，自動靜音、無限循環）。
    - 設計師頁標題下方：assets/designers-universe/universe-intro.mp4。
-   三支都標註「AI 生成示意影片（Grok）」；使用者開啟「減少動態」時不自動播放、改顯示播放控制。
+   三支都是自動靜音播放、無限循環，不顯示額外說明文字。
 3. 不要改寫 Claude 寫好的內容與程式；只有下面的檢查失敗時才修正，並說明改了哪裡。
 
 ━━━━━━━━━━━━━━━━━━
@@ -96,4 +99,4 @@ A vintage dressmaker's mannequin in a dark studio. Streaks of warm light rush pa
 Floating cloth-bound books drift slowly in a starry deep-space scene around a ringed planet, each book softly glowing as the camera glides between them. Editorial, calm, dark navy with warm brass light, no text, no logos.
 ```
 
-注意：提示詞刻意避免真實人物、品牌標誌與特定設計師的作品，影片只作氛圍示意；網站上會標註「AI 生成示意影片」。
+注意：提示詞刻意避免真實人物、品牌標誌與特定設計師的作品。
