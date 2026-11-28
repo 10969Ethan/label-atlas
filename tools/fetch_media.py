@@ -111,7 +111,7 @@ def find_works(d):
         for row in rows:
             name = row['title'].lower()
             text = (row['title'] + ' ' + row['desc']).lower()
-            if row['url'] in seen or re.search(r'portrait|headshot|logo|signature|selfie|red carpet', name) or not garment.search(text):
+            if row['title'] in d.get('rejectedWorks', []) or row['url'] in seen or re.search(r'portrait|headshot|logo|signature|selfie|red carpet', name) or not garment.search(text):
                 continue
             if not any(norm(k) in norm(text) for k in (d['brand'], d['name'])):
                 continue
@@ -164,8 +164,10 @@ def main():
         if qid and not d.get('qid'):
             d['qid'] = qid
 
-        if FORCE or not done:
+        if FORCE or not (done or d.get('portraitUnavailable')):
             p = find_portrait(d, qid)
+            if p and p['title'] in d.get('rejectedPortraits', []):
+                p = None
             saved = save_image(p, folder, 'portrait') if p else None
             if saved:
                 d['portrait'] = saved

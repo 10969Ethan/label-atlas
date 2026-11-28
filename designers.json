@@ -13,17 +13,17 @@
   "decades": [
    1980
   ],
-  "portrait": {
-   "title": "Comme des Garcons at the Met (62473).jpg",
-   "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Comme_des_Garcons_at_the_Met_%2862473%29.jpg/960px-Comme_des_Garcons_at_the_Met_%2862473%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "url": "https://commons.wikimedia.org/wiki/File:Comme_des_Garcons_at_the_Met_(62473).jpg",
-   "license": "CC BY-SA 4.0",
-   "artist": "Rhododendrites",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "desc": "The Rei Kawakubo / Comme des Garcons Art of the In-Between show at the Met.",
-   "src": "assets/designers/rei-kawakubo/portrait.jpg"
-  },
   "works": [
+   {
+    "title": "Comme des Garcons at the Met (62473).jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Comme_des_Garcons_at_the_Met_%2862473%29.jpg/960px-Comme_des_Garcons_at_the_Met_%2862473%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "url": "https://commons.wikimedia.org/wiki/File:Comme_des_Garcons_at_the_Met_(62473).jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Rhododendrites",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "desc": "The Rei Kawakubo / Comme des Garcons Art of the In-Between show at the Met.",
+    "src": "assets/designers/rei-kawakubo/work-0.jpg"
+   },
    {
     "title": "2005 Rei Kawakubo for Comme des Garçons printed wedding dress, Autumn-Winter collection 01.jpg",
     "remote": "https://upload.wikimedia.org/wikipedia/commons/b/bc/2005_Rei_Kawakubo_for_Comme_des_Gar%C3%A7ons_printed_wedding_dress%2C_Autumn-Winter_collection_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
@@ -64,6 +64,79 @@
     "desc": "Wool jumper dress designed by Rei Kawakubo for Comme des Garçons, 1983-84 RISDM 1999-35-5 v01",
     "src": "assets/designers/rei-kawakubo/work-4.jpg"
    }
+  ],
+  "profile": {
+   "country": "日本",
+   "life": "1942 年生於東京",
+   "story": "川久保玲畢業於慶應義塾大學文學部，主修美學與藝術史，沒有正式學過服裝設計。她先在旭化成的廣告部門工作，之後成為自由造型師，因為找不到想要的衣服，開始自己動手做。1969 年她以法文「像男孩一樣」為名創立 Comme des Garçons，1973 年正式成立公司。\n\n1981 年她在巴黎首次發表，隔年以大量黑色、破洞針織與不對稱剪裁震撼時裝界，被媒體稱為「廣島時尚」或「乞丐裝」。這些評語原本帶有貶意，卻也顯示她挑戰的正是西方對「美麗女裝」的定義。1997 年春夏的「Body Meets Dress, Dress Meets Body」在衣服裡塞入襯墊，讓身體出現凸起，是她最常被討論的系列之一。\n\n除了設計，她也重新定義品牌經營：2004 年在倫敦開設 Dover Street Market，把不同品牌與藝術裝置放在同一個空間；旗下也培養出渡邊淳彌、栗原たお等設計師。2017 年紐約大都會藝術博物館為她舉辦大型個展，她是繼 Yves Saint Laurent 之後第二位在世時獲得該館個展的設計師。",
+   "context": "1980 年代初的巴黎，主流時尚強調墊肩、合身與華麗的女性曲線。川久保玲與山本耀司帶來黑色、寬鬆和看似未完成的衣服，讓「衣服一定要修飾身體」這件事第一次被大規模質疑。",
+   "contributions": [
+    "以黑色、破損與不對稱剪裁，挑戰西方對女性美的標準。",
+    "把服裝當成提問的工具，例如用襯墊改變身體輪廓，讓人重新思考「身體」與「衣服」的關係。",
+    "開設 Dover Street Market，發展出結合多品牌與藝術展示的零售模式。",
+    "培養並支持渡邊淳彌、高橋盾等後進設計師。"
+   ],
+   "tags": [
+    "前衛",
+    "黑色",
+    "解構",
+    "反時尚"
+   ],
+   "language": "她的衣服常常看起來「不對勁」：袖子位置錯開、布料故意破損、輪廓不跟著身體走。這種不完美是刻意的，目的是讓穿的人和看的人停下來思考。",
+   "influence": "她讓前衛設計可以同時是一門成功的生意，也影響了馬丁·馬吉拉、安特衛普六君子到當代許多強調概念的設計師。",
+   "timeline": [
+    {
+     "year": 1964,
+     "text": "畢業於慶應義塾大學"
+    },
+    {
+     "year": 1969,
+     "text": "以 Comme des Garçons 為名開始設計"
+    },
+    {
+     "year": 1973,
+     "text": "正式成立公司"
+    },
+    {
+     "year": 1981,
+     "text": "首次在巴黎發表"
+    },
+    {
+     "year": 1997,
+     "text": "發表「Body Meets Dress, Dress Meets Body」"
+    },
+    {
+     "year": 2004,
+     "text": "倫敦 Dover Street Market 開幕"
+    },
+    {
+     "year": 2017,
+     "text": "大都會藝術博物館舉辦個展"
+    }
+   ],
+   "links": [
+    {
+     "id": "yohji-yamamoto",
+     "text": "同時期在巴黎發表的日本設計師"
+    },
+    {
+     "id": "junya-watanabe",
+     "text": "在 Comme des Garçons 培養出的設計師"
+    },
+    {
+     "id": "jun-takahashi",
+     "text": "鼓勵他到巴黎發表"
+    },
+    {
+     "id": "chitose-abe",
+     "text": "曾在 Comme des Garçons 擔任打版師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  },
+  "portraitUnavailable": true,
+  "rejectedPortraits": [
+   "Comme des Garcons at the Met (62473).jpg"
   ]
  },
  {
@@ -655,7 +728,63 @@
     "desc": "Ensemble by Jun Takahashi, for his brand Undercover. Creep Very collection, Fall/Winter 2021 (Look 27). Entire collection was inspired by the anime series Evangelion.",
     "src": "assets/designers/jun-takahashi/work-3.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "日本",
+   "life": "1969 年生於群馬縣桐生市",
+   "story": "高橋盾在群馬長大，1988 年進入文化服裝學院。求學期間他擔任翻唱樂團「東京 Sex Pistols」的主唱，龐克文化與 Vivienne Westwood 是他最早的偶像。\n\n1993 年他創立 UNDERCOVER，同年和 NIGO 在原宿後巷合開選物店 NOWHERE，成為「裏原宿」潮流的核心人物之一。川久保玲看到他的才華，鼓勵他走向國際；2002 年起他在巴黎發表，2003 年春夏的「Scab」系列以拼貼、破壞與手工感建立了他在時裝週的位置。\n\n他擅長把龐克、恐怖片、音樂和童話這些看似不相干的元素放進同一件衣服，也和 Nike（GYAKUSOU 跑步系列）、UNIQLO 等品牌長期合作，讓前衛設計走進日常穿著。",
+   "context": "1990 年代的東京原宿出現一群年輕人自己做衣服、開小店、限量販售，形成「裏原宿」文化。這股風潮把街頭服裝從次文化推向全球，也讓日本成為潮流的重要產地。",
+   "contributions": [
+    "與 NIGO 等人共同推動裏原宿文化，讓街頭服裝成為設計領域。",
+    "把龐克精神與高級時裝的工藝結合，在巴黎建立日本街頭品牌的地位。",
+    "透過 Nike、UNIQLO 等合作，把實驗性設計帶到大眾市場。"
+   ],
+   "tags": [
+    "龐克",
+    "裏原宿",
+    "拼貼",
+    "街頭"
+   ],
+   "language": "UNDERCOVER 的作品常把可愛和恐怖、精緻和破壞放在一起，例如在童話圖案上加入骷髏，或用手工拼接改造經典外套。",
+   "influence": "他示範了街頭品牌也能在巴黎時裝週發表，影響後來許多從潮流出發的設計師。",
+   "timeline": [
+    {
+     "year": 1988,
+     "text": "進入文化服裝學院"
+    },
+    {
+     "year": 1993,
+     "text": "創立 UNDERCOVER，與 NIGO 開設 NOWHERE"
+    },
+    {
+     "year": 2002,
+     "text": "首次在巴黎發表"
+    },
+    {
+     "year": 2010,
+     "text": "與 Nike 推出 GYAKUSOU 跑步系列"
+    }
+   ],
+   "links": [
+    {
+     "id": "nigo",
+     "text": "共同經營 NOWHERE"
+    },
+    {
+     "id": "hiroshi-fujiwara",
+     "text": "裏原宿文化的前輩"
+    },
+    {
+     "id": "rei-kawakubo",
+     "text": "鼓勵他到巴黎發表"
+    },
+    {
+     "id": "vivienne-westwood",
+     "text": "年輕時的龐克偶像"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "chitose-abe",
@@ -711,7 +840,59 @@
     "desc": "2017 Chitose Abe for Sacai two-piece dress, Fall-Winter collection. Pleated printed silk.",
     "src": "assets/designers/chitose-abe/work-4.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "日本",
+   "life": "1965 年生於岐阜縣",
+   "story": "阿部千登勢的母親是裁縫師，她從小就幫娃娃做衣服。從名古屋的學校畢業後，她先進入服裝公司 World 工作，一年後轉到 Comme des Garçons 擔任打版師，之後也參與渡邊淳彌個人品牌的打版。\n\n1997 年她因為懷孕離職，兩年後在家中以五件手織作品創立 sacai。她最有名的手法是「混合」：把針織毛衣和襯衫、西裝外套和尼龍飛行外套拆開再接在一起，讓一件衣服同時有兩種身分。這種做法看起來很前衛，穿起來卻很日常，讓 sacai 很快受到國際買手注意。\n\n2009 年起 sacai 在巴黎發表，之後與 Nike、Carhartt WIP 等品牌的合作讓她的名字被更多年輕人認識；2021 年她受邀為 Jean Paul Gaultier 設計高級訂製系列。",
+   "context": "2000 年後，日常服裝和高級時裝的界線越來越模糊。阿部千登勢的「混合」設計正好回應了這個時代：人們想要有設計感，又要能每天穿。",
+   "contributions": [
+    "發展出把不同服裝類型拼接成一件衣服的「混合」手法。",
+    "證明前衛的打版技術也可以做出好穿、好搭的日常服。",
+    "以運動品牌合作帶動跨界聯名風潮，例如 Nike 的 LDWaffle 系列。"
+   ],
+   "tags": [
+    "混合",
+    "拼接",
+    "打版",
+    "日常前衛"
+   ],
+   "language": "sacai 的衣服從正面看可能是一件普通毛衣，轉到背面卻變成百褶裙或風衣。這種「轉身才看得到的驚喜」來自她扎實的打版功力。",
+   "influence": "她讓「拼接不同單品」成為當代時裝常見的語彙，也是 Comme des Garçons 體系培養出的重要設計師之一。",
+   "timeline": [
+    {
+     "year": 1999,
+     "text": "以五件手織作品創立 sacai"
+    },
+    {
+     "year": 2009,
+     "text": "開始在巴黎發表"
+    },
+    {
+     "year": 2019,
+     "text": "與 Nike 推出 LDWaffle"
+    },
+    {
+     "year": 2021,
+     "text": "為 Jean Paul Gaultier 設計高級訂製系列"
+    }
+   ],
+   "links": [
+    {
+     "id": "rei-kawakubo",
+     "text": "曾在 Comme des Garçons 擔任打版師"
+    },
+    {
+     "id": "junya-watanabe",
+     "text": "曾參與其品牌打版"
+    },
+    {
+     "id": "jean-paul-gaultier",
+     "text": "受邀設計其高級訂製系列"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "hiroshi-fujiwara",
@@ -728,7 +909,47 @@
   ],
   "qid": "Q5970511",
   "portraitUnavailable": true,
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "日本",
+   "life": "1964 年生於三重縣伊勢市",
+   "story": "藤原浩十多歲時到倫敦，結識了 Sex Pistols 的經紀人 Malcolm McLaren，接觸到龐克與嘻哈文化。他回到日本後擔任 DJ，被視為最早把嘻哈音樂帶進日本的人之一。\n\n1990 年代他在原宿創立 GOODENOUGH 等品牌，並以選物、穿搭和人脈影響了 NIGO、高橋盾等年輕一代，因此被稱為「裏原宿教父」。2003 年他成立 fragment design，以兩道閃電的標誌參與大量聯名合作。\n\n他本身很少做大型時裝秀，影響力主要來自「眼光」：他知道什麼東西會流行，也知道怎麼把運動鞋、工作服和音樂文化串在一起。",
+   "context": "1980 到 90 年代，東京年輕人積極吸收倫敦與紐約的音樂和街頭文化，再轉化成自己的風格。藤原浩是這段文化交流中的關鍵中介者。",
+   "contributions": [
+    "把嘻哈與龐克等街頭文化帶入日本，影響原宿的潮流發展。",
+    "以 fragment design 建立「聯名」作為設計與行銷方法。",
+    "提攜 NIGO、高橋盾等後進，推動裏原宿成為國際潮流中心。"
+   ],
+   "tags": [
+    "裏原宿",
+    "聯名",
+    "街頭文化",
+    "選物"
+   ],
+   "language": "fragment design 的作品通常很低調：在經典款式上做小幅調整，再加上閃電標誌。重點不是改造，而是挑選與重新詮釋。",
+   "influence": "現今品牌之間頻繁的聯名合作模式，很大一部分可以追溯到他與運動品牌、精品品牌的長期合作。",
+   "timeline": [
+    {
+     "year": 1990,
+     "text": "參與創立 GOODENOUGH"
+    },
+    {
+     "year": 2003,
+     "text": "成立 fragment design"
+    }
+   ],
+   "links": [
+    {
+     "id": "nigo",
+     "text": "提攜的後輩"
+    },
+    {
+     "id": "jun-takahashi",
+     "text": "裏原宿文化的夥伴"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "nigo",
@@ -810,17 +1031,9 @@
    "quote": null
   },
   "qid": "Q967645",
-  "works": [
-   {
-    "title": "The National Archives UK - CO 1069-30-27.jpg",
-    "remote": "https://upload.wikimedia.org/wikipedia/commons/8/8a/The_National_Archives_UK_-_CO_1069-30-27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "url": "https://commons.wikimedia.org/wiki/File:The_National_Archives_UK_-_CO_1069-30-27.jpg",
-    "license": "OGL v1.0",
-    "artist": "The National Archives UK - Flickr account",
-    "licenseUrl": "",
-    "desc": "Description: Nigo near Pram Pram from the River side. Location: Nigo (= Great Ningo ?) near Prampram Our Catalogue Reference: Part of CO 1069/30 This image is part of the Colonial Office photographic collection held at The National Archives, uploaded as part of the Africa Through a Lens project. Feel free to share it within the spirit of the Commons.",
-    "src": "assets/designers/nigo/work-1.jpg"
-   }
+  "works": [],
+  "rejectedWorks": [
+   "The National Archives UK - CO 1069-30-27.jpg"
   ]
  },
  {
@@ -952,47 +1165,12 @@
   },
   "qid": "Q2181383",
   "portraitUnavailable": true,
-  "works": [
-   {
-    "title": "Statue of a King, Roman, 30 BCE-395 CE, Borgia Collection, Museo Archeologico di Napoli.jpg",
-    "remote": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Statue_of_a_King%2C_Roman%2C_30_BCE-395_CE%2C_Borgia_Collection%2C_Museo_Archeologico_di_Napoli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "url": "https://commons.wikimedia.org/wiki/File:Statue_of_a_King,_Roman,_30_BCE-395_CE,_Borgia_Collection,_Museo_Archeologico_di_Napoli.jpg",
-    "license": "CC BY-SA 4.0",
-    "artist": "SpeakingArch",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "desc": "Statue of a King, Roman, 30 BCE-395 CE, Borgia Collection, Museo Archeologico di Napoli",
-    "src": "assets/designers/ma-ke/work-1.jpg"
-   },
-   {
-    "title": "Head of a King with Nemes, Roman, 30BCE-395 CE, Borgia Collection, Museo Archeologico di Napoli.jpg",
-    "remote": "https://upload.wikimedia.org/wikipedia/commons/0/07/Head_of_a_King_with_Nemes%2C_Roman%2C_30BCE-395_CE%2C_Borgia_Collection%2C_Museo_Archeologico_di_Napoli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "url": "https://commons.wikimedia.org/wiki/File:Head_of_a_King_with_Nemes,_Roman,_30BCE-395_CE,_Borgia_Collection,_Museo_Archeologico_di_Napoli.jpg",
-    "license": "CC BY-SA 4.0",
-    "artist": "SpeakingArch",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "desc": "Head of a King with Nemes, Roman, 30BCE-395 CE, Borgia Collection, Museo Archeologico di Napoli",
-    "src": "assets/designers/ma-ke/work-2.jpg"
-   },
-   {
-    "title": "Head of a King, Basalt, Ptolemaic Period (first half of 2nd century BCE), MANN, Naples ,Part of Borgia Collection.jpg",
-    "remote": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Head_of_a_King%2C_Basalt%2C_Ptolemaic_Period_%28first_half_of_2nd_century_BCE%29%2C_MANN%2C_Naples_%2CPart_of_Borgia_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "url": "https://commons.wikimedia.org/wiki/File:Head_of_a_King,_Basalt,_Ptolemaic_Period_(first_half_of_2nd_century_BCE),_MANN,_Naples_,Part_of_Borgia_Collection.jpg",
-    "license": "CC BY-SA 4.0",
-    "artist": "SpeakingArch",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "desc": "Head of a King, Basalt, Ptolemaic Period (first half of 2nd century BCE), MANN, Naples , Part of Borgia Collection",
-    "src": "assets/designers/ma-ke/work-3.jpg"
-   },
-   {
-    "title": "Chateau d'Eu - John Edward Jones (1806 - 1862) - Le roi Louis Philippe - IMG 20240721 105101.jpg",
-    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Chateau_d%27Eu_-_John_Edward_Jones_%281806_-_1862%29_-_Le_roi_Louis_Philippe_-_IMG_20240721_105101.jpg/960px-Chateau_d%27Eu_-_John_Edward_Jones_%281806_-_1862%29_-_Le_roi_Louis_Philippe_-_IMG_20240721_105101.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "url": "https://commons.wikimedia.org/wiki/File:Chateau_d%27Eu_-_John_Edward_Jones_(1806_-_1862)_-_Le_roi_Louis_Philippe_-_IMG_20240721_105101.jpg",
-    "license": "CC0",
-    "artist": "Claude villetaneuse",
-    "licenseUrl": "",
-    "desc": "Jones, John Edward - Le roi Louis Philippe (marbre, 1845) collection du Musée Louis-Philippe d'Eu",
-    "src": "assets/designers/ma-ke/work-4.jpg"
-   }
+  "works": [],
+  "rejectedWorks": [
+   "Statue of a King, Roman, 30 BCE-395 CE, Borgia Collection, Museo Archeologico di Napoli.jpg",
+   "Head of a King with Nemes, Roman, 30BCE-395 CE, Borgia Collection, Museo Archeologico di Napoli.jpg",
+   "Head of a King, Basalt, Ptolemaic Period (first half of 2nd century BCE), MANN, Naples ,Part of Borgia Collection.jpg",
+   "Chateau d'Eu - John Edward Jones (1806 - 1862) - Le roi Louis Philippe - IMG 20240721 105101.jpg"
   ]
  },
  {
@@ -1010,7 +1188,45 @@
   "sourceLabel": "UMAWANG 品牌簡介",
   "note": "王汁在上海東華大學及倫敦中央聖馬丁學習設計。2009 年成立同名品牌，以布料研究與剪裁見長。她參與米蘭時裝週，2017 年進入巴黎官方日程，2022 年與聯合國難民署合作。",
   "portraitUnavailable": true,
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "中國",
+   "story": "王汁在上海東華大學學習服裝設計，之後到倫敦中央聖馬丁深造。2009 年她創立同名品牌 UMA WANG，特別重視布料：她會和工廠一起開發面料，讓質地、重量和顏色成為設計的起點。\n\n她的作品偏向寬鬆、有垂墜感的輪廓，色彩沉穩，常帶有手工染色或做舊的質感。品牌在米蘭時裝週發表多年，2017 年進入巴黎官方時裝週日程；2022 年她與聯合國難民署合作，以設計關注社會議題。",
+   "context": "2000 年後中國設計師開始走上國際舞台。和許多以圖案或民族元素吸引目光的品牌不同，王汁選擇以布料研究和剪裁說話，建立安靜但有辨識度的風格。",
+   "contributions": [
+    "以布料開發作為設計核心，強調質地與穿著感受。",
+    "成為少數進入米蘭與巴黎官方日程的中國設計師之一。"
+   ],
+   "tags": [
+    "布料研究",
+    "垂墜",
+    "沉穩色調",
+    "寬鬆剪裁"
+   ],
+   "language": "UMA WANG 的衣服像是被時間穿過：顏色柔和、表面帶有自然的變化，輪廓寬鬆，讓身體在衣服裡有活動的空間。",
+   "influence": "她讓國際市場看見中國設計也能以材料與工藝見長，而不只是東方圖案。",
+   "timeline": [
+    {
+     "year": 2009,
+     "text": "創立 UMA WANG"
+    },
+    {
+     "year": 2017,
+     "text": "進入巴黎官方時裝週日程"
+    },
+    {
+     "year": 2022,
+     "text": "與聯合國難民署合作"
+    }
+   ],
+   "links": [
+    {
+     "id": "ma-ke",
+     "text": "同樣重視布料的中國設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "vivienne-tam",
@@ -1057,7 +1273,51 @@
     "desc": "Vivienne Tam, Chinese fashion designer, in her spring 2009 collection",
     "src": "assets/designers/vivienne-tam/work-2.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "中國／美國",
+   "life": "1957 年生於廣州",
+   "story": "譚燕玉在廣州出生，三歲隨家人移居香港，畢業於香港理工學院（今香港理工大學）的服裝設計課程。1981 年她移居紐約，1990 年代初以自己的名字推出品牌。\n\n她最為人所知的是 1995 年的「毛澤東」系列，把安迪·沃荷式的毛澤東肖像印在服裝上，引起很大爭議，其中幾件後來被美術館收藏。她也常用龍、牡丹、佛像等中國圖像，搭配西方的剪裁與輕盈布料，2000 年出版《China Chic》一書整理這種東西方交會的風格。\n\n她也嘗試跨界合作，例如 2009 年與惠普合作設計筆記型電腦外殼，讓服裝圖案延伸到科技產品。",
+   "context": "1990 年代全球化加速，西方市場對「中國」的想像逐漸改變。譚燕玉站在香港與紐約之間，用服裝回應東西方如何看待彼此。",
+   "contributions": [
+    "把中國圖像與西方剪裁結合，形成鮮明的「東西交會」風格。",
+    "以具爭議性的毛澤東系列，讓服裝成為討論政治與流行文化的媒介。",
+    "較早嘗試服裝設計與科技產品的跨界合作。"
+   ],
+   "tags": [
+    "東西交會",
+    "印花",
+    "刺繡",
+    "流行藝術"
+   ],
+   "language": "她的衣服常以輕柔的網紗、刺繡和大面積印花呈現中國符號，再用合身的西式剪裁讓整體保持現代感。",
+   "influence": "她是最早在紐約時裝週建立知名度的華裔設計師之一，為後來的亞裔設計師開了一條路。",
+   "timeline": [
+    {
+     "year": 1981,
+     "text": "移居紐約"
+    },
+    {
+     "year": 1995,
+     "text": "發表毛澤東系列"
+    },
+    {
+     "year": 2000,
+     "text": "出版《China Chic》"
+    },
+    {
+     "year": 2009,
+     "text": "與惠普合作設計筆電"
+    }
+   ],
+   "links": [
+    {
+     "id": "anna-sui",
+     "text": "同時期在紐約發展的亞裔設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "shiatzy-chen",
@@ -1136,7 +1396,41 @@
   "sourceLabel": "洪麗芬品牌與創作紀錄",
   "note": "洪麗芬在台北接受服裝訓練，也赴東京進修。1985 年創設品牌。她以洪絲研究織物與穿著時間，創作跨足音樂、戲劇和舞蹈服裝。2014 年洪絲獲金點設計獎。",
   "portraitUnavailable": true,
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "台灣",
+   "story": "洪麗芬在台北接受服裝訓練，之後到東京進修，1985 年創立同名品牌。她很早就開始研究布料，自行開發被稱為「洪絲」的織物，讓絲的光澤和皺褶隨著穿著時間慢慢改變。\n\n她的創作不只限於服裝店裡的衣服，也跨足音樂、戲劇與舞蹈服裝，讓布料在舞台上的動作和光線中被看見。2014 年，洪絲獲得台灣金點設計獎，肯定她數十年來在材料上的研究。",
+   "context": "1980 年代台灣經濟快速成長，本地服裝產業從代工逐漸走向自有品牌。洪麗芬是這一代嘗試以設計與材料建立品牌的台灣設計師之一。",
+   "contributions": [
+    "開發「洪絲」織物，把材料研究變成品牌的核心。",
+    "跨足舞台與表演服裝，拓展服裝設計的應用範圍。"
+   ],
+   "tags": [
+    "布料研究",
+    "絲",
+    "台灣設計",
+    "舞台服裝"
+   ],
+   "language": "她的設計重視布料本身的表情：皺褶、光澤和柔軟度，讓衣服在身體移動時產生變化。",
+   "influence": "她是台灣少數長期耕耘自有材料的設計師，對後來重視工藝與在地材料的台灣品牌有示範作用。",
+   "timeline": [
+    {
+     "year": 1985,
+     "text": "創立洪麗芬品牌"
+    },
+    {
+     "year": 2014,
+     "text": "洪絲獲金點設計獎"
+    }
+   ],
+   "links": [
+    {
+     "id": "shiatzy-chen",
+     "text": "同時代的台灣設計品牌"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "manish-arora",
@@ -1201,7 +1495,54 @@
     "desc": "Manish Arora design (Spring 2007 collection) at London fashion Week",
     "src": "assets/designers/manish-arora/work-4.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "印度",
+   "story": "Manish Arora 在孟買長大，原本念的是別的科系，後來改報新德里的國家時裝技術學院（NIFT），1994 年以最佳學生獎畢業。1997 年他推出同名品牌，2001 年再與 Reebok 合作推出運動風副牌 Fish Fry。\n\n他的作品色彩極為鮮豔，大量使用印度傳統的刺繡、亮片和珠飾，再混入普普藝術、卡通與迷幻圖案，常被形容為「印度版的普普時裝」。2000 年代中期他先後在倫敦與巴黎發表，2011 年被任命為法國時裝屋 Paco Rabanne 的女裝創意總監，直到 2012 年離任。",
+   "context": "2000 年前後印度時裝週成立，印度設計師開始走向國際。Manish Arora 是第一批在巴黎建立聲量的印度設計師之一。",
+   "contributions": [
+    "把印度手工刺繡與普普藝術結合，創造強烈的視覺風格。",
+    "成為較早進入巴黎時裝週並掌舵歐洲時裝屋的印度設計師。",
+    "透過與運動品牌合作，把印度設計帶向年輕市場。"
+   ],
+   "tags": [
+    "普普",
+    "刺繡",
+    "亮片",
+    "高彩度"
+   ],
+   "language": "他的衣服幾乎沒有安靜的時候：螢光色、立體刺繡、卡通圖案和亮片同時出現，熱鬧而充滿幽默感。",
+   "influence": "他讓國際市場看到印度工藝可以很現代、很好玩，不只是傳統婚禮服裝。",
+   "timeline": [
+    {
+     "year": 1994,
+     "text": "自 NIFT 畢業"
+    },
+    {
+     "year": 1997,
+     "text": "推出同名品牌"
+    },
+    {
+     "year": 2001,
+     "text": "與 Reebok 推出 Fish Fry"
+    },
+    {
+     "year": 2011,
+     "text": "出任 Paco Rabanne 女裝創意總監"
+    }
+   ],
+   "links": [
+    {
+     "id": "paco-rabanne",
+     "text": "曾任其時裝屋創意總監"
+    },
+    {
+     "id": "sabyasachi-mukherjee",
+     "text": "同時代的印度設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "sabyasachi-mukherjee",
@@ -1236,7 +1577,43 @@
     "desc": "Sabyasachi Mukherjee at the launch of Zoya Banaras collection by Taj Khazana",
     "src": "assets/designers/sabyasachi-mukherjee/work-1.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "印度",
+   "life": "1974 年生於加爾各答",
+   "story": "Sabyasachi Mukherjee 在加爾各答長大，畢業於國家時裝技術學院（NIFT），1999 年創立同名品牌。他以印度新娘禮服最為有名：大量使用手織布、傳統刺繡和古董感的配色，讓婚禮服裝帶有濃厚的歷史氣息。\n\n他非常重視印度的手工藝人，品牌與各地織工和刺繡師傅長期合作，也常在作品中重現孟加拉地區的紡織傳統。許多寶萊塢明星在婚禮上穿著他的設計，使品牌在印度家喻戶曉。他也和 Christian Louboutin、H&M 等國際品牌合作，讓印度工藝被更多人看見。",
+   "context": "印度擁有豐富的手織與刺繡傳統，但在工業化與快時尚衝擊下面臨流失。Sabyasachi 把這些技藝放進高價位的婚禮與時裝市場，讓工藝有了延續的經濟基礎。",
+   "contributions": [
+    "讓印度手織布與傳統刺繡成為高級婚禮服裝的主角。",
+    "長期與手工藝人合作，支持傳統技藝的延續。",
+    "透過國際品牌合作，把印度工藝推向全球市場。"
+   ],
+   "tags": [
+    "新娘禮服",
+    "手織布",
+    "刺繡",
+    "印度工藝"
+   ],
+   "language": "他的設計色彩濃郁、層次繁複，像是從老照片裡走出來的華服，卻用現代的方式組合。",
+   "influence": "他讓「穿印度工藝」成為一種驕傲，影響了印度年輕一代對傳統服裝的看法。",
+   "timeline": [
+    {
+     "year": 1999,
+     "text": "創立同名品牌"
+    },
+    {
+     "year": 2021,
+     "text": "與 H&M 推出合作系列"
+    }
+   ],
+   "links": [
+    {
+     "id": "manish-arora",
+     "text": "同時代的印度設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "yiqing-yin",
@@ -1291,7 +1668,46 @@
     "desc": "Galleria del Costume (Florence)",
     "src": "assets/designers/yiqing-yin/work-3.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "中國／法國",
+   "life": "1985 年生於北京",
+   "story": "殷亦晴在北京出生，四歲隨家人移居法國，畢業於巴黎國立高等裝飾藝術學院。2010 年她受邀在法國 Hyères 時尚節發表首個系列「Exile（流亡）」，並獲得 ANDAM 首個系列獎等肯定。\n\n她的作品以大量的手工褶皺、立體雕塑般的布料堆疊聞名，常讓人聯想到有機的形體，例如花瓣、骨骼或水流。2011 年她受邀成為巴黎高級訂製時裝公會的客座會員，在巴黎高級訂製週發表，是少數進入這個體系的華裔年輕設計師。",
+   "context": "高級訂製時裝的門檻非常高，需要大量的手工與工坊支持。殷亦晴以年輕設計師的身分進入這個傳統體系，代表高級訂製開始接納新一代、多元背景的創作者。",
+   "contributions": [
+    "以手工褶皺與立體堆疊發展出雕塑感的高級訂製語彙。",
+    "成為較早進入巴黎高級訂製日程的華裔年輕設計師。"
+   ],
+   "tags": [
+    "高級訂製",
+    "褶皺",
+    "雕塑感",
+    "有機形體"
+   ],
+   "language": "她的衣服像被風或水塑造出來：布料一層層堆疊、扭轉，身體在其中若隱若現。",
+   "influence": "她的成功顯示跨文化背景的設計師能以手工技藝在高級訂製體系中立足。",
+   "timeline": [
+    {
+     "year": 2010,
+     "text": "於 Hyères 時尚節發表「Exile」"
+    },
+    {
+     "year": 2011,
+     "text": "成為巴黎高級訂製時裝公會客座會員"
+    }
+   ],
+   "links": [
+    {
+     "id": "robert-wun",
+     "text": "同樣在高級訂製週發表的華人設計師"
+    },
+    {
+     "id": "guo-pei",
+     "text": "在巴黎高級訂製週發表的中國設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "robert-wun",
@@ -1327,7 +1743,46 @@
     "desc": "Robert Wun - ensemble from Tsunaia collection, Fall/Winter 2021",
     "src": "assets/designers/robert-wun/work-2.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "香港",
+   "life": "1991 年生於香港",
+   "story": "雲惟駿十一歲就開始逛二手店、改造自己的衣服，十七歲赴英國求學，2012 年從倫敦時裝學院畢業，畢業系列「Burnt」被香港選物店 Joyce 看中。2014 年他創立同名品牌，專注於女裝。\n\n他的作品充滿戲劇性：雕塑般的輪廓、看起來被燒焦或沾血的錯視效果，以及大量手工細節，讓衣服像是電影裡的場景。這些作品經常出現在紅毯上。後來他成為第一位在巴黎高級訂製週發表系列的香港設計師。",
+   "context": "社群媒體與紅毯讓「一眼就記得住」的服裝更有影響力。雲惟駿的作品結合高級訂製的工藝和強烈的視覺故事，正好適合這個影像時代。",
+   "contributions": [
+    "以錯視與雕塑感手法，讓服裝說出戲劇性的故事。",
+    "成為第一位在巴黎高級訂製週發表的香港設計師。"
+   ],
+   "tags": [
+    "高級訂製",
+    "錯視",
+    "雕塑感",
+    "戲劇性"
+   ],
+   "language": "他喜歡讓衣服看起來「發生過什麼事」：被燒過、被雨淋過或正在融化，背後卻是極為精細的手工。",
+   "influence": "他代表新一代香港設計師以國際舞台為目標，也讓高級訂製更貼近當代的影像文化。",
+   "timeline": [
+    {
+     "year": 2012,
+     "text": "自倫敦時裝學院畢業"
+    },
+    {
+     "year": 2014,
+     "text": "創立同名品牌"
+    }
+   ],
+   "links": [
+    {
+     "id": "alexander-mcqueen",
+     "text": "同樣以戲劇性見長的倫敦設計師"
+    },
+    {
+     "id": "yiqing-yin",
+     "text": "同樣在高級訂製週發表的華人設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "nora-noh",
@@ -1342,7 +1797,56 @@
   ],
   "qid": "Q12590328",
   "portraitUnavailable": true,
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "韓國",
+   "life": "1928 年生",
+   "story": "諾拉·盧本名盧明子，年輕時赴美國學習並在服裝業工作，1952 年回到首爾創立 House of Nora Noh。當時韓國剛經歷戰爭，她把美國與法國的流行輪廓帶進韓國，同時使用韓國傳統的布料與元素。\n\n1956 年她在首爾舉辦了韓國第一場時裝秀。1959 年，她設計的「阿里郎禮服」把韓服的元素放進西式晚禮服，在環球小姐選美中亮相，這件衣服在 2014 年被登錄為韓國國家文化遺產。1960 年代，她的作品進入梅西百貨等美國百貨公司，她也為歌手尹福姬設計造型，把迷你裙等新潮流帶進韓國社會。",
+   "context": "1950 年代的韓國在戰後重建，西式服裝逐漸取代韓服成為日常穿著。諾拉·盧站在這個轉變的中心，決定了許多韓國女性第一次穿上「現代時裝」的樣子。",
+   "contributions": [
+    "舉辦韓國第一場時裝秀，奠定韓國時裝產業的基礎。",
+    "以「阿里郎禮服」示範韓服元素與西式禮服的結合。",
+    "較早讓韓國設計進入美國百貨市場。",
+    "引進迷你裙等新潮流，影響戰後韓國女性的穿著觀念。"
+   ],
+   "tags": [
+    "韓國時裝先驅",
+    "西式禮服",
+    "韓服元素",
+    "現代化"
+   ],
+   "language": "她的設計以 1950、60 年代的西式輪廓為主：合身上衣、俐落裙裝，再用韓國布料與細節點出在地特色。",
+   "influence": "她被視為韓國現代時裝的開創者，許多後來的韓國設計師都是在她建立的產業基礎上起步。",
+   "timeline": [
+    {
+     "year": 1952,
+     "text": "創立 House of Nora Noh"
+    },
+    {
+     "year": 1956,
+     "text": "舉辦韓國第一場時裝秀"
+    },
+    {
+     "year": 1959,
+     "text": "阿里郎禮服於環球小姐亮相"
+    },
+    {
+     "year": 2014,
+     "text": "阿里郎禮服登錄為國家文化遺產"
+    }
+   ],
+   "links": [
+    {
+     "id": "andre-kim",
+     "text": "同為韓國時裝的開創者"
+    },
+    {
+     "id": "lee-young-hee",
+     "text": "同樣把韓服帶向國際的設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "andre-kim",
@@ -1359,7 +1863,55 @@
   ],
   "qid": "Q497690",
   "portraitUnavailable": true,
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "韓國",
+   "life": "1935–2010",
+   "story": "安德烈·金本名金鳳男，出生於京畿道高陽的農家，畢業於國際服裝設計學院。1962 年他在首爾開設 Salon André，成為韓國第一位男性服裝設計師。\n\n1966 年他成為第一位在巴黎舉辦時裝秀的韓國人，之後也在紐約、北京等地發表。他以華麗的晚禮服和婚紗聞名，作品常有大面積的刺繡與東方圖案。1988 年他為首爾奧運的韓國選手設計服裝。他本人永遠穿著一身白衣，這個形象在韓國流行文化中非常有名。",
+   "context": "1960 年代的韓國社會仍普遍認為縫紉是女性的工作。安德烈·金以男性設計師的身分出道，打破了這個刻板印象，也讓「時裝設計師」在韓國成為一種明星職業。",
+   "contributions": [
+    "成為韓國第一位男性服裝設計師。",
+    "第一位在巴黎舉辦時裝秀的韓國人。",
+    "為 1988 年首爾奧運韓國選手設計服裝。"
+   ],
+   "tags": [
+    "晚禮服",
+    "婚紗",
+    "刺繡",
+    "東方圖案"
+   ],
+   "language": "他的禮服華麗、對稱，常用金線刺繡、鳳凰與花卉圖案，帶有強烈的舞台感。",
+   "influence": "他讓時裝設計在韓國大眾心中有了具體的形象，也打開了韓國設計走向海外的第一扇門。",
+   "timeline": [
+    {
+     "year": 1962,
+     "text": "於首爾開設 Salon André"
+    },
+    {
+     "year": 1966,
+     "text": "首位在巴黎舉辦時裝秀的韓國人"
+    },
+    {
+     "year": 1988,
+     "text": "設計首爾奧運韓國選手服裝"
+    },
+    {
+     "year": 2010,
+     "text": "辭世"
+    }
+   ],
+   "links": [
+    {
+     "id": "nora-noh",
+     "text": "同為韓國時裝的開創者"
+    },
+    {
+     "id": "jin-teok",
+     "text": "同樣參與首爾奧運服裝設計"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "lee-young-hee",
@@ -1376,7 +1928,47 @@
   "sourceLabel": "韓聯社生平紀錄",
   "note": "李英姬生於 1936 年，出身大邱，約四十歲開始設計韓服。她把韓服帶入國際服裝展演，2004 年在紐約開設韓國文化博物館，2018 年辭世。",
   "portraitUnavailable": true,
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "韓國",
+   "life": "1936–2018",
+   "story": "李英姬出身大邱，大約四十歲時才開始設計韓服。她不把韓服當成只能在節日穿的傳統服裝，而是從布料、顏色和輪廓去重新思考它的美。\n\n1990 年代她把韓服帶進巴黎的時裝展演，作品去掉韓服上衣的綁帶、簡化結構，讓寬大的裙身像風一樣輕盈，被稱為「風之衣」。2004 年她在紐約開設韓國文化博物館，持續向海外介紹韓國服飾文化，2018 年辭世。",
+   "context": "韓國現代化之後，韓服逐漸退出日常生活，只在婚禮或節日出現。李英姬的工作讓韓服以「時裝」的身分重新被看見。",
+   "contributions": [
+    "把韓服帶入國際時裝展演，讓韓服被當成現代時裝看待。",
+    "簡化韓服結構，發展出輕盈、具雕塑感的新輪廓。",
+    "在紐約設立韓國文化博物館，推廣韓國服飾文化。"
+   ],
+   "tags": [
+    "韓服",
+    "天然染色",
+    "輕盈輪廓",
+    "傳統再詮釋"
+   ],
+   "language": "她的作品保留韓服高腰、寬裙的基本形狀，用柔和的天然色調和透光的布料，呈現安靜而流動的美感。",
+   "influence": "她影響了後來許多重新設計韓服的年輕品牌，讓「現代韓服」成為一個設計領域。",
+   "timeline": [
+    {
+     "year": 2004,
+     "text": "於紐約開設韓國文化博物館"
+    },
+    {
+     "year": 2018,
+     "text": "辭世"
+    }
+   ],
+   "links": [
+    {
+     "id": "nora-noh",
+     "text": "同樣把韓國元素帶向國際"
+    },
+    {
+     "id": "lie-sang-bong",
+     "text": "同樣以韓國文化為靈感"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "lie-sang-bong",
@@ -1421,7 +2013,49 @@
     "desc": "2012 London Olympic Games In celebration of ‘All Eyes On Korea>’ a 100 Day Festival of Korean Culture, the Korean Cultural Centre UK (KCCUK) in collaboration with the Victoria and Albert Museum presented ‘Korea Shining Bright’ a Gala Reception hosted by the Korean Minister for Culture, Sport and Tourism, Choe Kwang-shik. The Minister’s Reception took place in the iconic Raphael Gallery of the Victoria and Albert Museum on Monday 30 July 2012, 8pm",
     "src": "assets/designers/lie-sang-bong/work-2.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "韓國",
+   "story": "李相奉畢業於首爾藝術大學廣播演藝科，原本是演員，1983 年在中央設計大賽得獎後轉向時裝設計。1993 年他在首爾時裝週發表首個系列，2002 年開始在巴黎發表。\n\n他最為人知的作品是以韓文書法為圖案的服裝，把韓文字母的筆畫變成印花與刺繡，讓文字本身成為設計。他的靈感也來自韓國詩歌、立體派與包浩斯，作品曾被碧昂絲、Lady Gaga 等歌手穿著。",
+   "context": "2000 年代韓國流行文化開始走向全球。李相奉選擇把韓文這種最日常的文化符號帶上國際伸展台，讓外國觀眾從視覺上認識韓國。",
+   "contributions": [
+    "以韓文書法作為服裝圖案，讓文字成為設計語言。",
+    "長期在巴黎發表，是較早建立國際知名度的韓國設計師之一。"
+   ],
+   "tags": [
+    "韓文書法",
+    "印花",
+    "藝術靈感",
+    "首爾時裝週"
+   ],
+   "language": "他的衣服常把黑白筆畫放大在布料上，搭配俐落的剪裁，讓書法的動態感和現代服裝結合。",
+   "influence": "他示範了如何把在地文化轉化成國際觀眾也能欣賞的視覺語言。",
+   "timeline": [
+    {
+     "year": 1983,
+     "text": "獲中央設計大賽獎項"
+    },
+    {
+     "year": 1993,
+     "text": "於首爾時裝週發表首個系列"
+    },
+    {
+     "year": 2002,
+     "text": "首次在巴黎發表"
+    }
+   ],
+   "links": [
+    {
+     "id": "lee-young-hee",
+     "text": "同樣以韓國文化為靈感"
+    },
+    {
+     "id": "woo-young-mi",
+     "text": "同時期在巴黎發表的韓國設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "jin-teok",
@@ -1438,7 +2072,50 @@
   "sourceLabel": "陳德訪談",
   "note": "陳德於 1965 年創立女裝品牌 Francoise，1988 年為首爾奧運運動員設計典禮服裝。1990 年組織首爾時裝藝術家協會，1993 年在巴黎發表作品。白襯衫是她持續研究的衣櫥單品。",
   "portraitUnavailable": true,
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "韓國",
+   "story": "陳德在 1965 年創立女裝品牌 Francoise，是韓國早期的女裝設計師之一。1988 年首爾奧運，她為運動員設計典禮服裝。1990 年她組織首爾時裝藝術家協會，推動首爾時裝週的發展；1993 年起她在巴黎發表作品。\n\n她長期以白襯衫為研究對象，反覆探索這件最基本的衣櫥單品可以有多少變化：領子、袖子和比例的小改動，就能讓白襯衫呈現完全不同的個性。",
+   "context": "1980 到 90 年代，韓國時裝產業從個人工作室走向有組織的時裝週。陳德是推動這個轉變的關鍵人物之一。",
+   "contributions": [
+    "組織首爾時裝藝術家協會，推動韓國時裝週的建立。",
+    "為 1988 年首爾奧運設計典禮服裝。",
+    "長期研究白襯衫，展現基本單品的設計可能。"
+   ],
+   "tags": [
+    "女裝",
+    "白襯衫",
+    "極簡",
+    "首爾時裝週"
+   ],
+   "language": "她的設計以簡潔為主，常從襯衫、外套這些基本款出發，用比例和細節做出變化。",
+   "influence": "她為韓國設計師建立了集體發表與對外交流的平台。",
+   "timeline": [
+    {
+     "year": 1965,
+     "text": "創立 Francoise"
+    },
+    {
+     "year": 1988,
+     "text": "設計首爾奧運典禮服裝"
+    },
+    {
+     "year": 1990,
+     "text": "組織首爾時裝藝術家協會"
+    },
+    {
+     "year": 1993,
+     "text": "於巴黎發表作品"
+    }
+   ],
+   "links": [
+    {
+     "id": "andre-kim",
+     "text": "同樣參與首爾奧運服裝設計"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "woo-young-mi",
@@ -1453,7 +2130,51 @@
   ],
   "portraitUnavailable": true,
   "qid": "Q3569879",
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "韓國",
+   "life": "1959 年生於首爾",
+   "story": "禹英美的父親經營建築事務所，常從國外帶回雜誌，讓她很早就對外面的世界感到好奇。她畢業於成均館大學服裝系，1983 年代表韓國參加日本大阪國際時裝大賽並獲獎。\n\n1988 年她創立男裝品牌 SOLID HOMME，2002 年在巴黎推出以自己名字命名的 WOOYOUNGMI。品牌以精準的西裝剪裁著稱，靈感常來自藝術與建築，被韓國媒體形容為最成功的韓國獨立男裝品牌之一。她的女兒 Katie Chung 後來也加入，共同擔任創意總監。",
+   "context": "在男裝仍以歐洲品牌為主的年代，WOOYOUNGMI 是少數長期在巴黎男裝週發表的亞洲品牌，讓韓國男裝有了國際能見度。",
+   "contributions": [
+    "創立 SOLID HOMME，奠定韓國設計師男裝的市場。",
+    "以 WOOYOUNGMI 在巴黎建立韓國男裝的國際地位。",
+    "以建築感的剪裁發展出俐落的男裝語言。"
+   ],
+   "tags": [
+    "男裝",
+    "西裝剪裁",
+    "建築感",
+    "巴黎男裝週"
+   ],
+   "language": "她的男裝線條乾淨、比例寬鬆，常有略微加長的外套和柔和的肩線，在正式感中帶點放鬆。",
+   "influence": "她為韓國男裝打開了國際市場，也影響了後來 JUUN.J 等進軍巴黎的韓國男裝設計師。",
+   "timeline": [
+    {
+     "year": 1983,
+     "text": "獲大阪國際時裝大賽獎項"
+    },
+    {
+     "year": 1988,
+     "text": "創立 SOLID HOMME"
+    },
+    {
+     "year": 2002,
+     "text": "在巴黎推出 WOOYOUNGMI"
+    }
+   ],
+   "links": [
+    {
+     "id": "juun-j",
+     "text": "同樣在巴黎發表的韓國男裝設計師"
+    },
+    {
+     "id": "lie-sang-bong",
+     "text": "同時期在巴黎發表的韓國設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "juun-j",
@@ -1470,7 +2191,41 @@
   "sourceLabel": "三星物產時裝部門｜JUUN.J",
   "note": "鄭旭俊以 JUUN.J 發表男裝，2007 年起在巴黎發表。設計經常重新安排經典衣裝的比例與層次，寬大的量體成為辨認服裝輪廓的線索。",
   "portraitUnavailable": true,
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "韓國",
+   "story": "鄭旭俊以 JUUN.J 名義發表男裝，2007 年開始在巴黎時裝週發表。他經常拿風衣、西裝、軍裝外套這些經典男裝來重新設計，把比例放大、層次打亂，讓熟悉的衣服出現陌生的輪廓。\n\n寬大的量體是辨認 JUUN.J 的重要線索：肩線往外延伸、衣身變長、袖子加寬，但仍保有男裝講究的剪裁結構。",
+   "context": "2000 年代後期，男裝開始流行更寬鬆、更有戲劇感的輪廓。JUUN.J 在這股潮流中以韓國設計師的身分，在巴黎建立自己的位置。",
+   "contributions": [
+    "以放大的比例重新詮釋經典男裝單品。",
+    "長期在巴黎男裝週發表，提升韓國男裝的國際能見度。"
+   ],
+   "tags": [
+    "男裝",
+    "大廓形",
+    "層次",
+    "經典再造"
+   ],
+   "language": "他的衣服看起來像經典款被「放大」了：風衣更長、西裝更寬，黑白灰的配色讓輪廓成為主角。",
+   "influence": "他和 WOOYOUNGMI 一起讓巴黎觀眾看到韓國男裝的實力。",
+   "timeline": [
+    {
+     "year": 2007,
+     "text": "開始在巴黎發表"
+    }
+   ],
+   "links": [
+    {
+     "id": "woo-young-mi",
+     "text": "同樣在巴黎發表的韓國男裝設計師"
+    },
+    {
+     "id": "yohji-yamamoto",
+     "text": "同樣以寬大輪廓見長"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "kathleen-kye",
@@ -1487,7 +2242,45 @@
   "sourceLabel": "LVMH Prize 設計師檔案",
   "note": "韓國設計師 Kathleen Kye 在倫敦中央聖馬丁修習男裝，2010 年推出 KYE，2011 年完成碩士班。以帶有遊戲感的形狀挑戰傳統男裝。2014 年入圍 LVMH Prize 準決賽。",
   "portraitUnavailable": true,
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "韓國",
+   "story": "Kathleen Kye（桂翰熙）在倫敦中央聖馬丁修習男裝，2010 年推出品牌 KYE，2011 年完成碩士學業。她的作品帶有遊戲感：誇張的形狀、鮮明的圖案和街頭元素，挑戰傳統男裝的嚴肅印象。2014 年她入圍 LVMH Prize 準決賽。",
+   "context": "2010 年代初期，首爾的年輕設計師大量吸收海外教育與街頭文化，形成活潑、跨性別的新首爾風格。",
+   "contributions": [
+    "以遊戲感的形狀與圖案挑戰傳統男裝。",
+    "入圍 LVMH Prize 準決賽，代表首爾新一代設計師的國際能見度。"
+   ],
+   "tags": [
+    "男裝",
+    "街頭",
+    "遊戲感",
+    "圖案"
+   ],
+   "language": "KYE 的衣服常有誇張的袖子、拼接和印花，看起來像把卡通和運動服混在一起。",
+   "influence": "她是首爾年輕設計師走向國際的代表之一。",
+   "timeline": [
+    {
+     "year": 2010,
+     "text": "推出 KYE"
+    },
+    {
+     "year": 2011,
+     "text": "完成中央聖馬丁碩士學業"
+    },
+    {
+     "year": 2014,
+     "text": "入圍 LVMH Prize 準決賽"
+    }
+   ],
+   "links": [
+    {
+     "id": "minju-kim",
+     "text": "同世代的韓國設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "minju-kim",
@@ -1502,7 +2295,46 @@
   ],
   "qid": "Q85678880",
   "portraitUnavailable": true,
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "韓國",
+   "life": "1986 年生於首爾",
+   "story": "金敏珠在首爾出生，青少年時期曾在紐西蘭讀書。她原本想當漫畫家，後來在父母鼓勵下改學服裝，先後就讀三星藝術設計學院和比利時安特衛普皇家藝術學院碩士班，深受 Walter Van Beirendonck 等老師影響。\n\n2015 年她在首爾創立 MINJUKIM，作品以自己繪製的印花最有特色：每一季會先設計一個核心圖案，再讓它出現在整個系列中，例如 2018 年秋冬以漫畫《銀河鐵道 999》為靈感。2020 年她贏得 Netflix 設計比賽節目《Next in Fashion》第一季冠軍，也曾為女團 Red Velvet 設計服裝。",
+   "context": "安特衛普皇家藝術學院以培養個性強烈的設計師聞名。金敏珠把這種訓練與自己的插畫背景結合，形成可愛又帶點奇幻的風格。",
+   "contributions": [
+    "以自繪印花作為系列核心，讓插畫成為時裝語言。",
+    "贏得《Next in Fashion》冠軍，讓韓國設計被全球觀眾認識。"
+   ],
+   "tags": [
+    "印花",
+    "插畫",
+    "浪漫",
+    "安特衛普"
+   ],
+   "language": "她的衣服充滿手繪圖案、蓬袖和柔和的色彩，像是從童話或動畫裡走出來的角色服裝。",
+   "influence": "她代表新一代韓國設計師結合流行文化與時裝的路線。",
+   "timeline": [
+    {
+     "year": 2015,
+     "text": "創立 MINJUKIM"
+    },
+    {
+     "year": 2020,
+     "text": "贏得《Next in Fashion》第一季冠軍"
+    }
+   ],
+   "links": [
+    {
+     "id": "dries-van-noten",
+     "text": "同樣出身安特衛普皇家藝術學院"
+    },
+    {
+     "id": "kathleen-kye",
+     "text": "同世代的韓國設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "ader-error",
@@ -1519,7 +2351,32 @@
   "sourceLabel": "ADERERROR 品牌介紹",
   "note": "韓國設計團隊以 ADERERROR 名義發表服裝，也投入藝術、室內空間與視覺展示。主要系列表達品牌對未來的想像，Significant 重新整理既有設計，Essence 著重日常穿著與標誌性的輪廓。",
   "portraitUnavailable": true,
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "韓國",
+   "story": "ADER ERROR 是一個在首爾成立的設計團隊，成員多半不公開個人身分，以團隊名義發表作品。除了服裝，他們也投入藝術、室內空間與視覺展示，門市本身就像一座裝置藝術展。\n\n品牌把系列分成幾條線：主要系列表達團隊對未來的想像，Significant 重新整理既有的設計，Essence 則著重日常穿著與標誌性的輪廓。寬鬆的版型、刻意歪斜的標誌和藍色是辨認 ADER ERROR 的線索。",
+   "context": "2010 年代，社群媒體讓品牌的「空間」和「視覺」與衣服本身一樣重要。ADER ERROR 以完整的視覺世界吸引年輕消費者，成為首爾潮流的代表品牌之一。",
+   "contributions": [
+    "以團隊形式經營品牌，結合服裝、空間與視覺藝術。",
+    "以沉浸式門市體驗帶動首爾潮流品牌的國際知名度。"
+   ],
+   "tags": [
+    "首爾潮流",
+    "大廓形",
+    "視覺展示",
+    "團隊創作"
+   ],
+   "language": "ADER ERROR 喜歡「小小的錯誤」：歪掉的標誌、不對稱的口袋和寬大的比例，讓日常單品多了一點玩笑感。",
+   "influence": "它讓「品牌世界觀」成為首爾年輕品牌經營的重要方法。",
+   "timeline": [],
+   "links": [
+    {
+     "id": "andersson-bell",
+     "text": "同樣來自首爾的設計品牌"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "andersson-bell",
@@ -1536,7 +2393,37 @@
   "sourceLabel": "Andersson Bell 品牌自述",
   "note": "Andersson Bell 在 2014 年於首爾成立，由韓國的觀點重新閱讀斯堪地那維亞美學。名稱結合瑞典常見姓氏及韓國寺廟鐘意象。其後持續以不同文化的並置發展設計。",
   "portraitUnavailable": true,
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "韓國",
+   "story": "Andersson Bell 在 2014 年於首爾成立，出發點是「用韓國人的眼光重新閱讀斯堪地那維亞美學」。品牌名稱結合了瑞典常見的姓氏 Andersson，以及韓國寺廟鐘的意象。\n\n之後品牌持續把不同文化放在一起：北歐的簡潔線條、韓國的傳統圖像、美國的工作服，彼此拼貼出新的日常服裝。",
+   "context": "2010 年代，北歐極簡風格在全球流行。Andersson Bell 沒有單純模仿，而是把它和韓國文化對照，形成自己的語彙。",
+   "contributions": [
+    "以跨文化並置作為品牌的設計方法。",
+    "成為首爾設計品牌走向國際選物店的代表之一。"
+   ],
+   "tags": [
+    "跨文化",
+    "北歐",
+    "韓國",
+    "日常"
+   ],
+   "language": "它的衣服通常線條乾淨，再加上拼接、刺繡或圖案，讓不同文化的元素同時出現。",
+   "influence": "它示範了韓國品牌如何用「對照」的方式建立國際辨識度。",
+   "timeline": [
+    {
+     "year": 2014,
+     "text": "於首爾成立"
+    }
+   ],
+   "links": [
+    {
+     "id": "ader-error",
+     "text": "同樣來自首爾的設計品牌"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "kimseoryong",
@@ -1553,7 +2440,37 @@
   "sourceLabel": "首爾市政府｜設計師展演紀錄",
   "note": "金瑞龍是韓國男裝設計師。2019 年 5 月在首爾的公共書庫舉行展演，透過四十餘套男裝，將原本用於閱讀的空間變為展示人體比例與行走姿態的場地。",
   "portraitUnavailable": true,
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "韓國",
+   "story": "金瑞龍是韓國男裝設計師，以品牌 KIMSEORYONG 發表作品。2019 年 5 月，他在首爾的公共書庫舉辦時裝秀，透過四十餘套男裝，把原本用來閱讀的空間變成展示人體比例與行走姿態的舞台。\n\n他的作品重視西裝與外套的剪裁，常在經典的男裝結構中加入柔和的比例變化。",
+   "context": "近年首爾設計師常選擇美術館、書店等非傳統場地發表，讓服裝與城市空間對話。",
+   "contributions": [
+    "以公共空間發表，讓時裝秀與城市文化結合。",
+    "以精緻剪裁詮釋當代韓國男裝。"
+   ],
+   "tags": [
+    "男裝",
+    "剪裁",
+    "首爾",
+    "空間展演"
+   ],
+   "language": "他的男裝以俐落的剪裁為基礎，透過比例與布料的變化呈現細膩的層次。",
+   "influence": "他代表首爾新一代重視剪裁的男裝設計師。",
+   "timeline": [
+    {
+     "year": 2019,
+     "text": "於首爾公共書庫舉辦時裝秀"
+    }
+   ],
+   "links": [
+    {
+     "id": "woo-young-mi",
+     "text": "韓國男裝的前輩"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "charles-frederick-worth",
@@ -1607,7 +2524,51 @@
     "desc": "Collections of the National Museum of Ireland, Collins Barracks",
     "src": "assets/designers/charles-frederick-worth/work-3.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "英國／法國",
+   "life": "1825–1895",
+   "story": "沃斯出生於英格蘭林肯郡，少年時就到倫敦的布料行當學徒。1840 年代他搬到巴黎，在高級布料店 Gagelin 工作，開始替客人設計並製作衣服。\n\n1858 年他和合夥人在巴黎和平街開設自己的時裝屋。在他之前，裁縫通常是照著客人的要求縫製；沃斯則反過來，由設計師決定風格、每季推出新設計，讓客人從中挑選。他請真人模特兒（包括他的妻子）穿上衣服展示，也在衣服上縫上自己的名字標籤。法國皇后歐仁妮成為他的重要客戶後，他的時裝屋成為歐洲上流社會的時尚中心。\n\n這些做法今天看起來理所當然，在當時卻是全新的觀念，因此沃斯常被稱為「高級訂製時裝之父」。",
+   "context": "19 世紀中期，工業革命帶來新的布料與交通方式，巴黎的上流社會對華服的需求大增。沃斯把「裁縫」變成「設計師」，讓服裝設計第一次成為有名字、有權威的職業。",
+   "contributions": [
+    "讓設計師主導風格，奠定高級訂製時裝的經營模式。",
+    "首創以真人模特兒展示服裝，以及每季推出新設計的做法。",
+    "在服裝上縫上設計師名字標籤，讓「品牌」概念出現在時裝中。"
+   ],
+   "tags": [
+    "高級訂製之父",
+    "時裝屋",
+    "第二帝國",
+    "華服"
+   ],
+   "language": "沃斯的禮服華麗而講究結構，常見寬大的裙撐、豐富的布料與裝飾，反映第二帝國時期宮廷的品味。",
+   "influence": "現代時裝產業裡「設計師品牌」與「時裝秀」的基本形式，都可以追溯到沃斯。",
+   "timeline": [
+    {
+     "year": 1845,
+     "text": "前後移居巴黎"
+    },
+    {
+     "year": 1858,
+     "text": "於巴黎和平街開設時裝屋"
+    },
+    {
+     "year": 1895,
+     "text": "辭世，由兒子接手經營"
+    }
+   ],
+   "links": [
+    {
+     "id": "paul-poiret",
+     "text": "曾在沃斯時裝屋工作"
+    },
+    {
+     "id": "coco-chanel",
+     "text": "後來推翻華服傳統的設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "coco-chanel",
@@ -1636,26 +2597,6 @@
   "qid": "Q45661",
   "works": [
    {
-    "title": "Collections of Musée de la Monnaie de Paris 5€ coco chanel verso.jpg",
-    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Collections_of_Mus%C3%A9e_de_la_Monnaie_de_Paris_5%E2%82%AC_coco_chanel_verso.jpg/960px-Collections_of_Mus%C3%A9e_de_la_Monnaie_de_Paris_5%E2%82%AC_coco_chanel_verso.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "url": "https://commons.wikimedia.org/wiki/File:Collections_of_Mus%C3%A9e_de_la_Monnaie_de_Paris_5%E2%82%AC_coco_chanel_verso.jpg",
-    "license": "CC BY-SA 3.0",
-    "artist": "Chatsam",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "desc": "Collections of Musée de la Monnaie de Paris : pièce de 5€ coco chanel verso",
-    "src": "assets/designers/coco-chanel/work-1.jpg"
-   },
-   {
-    "title": "Collections of Musée de la Monnaie de Paris pièce de 5€ coco chanel recto.jpg",
-    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Collections_of_Mus%C3%A9e_de_la_Monnaie_de_Paris_pi%C3%A8ce_de_5%E2%82%AC_coco_chanel_recto.jpg/960px-Collections_of_Mus%C3%A9e_de_la_Monnaie_de_Paris_pi%C3%A8ce_de_5%E2%82%AC_coco_chanel_recto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "url": "https://commons.wikimedia.org/wiki/File:Collections_of_Mus%C3%A9e_de_la_Monnaie_de_Paris_pi%C3%A8ce_de_5%E2%82%AC_coco_chanel_recto.jpg",
-    "license": "CC BY-SA 3.0",
-    "artist": "Chatsam",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "desc": "Collections of Musée de la Monnaie de Paris : pièce de 5€ coco chanel recto",
-    "src": "assets/designers/coco-chanel/work-2.jpg"
-   },
-   {
     "title": "Chanel Haute Couture jacket, 1961.jpg",
     "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Chanel_Haute_Couture_jacket%2C_1961.jpg/960px-Chanel_Haute_Couture_jacket%2C_1961.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "url": "https://commons.wikimedia.org/wiki/File:Chanel_Haute_Couture_jacket,_1961.jpg",
@@ -1675,6 +2616,71 @@
     "desc": "1923 Coco Chanel wedding dress, in winter velvet Displayed at \"A Celebration of Bridal Gowns\" exhibition in Ely Cathedral, 2024. On loan from collection of Kevin Thornhill.",
     "src": "assets/designers/coco-chanel/work-4.jpg"
    }
+  ],
+  "profile": {
+   "country": "法國",
+   "life": "1883–1971",
+   "story": "嘉柏麗·香奈兒出生於法國索米爾，童年在修道院孤兒院度過，在那裡學會縫紉。她從製作帽子起家，1910 年在巴黎康朋街開店，1913 年到海濱度假勝地杜維爾開設精品店。\n\n當時女性仍普遍穿著束腹與繁複的裙裝，香奈兒卻使用原本用來做男性內衣的針織布（jersey），做出簡單、好活動的服裝。1921 年她推出香水 N°5，1926 年《Vogue》刊出她的小黑裙，形容它會像福特汽車一樣普及。\n\n二戰爆發後她關閉時裝店，戰爭期間她與德國軍官的關係至今仍受爭議。1954 年她以七十多歲之齡重返時裝界，推出斜紋軟呢套裝，1955 年推出 2.55 鏈條包，這些設計至今仍是品牌的象徵。",
+   "context": "第一次世界大戰前後，女性開始工作、運動和旅行，需要更實用的衣服。香奈兒把男裝與運動服的元素帶進女裝，回應了女性生活方式的巨大改變。",
+   "contributions": [
+    "以針織布等材料做出簡潔、好活動的女裝，讓女性擺脫束腹。",
+    "推出小黑裙，讓黑色成為優雅日常的顏色。",
+    "以斜紋軟呢套裝與 2.55 手袋建立經典款式。",
+    "推出 N°5 香水，開創設計師香水的成功模式。"
+   ],
+   "tags": [
+    "簡潔",
+    "針織",
+    "小黑裙",
+    "斜紋軟呢"
+   ],
+   "language": "香奈兒的設計重點是「舒服又俐落」：直線條的裙裝、合身但不緊繃的外套、珍珠與鏈條配件，形成低調奢華的風格。",
+   "influence": "她改變了 20 世紀女性的穿著方式，品牌在卡爾·拉格斐接手後成為全球最具代表性的時裝屋之一。",
+   "timeline": [
+    {
+     "year": 1910,
+     "text": "於巴黎康朋街開店"
+    },
+    {
+     "year": 1913,
+     "text": "於杜維爾開設精品店"
+    },
+    {
+     "year": 1921,
+     "text": "推出 N°5 香水"
+    },
+    {
+     "year": 1926,
+     "text": "《Vogue》刊出小黑裙"
+    },
+    {
+     "year": 1954,
+     "text": "重返時裝界"
+    },
+    {
+     "year": 1955,
+     "text": "推出 2.55 手袋"
+    }
+   ],
+   "links": [
+    {
+     "id": "karl-lagerfeld",
+     "text": "1983 年起接手香奈兒"
+    },
+    {
+     "id": "paul-poiret",
+     "text": "同時代的競爭者"
+    },
+    {
+     "id": "christian-dior",
+     "text": "戰後風格的對照"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  },
+  "rejectedWorks": [
+   "Collections of Musée de la Monnaie de Paris 5€ coco chanel verso.jpg",
+   "Collections of Musée de la Monnaie de Paris pièce de 5€ coco chanel recto.jpg"
   ]
  },
  {
@@ -1703,26 +2709,6 @@
   "qid": "Q159694",
   "works": [
    {
-    "title": "Chanel-Iman Runway 2009.jpg",
-    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Chanel-Iman_Runway_2009.jpg/960px-Chanel-Iman_Runway_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "url": "https://commons.wikimedia.org/wiki/File:Chanel-Iman_Runway_2009.jpg",
-    "license": "CC BY 3.0",
-    "artist": "Pascal Le Segretain",
-    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-    "desc": "Model Chanel Iman on the runway during the Christian Dior Haute Couture fashion show for A/W 2009/10 on July 6, 2009 in Paris, France.",
-    "src": "assets/designers/christian-dior/work-1.jpg"
-   },
-   {
-    "title": "La Collection Privée Christian Dior (35504308473).jpg",
-    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/La_Collection_Priv%C3%A9e_Christian_Dior_%2835504308473%29.jpg/960px-La_Collection_Priv%C3%A9e_Christian_Dior_%2835504308473%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "url": "https://commons.wikimedia.org/wiki/File:La_Collection_Priv%C3%A9e_Christian_Dior_(35504308473).jpg",
-    "license": "CC BY 2.0",
-    "artist": "soomness from United States",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "desc": "La Collection Privée (fragrances) by Christian Dior",
-    "src": "assets/designers/christian-dior/work-2.jpg"
-   },
-   {
     "title": "Christian Dior Fall-Winter 1947 \"Zig-Zag\" Collection Dress (detail).jpg",
     "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Christian_Dior_Fall-Winter_1947_%22Zig-Zag%22_Collection_Dress_%28detail%29.jpg/960px-Christian_Dior_Fall-Winter_1947_%22Zig-Zag%22_Collection_Dress_%28detail%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "url": "https://commons.wikimedia.org/wiki/File:Christian_Dior_Fall-Winter_1947_%22Zig-Zag%22_Collection_Dress_(detail).jpg",
@@ -1742,6 +2728,70 @@
     "desc": "Red maxi dress, Christian Dior Boutique, c.1970.",
     "src": "assets/designers/christian-dior/work-4.jpg"
    }
+  ],
+  "profile": {
+   "country": "法國",
+   "life": "1905–1957",
+   "story": "克里斯汀·迪奧出生於法國諾曼第的格蘭維爾，年輕時經營藝廊，後來因家道中落開始畫時裝插畫，先後在 Robert Piguet 和 Lucien Lelong 的時裝屋工作。\n\n1946 年，在紡織業鉅子 Marcel Boussac 的支持下，他成立自己的時裝屋。1947 年 2 月的首場發表，以細腰、圓肩和寬大的長裙震驚世界，《Harper's Bazaar》總編輯稱之為「New Look（新風貌）」。在戰後物資仍然缺乏的時期，一件裙子用上大量布料，被視為奢侈也被視為希望。\n\n之後十年他每季推出不同的輪廓線，例如 H 線、A 線，讓「每季新輪廓」成為時尚的節奏。1957 年他驟逝，年僅 21 歲的伊夫·聖羅蘭接任首席設計師。",
+   "context": "二戰期間布料配給、服裝簡樸。戰爭結束後，人們渴望回到優雅與浪漫，迪奧的新風貌正好回應了這種心情，也讓巴黎重新成為世界時尚中心。",
+   "contributions": [
+    "以 1947 年的「新風貌」重新定義戰後女性輪廓。",
+    "以每季不同的輪廓線建立現代時裝的流行週期。",
+    "發展授權與香水等事業，建立國際化的時裝屋經營模式。"
+   ],
+   "tags": [
+    "新風貌",
+    "細腰",
+    "輪廓線",
+    "戰後優雅"
+   ],
+   "language": "迪奧的衣服像建築一樣有結構：內部用襯布與骨架撐出細腰和圓潤的裙擺，外表看起來卻輕盈優雅。",
+   "influence": "新風貌主導了 1950 年代的女性時尚，迪奧時裝屋也培養出伊夫·聖羅蘭、皮爾·卡登等設計師。",
+   "timeline": [
+    {
+     "year": 1946,
+     "text": "成立時裝屋"
+    },
+    {
+     "year": 1947,
+     "text": "發表「新風貌」"
+    },
+    {
+     "year": 1954,
+     "text": "推出 H 線"
+    },
+    {
+     "year": 1955,
+     "text": "推出 A 線"
+    },
+    {
+     "year": 1957,
+     "text": "辭世"
+    }
+   ],
+   "links": [
+    {
+     "id": "yves-saint-laurent",
+     "text": "接任首席設計師"
+    },
+    {
+     "id": "pierre-cardin",
+     "text": "曾在迪奧時裝屋工作"
+    },
+    {
+     "id": "cristobal-balenciaga",
+     "text": "同時代的高級訂製大師"
+    },
+    {
+     "id": "john-galliano",
+     "text": "1996 年起擔任 Dior 創意總監"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  },
+  "rejectedWorks": [
+   "Chanel-Iman Runway 2009.jpg",
+   "La Collection Privée Christian Dior (35504308473).jpg"
   ]
  },
  {
@@ -1780,26 +2830,6 @@
     "src": "assets/designers/yves-saint-laurent/work-1.jpg"
    },
    {
-    "title": "Lyon 2e - Musée des Tissus - Yves Saint Laurent, les coulisses de la haute couture à Lyon - Livre d'inventaire, collection haute couture printemps-été 1996.jpg",
-    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Lyon_2e_-_Mus%C3%A9e_des_Tissus_-_Yves_Saint_Laurent%2C_les_coulisses_de_la_haute_couture_%C3%A0_Lyon_-_Livre_d%27inventaire%2C_collection_haute_couture_printemps-%C3%A9t%C3%A9_1996.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "url": "https://commons.wikimedia.org/wiki/File:Lyon_2e_-_Mus%C3%A9e_des_Tissus_-_Yves_Saint_Laurent,_les_coulisses_de_la_haute_couture_%C3%A0_Lyon_-_Livre_d%27inventaire,_collection_haute_couture_printemps-%C3%A9t%C3%A9_1996.jpg",
-    "license": "CC0",
-    "artist": "Romainbehar",
-    "licenseUrl": "",
-    "desc": "Livre d'inventaire, collection haute couture printemps-été 1996. Encre sur papier quadrillé, échantillons textiles. Musée Yves Saint Laurent Paris.",
-    "src": "assets/designers/yves-saint-laurent/work-2.jpg"
-   },
-   {
-    "title": "Lyon 2e - Musée des Tissus - Yves Saint Laurent, les coulisses de la haute couture à Lyon - Liste des modèles avec le nom des fournisseurs, collection haute couture printemps-été 1996.jpg",
-    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Lyon_2e_-_Mus%C3%A9e_des_Tissus_-_Yves_Saint_Laurent%2C_les_coulisses_de_la_haute_couture_%C3%A0_Lyon_-_Liste_des_mod%C3%A8les_avec_le_nom_des_fournisseurs%2C_collection_haute_couture_printemps-%C3%A9t%C3%A9_1996.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "url": "https://commons.wikimedia.org/wiki/File:Lyon_2e_-_Mus%C3%A9e_des_Tissus_-_Yves_Saint_Laurent,_les_coulisses_de_la_haute_couture_%C3%A0_Lyon_-_Liste_des_mod%C3%A8les_avec_le_nom_des_fournisseurs,_collection_haute_couture_printemps-%C3%A9t%C3%A9_1996.jpg",
-    "license": "CC0",
-    "artist": "Romainbehar",
-    "licenseUrl": "",
-    "desc": "Liste des modèles avec le nom des fournisseurs, collection haute couture printemps-été 1996. Encre sur papier quadrillé et perforé. Musée Yves Saint Laurent Paris.",
-    "src": "assets/designers/yves-saint-laurent/work-3.jpg"
-   },
-   {
     "title": "Saint Laurent Rive Gauche \"Safari\" jacket.jpg",
     "remote": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Saint_Laurent_Rive_Gauche_%22Safari%22_jacket.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "url": "https://commons.wikimedia.org/wiki/File:Saint_Laurent_Rive_Gauche_%22Safari%22_jacket.jpg",
@@ -1809,6 +2839,78 @@
     "desc": "Khaki 1968, France Gift of Mary Russell, 96.84.8 YSL + Halston: Fashioning the 70s Photograph by Eileen Costa © The Museum at FIT.",
     "src": "assets/designers/yves-saint-laurent/work-4.jpg"
    }
+  ],
+  "profile": {
+   "country": "法國",
+   "life": "1936–2008，生於阿爾及利亞奧蘭",
+   "story": "伊夫·聖羅蘭在阿爾及利亞奧蘭長大，十七歲贏得國際羊毛局設計比賽的洋裝類獎項，隨後進入迪奧時裝屋。1957 年迪奧驟逝，年僅 21 歲的他接任首席設計師，隔年推出的梯形線系列大受好評。\n\n1961 年他和伴侶 Pierre Bergé 成立自己的時裝屋。他把男裝和藝術帶進女裝：1965 年的蒙德里安洋裝把抽象畫變成衣服，1966 年的「Le Smoking」讓女性穿上男性的吸菸裝。同年他開設成衣店 Saint Laurent Rive Gauche，讓設計師時裝不再只屬於高級訂製的客人。\n\n1983 年紐約大都會藝術博物館為他舉辦個展，他是第一位在世時獲得該館個展的設計師。他在 2002 年退休，2008 年辭世。",
+   "context": "1960 年代女性社會地位改變，年輕人成為流行的主角。聖羅蘭讓女性穿上褲裝、獵裝和吸菸裝，把權力與自由感帶進女裝。",
+   "contributions": [
+    "以「Le Smoking」吸菸裝讓女性正式穿上褲裝。",
+    "開設 Rive Gauche 成衣店，推動設計師成衣的發展。",
+    "把藝術、異國文化與男裝元素融入女裝。"
+   ],
+   "tags": [
+    "吸菸裝",
+    "褲裝",
+    "成衣",
+    "藝術靈感"
+   ],
+   "language": "他的女裝常借用男裝的結構：俐落的西裝、獵裝和風衣，搭配大膽的色彩與異國元素，自信而優雅。",
+   "influence": "他讓女性的褲裝成為正式場合的選擇，也讓高級時裝品牌普遍開始經營成衣線。",
+   "timeline": [
+    {
+     "year": 1954,
+     "text": "獲國際羊毛局設計比賽獎項"
+    },
+    {
+     "year": 1957,
+     "text": "接任迪奧首席設計師"
+    },
+    {
+     "year": 1961,
+     "text": "成立自己的時裝屋"
+    },
+    {
+     "year": 1965,
+     "text": "推出蒙德里安洋裝"
+    },
+    {
+     "year": 1966,
+     "text": "推出「Le Smoking」與 Rive Gauche"
+    },
+    {
+     "year": 1983,
+     "text": "大都會藝術博物館舉辦個展"
+    },
+    {
+     "year": 2002,
+     "text": "退休"
+    }
+   ],
+   "links": [
+    {
+     "id": "christian-dior",
+     "text": "接任其首席設計師"
+    },
+    {
+     "id": "karl-lagerfeld",
+     "text": "同年獲國際羊毛局獎項"
+    },
+    {
+     "id": "tom-ford",
+     "text": "後來擔任 YSL 創意總監"
+    },
+    {
+     "id": "hedi-slimane",
+     "text": "後來擔任 Saint Laurent 創意總監"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  },
+  "rejectedWorks": [
+   "Lyon 2e - Musée des Tissus - Yves Saint Laurent, les coulisses de la haute couture à Lyon - Livre d'inventaire, collection haute couture printemps-été 1996.jpg",
+   "Lyon 2e - Musée des Tissus - Yves Saint Laurent, les coulisses de la haute couture à Lyon - Liste des modèles avec le nom des fournisseurs, collection haute couture printemps-été 1996.jpg"
   ]
  },
  {
@@ -1825,16 +2927,6 @@
    1950
   ],
   "qid": "Q381088",
-  "portrait": {
-   "title": "Placa de Cristóbal Balenciaga, Getaria.jpg",
-   "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Placa_de_Crist%C3%B3bal_Balenciaga%2C_Getaria.jpg/960px-Placa_de_Crist%C3%B3bal_Balenciaga%2C_Getaria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "url": "https://commons.wikimedia.org/wiki/File:Placa_de_Crist%C3%B3bal_Balenciaga,_Getaria.jpg",
-   "license": "CC BY 4.0",
-   "artist": "Artistosteles",
-   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-   "desc": "Placa de Cristóbal Balenciaga, Getaria",
-   "src": "assets/designers/cristobal-balenciaga/portrait.jpg"
-  },
   "works": [
    {
     "title": "Spring 1951 Balenciaga evening dress.jpg",
@@ -1876,6 +2968,62 @@
     "desc": "1957 Balenciaga chemise or sack dress, black bouclé wool RISDM 1997-83",
     "src": "assets/designers/cristobal-balenciaga/work-4.jpg"
    }
+  ],
+  "profile": {
+   "country": "西班牙／法國",
+   "life": "1895–1972",
+   "story": "巴倫西亞加出生於西班牙巴斯克地區的漁村格塔里亞，母親是裁縫師。他很年輕就在聖塞巴斯蒂安開設時裝店，之後擴展到馬德里與巴塞隆納。西班牙內戰爆發後，他在 1937 年移居巴黎開設時裝屋。\n\n他被同行視為技術最精湛的設計師，能夠親手完成從打版到縫製的每一步。1950 年代他推出半合身的套裝、袋型洋裝和氣球裙，讓衣服離開身體、形成新的空間，與當時強調細腰的潮流形成對比。\n\n他的時裝屋培養出于貝爾·德·紀梵希等設計師。1968 年他關閉時裝屋，據說因為不認同成衣時代的來臨。",
+   "context": "1950 年代，迪奧的新風貌強調細腰與曲線，巴倫西亞加則逐漸鬆開腰線，為 1960 年代更自由、更幾何的服裝鋪路。",
+   "contributions": [
+    "以袋型洋裝、氣球裙等新輪廓，讓衣服與身體之間產生空間。",
+    "以極高的剪裁技術被同行視為「設計師中的設計師」。",
+    "培養出紀梵希等重要的下一代設計師。"
+   ],
+   "tags": [
+    "雕塑感",
+    "剪裁",
+    "新輪廓",
+    "高級訂製"
+   ],
+   "language": "他的作品線條簡潔，卻有強烈的體積感，像雕塑一樣包圍身體；細節少，但每一條縫線都精準。",
+   "influence": "他的輪廓實驗影響了 1960 年代的時尚，品牌在 Demna 等設計師手中重新成為當代潮流的焦點。",
+   "timeline": [
+    {
+     "year": 1917,
+     "text": "前後於聖塞巴斯蒂安開店"
+    },
+    {
+     "year": 1937,
+     "text": "於巴黎開設時裝屋"
+    },
+    {
+     "year": 1957,
+     "text": "推出袋型洋裝"
+    },
+    {
+     "year": 1968,
+     "text": "關閉時裝屋"
+    }
+   ],
+   "links": [
+    {
+     "id": "hubert-de-givenchy",
+     "text": "其指導與支持的設計師"
+    },
+    {
+     "id": "christian-dior",
+     "text": "同時代的高級訂製大師"
+    },
+    {
+     "id": "demna",
+     "text": "後來擔任 Balenciaga 創意總監"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  },
+  "portraitUnavailable": true,
+  "rejectedPortraits": [
+   "Placa de Cristóbal Balenciaga, Getaria.jpg"
   ]
  },
  {
@@ -1931,7 +3079,55 @@
     "desc": "Elsa Schiaparelli, tailleur in lana bouclé, bottoni in bronzo dorato di François Hugo, 1938/39. Modello di Alberto Giacometti. Abito appartenuto a Marlene Dietrich. Berlino, Marlene Dietrich Collection.",
     "src": "assets/designers/elsa-schiaparelli/work-3.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "義大利／法國",
+   "life": "1890–1973",
+   "story": "艾爾莎·夏帕瑞麗出生於羅馬的學者家庭，曾在紐約生活，之後移居巴黎。1927 年她推出一件織有錯視蝴蝶結的黑色毛衣，大受歡迎，從此展開時裝事業。\n\n她和超現實主義藝術家關係密切，與達利合作設計印著龍蝦的洋裝和鞋子形狀的帽子，也和尚·考克多合作刺繡圖案。她在 1937 年推出鮮豔的「驚人粉紅（Shocking Pink）」，並且很早就把拉鍊等新材料放進高級時裝。\n\n她的時裝屋在 1954 年關閉，品牌在 2010 年代重新啟動。",
+   "context": "1930 年代是超現實主義藝術的高峰。夏帕瑞麗把藝術的幽默與想像力帶進服裝，與當時香奈兒的簡潔路線形成鮮明對比。",
+   "contributions": [
+    "與達利等超現實主義藝術家合作，讓時裝成為藝術創作。",
+    "以錯視手法與幽默圖案拓展服裝的表現方式。",
+    "推出「驚人粉紅」，並較早在高級時裝中使用拉鍊與新材料。"
+   ],
+   "tags": [
+    "超現實主義",
+    "錯視",
+    "驚人粉紅",
+    "藝術合作"
+   ],
+   "language": "她的衣服常藏著玩笑：毛衣上織出假的蝴蝶結、帽子長得像鞋子、鈕扣做成昆蟲，讓穿的人成為一件會走路的藝術品。",
+   "influence": "她開啟了時裝與藝術家合作的傳統，也影響了後來許多以幽默與概念見長的設計師。",
+   "timeline": [
+    {
+     "year": 1927,
+     "text": "推出錯視蝴蝶結毛衣"
+    },
+    {
+     "year": 1937,
+     "text": "與達利合作龍蝦洋裝，推出驚人粉紅"
+    },
+    {
+     "year": 1954,
+     "text": "關閉時裝屋"
+    }
+   ],
+   "links": [
+    {
+     "id": "coco-chanel",
+     "text": "同時代的主要競爭者"
+    },
+    {
+     "id": "hubert-de-givenchy",
+     "text": "曾在其時裝屋工作"
+    },
+    {
+     "id": "jeremy-scott",
+     "text": "同樣以幽默與流行文化見長"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "hubert-de-givenchy",
@@ -1978,7 +3174,59 @@
     "desc": "1982 evening gown by Hubert de Givenchy, Fall 1982 https://www.philamuseum.org/collection/object/93552 Fabulous Fashion: From Dior's New Look to Now Philadelphia Museum of Art, Through March 3, 2019. Photographed November 3, 2018.",
     "src": "assets/designers/hubert-de-givenchy/work-2.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "法國",
+   "life": "1927–2018",
+   "story": "于貝爾·德·紀梵希出生於法國博韋，先後在 Jacques Fath、Robert Piguet、Lucien Lelong 和夏帕瑞麗的時裝屋工作。1952 年他成立自己的時裝屋，首場發表中以白色棉布做成的「Bettina 襯衫」大受歡迎。\n\n他非常敬重巴倫西亞加，兩人亦師亦友，風格也互相呼應。他和奧黛麗·赫本的合作最為人所知：從電影《龍鳳配》到《第凡內早餐》，赫本穿著他設計的小黑裙，成為電影史上最經典的造型之一。\n\n他在 1995 年退休，品牌之後由約翰·加利亞諾、亞歷山大·麥昆等設計師接手。",
+   "context": "1950 年代電影明星是時尚的重要推手。紀梵希與赫本的長期合作，讓「設計師與明星」的關係成為時尚行銷的模式。",
+   "contributions": [
+    "以簡潔優雅的設計建立紀梵希時裝屋的風格。",
+    "與奧黛麗·赫本合作，創造電影史上的經典造型。",
+    "推出可以自由搭配的上衣與裙子，接近後來的分件式穿搭。"
+   ],
+   "tags": [
+    "優雅",
+    "小黑裙",
+    "電影服裝",
+    "簡潔"
+   ],
+   "language": "他的設計乾淨、端莊，強調比例與線條，常用簡單的剪裁搭配一個精緻的細節，例如蝴蝶結或領口設計。",
+   "influence": "他和赫本共同塑造了「優雅」的現代形象，紀梵希時裝屋也成為後來許多重要設計師發揮的舞台。",
+   "timeline": [
+    {
+     "year": 1952,
+     "text": "成立時裝屋，推出 Bettina 襯衫"
+    },
+    {
+     "year": 1961,
+     "text": "為《第凡內早餐》設計小黑裙"
+    },
+    {
+     "year": 1995,
+     "text": "退休"
+    }
+   ],
+   "links": [
+    {
+     "id": "cristobal-balenciaga",
+     "text": "亦師亦友的前輩"
+    },
+    {
+     "id": "elsa-schiaparelli",
+     "text": "曾在其時裝屋工作"
+    },
+    {
+     "id": "john-galliano",
+     "text": "接任紀梵希設計師"
+    },
+    {
+     "id": "alexander-mcqueen",
+     "text": "後來接任紀梵希設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "paul-poiret",
@@ -2002,7 +3250,55 @@
    "src": "assets/designers/paul-poiret/portrait.jpg"
   },
   "qid": "Q631884",
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "法國",
+   "life": "1879–1944",
+   "story": "保羅·波烈出生於巴黎的布商家庭，年輕時把設計圖賣給時裝屋，之後先後在 Jacques Doucet 和沃斯時裝屋工作。1903 年他開設自己的時裝屋。\n\n1900 年代後期，他推出不需要緊身束腹的直線型洋裝，被視為讓女性擺脫束腹的先驅之一。他深受東方與俄羅斯芭蕾舞團的影響，設計出燈罩式上衣、哈倫褲和窄擺裙，色彩大膽鮮豔。1911 年他推出香水 Rosine，是最早推出香水的時裝設計師之一，同年還舉辦了著名的「一千零二夜」派對。\n\n第一次世界大戰後，時尚轉向更簡潔實用的風格，他的事業逐漸衰退，晚年相當困頓。",
+   "context": "20 世紀初，女性服裝仍以束腹塑造 S 型曲線。波烈和其他設計師開始放鬆腰身，讓女性的身體有了新的自由，也為後來香奈兒的簡潔風格鋪路。",
+   "contributions": [
+    "推出不需束腹的直線型洋裝，改變 20 世紀初的女性輪廓。",
+    "把東方與異國元素大量帶入巴黎時裝。",
+    "較早推出設計師香水，並經營室內裝飾與藝術學校，擴展時裝屋的事業範圍。"
+   ],
+   "tags": [
+    "解放束腹",
+    "東方主義",
+    "鮮豔色彩",
+    "裝飾藝術"
+   ],
+   "language": "他的衣服垂直、寬鬆，像一件件華麗的戲服：金色刺繡、毛皮邊、頭巾和羽毛，充滿舞台感。",
+   "influence": "他示範了設計師可以經營一整套生活風格，從衣服、香水到室內設計，這種模式後來被許多時裝屋採用。",
+   "timeline": [
+    {
+     "year": 1903,
+     "text": "開設時裝屋"
+    },
+    {
+     "year": 1911,
+     "text": "推出 Rosine 香水，舉辦「一千零二夜」派對"
+    },
+    {
+     "year": 1944,
+     "text": "辭世"
+    }
+   ],
+   "links": [
+    {
+     "id": "charles-frederick-worth",
+     "text": "曾在沃斯時裝屋工作"
+    },
+    {
+     "id": "coco-chanel",
+     "text": "繼他之後以簡潔風格崛起"
+    },
+    {
+     "id": "madeleine-vionnet",
+     "text": "同時代放鬆女性輪廓的設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "madeleine-vionnet",
@@ -2028,7 +3324,47 @@
    "src": "assets/designers/madeleine-vionnet/portrait.jpg"
   },
   "qid": "Q266934",
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "法國",
+   "life": "1876–1975",
+   "story": "瑪德琳·維奧內十一歲就開始當裁縫學徒，曾在倫敦工作，之後回到巴黎，在 Callot Soeurs 和 Jacques Doucet 的時裝屋任職。1912 年她開設自己的時裝屋，一戰期間一度關閉，戰後重新開張並大受歡迎。\n\n她最重要的技術是「斜裁」：把布料沿著 45 度角裁剪，讓布有彈性、能自然貼合身體並垂墜。她常在小型的木頭人台上用布料直接立裁，研究布如何流動。她的作品受古希臘雕像啟發，簡潔卻極為複雜。她也積極對抗抄襲，推動設計的著作權保護。時裝屋在 1939 年關閉。",
+   "context": "1920 到 30 年代，女性服裝越來越簡潔，強調身體的自然線條。維奧內的斜裁技術讓這種流動感成為可能，影響了好萊塢黃金時代的禮服。",
+   "contributions": [
+    "發展並推廣斜裁技術，讓布料自然貼合身體。",
+    "以立裁方式研究布料與身體的關係。",
+    "推動服裝設計的著作權保護。"
+   ],
+   "tags": [
+    "斜裁",
+    "立裁",
+    "垂墜",
+    "古希臘靈感"
+   ],
+   "language": "她的衣服看起來很簡單，常常只用幾片布，但穿上身後布料會順著身體流動，像古希臘雕像的衣褶。",
+   "influence": "她被視為最重要的剪裁技術創新者之一，阿瑟丁·阿萊亞、川久保玲等設計師都研究過她的作品。",
+   "timeline": [
+    {
+     "year": 1912,
+     "text": "開設時裝屋"
+    },
+    {
+     "year": 1939,
+     "text": "關閉時裝屋"
+    }
+   ],
+   "links": [
+    {
+     "id": "azzedine-alaia",
+     "text": "收藏並研究其作品"
+    },
+    {
+     "id": "paul-poiret",
+     "text": "同時代放鬆女性輪廓的設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "pierre-cardin",
@@ -2085,7 +3421,59 @@
     "desc": "The \"Pierre Cardin Blue Sapphire\" from 1988 to 2002.",
     "src": "assets/designers/pierre-cardin/work-3.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "法國",
+   "life": "1922–2020，生於義大利",
+   "story": "皮爾·卡登出生於義大利，幼年隨家人移居法國。他曾在 Paquin、夏帕瑞麗等時裝屋工作，1947 年成為迪奧時裝屋開業時的成員之一。1950 年他成立自己的公司，1954 年推出泡泡裙。\n\n1959 年他在百貨公司推出成衣系列，因此一度被巴黎高級時裝公會開除，但這個決定後來證明很有遠見。1960 年代他以太空時代為靈感，推出幾何剪裁、塑膠與金屬配件的未來感服裝。\n\n他也是授權經營的先驅，名字出現在從衣服、家具到餐具的各種商品上，並在 1979 年到北京舉辦時裝秀，是最早進入中國市場的西方設計師之一。",
+   "context": "1960 年代太空競賽與科技進步讓人們對未來充滿想像，時尚也開始追求幾何、簡潔與新材料。",
+   "contributions": [
+    "推出設計師成衣，打破高級訂製與大眾市場的界線。",
+    "以太空時代風格開創未來主義時裝。",
+    "發展大規模授權經營，並較早進入中國等新市場。"
+   ],
+   "tags": [
+    "太空時代",
+    "幾何",
+    "未來主義",
+    "授權"
+   ],
+   "language": "他的衣服常有圓形、方形等幾何形狀，配色鮮明，搭配頭盔式帽子與塑膠材質，像來自未來的制服。",
+   "influence": "他讓設計師名字成為可以授權的品牌，這種商業模式深刻影響了後來的時尚產業。",
+   "timeline": [
+    {
+     "year": 1947,
+     "text": "加入迪奧時裝屋"
+    },
+    {
+     "year": 1950,
+     "text": "成立自己的公司"
+    },
+    {
+     "year": 1959,
+     "text": "推出百貨公司成衣系列"
+    },
+    {
+     "year": 1979,
+     "text": "於北京舉辦時裝秀"
+    },
+    {
+     "year": 2020,
+     "text": "辭世"
+    }
+   ],
+   "links": [
+    {
+     "id": "christian-dior",
+     "text": "曾在迪奧時裝屋工作"
+    },
+    {
+     "id": "paco-rabanne",
+     "text": "同屬 1960 年代未來主義設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "paco-rabanne",
@@ -2152,7 +3540,55 @@
     "desc": "PACO RABANNE I FALL/WINTER 2020-21 SHOW Womenswear Fall/Winter 2020-21 show. An exploration of radical craft Taking place within the medieval hall of the Conciergerie, this #PacoRabanne collection presents a composite portrait of women who conjure contemporary forces of light and dark. Exploring new territory through elaborate workmanship, #JulienDossena adapts garments associated with historical dress to arrive at radically crafted expressions o",
     "src": "assets/designers/paco-rabanne/work-4.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "西班牙／法國",
+   "life": "1934–2023",
+   "story": "帕科·拉巴納出生於西班牙巴斯克地區，西班牙內戰期間隨家人逃到法國。他在巴黎美術學院學習建築，一開始替時裝屋設計飾品和鈕扣。\n\n1966 年他發表「12 件以當代材料製作、無法穿著的洋裝」，用金屬片、塑膠片和鉗子代替針線，把衣服「組裝」起來，一舉成名。1968 年他參與電影《太空英雌芭芭麗娜》的服裝設計，1969 年推出香水 Calandre。他的未來感設計是 1960 年代太空時代風格的代表之一。",
+   "context": "1960 年代的設計師熱衷於新材料與新技術。拉巴納把建築的思考帶進時裝，挑戰「衣服一定要用布和針線」的觀念。",
+   "contributions": [
+    "以金屬片與塑膠等材料製作服裝，拓展時裝的材料可能。",
+    "以組裝方式取代縫製，提出新的服裝製作方法。",
+    "成為 1960 年代太空時代風格的代表設計師。"
+   ],
+   "tags": [
+    "金屬片",
+    "新材料",
+    "太空時代",
+    "建築感"
+   ],
+   "language": "他的衣服像一片片拼起來的鎧甲：金屬圓片互相扣連，閃閃發亮，隨著身體移動發出聲音。",
+   "influence": "他讓實驗材料成為時裝的一部分，Paco Rabanne 品牌後來也由 Manish Arora 等設計師掌舵。",
+   "timeline": [
+    {
+     "year": 1966,
+     "text": "發表「12 件無法穿著的洋裝」"
+    },
+    {
+     "year": 1968,
+     "text": "參與《太空英雌芭芭麗娜》服裝設計"
+    },
+    {
+     "year": 1969,
+     "text": "推出 Calandre 香水"
+    },
+    {
+     "year": 2023,
+     "text": "辭世"
+    }
+   ],
+   "links": [
+    {
+     "id": "pierre-cardin",
+     "text": "同屬 1960 年代未來主義設計師"
+    },
+    {
+     "id": "manish-arora",
+     "text": "後來擔任品牌創意總監"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "mary-quant",
@@ -2219,7 +3655,55 @@
     "desc": "Emerald green, purple and white minidress by Mary Quant, London, mid 1960s",
     "src": "assets/designers/mary-quant/work-4.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "英國",
+   "life": "1930–2023",
+   "story": "瑪莉·官出生於倫敦，畢業於金匠學院。1955 年她和丈夫 Alexander Plunket Greene 在倫敦國王路開設精品店 Bazaar，專門販售給年輕人的衣服。\n\n她的設計短、簡單、色彩鮮明，最有名的是讓迷你裙在 1960 年代流行起來。她也推出熱褲、PVC 雨衣和彩色褲襪，並在 1963 年推出價格較親民的副牌 Ginger Group，讓更多年輕人買得起時髦的衣服。後來她把事業擴展到化妝品，雛菊標誌成為她的象徵。",
+   "context": "1960 年代的倫敦被稱為「搖擺倫敦」，戰後嬰兒潮世代成為新的消費主力。年輕人第一次想穿和父母不一樣的衣服，瑪莉·官正是這個「青年革命」的代言人。",
+   "contributions": [
+    "讓迷你裙成為 1960 年代的代表服裝。",
+    "以年輕人為主要客群，推動「青年時尚」的出現。",
+    "推出平價副牌與化妝品，擴大設計師時裝的市場。"
+   ],
+   "tags": [
+    "迷你裙",
+    "搖擺倫敦",
+    "青年文化",
+    "普普色彩"
+   ],
+   "language": "她的衣服短而俐落，常是直筒洋裝、條紋與格紋，搭配彩色褲襪和短靴，輕鬆、活潑、有點孩子氣。",
+   "influence": "她讓倫敦成為和巴黎並列的時尚城市，也讓「年輕」成為時尚的核心價值。",
+   "timeline": [
+    {
+     "year": 1955,
+     "text": "於國王路開設 Bazaar"
+    },
+    {
+     "year": 1963,
+     "text": "推出 Ginger Group"
+    },
+    {
+     "year": 1966,
+     "text": "前後推出化妝品系列"
+    },
+    {
+     "year": 2023,
+     "text": "辭世"
+    }
+   ],
+   "links": [
+    {
+     "id": "vivienne-westwood",
+     "text": "同樣從國王路崛起的設計師"
+    },
+    {
+     "id": "pierre-cardin",
+     "text": "同時期推出年輕化設計"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "karl-lagerfeld",
@@ -2245,27 +3729,62 @@
    "src": "assets/designers/karl-lagerfeld/portrait.jpg"
   },
   "qid": "Q76716",
-  "works": [
-   {
-    "title": "KarlLagerfeld.jpg",
-    "remote": "https://upload.wikimedia.org/wikipedia/commons/c/c6/KarlLagerfeld.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "url": "https://commons.wikimedia.org/wiki/File:KarlLagerfeld.jpg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Runway France Magazine, Bible of Elegance issue 2014",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "desc": "Karl Lagerfeld with new issue at the cover launch of Runway France magazine in WHSmith in Paris, France, 2013",
-    "src": "assets/designers/karl-lagerfeld/work-1.jpg"
-   },
-   {
-    "title": "Designers.jpg",
-    "remote": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Designers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "url": "https://commons.wikimedia.org/wiki/File:Designers.jpg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Runway France Magazine",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "desc": "Support to Eleonora de Gray and Runway France by top fashion designers and models (from left to right): Kenzo, Mila Jovovich, Julien Fournie, Karl Lagerfeld.",
-    "src": "assets/designers/karl-lagerfeld/work-2.jpg"
-   }
+  "works": [],
+  "profile": {
+   "country": "德國／法國",
+   "life": "1933–2019",
+   "story": "卡爾·拉格斐出生於德國漢堡，少年時移居巴黎。1954 年他贏得國際羊毛局設計比賽的大衣類獎項（同年伊夫·聖羅蘭贏得洋裝類），隨後進入 Pierre Balmain 與 Jean Patou 工作。\n\n他後來成為自由設計師，同時為多個品牌工作：1960 年代起為 Chloé 設計，1965 年開始為義大利的 Fendi 設計，一直合作到他辭世。1983 年他接手當時被認為已經過時的香奈兒，大膽地把雙 C 標誌、斜紋軟呢和珍珠重新組合，讓品牌重新成為潮流焦點。\n\n他以驚人的工作量、黑白造型和墨鏡形象聞名，2004 年與 H&M 推出聯名系列，開啟了精品設計師與快時尚合作的風潮。",
+   "context": "1980 年代起，時尚產業逐漸被大型集團主導，老牌時裝屋需要重新吸引年輕消費者。拉格斐示範了如何讓歷史品牌「年輕化」。",
+   "contributions": [
+    "讓香奈兒在 1980 年代重新成為潮流品牌，示範經典品牌的重生。",
+    "同時為 Chanel、Fendi、Chloé 等多個品牌設計，開創「創意總監」的工作模式。",
+    "與 H&M 合作，開啟精品與快時尚聯名的潮流。"
+   ],
+   "tags": [
+    "品牌重塑",
+    "創意總監",
+    "香奈兒",
+    "多產"
+   ],
+   "language": "他很少有固定的個人風格，而是擅長抓住每個品牌的符號，再用當下的流行重新組合，例如在斜紋軟呢套裝上加入街頭元素。",
+   "influence": "他讓「創意總監接手歷史品牌」成為當代時尚的主流模式。",
+   "timeline": [
+    {
+     "year": 1954,
+     "text": "獲國際羊毛局設計比賽獎項"
+    },
+    {
+     "year": 1965,
+     "text": "開始為 Fendi 設計"
+    },
+    {
+     "year": 1983,
+     "text": "接手香奈兒"
+    },
+    {
+     "year": 2004,
+     "text": "與 H&M 推出聯名系列"
+    },
+    {
+     "year": 2019,
+     "text": "辭世"
+    }
+   ],
+   "links": [
+    {
+     "id": "coco-chanel",
+     "text": "接手其品牌"
+    },
+    {
+     "id": "yves-saint-laurent",
+     "text": "同年獲國際羊毛局獎項"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  },
+  "rejectedWorks": [
+   "KarlLagerfeld.jpg",
+   "Designers.jpg"
   ]
  },
  {
@@ -2323,7 +3842,67 @@
     "desc": "\"Anglomania\" dress by Vivienne Westwood",
     "src": "assets/designers/vivienne-westwood/work-3.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "英國",
+   "life": "1941–2022",
+   "story": "薇薇安·魏斯伍德出生於英格蘭德比郡，原本是小學老師。1971 年她和 Malcolm McLaren 在倫敦國王路 430 號開店，店名換了好幾次，從 Let It Rock、SEX 到 Seditionaries，販售別針、皮革、破洞 T 恤等充滿挑釁意味的衣服。McLaren 經紀的 Sex Pistols 樂團穿著這些衣服，讓她成為龐克時尚的代表人物。\n\n1981 年她以「海盜」系列首次舉辦時裝秀，之後越來越多從英國歷史服裝取材，例如 1985 年的迷你裙撐、緊身胸衣和蘇格蘭格紋，把歷史和叛逆混在一起。晚年她積極投入氣候變遷等社會運動，2006 年獲封女爵。",
+   "context": "1970 年代英國經濟低迷、失業率高，年輕人以龐克音樂和服裝表達憤怒與反叛。魏斯伍德的店是這場文化運動的中心之一。",
+   "contributions": [
+    "與 McLaren 共同塑造龐克時尚的視覺形象。",
+    "把英國歷史服裝與叛逆精神結合，形成獨特的設計語言。",
+    "以時裝作為表達社會與環境議題的平台。"
+   ],
+   "tags": [
+    "龐克",
+    "蘇格蘭格紋",
+    "緊身胸衣",
+    "歷史服裝"
+   ],
+   "language": "她的衣服把古典和叛逆放在一起：18 世紀的胸衣、蘇格蘭格紋、海盜襯衫，搭配撕裂、別針和不對稱剪裁。",
+   "influence": "她讓街頭反叛文化成為時裝的一部分，影響了從高橋盾到亞歷山大·麥昆等許多設計師。",
+   "timeline": [
+    {
+     "year": 1971,
+     "text": "與 McLaren 於國王路 430 號開店"
+    },
+    {
+     "year": 1976,
+     "text": "店名改為 Seditionaries"
+    },
+    {
+     "year": 1981,
+     "text": "以「海盜」系列首次舉辦時裝秀"
+    },
+    {
+     "year": 1985,
+     "text": "推出迷你裙撐"
+    },
+    {
+     "year": 2006,
+     "text": "獲封女爵"
+    },
+    {
+     "year": 2022,
+     "text": "辭世"
+    }
+   ],
+   "links": [
+    {
+     "id": "jun-takahashi",
+     "text": "以她為偶像的設計師"
+    },
+    {
+     "id": "mary-quant",
+     "text": "同樣從國王路崛起的設計師"
+    },
+    {
+     "id": "alexander-mcqueen",
+     "text": "同樣以英國歷史與叛逆為靈感"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "alexander-mcqueen",
@@ -2390,7 +3969,67 @@
     "desc": "British model Stella Tennant at Alexander McQueen Fall Winter 2018 runway",
     "src": "assets/designers/alexander-mcqueen/work-4.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "英國",
+   "life": "1969–2010",
+   "story": "亞歷山大·麥昆出生於倫敦，父親是計程車司機。他十六歲離開學校，到倫敦薩佛街的傳統西裝店當學徒，學會了紮實的裁縫技術。1992 年他從中央聖馬丁碩士班畢業，畢業系列被時尚編輯 Isabella Blow 全部買下。\n\n他的時裝秀充滿震撼與爭議，例如 1995 年的「Highland Rape」以蘇格蘭歷史上的苦難為題。他推出的超低腰「bumster」褲曾引起討論。1996 年他出任紀梵希設計師，2001 年離開並專注於自己的品牌。2010 年春夏的「柏拉圖的亞特蘭提斯」以數位印花和犰狳鞋成為經典。他在 2010 年辭世，2011 年大都會藝術博物館舉辦的「Savage Beauty」展覽吸引了大量觀眾。",
+   "context": "1990 年代的倫敦時尚充滿年輕、叛逆的能量。麥昆把傳統裁縫技術和黑暗、浪漫的想像結合，成為「英國時尚新浪潮」的代表。",
+   "contributions": [
+    "結合薩佛街的裁縫技術與前衛的概念，建立獨特的設計語言。",
+    "把時裝秀變成具有強烈情緒與敘事的表演藝術。",
+    "以數位印花等新技術拓展高級時裝的表現方式。"
+   ],
+   "tags": [
+    "黑暗浪漫",
+    "精準剪裁",
+    "戲劇性",
+    "英國歷史"
+   ],
+   "language": "他的衣服同時有銳利和脆弱：極為合身的西裝剪裁、骨架般的配件、羽毛和蕾絲，像是美麗又危險的生物。",
+   "influence": "他的品牌由 Sarah Burton 等人接手，至今仍以他的精神延續；許多年輕設計師都把他視為靈感來源。",
+   "timeline": [
+    {
+     "year": 1992,
+     "text": "中央聖馬丁碩士班畢業"
+    },
+    {
+     "year": 1995,
+     "text": "發表「Highland Rape」"
+    },
+    {
+     "year": 1996,
+     "text": "出任紀梵希設計師"
+    },
+    {
+     "year": 2009,
+     "text": "發表「柏拉圖的亞特蘭提斯」（2010 春夏）"
+    },
+    {
+     "year": 2010,
+     "text": "辭世"
+    },
+    {
+     "year": 2011,
+     "text": "大都會藝術博物館舉辦「Savage Beauty」"
+    }
+   ],
+   "links": [
+    {
+     "id": "hubert-de-givenchy",
+     "text": "接任紀梵希設計師"
+    },
+    {
+     "id": "vivienne-westwood",
+     "text": "同樣以英國歷史與叛逆為靈感"
+    },
+    {
+     "id": "robert-wun",
+     "text": "受其影響的年輕設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "john-galliano",
@@ -2447,7 +4086,71 @@
     "desc": "Clothes from the Dress of the Year collection at the Fashion Museum, Bath. From left to right: Dresses of the Year for 2013 (Christopher Kane), 1963 (Mary Quant) and 1987 (John Galliano)",
     "src": "assets/designers/john-galliano/work-3.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "英國",
+   "life": "1960 年生於直布羅陀",
+   "story": "約翰·加利亞諾出生於直布羅陀，六歲隨家人移居倫敦。1984 年他從中央聖馬丁畢業，以法國大革命時期為靈感的畢業系列「Les Incroyables」被倫敦精品店 Browns 整批買下，一畢業就成名。\n\n他以戲劇性的歷史靈感和精湛的斜裁技術聞名。1995 年他出任紀梵希設計師，隔年轉任 Dior 創意總監，在 Dior 的十五年間打造了許多華麗如電影場景的時裝秀，也重新帶回斜裁晚禮服。2011 年他因發表反猶言論遭 Dior 解職，2014 年至 2024 年擔任 Maison Margiela 創意總監，作品轉向更實驗性的手工與解構。",
+   "context": "1990 年代，大型精品集團開始延攬年輕的英國設計師來活化法國老牌時裝屋，加利亞諾是這波浪潮的代表。",
+   "contributions": [
+    "以戲劇化的時裝秀讓 Dior 在 1990 年代重新受到矚目。",
+    "重新推廣斜裁禮服，讓這項技術在當代流行。",
+    "在 Maison Margiela 時期發展結合手工與解構的高級訂製作品。"
+   ],
+   "tags": [
+    "戲劇性",
+    "斜裁",
+    "歷史靈感",
+    "浪漫主義"
+   ],
+   "language": "他的作品像一場場穿越時空的戲：18 世紀的禮服、1930 年代的斜裁、異國的服飾元素，混合成華麗又帶點頹廢的造型。",
+   "influence": "他示範了時裝秀可以是一場完整的表演，也影響了許多以敘事見長的設計師。",
+   "timeline": [
+    {
+     "year": 1984,
+     "text": "中央聖馬丁畢業，發表「Les Incroyables」"
+    },
+    {
+     "year": 1995,
+     "text": "出任紀梵希設計師"
+    },
+    {
+     "year": 1996,
+     "text": "出任 Dior 創意總監"
+    },
+    {
+     "year": 2011,
+     "text": "遭 Dior 解職"
+    },
+    {
+     "year": 2014,
+     "text": "出任 Maison Margiela 創意總監"
+    },
+    {
+     "year": 2024,
+     "text": "離開 Maison Margiela"
+    }
+   ],
+   "links": [
+    {
+     "id": "christian-dior",
+     "text": "擔任其品牌創意總監"
+    },
+    {
+     "id": "hubert-de-givenchy",
+     "text": "接任紀梵希設計師"
+    },
+    {
+     "id": "martin-margiela",
+     "text": "擔任其品牌創意總監"
+    },
+    {
+     "id": "madeleine-vionnet",
+     "text": "同樣以斜裁見長"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "jean-paul-gaultier",
@@ -2495,7 +4198,67 @@
     "desc": "Orange cone-bra dress, fall 1984, by Jean Paul GaultierDress, Dreams and Desire at FIT",
     "src": "assets/designers/jean-paul-gaultier/work-2.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "法國",
+   "life": "1952 年生",
+   "story": "尚·保羅·高緹耶在巴黎郊區長大，沒有上過服裝學校。他把自己的設計草圖寄給各家時裝屋，十八歲被皮爾·卡登錄用，之後也在 Patou 等時裝屋累積經驗。1976 年他發表自己的第一個系列。\n\n他被稱為「時尚頑童」，喜歡挑戰關於性別和美的規則：讓男模穿裙子、把緊身胸衣穿在外面、把法國水手的條紋衫變成時尚單品。1990 年他為瑪丹娜的巡迴演唱會設計錐形胸罩馬甲，成為流行文化中的經典畫面。1993 年他推出香水 Classique，瓶身就是人體的形狀。2003 年至 2010 年他兼任愛馬仕女裝創意總監，2020 年舉辦最後一場高級訂製秀後，品牌改為每季邀請客座設計師。",
+   "context": "1980 年代流行文化與時裝的界線越來越模糊，音樂錄影帶和演唱會讓服裝被更多人看見。高緹耶以幽默與挑釁回應了這個時代。",
+   "contributions": [
+    "以男裙、外穿胸衣等設計挑戰性別與身體的刻板印象。",
+    "讓水手條紋衫、錐形胸罩等元素成為流行文化符號。",
+    "在時裝秀中起用不同年齡、體型與背景的模特兒。"
+   ],
+   "tags": [
+    "性別流動",
+    "水手條紋",
+    "緊身胸衣",
+    "幽默"
+   ],
+   "language": "他的衣服喜歡「錯位」：內衣當外衣、男裝變女裝、高級訂製混入街頭元素，熱鬧又大膽。",
+   "influence": "他讓「打破規則」成為時裝的樂趣之一，品牌的客座設計師制度也邀請了阿部千登勢等設計師參與。",
+   "timeline": [
+    {
+     "year": 1970,
+     "text": "被皮爾·卡登錄用"
+    },
+    {
+     "year": 1976,
+     "text": "發表第一個系列"
+    },
+    {
+     "year": 1990,
+     "text": "為瑪丹娜設計錐形胸罩馬甲"
+    },
+    {
+     "year": 1993,
+     "text": "推出 Classique 香水"
+    },
+    {
+     "year": 2003,
+     "text": "兼任愛馬仕女裝創意總監"
+    },
+    {
+     "year": 2020,
+     "text": "舉辦最後一場高級訂製秀"
+    }
+   ],
+   "links": [
+    {
+     "id": "pierre-cardin",
+     "text": "職涯起點"
+    },
+    {
+     "id": "martin-margiela",
+     "text": "曾擔任其助理"
+    },
+    {
+     "id": "chitose-abe",
+     "text": "受邀擔任客座設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "azzedine-alaia",
@@ -2530,7 +4293,51 @@
     "desc": "This dress by Azzedine Alaïa is inscribed “Mon cœur est à papa” (My Heart belongs to Daddy).",
     "src": "assets/designers/azzedine-alaia/work-1.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "突尼西亞／法國",
+   "life": "1935–2017",
+   "story": "阿瑟丁·阿萊亞出生於突尼西亞，在突尼斯美術學院學習雕塑，同時替裁縫師工作。1950 年代末他來到巴黎，曾短暫在迪奧時裝屋任職，之後長期為私人客戶製衣。\n\n1980 年代他推出自己的系列，以彈性針織和精準剪裁做出緊貼身體的服裝，被稱為「貼身之王」。他的衣服強調身體的曲線，但結構非常講究，被許多超級名模和名人喜愛。他不跟隨時裝週的時間表，而是在作品準備好時才發表。他也是重要的時裝收藏家，收藏了大量維奧內等前輩的作品。",
+   "context": "1980 年代健身風潮興起，身體成為時尚的焦點。阿萊亞以雕塑家的眼光處理身體曲線，讓貼身服裝變得優雅而有力量。",
+   "contributions": [
+    "以彈性針織與精準剪裁發展出「貼身」服裝的經典。",
+    "以雕塑的方式思考服裝與身體的關係。",
+    "拒絕配合時裝週節奏，堅持依照自己的步調創作。"
+   ],
+   "tags": [
+    "貼身",
+    "雕塑感",
+    "彈性針織",
+    "精準剪裁"
+   ],
+   "language": "他的衣服像第二層皮膚，緊貼身體卻不顯得廉價，細節常藏在縫線和布料的走向裡。",
+   "influence": "他影響了 1980 年代以來的貼身服裝設計，也以獨立的創作節奏成為許多設計師的榜樣。",
+   "timeline": [
+    {
+     "year": 1957,
+     "text": "前後來到巴黎"
+    },
+    {
+     "year": 1980,
+     "text": "前後推出自己的系列"
+    },
+    {
+     "year": 2017,
+     "text": "辭世"
+    }
+   ],
+   "links": [
+    {
+     "id": "madeleine-vionnet",
+     "text": "收藏並研究其作品"
+    },
+    {
+     "id": "christian-dior",
+     "text": "曾短暫在迪奧時裝屋任職"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "martin-margiela",
@@ -2546,17 +4353,17 @@
    1990
   ],
   "qid": "Q978265",
-  "portrait": {
-   "title": "FIT-Museum-2022-Fashion-in-the-Nineties 0003.jpg",
-   "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/FIT-Museum-2022-Fashion-in-the-Nineties_0003.jpg/960px-FIT-Museum-2022-Fashion-in-the-Nineties_0003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "url": "https://commons.wikimedia.org/wiki/File:FIT-Museum-2022-Fashion-in-the-Nineties_0003.jpg",
-   "license": "CC BY 4.0",
-   "artist": "DutchTreat",
-   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-   "desc": "\"Fashion in the Nineties\" exhibit at Museum at the Fashion Institute of Technology. (a) Givenchy Couture (Alexander McQueen) on the left, Coat dress Tartan wool, black silk satin, black and white lace Fall/winter 1997, France The Museum at FIT, 2015.1.2, museum purchase (b) Hermès (Martin Margiela) Tunic Black silk jersey, leather 1998, France The Museum at FIT, 2019.21.4, anonymous donor",
-   "src": "assets/designers/martin-margiela/portrait.jpg"
-  },
   "works": [
+   {
+    "title": "FIT-Museum-2022-Fashion-in-the-Nineties 0003.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/FIT-Museum-2022-Fashion-in-the-Nineties_0003.jpg/960px-FIT-Museum-2022-Fashion-in-the-Nineties_0003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "url": "https://commons.wikimedia.org/wiki/File:FIT-Museum-2022-Fashion-in-the-Nineties_0003.jpg",
+    "license": "CC BY 4.0",
+    "artist": "DutchTreat",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "desc": "\"Fashion in the Nineties\" exhibit at Museum at the Fashion Institute of Technology. (a) Givenchy Couture (Alexander McQueen) on the left, Coat dress Tartan wool, black silk satin, black and white lace Fall/winter 1997, France The Museum at FIT, 2015.1.2, museum purchase (b) Hermès (Martin Margiela) Tunic Black silk jersey, leather 1998, France The Museum at FIT, 2019.21.4, anonymous donor",
+    "src": "assets/designers/martin-margiela/work-0.jpg"
+   },
    {
     "title": "1997 Maison Martin Margiela white dress and red coat, Winter 1997-98 collection 1.jpg",
     "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/1997_Maison_Martin_Margiela_white_dress_and_red_coat%2C_Winter_1997-98_collection_1.jpg/960px-1997_Maison_Martin_Margiela_white_dress_and_red_coat%2C_Winter_1997-98_collection_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -2586,17 +4393,68 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "desc": "1997 Maison Martin Margiela white dress and red coat, Winter 1997-98 collection",
     "src": "assets/designers/martin-margiela/work-3.jpg"
-   },
-   {
-    "title": "FIT-Museum-2022-Fashion-in-the-Nineties 0003.jpg",
-    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/FIT-Museum-2022-Fashion-in-the-Nineties_0003.jpg/960px-FIT-Museum-2022-Fashion-in-the-Nineties_0003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "url": "https://commons.wikimedia.org/wiki/File:FIT-Museum-2022-Fashion-in-the-Nineties_0003.jpg",
-    "license": "CC BY 4.0",
-    "artist": "DutchTreat",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-    "desc": "\"Fashion in the Nineties\" exhibit at Museum at the Fashion Institute of Technology. (a) Givenchy Couture (Alexander McQueen) on the left, Coat dress Tartan wool, black silk satin, black and white lace Fall/winter 1997, France The Museum at FIT, 2015.1.2, museum purchase (b) Hermès (Martin Margiela) Tunic Black silk jersey, leather 1998, France The Museum at FIT, 2019.21.4, anonymous donor",
-    "src": "assets/designers/martin-margiela/work-4.jpg"
    }
+  ],
+  "profile": {
+   "country": "比利時",
+   "life": "1957 年生於亨克",
+   "story": "馬丁·馬吉拉畢業於安特衛普皇家藝術學院，1984 年至 1987 年擔任高緹耶的助理。1988 年他和 Jenny Meirens 成立 Maison Martin Margiela，第一個系列就推出了分趾的 Tabi 靴。\n\n他以「解構」聞名：把舊衣服拆開重組、把襯裡翻到外面、讓縫線和打版記號露出來，讓人看見衣服是怎麼被做出來的。品牌的標籤是一塊沒有字的白布，用四個角的白色縫線固定。他本人幾乎從不公開露面，也很少接受採訪，讓作品本身成為焦點。1997 年至 2003 年他兼任愛馬仕女裝設計師，2009 年離開自己的品牌。",
+   "context": "1980 年代末期，時尚充滿炫耀與奢華。馬吉拉反其道而行，用舊衣、白色和匿名性質疑時尚產業對「新」與「明星設計師」的追求。",
+   "contributions": [
+    "以解構手法讓服裝的製作過程成為設計的一部分。",
+    "推廣舊衣重製，被視為永續時尚的先驅之一。",
+    "以匿名與白色標籤挑戰設計師明星化的文化。",
+    "推出 Tabi 靴等至今仍具代表性的單品。"
+   ],
+   "tags": [
+    "解構",
+    "匿名",
+    "舊衣重製",
+    "白色標籤"
+   ],
+   "language": "他的衣服常常看起來像「做到一半」：露出的縫份、放大的尺寸、翻面的襯裡，讓人重新思考什麼才算完成的衣服。",
+   "influence": "他是最具影響力的概念派設計師之一，影響了 Raf Simons、Demna 等一代設計師。",
+   "timeline": [
+    {
+     "year": 1984,
+     "text": "擔任高緹耶助理"
+    },
+    {
+     "year": 1988,
+     "text": "成立 Maison Martin Margiela，推出 Tabi 靴"
+    },
+    {
+     "year": 1997,
+     "text": "兼任愛馬仕女裝設計師"
+    },
+    {
+     "year": 2009,
+     "text": "離開自己的品牌"
+    }
+   ],
+   "links": [
+    {
+     "id": "jean-paul-gaultier",
+     "text": "曾擔任其助理"
+    },
+    {
+     "id": "rei-kawakubo",
+     "text": "同樣以前衛概念挑戰時裝"
+    },
+    {
+     "id": "demna",
+     "text": "曾在其品牌工作"
+    },
+    {
+     "id": "john-galliano",
+     "text": "後來擔任品牌創意總監"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  },
+  "portraitUnavailable": true,
+  "rejectedPortraits": [
+   "FIT-Museum-2022-Fashion-in-the-Nineties 0003.jpg"
   ]
  },
  {
@@ -2612,7 +4470,50 @@
   ],
   "qid": "Q466241",
   "portraitUnavailable": true,
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "比利時",
+   "life": "1959 年生",
+   "story": "安·迪穆拉米斯特畢業於安特衛普皇家藝術學院，1985 年和丈夫 Patrick Robyn 成立同名品牌。1986 年她和五位同學一起到倫敦展出作品，被媒體稱為「安特衛普六君子」，讓比利時成為時尚的新焦點。\n\n她的作品以黑白為主，帶有詩意與搖滾氣息，常見不對稱的剪裁、長版外套、綁帶和層層疊疊的穿法。她深受詩人與歌手 Patti Smith 的影響，衣服中有一種浪漫又陰鬱的氣質。2013 年她宣布離開品牌。",
+   "context": "1980 年代中期，安特衛普的年輕設計師以強烈的個人風格在國際上嶄露頭角，打破了巴黎、米蘭、倫敦的時尚版圖。",
+   "contributions": [
+    "作為安特衛普六君子之一，推動比利時時尚走向國際。",
+    "以黑白、詩意與搖滾精神建立鮮明的品牌形象。"
+   ],
+   "tags": [
+    "安特衛普六君子",
+    "黑白",
+    "詩意",
+    "搖滾"
+   ],
+   "language": "她的衣服像詩人或搖滾樂手的衣櫥：黑色長外套、白襯衫、皮革和綁帶，輪廓修長而有點頹廢。",
+   "influence": "她影響了許多以暗色系與層次穿搭為主的設計師與品牌。",
+   "timeline": [
+    {
+     "year": 1985,
+     "text": "成立同名品牌"
+    },
+    {
+     "year": 1986,
+     "text": "以「安特衛普六君子」身分在倫敦展出"
+    },
+    {
+     "year": 2013,
+     "text": "離開品牌"
+    }
+   ],
+   "links": [
+    {
+     "id": "dries-van-noten",
+     "text": "同為安特衛普六君子"
+    },
+    {
+     "id": "martin-margiela",
+     "text": "同樣出身安特衛普皇家藝術學院"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "dries-van-noten",
@@ -2671,7 +4572,59 @@
     "desc": "Printed silk dress by Dries van Noten, 2008 l 18-2009 v02",
     "src": "assets/designers/dries-van-noten/work-4.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "比利時",
+   "life": "1958 年生於安特衛普",
+   "story": "德賴斯·范諾頓出身裁縫與服裝商家庭，祖父是裁縫，父親經營男裝店。他畢業於安特衛普皇家藝術學院，是「安特衛普六君子」之一。1986 年他的首個男裝系列被海外買手引進，1989 年在安特衛普開設旗艦店，1991 年開始在巴黎發表男裝，1993 年推出女裝秀。\n\n他以印花、色彩和布料的搭配聞名，常把來自世界各地的織品、刺繡和圖案混合在一起，卻仍保持低調實穿的感覺。他長期不做廣告，以作品本身累積口碑。2024 年他舉辦最後一場男裝秀，宣布退休。",
+   "context": "1990 年代極簡主義盛行時，范諾頓逆勢以豐富的印花與色彩建立風格，證明「繁複」也能很優雅。",
+   "contributions": [
+    "以印花與異國織品的混搭建立獨特的設計語言。",
+    "作為安特衛普六君子之一，推動比利時時尚走向國際。",
+    "以不做廣告的經營方式，示範以作品累積品牌價值。"
+   ],
+   "tags": [
+    "印花",
+    "色彩",
+    "混搭",
+    "安特衛普六君子"
+   ],
+   "language": "他的衣服像一本旅行筆記：花卉印花、民族刺繡、男裝剪裁放在一起，豐富但不吵鬧。",
+   "influence": "他影響了當代對印花與色彩搭配的理解，也是獨立經營的時裝品牌典範。",
+   "timeline": [
+    {
+     "year": 1986,
+     "text": "首個男裝系列"
+    },
+    {
+     "year": 1989,
+     "text": "於安特衛普開設旗艦店"
+    },
+    {
+     "year": 1991,
+     "text": "開始在巴黎發表男裝"
+    },
+    {
+     "year": 1993,
+     "text": "推出女裝秀"
+    },
+    {
+     "year": 2024,
+     "text": "舉辦最後一場男裝秀並退休"
+    }
+   ],
+   "links": [
+    {
+     "id": "ann-demeulemeester",
+     "text": "同為安特衛普六君子"
+    },
+    {
+     "id": "minju-kim",
+     "text": "同樣出身安特衛普皇家藝術學院"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "raf-simons",
@@ -2684,18 +4637,18 @@
   "decades": [
    1990
   ],
-  "portrait": {
-   "title": "Backstageraf.jpg",
-   "remote": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Backstageraf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "url": "https://commons.wikimedia.org/wiki/File:Backstageraf.jpg",
-   "license": "CC BY-SA 4.0",
-   "artist": "Orgito",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "desc": "backstage de raf simmon otoño 2007",
-   "src": "assets/designers/raf-simons/portrait.jpg"
-  },
   "qid": "Q1347583",
   "works": [
+   {
+    "title": "Backstageraf.jpg",
+    "remote": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Backstageraf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "url": "https://commons.wikimedia.org/wiki/File:Backstageraf.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Orgito",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "desc": "backstage de raf simmon otoño 2007",
+    "src": "assets/designers/raf-simons/work-0.jpg"
+   },
    {
     "title": "Dress of the Year.jpg",
     "remote": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Dress_of_the_Year.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
@@ -2736,6 +4689,74 @@
     "desc": "Raf Simons Spiderweb sweater from the Autumn-Winter 1998-99 \"Radioactivity\" collection, jersey with handknit cotton, leather and mohair overlay",
     "src": "assets/designers/raf-simons/work-4.jpg"
    }
+  ],
+  "profile": {
+   "country": "比利時",
+   "life": "1968 年生",
+   "story": "拉夫·西蒙斯在比利時長大，原本學的是工業設計，沒有受過正式的服裝訓練。看過馬吉拉的時裝秀後，他決定轉向時尚，1995 年推出同名男裝品牌。\n\n他的男裝深受青年次文化影響：New Order 等樂團、龐克、銳舞派對和學生制服，讓男裝帶有叛逆又脆弱的年輕感。2005 年起他先後擔任 Jil Sander、Dior、Calvin Klein 的創意總監，在 Dior 時期以極簡與藝術結合的高級訂製受到好評。2020 年他與繆西婭·普拉達共同擔任 Prada 創意總監，2022 年關閉自己的品牌。",
+   "context": "1990 年代後期，男裝開始從傳統西裝走向更多元的表現。西蒙斯把青年文化帶進男裝，讓男裝成為表達身分與情緒的工具。",
+   "contributions": [
+    "把青年次文化與音樂帶入高級男裝。",
+    "先後掌舵 Jil Sander、Dior、Calvin Klein 與 Prada，影響當代時尚方向。",
+    "結合極簡與藝術，發展出現代的高級訂製語言。"
+   ],
+   "tags": [
+    "青年文化",
+    "極簡",
+    "男裝",
+    "藝術合作"
+   ],
+   "language": "他的衣服常有寬大的外套、修長的比例和印上樂團或藝術作品的圖案，乾淨又帶點叛逆。",
+   "influence": "他是當代最受尊敬的設計師之一，影響了許多男裝與街頭品牌的審美。",
+   "timeline": [
+    {
+     "year": 1995,
+     "text": "推出同名男裝品牌"
+    },
+    {
+     "year": 2005,
+     "text": "出任 Jil Sander 創意總監"
+    },
+    {
+     "year": 2012,
+     "text": "出任 Dior 創意總監"
+    },
+    {
+     "year": 2016,
+     "text": "出任 Calvin Klein 創意總監"
+    },
+    {
+     "year": 2020,
+     "text": "與繆西婭·普拉達共同擔任 Prada 創意總監"
+    },
+    {
+     "year": 2022,
+     "text": "關閉同名品牌"
+    }
+   ],
+   "links": [
+    {
+     "id": "martin-margiela",
+     "text": "讓他決定投入時尚"
+    },
+    {
+     "id": "jil-sander",
+     "text": "擔任其品牌創意總監"
+    },
+    {
+     "id": "miuccia-prada",
+     "text": "共同擔任 Prada 創意總監"
+    },
+    {
+     "id": "calvin-klein",
+     "text": "擔任其品牌創意總監"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  },
+  "portraitUnavailable": true,
+  "rejectedPortraits": [
+   "Backstageraf.jpg"
   ]
  },
  {
@@ -2760,7 +4781,51 @@
    "src": "assets/designers/helmut-lang/portrait.jpg"
   },
   "qid": "Q89412",
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "奧地利",
+   "life": "1956 年生於維也納",
+   "story": "海爾穆特·朗出生於維也納，沒有正式學過服裝設計，因為找不到想穿的衣服而開始自己做。1986 年他在巴黎首次發表，以俐落的剪裁、灰黑白的配色和工業感的材料建立極簡風格。\n\n1990 年代他成為極簡主義的代表人物，也很早把科技材料、反光布和街頭元素帶進高級時裝。1998 年他把品牌搬到紐約，並把發表時間提前到歐洲時裝週之前，也是最早在網路上發表系列的設計師之一。他在 2005 年離開自己的品牌，之後轉向藝術創作。",
+   "context": "1990 年代被稱為極簡主義的年代，人們厭倦了 80 年代的浮誇，開始追求簡單、實用與知性的風格。",
+   "contributions": [
+    "定義 1990 年代的極簡主義時裝風格。",
+    "把工業材料與街頭元素帶進高級時裝。",
+    "較早利用網路發表時裝系列，改變發表的方式。"
+   ],
+   "tags": [
+    "極簡",
+    "工業材料",
+    "灰黑白",
+    "1990 年代"
+   ],
+   "language": "他的衣服線條乾淨、配色克制，常用透明、反光或帶有科技感的材料，以細小的細節打破單調。",
+   "influence": "他的極簡美學至今仍被大量引用，許多當代品牌都會回頭研究他 1990 年代的作品。",
+   "timeline": [
+    {
+     "year": 1986,
+     "text": "首次在巴黎發表"
+    },
+    {
+     "year": 1998,
+     "text": "把品牌搬到紐約並提前發表"
+    },
+    {
+     "year": 2005,
+     "text": "離開自己的品牌"
+    }
+   ],
+   "links": [
+    {
+     "id": "jil-sander",
+     "text": "同屬 1990 年代極簡主義代表"
+    },
+    {
+     "id": "calvin-klein",
+     "text": "同時代的極簡風格"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "jil-sander",
@@ -2774,17 +4839,63 @@
    1990
   ],
   "qid": "Q69066",
-  "portrait": {
-   "title": "Hamburg Neuer Wall DS005n.jpg",
-   "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Hamburg_Neuer_Wall_DS005n.jpg/960px-Hamburg_Neuer_Wall_DS005n.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "url": "https://commons.wikimedia.org/wiki/File:Hamburg_Neuer_Wall_DS005n.jpg",
-   "license": "CC BY-SA 4.0",
-   "artist": "AltSylt",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "desc": "Hamburg Neuer Wall",
-   "src": "assets/designers/jil-sander/portrait.jpg"
+  "works": [],
+  "profile": {
+   "country": "德國",
+   "life": "1943 年生於漢堡",
+   "story": "吉爾·桑德出生於德國漢堡附近，曾擔任時尚記者，1968 年在漢堡開設精品店，1973 年推出自己的系列。她的設計以高品質的布料、精準的剪裁和極少的裝飾為特色，被稱為「極簡女王」。\n\n1990 年代她的品牌成為極簡主義的代表，受到職業女性喜愛。1999 年 Prada 集團收購她的品牌，她之後幾度離開又回歸。2009 年起她與 UNIQLO 合作推出「+J」系列，讓更多人以平價穿到極簡設計。",
+   "context": "1970 到 90 年代，越來越多女性進入職場，需要專業、俐落又不失女性特質的服裝。吉爾·桑德的極簡設計正好滿足了這個需求。",
+   "contributions": [
+    "以高品質布料與精準剪裁定義極簡主義時裝。",
+    "為職業女性提供俐落、有質感的服裝選擇。",
+    "與 UNIQLO 合作，讓極簡設計走進大眾市場。"
+   ],
+   "tags": [
+    "極簡",
+    "高品質布料",
+    "職業女性",
+    "精準剪裁"
+   ],
+   "language": "她的衣服幾乎沒有多餘的裝飾，靠布料的質感、完美的比例和乾淨的線條呈現高級感。",
+   "influence": "她的品牌後來由拉夫·西蒙斯等設計師接手，極簡風格持續影響當代時尚。",
+   "timeline": [
+    {
+     "year": 1968,
+     "text": "於漢堡開設精品店"
+    },
+    {
+     "year": 1973,
+     "text": "推出自己的系列"
+    },
+    {
+     "year": 1999,
+     "text": "Prada 集團收購品牌"
+    },
+    {
+     "year": 2009,
+     "text": "與 UNIQLO 推出 +J"
+    }
+   ],
+   "links": [
+    {
+     "id": "helmut-lang",
+     "text": "同屬 1990 年代極簡主義代表"
+    },
+    {
+     "id": "raf-simons",
+     "text": "後來擔任品牌創意總監"
+    },
+    {
+     "id": "miuccia-prada",
+     "text": "Prada 集團曾收購其品牌"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
   },
-  "works": []
+  "portraitUnavailable": true,
+  "rejectedPortraits": [
+   "Hamburg Neuer Wall DS005n.jpg"
+  ]
  },
  {
   "id": "miuccia-prada",
@@ -2831,7 +4942,59 @@
     "desc": "Prada Fall / Winter 2017 Mens & Women's Runway Show | Global Fashion News Prada Fall 2017 Womenswear/Menswear Ready-To-Wear Collection by designer Miuccia Prada. Prada revives normcore and seventies cool for Fall 2017 in rich chocolate and sepia toned leather jackets and trousers. Fur moccasins, studded belts and tufted fur panels on leather jackets looked like they were straight out of the 70s. Talisman necklaces adorned with giant crystals, twi",
     "src": "assets/designers/miuccia-prada/work-2.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "義大利",
+   "life": "1949 年生於米蘭",
+   "story": "繆西婭·普拉達出生於米蘭，祖父創立了皮件品牌 Prada。她取得政治學博士學位，也學過默劇，年輕時曾參與政治運動，並沒有打算進入家族事業。1978 年她接手 Prada，和後來的丈夫 Patrizio Bertelli 一起經營。\n\n1984 年她推出以軍用尼龍布製作的黑色後背包，把原本被視為廉價的材料變成奢侈品，成為品牌的轉捩點。之後她推出女裝，以「醜也可以很美」的觀念挑戰傳統的優雅，1993 年推出副牌 Miu Miu，同年成立 Prada 基金會支持當代藝術。2020 年起她與拉夫·西蒙斯共同擔任 Prada 創意總監。",
+   "context": "1980 年代奢侈品強調華麗與炫耀，普拉達卻以知性、實用和略帶怪異的品味，提出另一種奢華的定義。",
+   "contributions": [
+    "以尼龍等工業材料重新定義奢侈品。",
+    "以知性與「醜美學」挑戰傳統的優雅標準。",
+    "成立 Prada 基金會，連結時尚與當代藝術。"
+   ],
+   "tags": [
+    "知性",
+    "尼龍",
+    "醜美學",
+    "藝術"
+   ],
+   "language": "她的衣服常有「不太搭」的組合：復古的印花、奇怪的顏色、制服般的剪裁，看起來有點彆扭，卻很有想法。",
+   "influence": "她是當代最具影響力的設計師之一，讓「聰明的時尚」成為一種風格。",
+   "timeline": [
+    {
+     "year": 1978,
+     "text": "接手家族品牌 Prada"
+    },
+    {
+     "year": 1984,
+     "text": "推出尼龍後背包"
+    },
+    {
+     "year": 1993,
+     "text": "推出 Miu Miu，成立 Prada 基金會"
+    },
+    {
+     "year": 2020,
+     "text": "與拉夫·西蒙斯共同擔任創意總監"
+    }
+   ],
+   "links": [
+    {
+     "id": "raf-simons",
+     "text": "共同擔任 Prada 創意總監"
+    },
+    {
+     "id": "jil-sander",
+     "text": "Prada 集團曾收購其品牌"
+    },
+    {
+     "id": "elsa-schiaparelli",
+     "text": "曾與其在展覽中對照展出"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "giorgio-armani",
@@ -2857,7 +5020,51 @@
    "src": "assets/designers/giorgio-armani/portrait.jpg"
   },
   "qid": "Q157054",
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "義大利",
+   "life": "1934–2025",
+   "story": "喬治·亞曼尼出生於義大利皮亞琴察，原本學醫，後來在米蘭的百貨公司擔任櫥窗設計與採購，1960 年代進入 Cerruti 設計男裝。1975 年他和夥伴 Sergio Galeotti 成立自己的品牌。\n\n他最重要的貢獻是「解構西裝」：拿掉傳統西裝裡厚重的襯布和墊肩，讓外套變得柔軟、輕鬆。1980 年電影《美國舞男》中李察·吉爾穿著他的西裝，讓亞曼尼在美國一炮而紅。他也為職業女性設計權力套裝，成為 1980 年代職場的代表形象。他長期親自掌舵品牌，直到 2025 年辭世。",
+   "context": "1970 到 80 年代，男性與女性的職場穿著都在改變。亞曼尼讓西裝變得舒適、優雅，回應了新的生活方式。",
+   "contributions": [
+    "以解構西裝讓男裝外套變得柔軟、輕鬆。",
+    "為職業女性設計權力套裝，定義 1980 年代的職場形象。",
+    "讓好萊塢電影與紅毯成為時尚行銷的重要舞台。"
+   ],
+   "tags": [
+    "解構西裝",
+    "柔和剪裁",
+    "大地色",
+    "權力套裝"
+   ],
+   "language": "他的衣服線條流暢、顏色低調，常用米色、灰色和被稱為「greige」的灰米色，優雅而不張揚。",
+   "influence": "他讓米蘭成為世界時尚之都之一，也改變了全球的西裝穿著方式。",
+   "timeline": [
+    {
+     "year": 1975,
+     "text": "成立自己的品牌"
+    },
+    {
+     "year": 1980,
+     "text": "為電影《美國舞男》設計服裝"
+    },
+    {
+     "year": 2025,
+     "text": "辭世"
+    }
+   ],
+   "links": [
+    {
+     "id": "gianni-versace",
+     "text": "同時代米蘭時尚的代表"
+    },
+    {
+     "id": "valentino-garavani",
+     "text": "同時代的義大利設計大師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "gianni-versace",
@@ -2874,17 +5081,53 @@
   ],
   "qid": "Q264490",
   "portraitUnavailable": true,
-  "works": [
-   {
-    "title": "Adelina Patti by Lucien Francois Penet.jpg",
-    "remote": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Adelina_Patti_by_Lucien_Francois_Penet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "url": "https://commons.wikimedia.org/wiki/File:Adelina_Patti_by_Lucien_Francois_Penet.jpg",
-    "license": "Public domain",
-    "artist": "Lucien Francois Penet",
-    "licenseUrl": "",
-    "desc": "former Versace collection",
-    "src": "assets/designers/gianni-versace/work-1.jpg"
-   }
+  "works": [],
+  "profile": {
+   "country": "義大利",
+   "life": "1946–1997",
+   "story": "詹尼·凡賽斯出生於義大利南部的雷焦卡拉布里亞，母親是裁縫師，他從小在母親的工作室裡長大。1970 年代他到米蘭擔任設計師，1978 年推出自己的品牌，以希臘神話中的梅杜莎頭像作為標誌。\n\n他的設計大膽、性感、色彩鮮豔，大量使用金色、巴洛克圖案和金屬網布。他和超級名模、流行歌手關係密切，1994 年伊莉莎白·赫莉穿著他以別針固定的黑色洋裝出席首映，成為經典。1997 年他在邁阿密住所外遇害，品牌由妹妹 Donatella Versace 接手。",
+   "context": "1980 到 90 年代，名人文化與超級名模達到高峰。凡賽斯把時裝和明星緊緊結合，讓時裝秀成為大眾關注的娛樂事件。",
+   "contributions": [
+    "以大膽的色彩與巴洛克圖案建立鮮明的奢華風格。",
+    "和超級名模、流行明星合作，推動名人時尚文化。",
+    "開發金屬網布等材料，拓展時裝的表現方式。"
+   ],
+   "tags": [
+    "巴洛克",
+    "性感",
+    "金色",
+    "超級名模"
+   ],
+   "language": "他的衣服毫不低調：金色圖案、亮麗色彩、貼身剪裁和金屬光澤，充滿自信與享樂感。",
+   "influence": "他讓時裝與流行文化、名人緊密結合，這種模式持續影響當代品牌的行銷。",
+   "timeline": [
+    {
+     "year": 1978,
+     "text": "推出自己的品牌"
+    },
+    {
+     "year": 1994,
+     "text": "別針洋裝成為經典"
+    },
+    {
+     "year": 1997,
+     "text": "辭世，由 Donatella 接手"
+    }
+   ],
+   "links": [
+    {
+     "id": "giorgio-armani",
+     "text": "同時代米蘭時尚的對照"
+    },
+    {
+     "id": "jeremy-scott",
+     "text": "同樣大膽的流行文化風格"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  },
+  "rejectedWorks": [
+   "Adelina Patti by Lucien Francois Penet.jpg"
   ]
  },
  {
@@ -2922,7 +5165,55 @@
     "desc": "A collection of black dresses by Valentino at the exhibition \"Valentino a Roma\" at Museo Ara Pacis in Rome",
     "src": "assets/designers/valentino-garavani/work-1.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "義大利",
+   "life": "1932–2026",
+   "story": "瓦倫蒂諾·加拉瓦尼出生於義大利沃蓋拉，十幾歲就到巴黎學習時裝，在 Jean Dessès、Guy Laroche 的時裝屋工作。1959 年他回到羅馬開設時裝屋，1960 年與 Giancarlo Giammetti 結為事業夥伴。\n\n他以一種鮮豔的紅色聞名，後來被稱為「瓦倫蒂諾紅」。1968 年他發表全白系列，同年賈桂琳·甘迺迪穿著他設計的禮服嫁給船王歐納西斯。他的禮服優雅、華麗，深受好萊塢明星與名流喜愛。他在 2008 年舉辦告別秀後退休，2026 年辭世。",
+   "context": "1960 年代羅馬是電影與名流的聚集地，瓦倫蒂諾在這裡建立起義大利高級訂製時裝的國際聲望。",
+   "contributions": [
+    "以「瓦倫蒂諾紅」建立鮮明的品牌符號。",
+    "讓羅馬成為高級訂製時裝的重鎮之一。",
+    "為好萊塢與名流設計大量經典禮服。"
+   ],
+   "tags": [
+    "瓦倫蒂諾紅",
+    "高級訂製",
+    "禮服",
+    "優雅"
+   ],
+   "language": "他的禮服線條優美，常有蝴蝶結、荷葉邊和精緻的刺繡，顏色濃烈又不失典雅。",
+   "influence": "他是 20 世紀最具代表性的義大利高級訂製設計師之一。",
+   "timeline": [
+    {
+     "year": 1959,
+     "text": "於羅馬開設時裝屋"
+    },
+    {
+     "year": 1968,
+     "text": "發表全白系列"
+    },
+    {
+     "year": 2008,
+     "text": "舉辦告別秀並退休"
+    },
+    {
+     "year": 2026,
+     "text": "辭世"
+    }
+   ],
+   "links": [
+    {
+     "id": "giorgio-armani",
+     "text": "同時代的義大利設計大師"
+    },
+    {
+     "id": "hubert-de-givenchy",
+     "text": "同時代的優雅派設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "massimo-osti",
@@ -2937,7 +5228,55 @@
   ],
   "qid": "Q3851387",
   "portraitUnavailable": true,
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "義大利",
+   "life": "1944–2005",
+   "story": "馬西莫·奧斯蒂出生於義大利波隆那，原本是平面設計師，從印製 T 恤開始接觸服裝。1971 年他推出品牌 Chester Perry，後來改名為 C.P. Company；1982 年再創立 Stone Island。\n\n他被稱為「布料工程師」，最大的興趣是研究材料和處理技術。他推廣「成衣染色」，先把衣服做好再整件染色，讓顏色和質感更有層次；也大量研究軍裝、工作服，從中找出功能性的設計。1988 年 C.P. Company 推出的「護目鏡外套」把護目鏡縫在帽子上，成為經典。他一生收藏了大量軍裝與工作服作為研究資料。",
+   "context": "1970 到 80 年代，義大利紡織業技術非常發達。奧斯蒂把這些技術和軍裝、工作服的功能性結合，開創了今天所說的「機能服裝」。",
+   "contributions": [
+    "推廣成衣染色等布料處理技術。",
+    "以軍裝與工作服研究為基礎，發展機能性日常服裝。",
+    "創立 C.P. Company 與 Stone Island，影響當代街頭與機能服飾。"
+   ],
+   "tags": [
+    "布料研究",
+    "成衣染色",
+    "機能服裝",
+    "軍裝靈感"
+   ],
+   "language": "他的衣服看起來低調實用，但細看會發現特殊的布料、染色效果和功能性的口袋、拉鍊設計。",
+   "influence": "他被視為機能服裝的先驅，影響了今天的戶外、街頭與「Gorpcore」風格。",
+   "timeline": [
+    {
+     "year": 1971,
+     "text": "推出 Chester Perry（後改名 C.P. Company）"
+    },
+    {
+     "year": 1982,
+     "text": "創立 Stone Island"
+    },
+    {
+     "year": 1988,
+     "text": "推出護目鏡外套"
+    },
+    {
+     "year": 2005,
+     "text": "辭世"
+    }
+   ],
+   "links": [
+    {
+     "id": "helmut-lang",
+     "text": "同樣把工業材料帶入時裝"
+    },
+    {
+     "id": "jun-takahashi",
+     "text": "同樣重視機能與街頭"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "phoebe-philo",
@@ -2962,7 +5301,59 @@
    "src": "assets/designers/phoebe-philo/portrait.jpg"
   },
   "qid": "Q966975",
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "英國",
+   "life": "1973 年生於巴黎",
+   "story": "菲比·費洛出生於巴黎，在倫敦長大，1996 年從中央聖馬丁畢業後，擔任同學 Stella McCartney 在 Chloé 的助理。2001 年她接任 Chloé 創意總監，讓品牌充滿年輕、輕鬆的女性氣息。\n\n2008 年她出任 Céline 創意總監，以俐落、知性、實穿的設計重新定義現代女性的衣櫥，擁有大批被稱為「Philophiles」的忠實粉絲。2017 年她離開 Céline，2023 年推出同名品牌。",
+   "context": "2008 年金融危機後，消費者對浮誇的奢華感到厭倦，開始追求低調、有品質、能長久穿著的衣服。費洛的 Céline 正好代表了這種「安靜的奢華」。",
+   "contributions": [
+    "以知性、實穿的設計重新定義現代女性的衣櫥。",
+    "讓 Céline 成為 2010 年代極具影響力的品牌。",
+    "推動「安靜奢華」與極簡實穿的潮流。"
+   ],
+   "tags": [
+    "知性",
+    "極簡",
+    "實穿",
+    "女性視角"
+   ],
+   "language": "她的衣服以寬鬆的長褲、大衣和平底鞋為代表，線條乾淨、顏色低調，重視女性穿起來的自在感。",
+   "influence": "她影響了 2010 年代無數品牌的女裝方向，被許多女性視為「懂女性」的設計師。",
+   "timeline": [
+    {
+     "year": 1996,
+     "text": "自中央聖馬丁畢業"
+    },
+    {
+     "year": 2001,
+     "text": "出任 Chloé 創意總監"
+    },
+    {
+     "year": 2008,
+     "text": "出任 Céline 創意總監"
+    },
+    {
+     "year": 2017,
+     "text": "離開 Céline"
+    },
+    {
+     "year": 2023,
+     "text": "推出同名品牌"
+    }
+   ],
+   "links": [
+    {
+     "id": "jil-sander",
+     "text": "同樣以極簡實穿見長"
+    },
+    {
+     "id": "hedi-slimane",
+     "text": "接任 Celine 創意總監"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "hedi-slimane",
@@ -2989,7 +5380,63 @@
    "desc": "Hedi Slimane en 2015",
    "src": "assets/designers/hedi-slimane/portrait.jpg"
   },
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "法國",
+   "life": "1968 年生於巴黎",
+   "story": "艾迪·斯理曼出生於巴黎，父親是突尼西亞人，母親是義大利裁縫師。他年輕時和母親一起做衣服，後來學習藝術史，1997 年進入 YSL 負責男裝。\n\n2000 年至 2007 年他擔任 Dior Homme 創意總監，以極度修身的窄版西裝與窄管褲改變了男裝的輪廓，據說連卡爾·拉格斐都為了穿上他的衣服而減重。他也是攝影師，常以黑白照片記錄搖滾樂手與年輕人。2012 年至 2016 年他擔任 Saint Laurent 創意總監，並把品牌名稱中的「Yves」拿掉；2018 年至 2024 年擔任 Celine 創意總監。",
+   "context": "2000 年代初期的搖滾樂復興，讓窄版、帶點頹廢的造型成為年輕人的潮流。斯理曼把這種音樂文化帶進高級男裝。",
+   "contributions": [
+    "以極度修身的輪廓改變 2000 年代的男裝。",
+    "把搖滾音樂與青年文化帶入高級時裝。",
+    "結合攝影與時裝，由設計師主導品牌的整體形象。"
+   ],
+   "tags": [
+    "窄版",
+    "搖滾",
+    "黑白",
+    "青年文化"
+   ],
+   "language": "他的衣服修長、窄身，以黑色為主，皮外套、窄管褲和靴子讓人聯想到搖滾樂手。",
+   "influence": "他的窄版輪廓影響了整個 2000 年代的男裝，也讓「創意總監全面主導品牌形象」成為趨勢。",
+   "timeline": [
+    {
+     "year": 1997,
+     "text": "進入 YSL 負責男裝"
+    },
+    {
+     "year": 2000,
+     "text": "出任 Dior Homme 創意總監"
+    },
+    {
+     "year": 2012,
+     "text": "出任 Saint Laurent 創意總監"
+    },
+    {
+     "year": 2018,
+     "text": "出任 Celine 創意總監"
+    },
+    {
+     "year": 2024,
+     "text": "離開 Celine"
+    }
+   ],
+   "links": [
+    {
+     "id": "yves-saint-laurent",
+     "text": "擔任其品牌創意總監"
+    },
+    {
+     "id": "phoebe-philo",
+     "text": "接任其 Celine 創意總監職位"
+    },
+    {
+     "id": "raf-simons",
+     "text": "同時代以青年文化見長的男裝設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "demna",
@@ -3013,17 +5460,57 @@
    "src": "assets/designers/demna/portrait.jpg"
   },
   "qid": "Q21572882",
-  "works": [
-   {
-    "title": "Tunisia-4816 - In Memory to all the Dead and Injured (7864574958).jpg",
-    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Tunisia-4816_-_In_Memory_to_all_the_Dead_and_Injured_%287864574958%29.jpg/960px-Tunisia-4816_-_In_Memory_to_all_the_Dead_and_Injured_%287864574958%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "url": "https://commons.wikimedia.org/wiki/File:Tunisia-4816_-_In_Memory_to_all_the_Dead_and_Injured_(7864574958).jpg",
-    "license": "CC BY-SA 2.0",
-    "artist": "Dennis G. Jarvis",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "desc": "This is in memory of the 20 tourists and 3 others who were killed by terriorists at the Bardo Museum, Tunisia. The museum is \"a jewel of Tunisian heritage.\" Its exhibits showcase Tunisian art, culture and history, and it boasts a collection of mosaics, as well as marble sculptures, furniture, jewels and other items. The Demna Baptistry - 6th century AD - in the Bardo Museum This early Christian baptismal font is richly decorated with mosaics disc",
-    "src": "assets/designers/demna/work-1.jpg"
-   }
+  "works": [],
+  "profile": {
+   "country": "喬治亞",
+   "life": "1981 年生",
+   "story": "Demna 出生於喬治亞，十歲時因阿布哈茲戰爭與家人逃離家鄉蘇呼米，這段經歷深深影響了他的創作。他先學習經濟，之後到比利時安特衛普皇家藝術學院學設計，畢業後在馬吉拉和路易威登工作。\n\n2014 年他與朋友共同創立 VETEMENTS，以超大尺寸、街頭感和充滿諷刺的設計引起轟動，例如印著快遞公司標誌的 T 恤。2015 年起他擔任 Balenciaga 創意總監長達十年，推出老爹鞋等爆紅單品，也讓品牌充滿爭議與話題。2025 年起他出任 Gucci 創意總監。",
+   "context": "2010 年代社群媒體讓「話題性」成為品牌的重要資產，奢侈品牌與街頭服裝的界線幾乎消失。Demna 正是這個時代最具代表性的設計師之一。",
+   "contributions": [
+    "以超大尺寸與街頭元素重新定義奢侈品牌的形象。",
+    "以諷刺與挪用的手法，讓日常物件成為時尚話題。",
+    "讓 Balenciaga 成為 2010 年代最具影響力的品牌之一。"
+   ],
+   "tags": [
+    "超大尺寸",
+    "街頭",
+    "諷刺",
+    "解構"
+   ],
+   "language": "他的衣服常把日常的東西放大或錯置：巨大的外套、像垃圾袋的包包、帶著企業標誌的 T 恤，讓人笑也讓人思考。",
+   "influence": "他讓「醜」與「諷刺」成為奢侈品牌的語言，影響了無數年輕設計師與街頭品牌。",
+   "timeline": [
+    {
+     "year": 2014,
+     "text": "共同創立 VETEMENTS"
+    },
+    {
+     "year": 2015,
+     "text": "出任 Balenciaga 創意總監"
+    },
+    {
+     "year": 2025,
+     "text": "出任 Gucci 創意總監"
+    }
+   ],
+   "links": [
+    {
+     "id": "martin-margiela",
+     "text": "曾在其品牌工作"
+    },
+    {
+     "id": "cristobal-balenciaga",
+     "text": "擔任其品牌創意總監"
+    },
+    {
+     "id": "virgil-abloh",
+     "text": "同時代結合街頭與精品的設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  },
+  "rejectedWorks": [
+   "Tunisia-4816 - In Memory to all the Dead and Injured (7864574958).jpg"
   ]
  },
  {
@@ -3089,7 +5576,55 @@
     "desc": "Claire McCardell day dress, blue and white striped cotton, early 1950s",
     "src": "assets/designers/claire-mccardell/work-4.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "美國",
+   "life": "1905–1958",
+   "story": "克萊兒·麥卡德爾出生於美國馬里蘭州，在紐約的帕森斯設計學院（當時名為紐約美術與應用藝術學校）學習，也曾到巴黎進修，研究維奧內等設計師的剪裁。1930 年代她進入成衣公司 Townley Frocks，後來成為主要設計師。\n\n當時美國的成衣多半是抄襲巴黎的設計，麥卡德爾卻為美國女性的真實生活設計衣服：可以自己穿脫的洋裝、有口袋的裙子、丹寧和棉布等耐穿的布料。1942 年她推出可以當家居服也可以出門的「Popover」包裹式洋裝，戰時皮革短缺，她請鞋廠 Capezio 製作搭配服裝的芭蕾平底鞋，讓這種鞋流行起來。她被視為「美式休閒風格（American Look）」的開創者。",
+   "context": "二戰期間，美國與巴黎時尚中心的聯繫中斷，美國設計師終於有機會發展自己的風格。麥卡德爾以實用、舒適、平價的設計回應了美國女性的生活需求。",
+   "contributions": [
+    "開創以實用與舒適為核心的「美式休閒風格」。",
+    "把丹寧、棉布等日常布料帶入女裝設計。",
+    "推出 Popover 洋裝與芭蕾平底鞋等經典單品。"
+   ],
+   "tags": [
+    "美式休閒",
+    "實用",
+    "丹寧",
+    "成衣"
+   ],
+   "language": "她的衣服簡單、好穿、好活動：包裹式洋裝、繫帶、口袋和寬鬆的剪裁，讓女性可以自在地工作、做家事和運動。",
+   "influence": "她被視為美國運動休閒服裝的源頭，影響了後來的唐娜·凱倫、卡爾文·克萊恩等美國設計師。",
+   "timeline": [
+    {
+     "year": 1938,
+     "text": "推出 Monastic 洋裝"
+    },
+    {
+     "year": 1942,
+     "text": "推出 Popover 洋裝"
+    },
+    {
+     "year": 1958,
+     "text": "辭世"
+    }
+   ],
+   "links": [
+    {
+     "id": "madeleine-vionnet",
+     "text": "曾研究其剪裁"
+    },
+    {
+     "id": "donna-karan",
+     "text": "延續美式實穿風格的設計師"
+    },
+    {
+     "id": "halston",
+     "text": "同樣代表美式簡約"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "halston",
@@ -3103,16 +5638,6 @@
    1970
   ],
   "qid": "Q456243",
-  "portrait": {
-   "title": "HALSTON logo.png",
-   "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/HALSTON_logo.png/960px-HALSTON_logo.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "url": "https://commons.wikimedia.org/wiki/File:HALSTON_logo.png",
-   "license": "Public domain",
-   "artist": "Created on personal computer with \"generic typeface\" font",
-   "licenseUrl": "",
-   "desc": "History: Not used currently by Halston brand (although slight modification is currently used) Commentary: This version was used initially by Halston brand. (Early 1970s through early 2000s)",
-   "src": "assets/designers/halston/portrait.jpg"
-  },
   "works": [
    {
     "title": "Mark Payne Halston Collection Brooklyn Museum 2020.jpg",
@@ -3154,6 +5679,67 @@
     "desc": "Khaki 1968, France Gift of Mary Russell, 96.84.8 YSL + Halston: Fashioning the 70s Photograph by Eileen Costa © The Museum at FIT.",
     "src": "assets/designers/halston/work-4.jpg"
    }
+  ],
+  "profile": {
+   "country": "美國",
+   "life": "1932–1990",
+   "story": "霍爾斯頓本名 Roy Halston Frowick，出生於愛荷華州。他最初以設計帽子聞名，1961 年賈桂琳·甘迺迪在總統就職典禮上戴的藥盒帽就出自他手。1968 年他推出自己的服裝系列。\n\n1970 年代他成為美國最受歡迎的設計師之一。他以極簡的剪裁和流動的布料，例如超細纖維麂皮（Ultrasuede）和絲質平紋針織，設計出簡單又性感的衣服，是 Studio 54 夜店時代的代表人物。1973 年他參加「凡爾賽之戰」時裝秀，讓美國時裝在巴黎打響名號。1983 年他與平價百貨 JC Penney 合作，卻因此流失了高級客群，品牌逐漸衰落。他於 1990 年辭世。",
+   "context": "1970 年代的美國充滿迪斯可文化與性解放的氣氛，女性追求輕鬆、自由又迷人的穿著。霍爾斯頓的極簡設計正是這種生活方式的代表。",
+   "contributions": [
+    "以極簡、流動的設計定義 1970 年代的美國時尚。",
+    "推廣超細纖維麂皮等新材料。",
+    "參與凡爾賽之戰時裝秀，提升美國時裝的國際地位。",
+    "較早嘗試設計師與平價百貨的合作。"
+   ],
+   "tags": [
+    "極簡",
+    "1970 年代",
+    "迪斯可",
+    "流動感"
+   ],
+   "language": "他的衣服幾乎沒有多餘的裝飾，常是一片布做成的長洋裝或襯衫式洋裝，靠布料的垂墜和身體的移動展現美感。",
+   "influence": "他是美國極簡時尚的代表人物，與平價百貨合作的經驗也成為後來設計師聯名的前例。",
+   "timeline": [
+    {
+     "year": 1961,
+     "text": "為賈桂琳·甘迺迪設計藥盒帽"
+    },
+    {
+     "year": 1968,
+     "text": "推出自己的服裝系列"
+    },
+    {
+     "year": 1972,
+     "text": "推出超細纖維麂皮襯衫洋裝"
+    },
+    {
+     "year": 1973,
+     "text": "參加凡爾賽之戰時裝秀"
+    },
+    {
+     "year": 1983,
+     "text": "與 JC Penney 合作"
+    },
+    {
+     "year": 1990,
+     "text": "辭世"
+    }
+   ],
+   "links": [
+    {
+     "id": "stephen-burrows",
+     "text": "同樣參加凡爾賽之戰時裝秀"
+    },
+    {
+     "id": "claire-mccardell",
+     "text": "同樣代表美式簡約"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  },
+  "portraitUnavailable": true,
+  "rejectedPortraits": [
+   "HALSTON logo.png"
   ]
  },
  {
@@ -3168,16 +5754,6 @@
    1970
   ],
   "qid": "Q7608814",
-  "portrait": {
-   "title": "Stephen Burrows 1971.jpg",
-   "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Stephen_Burrows_1971.jpg/960px-Stephen_Burrows_1971.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "url": "https://commons.wikimedia.org/wiki/File:Stephen_Burrows_1971.jpg",
-   "license": "CC BY-SA 4.0",
-   "artist": "Titit",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "desc": "Stephen Burrows top & skirt, Fall/ Winter 1971. Adnan Ege Kutay Collection",
-   "src": "assets/designers/stephen-burrows/portrait.jpg"
-  },
   "works": [
    {
     "title": "Stephen Burrows 1971.jpg",
@@ -3187,8 +5763,56 @@
     "artist": "Titit",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "desc": "Stephen Burrows top & skirt, Fall/ Winter 1971. Adnan Ege Kutay Collection",
-    "src": "assets/designers/stephen-burrows/work-1.jpg"
+    "src": "assets/designers/stephen-burrows/work-0.jpg"
    }
+  ],
+  "profile": {
+   "country": "美國",
+   "life": "1943 年生於紐澤西州紐華克",
+   "story": "史蒂芬·伯羅斯在紐澤西長大，祖母是縫紉師，他從小就跟著學做衣服。他畢業於紐約時裝技術學院（FIT），1970 年在紐約百貨公司 Henri Bendel 開設自己的專櫃。\n\n他最有名的設計是「萵苣邊」：把針織布的邊緣拉伸後車縫，形成像萵苣葉一樣波浪狀的裙擺。他的衣服色彩鮮豔、貼身又好跳舞，很受迪斯可時代的年輕人喜愛。1973 年他參加「凡爾賽之戰」時裝秀，是參展美國設計師中最年輕的一位，也是最早獲得國際肯定的非裔美國設計師之一。",
+   "context": "1970 年代民權運動之後，非裔美國人在藝術與文化領域越來越受到矚目。伯羅斯以設計才華打入紐約主流時尚圈，成為重要的先驅。",
+   "contributions": [
+    "發明「萵苣邊」收邊技法，成為 1970 年代的代表元素。",
+    "成為最早獲得國際肯定的非裔美國設計師之一。",
+    "參加凡爾賽之戰時裝秀，推動美國時尚走向國際。"
+   ],
+   "tags": [
+    "萵苣邊",
+    "鮮豔色彩",
+    "針織",
+    "迪斯可"
+   ],
+   "language": "他的衣服用大塊鮮豔的色彩拼接，搭配波浪狀的萵苣邊，輕盈貼身，跳舞時特別好看。",
+   "influence": "他為後來的非裔美國設計師開了一條路。",
+   "timeline": [
+    {
+     "year": 1970,
+     "text": "於 Henri Bendel 開設專櫃"
+    },
+    {
+     "year": 1973,
+     "text": "參加凡爾賽之戰時裝秀"
+    }
+   ],
+   "links": [
+    {
+     "id": "halston",
+     "text": "同樣參加凡爾賽之戰時裝秀"
+    },
+    {
+     "id": "willi-smith",
+     "text": "同時代的非裔美國設計師"
+    },
+    {
+     "id": "patrick-kelly",
+     "text": "同為非裔美國設計先驅"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  },
+  "portraitUnavailable": true,
+  "rejectedPortraits": [
+   "Stephen Burrows 1971.jpg"
   ]
  },
  {
@@ -3204,7 +5828,47 @@
   ],
   "qid": "Q8003780",
   "portraitUnavailable": true,
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "美國",
+   "life": "1948–1987",
+   "story": "威利·史密斯出生於費城，在帕森斯設計學院學習。1976 年他和事業夥伴 Laurie Mallet 創立 WilliWear，提出「街頭高級訂製」的概念：設計有質感、好穿又買得起的衣服，給在街上生活的一般人。\n\n他的衣服寬鬆、色彩明亮，男女都能穿，WilliWear 也是最早在同一個品牌下推出男裝和女裝的公司之一。他和許多藝術家、舞者合作，讓時裝和表演藝術交流。到 1986 年，WilliWear 的年營收超過兩千五百萬美元，他被視為當時最成功的非裔美國設計師之一。1987 年他因愛滋病相關疾病辭世。",
+   "context": "1970 到 80 年代的紐約，街頭文化、藝術和音樂充滿活力。史密斯讓時尚從高級的伸展台走到街頭，比後來的「街頭服裝」潮流早了好幾年。",
+   "contributions": [
+    "提出「街頭高級訂製」的概念，讓好設計變得平價好穿。",
+    "較早在同一品牌下推出男裝與女裝。",
+    "與藝術家和表演者合作，連結時尚與當代藝術。"
+   ],
+   "tags": [
+    "街頭高級訂製",
+    "平價",
+    "中性",
+    "藝術合作"
+   ],
+   "language": "他的衣服寬鬆舒適、色彩輕快，常用棉布等天然布料，看起來輕鬆隨性，卻有俐落的設計感。",
+   "influence": "他被視為當代街頭服裝的先驅之一，2020 年庫柏惠特國家設計博物館為他舉辦回顧展。",
+   "timeline": [
+    {
+     "year": 1976,
+     "text": "創立 WilliWear"
+    },
+    {
+     "year": 1987,
+     "text": "辭世"
+    }
+   ],
+   "links": [
+    {
+     "id": "stephen-burrows",
+     "text": "同時代的非裔美國設計師"
+    },
+    {
+     "id": "virgil-abloh",
+     "text": "後來結合街頭與時尚的設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "patrick-kelly",
@@ -3260,7 +5924,51 @@
     "desc": "Patrick Kelly Runway of Love April 27 – November 30 2014 Philadelphia Museum of Art . Born and raised in Mississippi, Patrick Kelly moved to Paris in late 1979. His early signature creations—skinny, body-conscious dresses with colorful buttons—were feature in Elle magazine 1985 and in 1988, Kelly became the first American and the first black designer to be voted into the prestigious Chambre syndicale du Prêt-à-Porter des Couturiers et des Créateu",
     "src": "assets/designers/patrick-kelly/work-4.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "美國",
+   "life": "1954–1990",
+   "story": "派翠克·凱利出生於密西西比州，祖母常從雜誌上剪下時尚圖片給他看。他曾在亞特蘭大工作，1979 年搬到巴黎，從在街頭賣自己做的衣服開始。\n\n他的設計充滿歡樂與幽默：大量使用彩色鈕扣、蝴蝶結和亮片，讓衣服像是一場派對。他也把美國南方的非裔文化帶進巴黎時裝，以作品回應關於種族的刻板印象。1988 年，在設計師 Sonia Rykiel 的支持下，他成為第一位加入法國成衣設計師公會的美國人。他於 1990 年辭世。",
+   "context": "1980 年代的巴黎時尚圈仍然很少見到非裔設計師。凱利以美國南方的成長經驗和幽默感，在巴黎建立了自己的位置。",
+   "contributions": [
+    "成為第一位加入法國成衣設計師公會的美國人。",
+    "以鈕扣與蝴蝶結等元素發展出歡樂幽默的設計語言。",
+    "把非裔美國文化帶入巴黎時裝。"
+   ],
+   "tags": [
+    "鈕扣",
+    "幽默",
+    "南方文化",
+    "巴黎"
+   ],
+   "language": "他的衣服常是貼身的針織洋裝，上面縫滿不同顏色的鈕扣，熱鬧又可愛。",
+   "influence": "他為非裔設計師在歐洲時尚體系中爭取到更多空間，作品近年也被美術館重新展出。",
+   "timeline": [
+    {
+     "year": 1979,
+     "text": "移居巴黎"
+    },
+    {
+     "year": 1988,
+     "text": "加入法國成衣設計師公會"
+    },
+    {
+     "year": 1990,
+     "text": "辭世"
+    }
+   ],
+   "links": [
+    {
+     "id": "stephen-burrows",
+     "text": "同為非裔美國設計先驅"
+    },
+    {
+     "id": "kerby-jean-raymond",
+     "text": "後來在巴黎發表的非裔美國設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "dapper-dan",
@@ -3284,7 +5992,51 @@
    "src": "assets/designers/dapper-dan/portrait.jpg"
   },
   "qid": "Q56841635",
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "美國",
+   "life": "1944 年生於紐約哈林區",
+   "story": "Dapper Dan 本名 Daniel Day，在紐約哈林區長大。1982 年他在哈林區第 125 街開設精品店，把 Gucci、Louis Vuitton 等奢侈品牌的標誌印在皮革上，做成整件外套、運動服和帽子，這是那些品牌當時自己都沒有推出的商品。\n\n他的客人包括拳王泰森、Eric B. & Rakim、LL Cool J 等嘻哈歌手與運動明星，被視為把高級時尚帶進嘻哈文化的關鍵人物。他的店在 1990 年代初因商標侵權問題被迫關閉。2017 年 Gucci 主動與他合作推出系列，2018 年他在哈林區開設 Dapper Dan's of Harlem 工作室。2020 年他入選《時代》百大影響力人物。",
+   "context": "1980 年代嘻哈文化在紐約興起，年輕人想用奢侈品牌的符號展示自己的成功，但這些品牌當時並不重視他們。Dapper Dan 用自己的方式滿足了這個需求。",
+   "contributions": [
+    "把奢侈品牌的標誌改造成嘻哈風格的服裝，開創「奢華街頭」風格。",
+    "為嘻哈歌手與運動明星打造鮮明的造型。",
+    "後來與 Gucci 合作，讓街頭創作獲得精品品牌的正式肯定。"
+   ],
+   "tags": [
+    "嘻哈",
+    "標誌改造",
+    "哈林區",
+    "奢華街頭"
+   ],
+   "language": "他的衣服用滿版的品牌標誌、皮革和毛皮做成寬大的外套與運動服，大膽、張揚，充滿自信。",
+   "influence": "他被視為「奢華街頭」風格的源頭之一，今天精品品牌和嘻哈文化的密切關係，可以追溯到他的作品。",
+   "timeline": [
+    {
+     "year": 1982,
+     "text": "於哈林區開設精品店"
+    },
+    {
+     "year": 2017,
+     "text": "與 Gucci 合作推出系列"
+    },
+    {
+     "year": 2018,
+     "text": "開設 Dapper Dan's of Harlem"
+    }
+   ],
+   "links": [
+    {
+     "id": "virgil-abloh",
+     "text": "延續街頭與精品結合的設計師"
+    },
+    {
+     "id": "tommy-hilfiger",
+     "text": "同樣與嘻哈文化關係密切"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "calvin-klein",
@@ -3311,16 +6063,6 @@
   },
   "qid": "Q214800",
   "works": [
-   {
-    "title": "Calvin Klein Collection flagship store 654 Madison Avenue New York City USA.jpg",
-    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Calvin_Klein_Collection_flagship_store_654_Madison_Avenue_New_York_City_USA.jpg/960px-Calvin_Klein_Collection_flagship_store_654_Madison_Avenue_New_York_City_USA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "url": "https://commons.wikimedia.org/wiki/File:Calvin_Klein_Collection_flagship_store_654_Madison_Avenue_New_York_City_USA.jpg",
-    "license": "CC BY 2.0",
-    "artist": "https://www.flickr.com/people/41018892@N00 David Long] from London, United Kingdom",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "desc": "Calvin Klein Collection Ladengeschäft 654 Madison Avenue New York City USA",
-    "src": "assets/designers/calvin-klein/work-1.jpg"
-   },
    {
     "title": "Women's Calvin Klein Dress Worn by Kathleen Walsh-Piper - DPLA - 19bed27475d8cb5119d8cd015a61ee70 (page 5).jpg",
     "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Women%27s_Calvin_Klein_Dress_Worn_by_Kathleen_Walsh-Piper_-_DPLA_-_19bed27475d8cb5119d8cd015a61ee70_%28page_5%29.jpg/960px-Women%27s_Calvin_Klein_Dress_Worn_by_Kathleen_Walsh-Piper_-_DPLA_-_19bed27475d8cb5119d8cd015a61ee70_%28page_5%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -3351,6 +6093,58 @@
     "desc": "Women's dress by Calvin Klein. This Calvin Klein ensemble was bought at Famous Barr by Kathleen Walsh-Piper.",
     "src": "assets/designers/calvin-klein/work-4.jpg"
    }
+  ],
+  "profile": {
+   "country": "美國",
+   "life": "1942 年生於紐約布朗克斯",
+   "story": "卡爾文·克萊恩在紐約布朗克斯長大，畢業於紐約時裝技術學院（FIT）。1968 年他和兒時好友 Barry Schwartz 創立公司，最初以大衣起家。\n\n他的設計以簡潔、俐落的美式極簡為特色。1970 年代末他推出設計師牛仔褲，1980 年由波姬·小絲主演的廣告引起轟動，讓牛仔褲變成時尚單品。1980 年代他推出印有品牌名稱的男性內褲，1994 年推出中性香水 CK One。他的廣告常常大膽又充滿爭議，深刻影響了時尚廣告的風格。",
+   "context": "1970 到 90 年代，美國消費文化與廣告產業蓬勃發展。克萊恩善用廣告和名人，讓「品牌形象」成為比衣服本身更重要的東西。",
+   "contributions": [
+    "推廣設計師牛仔褲，讓丹寧成為時尚單品。",
+    "以極簡風格定義現代美式時尚。",
+    "以大膽的廣告影響時尚行銷的方式。",
+    "推出中性香水 CK One，呼應 1990 年代的中性風潮。"
+   ],
+   "tags": [
+    "美式極簡",
+    "牛仔褲",
+    "內衣",
+    "廣告"
+   ],
+   "language": "他的衣服乾淨、簡單，常是白色、黑色、米色，搭配合身的牛仔褲和背心，強調自然與性感。",
+   "influence": "他讓美國極簡風格走向全球，品牌後來也由拉夫·西蒙斯等設計師擔任創意總監。",
+   "timeline": [
+    {
+     "year": 1968,
+     "text": "創立公司"
+    },
+    {
+     "year": 1980,
+     "text": "推出波姬·小絲牛仔褲廣告"
+    },
+    {
+     "year": 1994,
+     "text": "推出 CK One 香水"
+    }
+   ],
+   "links": [
+    {
+     "id": "raf-simons",
+     "text": "後來擔任品牌創意總監"
+    },
+    {
+     "id": "ralph-lauren",
+     "text": "同樣出身紐約布朗克斯"
+    },
+    {
+     "id": "helmut-lang",
+     "text": "同時代的極簡風格"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  },
+  "rejectedWorks": [
+   "Calvin Klein Collection flagship store 654 Madison Avenue New York City USA.jpg"
   ]
  },
  {
@@ -3398,7 +6192,55 @@
     "desc": "Daria Strokous walking the Ralph Lauren Spring/Summer 2015 runway fashion show",
     "src": "assets/designers/ralph-lauren/work-2.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "美國",
+   "life": "1939 年生於紐約布朗克斯",
+   "story": "拉夫·勞倫在紐約布朗克斯長大，沒有正式學過服裝設計。他曾在服裝公司當銷售員，1967 年開始設計比當時流行款式更寬的領帶，取名「Polo」。\n\n他把美國上流社會的生活想像變成服裝：常春藤學院、馬球運動、英式鄉村和美國西部。1972 年他推出有馬球選手刺繡標誌的 Polo 衫，成為品牌最經典的單品。1974 年他為電影《大亨小傳》設計男裝。他擅長打造完整的生活風格，從衣服、家具到餐廳，讓顧客「買進」一種生活夢想。",
+   "context": "第二次世界大戰後，美國中產階級擴大，許多人嚮往上流社會的生活方式。拉夫·勞倫把這種嚮往變成可以購買的服裝與生活風格。",
+   "contributions": [
+    "以「美式學院風」打造全球知名的生活風格品牌。",
+    "推出 Polo 衫，讓它成為經典的日常單品。",
+    "示範品牌如何透過服裝、家居與空間建立完整的生活想像。"
+   ],
+   "tags": [
+    "美式學院風",
+    "Polo 衫",
+    "生活風格",
+    "經典"
+   ],
+   "language": "他的衣服以經典為主：藏青色西裝外套、條紋襯衫、Polo 衫、粗花呢和牛仔，看起來像來自美國老電影。",
+   "influence": "他是美國時尚的代表人物之一，美式學院風也影響了日本的 Ivy 風格與各地的潮流文化。",
+   "timeline": [
+    {
+     "year": 1967,
+     "text": "推出 Polo 領帶"
+    },
+    {
+     "year": 1972,
+     "text": "推出 Polo 衫"
+    },
+    {
+     "year": 1974,
+     "text": "為電影《大亨小傳》設計男裝"
+    }
+   ],
+   "links": [
+    {
+     "id": "tommy-hilfiger",
+     "text": "同樣以美式學院風見長"
+    },
+    {
+     "id": "calvin-klein",
+     "text": "同樣出身紐約布朗克斯"
+    },
+    {
+     "id": "vera-wang",
+     "text": "曾在其公司工作"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "donna-karan",
@@ -3465,7 +6307,51 @@
     "desc": "Making its debut at the Lincoln Center venue, The Heart Truth’s Red Dress Collection Fashion Show unveiled its 2011 collection of red dresses designed to celebrate the Red Dress as the national symbol for women and heart disease awareness. More than 20 of today’s top celebrities walked the runway in red dresses by America’s top designers to inspire women to take action to protect their heart health. The Heart Truth® is a national awareness campai",
     "src": "assets/designers/donna-karan/work-4.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "美國",
+   "life": "1948 年生於紐約皇后區",
+   "story": "唐娜·凱倫在紐約長大，就讀帕森斯設計學院，之後在美國設計師 Anne Klein 的公司工作，後來接任首席設計師。1984 年她創立自己的品牌。\n\n1985 年她推出「七件簡單單品」：以一件緊身連身衣為基礎，再搭配裙子、長褲、外套等少數幾件衣服，就能從上班穿到晚宴。這套系統專門為忙碌的職業女性設計，讓穿衣變得簡單又有質感。1989 年她推出副牌 DKNY，以紐約街頭的活力為靈感，價格更親民。",
+   "context": "1980 年代越來越多女性擔任管理職，她們需要專業、舒適又能展現自信的服裝。唐娜·凱倫作為女性設計師，從自己的需求出發設計衣服。",
+   "contributions": [
+    "以「七件簡單單品」建立膠囊衣櫥的概念。",
+    "為職業女性設計舒適又專業的服裝系統。",
+    "推出 DKNY，把紐約都會風格帶向大眾市場。"
+   ],
+   "tags": [
+    "膠囊衣櫥",
+    "職業女性",
+    "紐約",
+    "黑色"
+   ],
+   "language": "她的衣服以黑色為主，常用有彈性的針織布，貼身但舒適，線條俐落，適合各種場合。",
+   "influence": "她的「少即是多」衣櫥概念，至今仍是許多人整理衣櫥時的參考。",
+   "timeline": [
+    {
+     "year": 1984,
+     "text": "創立自己的品牌"
+    },
+    {
+     "year": 1985,
+     "text": "推出七件簡單單品"
+    },
+    {
+     "year": 1989,
+     "text": "推出 DKNY"
+    }
+   ],
+   "links": [
+    {
+     "id": "claire-mccardell",
+     "text": "延續美式實穿風格"
+    },
+    {
+     "id": "giorgio-armani",
+     "text": "同時代為職業女性設計"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "diane-von-furstenberg",
@@ -3503,16 +6389,6 @@
     "src": "assets/designers/diane-von-furstenberg/work-1.jpg"
    },
    {
-    "title": "Joan Smalls 2013 (facecrop).jpg",
-    "remote": "https://upload.wikimedia.org/wikipedia/commons/4/42/Joan_Smalls_2013_%28facecrop%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "url": "https://commons.wikimedia.org/wiki/File:Joan_Smalls_2013_(facecrop).jpg",
-    "license": "CC BY 2.0",
-    "artist": "CHRISTOPHER MACSURAK",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "desc": "Model Joan Smalls on the runway at the Diane von Fürstenberg' Spring & Summer 2014 collection",
-    "src": "assets/designers/diane-von-furstenberg/work-2.jpg"
-   },
-   {
     "title": "Joan Smalls DVF ss14-33.jpg",
     "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Joan_Smalls_DVF_ss14-33.jpg/960px-Joan_Smalls_DVF_ss14-33.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "url": "https://commons.wikimedia.org/wiki/File:Joan_Smalls_DVF_ss14-33.jpg",
@@ -3532,6 +6408,49 @@
     "desc": "A model walks the runway at the Diane von Fürstenberg Spring/Summer 2014 show at New York Fashion Week, September 2013.",
     "src": "assets/designers/diane-von-furstenberg/work-4.jpg"
    }
+  ],
+  "profile": {
+   "country": "比利時／美國",
+   "life": "1946 年生於布魯塞爾",
+   "story": "黛安·馮芙絲汀寶出生於布魯塞爾，曾在義大利的紡織工廠學習。她與德國王子結婚後移居紐約，開始設計衣服。\n\n1974 年她推出用彈性針織布做成的「裹身裙」，不需要拉鍊或鈕扣，只要把布繞過身體再綁起來就能穿好。這件洋裝舒適、好看又適合上班，短短幾年賣出數百萬件，成為 1970 年代女性獨立的象徵。2006 年至 2019 年她擔任美國時裝設計師協會（CFDA）主席。",
+   "context": "1970 年代女性主義運動興起，越來越多女性進入職場。裹身裙讓女性能輕鬆地兼顧專業與女性魅力，成為那個時代的代表服裝。",
+   "contributions": [
+    "推出裹身裙，成為 20 世紀最經典的洋裝之一。",
+    "以舒適又專業的設計回應職業女性的需求。",
+    "擔任 CFDA 主席，推動美國時尚產業與年輕設計師的發展。"
+   ],
+   "tags": [
+    "裹身裙",
+    "印花",
+    "女性獨立",
+    "針織"
+   ],
+   "language": "她的設計以印花針織布為主，柔軟貼身，強調腰線，簡單又充滿女人味。",
+   "influence": "裹身裙至今仍是許多品牌的基本款，她也鼓勵了許多女性創業。",
+   "timeline": [
+    {
+     "year": 1974,
+     "text": "推出裹身裙"
+    },
+    {
+     "year": 2006,
+     "text": "擔任 CFDA 主席"
+    }
+   ],
+   "links": [
+    {
+     "id": "donna-karan",
+     "text": "同樣為職業女性設計"
+    },
+    {
+     "id": "halston",
+     "text": "同時代的紐約設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  },
+  "rejectedWorks": [
+   "Joan Smalls 2013 (facecrop).jpg"
   ]
  },
  {
@@ -3559,7 +6478,46 @@
    "desc": "Tommy Hilfiger portrait",
    "src": "assets/designers/tommy-hilfiger/portrait.jpg"
   },
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "美國",
+   "life": "1951 年生",
+   "story": "湯米·希爾費格在紐約州北部長大，1970 年代開設一系列名為 People's Place 的牛仔與服飾店。1985 年他推出同名品牌，以紅、白、藍三色的旗幟標誌，把美式學院服裝的經典樣式帶進大眾生活風格市場。\n\n1990 年代，許多嘻哈歌手穿著他寬大、色彩鮮明的衣服，讓品牌在年輕人之間爆紅。他也很早就和音樂產業合作，透過流行文化讓休閒服成為品牌的視覺語言。公司在 1992 年上市，之後擴展到女裝、香水等領域。",
+   "context": "1990 年代嘻哈文化成為美國主流，年輕人重新詮釋學院風格。希爾費格的品牌在這股潮流中，從學院風變成街頭文化的一部分。",
+   "contributions": [
+    "把美式學院風帶進大眾休閒服市場。",
+    "透過音樂與流行文化行銷品牌，擴大年輕客群。"
+   ],
+   "tags": [
+    "美式學院風",
+    "紅白藍",
+    "嘻哈",
+    "休閒服"
+   ],
+   "language": "他的衣服以 Polo 衫、橄欖球衫和連帽外套為代表，配色鮮明，常有大大的品牌標誌。",
+   "influence": "他示範了品牌如何透過音樂與名人文化接觸年輕世代。",
+   "timeline": [
+    {
+     "year": 1985,
+     "text": "推出同名品牌"
+    },
+    {
+     "year": 1992,
+     "text": "公司上市"
+    }
+   ],
+   "links": [
+    {
+     "id": "ralph-lauren",
+     "text": "同樣以美式學院風見長"
+    },
+    {
+     "id": "dapper-dan",
+     "text": "同樣與嘻哈文化關係密切"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "oscar-de-la-renta",
@@ -3626,7 +6584,55 @@
     "desc": "Making its debut at the Lincoln Center venue, The Heart Truth’s Red Dress Collection Fashion Show unveiled its 2011 collection of red dresses designed to celebrate the Red Dress as the national symbol for women and heart disease awareness. More than 20 of today’s top celebrities walked the runway in red dresses by America’s top designers to inspire women to take action to protect their heart health. The Heart Truth® is a national awareness campai",
     "src": "assets/designers/oscar-de-la-renta/work-4.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "多明尼加／美國",
+   "life": "1932–2014",
+   "story": "奧斯卡·德拉倫塔出生於多明尼加共和國，十八歲到馬德里學習繪畫，之後進入巴倫西亞加在馬德里的時裝店工作，接著到巴黎的 Lanvin 擔任助理。1963 年他移居紐約，先在伊莉莎白·雅頓工作，1965 年推出自己的品牌。\n\n他以優雅、浪漫又帶有拉丁色彩的禮服聞名，深受美國第一夫人與名流喜愛。1993 年至 2002 年，他同時擔任巴黎 Balmain 的高級訂製設計師，是第一位執掌法國高級訂製時裝屋的美國設計師。他於 2014 年辭世。",
+   "context": "1960 年代紐約逐漸成為美國社交與時尚的中心。德拉倫塔把歐洲高級訂製的技術帶到美國，為名流社交圈設計華麗的禮服。",
+   "contributions": [
+    "把歐洲高級訂製的技術與美國社交時尚結合。",
+    "成為第一位執掌法國高級訂製時裝屋的美國設計師。",
+    "為多位美國第一夫人設計禮服。"
+   ],
+   "tags": [
+    "禮服",
+    "優雅",
+    "拉丁色彩",
+    "名流"
+   ],
+   "language": "他的禮服色彩鮮豔、裙擺寬大，常有花卉、刺繡和荷葉邊，優雅而充滿女人味。",
+   "influence": "他是美國高級禮服的代表人物之一。",
+   "timeline": [
+    {
+     "year": 1963,
+     "text": "移居紐約"
+    },
+    {
+     "year": 1965,
+     "text": "推出自己的品牌"
+    },
+    {
+     "year": 1993,
+     "text": "出任 Balmain 高級訂製設計師"
+    },
+    {
+     "year": 2014,
+     "text": "辭世"
+    }
+   ],
+   "links": [
+    {
+     "id": "cristobal-balenciaga",
+     "text": "職涯起點"
+    },
+    {
+     "id": "carolina-herrera",
+     "text": "同樣出身拉丁美洲的紐約設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "carolina-herrera",
@@ -3693,7 +6699,46 @@
     "desc": "A model walks the runway at the Carolina Herrera Fall/Winter 2014 show at New York Fashion Week, February 2014.",
     "src": "assets/designers/carolina-herrera/work-4.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "委內瑞拉／美國",
+   "life": "1939 年生於卡拉卡斯",
+   "story": "卡羅琳娜·海萊拉出生於委內瑞拉的上流家庭，祖母很早就帶她去看巴倫西亞加的時裝秀。她以個人品味聞名，多次入選國際最佳衣著名單。1980 年，在朋友的鼓勵下，她在紐約推出自己的品牌。\n\n她的招牌是剪裁俐落的白襯衫，她本人幾乎每天都穿著白襯衫。她的設計優雅、端莊，深受名流喜愛，曾為多位美國第一夫人設計服裝。2018 年起，品牌由 Wes Gordon 擔任創意總監。",
+   "context": "1980 年代紐約的社交圈需要優雅又有個性的服裝。海萊拉以自身的品味和社交經驗，為上流社會的女性設計衣服。",
+   "contributions": [
+    "以白襯衫建立個人與品牌的經典形象。",
+    "以優雅端莊的設計成為美國名流時尚的代表。"
+   ],
+   "tags": [
+    "白襯衫",
+    "優雅",
+    "禮服",
+    "名流"
+   ],
+   "language": "她的衣服線條乾淨、比例優美，常以白襯衫搭配寬裙，或以簡單剪裁的禮服展現自信與優雅。",
+   "influence": "她示範了個人品味如何成為品牌的核心。",
+   "timeline": [
+    {
+     "year": 1980,
+     "text": "於紐約推出品牌"
+    },
+    {
+     "year": 2018,
+     "text": "Wes Gordon 出任創意總監"
+    }
+   ],
+   "links": [
+    {
+     "id": "oscar-de-la-renta",
+     "text": "同樣出身拉丁美洲的紐約設計師"
+    },
+    {
+     "id": "cristobal-balenciaga",
+     "text": "童年時的時尚啟蒙"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "anna-sui",
@@ -3760,7 +6805,47 @@
     "desc": "Vlada Roslyakova in a feathered headdress and orange jacket walks the runway at Anna Sui FW 2009.",
     "src": "assets/designers/anna-sui/work-4.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "美國",
+   "life": "1955 年生於底特律",
+   "story": "安娜蘇出生於底特律的華裔家庭，從小就收集雜誌上的時尚圖片，整理成她所說的「靈感檔案」。她就讀帕森斯設計學院，之後在成衣公司工作。1991 年她在紐約舉辦第一場時裝秀，隔年在蘇活區開設第一家店。\n\n她的風格融合搖滾、波希米亞、復古和少女感，以紫色和黑色為代表色，店面裝潢像是華麗的古董房間。她也推出化妝品與香水，在亞洲特別受歡迎。",
+   "context": "1990 年代初，垃圾搖滾與復古風潮流行，年輕人喜歡混搭二手衣和搖滾元素。安娜蘇把這種街頭與音樂文化變成浪漫又有個性的時裝。",
+   "contributions": [
+    "以搖滾與復古元素建立浪漫混搭的品牌風格。",
+    "把服裝、化妝品與店面空間打造成一致的品牌世界。",
+    "成為在國際上最知名的華裔美國設計師之一。"
+   ],
+   "tags": [
+    "搖滾",
+    "波希米亞",
+    "復古",
+    "紫色"
+   ],
+   "language": "她的衣服像一個少女的寶盒：蕾絲、印花、天鵝絨、刺繡和亮片混在一起，帶有一點搖滾的叛逆。",
+   "influence": "她讓混搭與復古風成為 1990 年代紐約時尚的代表，也深受亞洲消費者喜愛。",
+   "timeline": [
+    {
+     "year": 1991,
+     "text": "於紐約舉辦第一場時裝秀"
+    },
+    {
+     "year": 1992,
+     "text": "於蘇活區開設第一家店"
+    }
+   ],
+   "links": [
+    {
+     "id": "vivienne-tam",
+     "text": "同時期在紐約發展的亞裔設計師"
+    },
+    {
+     "id": "marc-jacobs",
+     "text": "同時期的紐約設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "vera-wang",
@@ -3827,7 +6912,47 @@
     "desc": "A model walks the runway at the Vera Wang Spring/Summer 2014 show at New York Fashion Week, September 2013.",
     "src": "assets/designers/vera-wang/work-4.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "美國",
+   "life": "1949 年生於紐約",
+   "story": "王薇薇出生於紐約的華裔家庭，年輕時是花式滑冰選手。大學畢業後她進入《Vogue》雜誌，擔任時尚編輯十多年，之後在拉夫·勞倫擔任設計總監。\n\n1989 年她為自己的婚禮尋找禮服時，發現市面上的選擇很少，於是在 1990 年於紐約開設婚紗店。她的婚紗擺脫傳統的蓬裙與大量裝飾，以簡潔優雅的剪裁和現代感受到歡迎，很快成為名人婚禮的首選。她也為花式滑冰選手設計比賽服，延續年輕時的熱情。",
+   "context": "1990 年代前，婚紗多半是華麗、蓬鬆的傳統樣式。王薇薇把時裝的眼光帶進婚紗，讓新娘也能穿得現代又有個性。",
+   "contributions": [
+    "以現代簡潔的設計改變婚紗的風格。",
+    "把時裝設計帶進婚紗產業，建立高級婚紗品牌。",
+    "為花式滑冰選手設計比賽服，連結運動與時尚。"
+   ],
+   "tags": [
+    "婚紗",
+    "現代優雅",
+    "簡潔",
+    "花式滑冰"
+   ],
+   "language": "她的婚紗常是簡單的線條、柔和的布料和低調的細節，後來也加入黑色、紅色等不傳統的顏色。",
+   "influence": "她讓「設計師婚紗」成為一個重要的時尚類別。",
+   "timeline": [
+    {
+     "year": 1990,
+     "text": "於紐約開設婚紗店"
+    }
+   ],
+   "links": [
+    {
+     "id": "ralph-lauren",
+     "text": "曾在其公司擔任設計總監"
+    },
+    {
+     "id": "anna-sui",
+     "text": "同為華裔美國設計師"
+    },
+    {
+     "id": "jason-wu",
+     "text": "同為華裔設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "isaac-mizrahi",
@@ -3851,7 +6976,51 @@
    "src": "assets/designers/isaac-mizrahi/portrait.jpg"
   },
   "qid": "Q1673431",
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "美國",
+   "life": "1961 年生於紐約布魯克林",
+   "story": "艾薩克·米茲拉希在紐約布魯克林長大，畢業於帕森斯設計學院，曾在 Perry Ellis 等公司工作。1987 年他推出自己的品牌，以鮮豔的色彩、幽默感和運動服式的舒適剪裁受到好評。\n\n1995 年的紀錄片《Unzipped》記錄了他籌備時裝秀的過程，讓大眾第一次看到時裝設計師工作的樣子。2003 年他與平價百貨 Target 合作推出系列，被視為設計師與量販通路合作的成功案例。他也經常主持電視節目，以活潑的個性成為大眾熟悉的時尚人物。",
+   "context": "1990 年代到 2000 年代，時尚逐漸變成大眾娛樂的一部分。米茲拉希透過紀錄片、電視和平價合作，讓時尚設計變得親近。",
+   "contributions": [
+    "以幽默與鮮豔色彩為美國時裝注入活力。",
+    "與 Target 合作，示範設計師與平價通路合作的模式。",
+    "透過紀錄片與電視節目讓大眾認識時裝設計工作。"
+   ],
+   "tags": [
+    "色彩",
+    "幽默",
+    "平價合作",
+    "電視"
+   ],
+   "language": "他的衣服明亮、俏皮，常把運動服的舒適與禮服的華麗結合，例如用格紋或亮色做晚禮服。",
+   "influence": "他和 Target 的合作，為後來 H&M 等快時尚與設計師的聯名開了先例。",
+   "timeline": [
+    {
+     "year": 1987,
+     "text": "推出自己的品牌"
+    },
+    {
+     "year": 1995,
+     "text": "紀錄片《Unzipped》上映"
+    },
+    {
+     "year": 2003,
+     "text": "與 Target 合作"
+    }
+   ],
+   "links": [
+    {
+     "id": "marc-jacobs",
+     "text": "同樣出身帕森斯、曾在 Perry Ellis 工作"
+    },
+    {
+     "id": "halston",
+     "text": "較早嘗試平價百貨合作的設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "marc-jacobs",
@@ -3918,7 +7087,55 @@
     "desc": "A model walks the runway at the Marc Jacobs Fall/Winter 2012 show at New York Fashion Week, February 2012.",
     "src": "assets/designers/marc-jacobs/work-4.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "美國",
+   "life": "1963 年生於紐約",
+   "story": "馬克·雅各布斯在紐約長大，從帕森斯設計學院畢業時獲得最佳學生獎，1980 年代推出自己的品牌。1992 年他為 Perry Ellis 推出「垃圾搖滾（Grunge）」系列，把法蘭絨襯衫和破舊的牛仔褲搬上伸展台，因為太過前衛而被解職，但這個系列後來被視為經典。\n\n1997 年他出任路易威登創意總監，為原本以皮件聞名的品牌推出成衣，並與藝術家 Stephen Sprouse、村上隆等人合作，讓塗鴉和卡通圖案出現在經典的老花包上。他在路易威登工作到 2013 年，同時經營自己的品牌與副牌。",
+   "context": "1990 年代初，Grunge 搖滾在年輕人之間流行，他們穿著二手衣、反對華麗的時尚。雅各布斯把這種反時尚的態度帶進高級時裝。",
+   "contributions": [
+    "推出垃圾搖滾系列，讓街頭與次文化進入高級時裝。",
+    "為路易威登建立成衣線，並開創精品與藝術家合作的模式。",
+    "以副牌拓展年輕市場。"
+   ],
+   "tags": [
+    "垃圾搖滾",
+    "藝術合作",
+    "路易威登",
+    "紐約"
+   ],
+   "language": "他的衣服常帶有復古與玩味：二手衣的感覺、誇張的比例和大膽的圖案，看起來既隨性又精緻。",
+   "influence": "他讓精品與藝術家、街頭文化的合作成為常態。",
+   "timeline": [
+    {
+     "year": 1992,
+     "text": "為 Perry Ellis 推出垃圾搖滾系列"
+    },
+    {
+     "year": 1997,
+     "text": "出任路易威登創意總監"
+    },
+    {
+     "year": 2013,
+     "text": "離開路易威登"
+    }
+   ],
+   "links": [
+    {
+     "id": "isaac-mizrahi",
+     "text": "同樣出身帕森斯、曾在 Perry Ellis 工作"
+    },
+    {
+     "id": "virgil-abloh",
+     "text": "後來擔任路易威登男裝藝術總監"
+    },
+    {
+     "id": "anna-sui",
+     "text": "同時期的紐約設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "tom-ford",
@@ -3975,7 +7192,63 @@
     "desc": "Fall 2004 Tom Ford evening dress for Yves Saint Laurent, printed silk",
     "src": "assets/designers/tom-ford/work-3.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "美國",
+   "life": "1961 年生於德州奧斯汀",
+   "story": "湯姆·福特在德州長大，曾在帕森斯設計學院學習建築。1990 年他加入當時陷入困境的 Gucci，1994 年成為創意總監。他以性感、華麗又充滿自信的設計和大膽的廣告，讓 Gucci 從瀕臨破產變成全球最受歡迎的品牌之一。2000 年至 2004 年，他同時擔任 Yves Saint Laurent 的創意總監。\n\n2005 年他推出自己的同名品牌，從香水、眼鏡到男女裝。他也是電影導演，執導了《摯愛無盡》（2009）和《夜行動物》（2016）。2019 年至 2022 年，他擔任美國時裝設計師協會主席。",
+   "context": "1990 年代精品產業開始被大型集團收購和重整。湯姆·福特在 Gucci 的成功，示範了創意總監如何讓一個老品牌重生。",
+   "contributions": [
+    "讓 Gucci 在 1990 年代重生，成為全球熱門品牌。",
+    "以性感與華麗的設計和廣告定義 1990 年代的奢華風格。",
+    "從時尚跨足電影，展現設計師的多元創作能力。"
+   ],
+   "tags": [
+    "性感",
+    "奢華",
+    "1990 年代",
+    "品牌重生"
+   ],
+   "language": "他的衣服強調身體的性感：貼身的剪裁、絲絨、低胸設計和閃亮的布料，充滿魅力與自信。",
+   "influence": "他讓「明星創意總監」成為精品產業的關鍵角色。",
+   "timeline": [
+    {
+     "year": 1990,
+     "text": "加入 Gucci"
+    },
+    {
+     "year": 1994,
+     "text": "出任 Gucci 創意總監"
+    },
+    {
+     "year": 2000,
+     "text": "兼任 YSL 創意總監"
+    },
+    {
+     "year": 2005,
+     "text": "推出同名品牌"
+    },
+    {
+     "year": 2009,
+     "text": "執導電影《摯愛無盡》"
+    }
+   ],
+   "links": [
+    {
+     "id": "yves-saint-laurent",
+     "text": "擔任其品牌創意總監"
+    },
+    {
+     "id": "karl-lagerfeld",
+     "text": "同樣讓老品牌重生的設計師"
+    },
+    {
+     "id": "thom-browne",
+     "text": "其後接任 CFDA 主席"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "rick-owens",
@@ -4040,7 +7313,47 @@
     "desc": "Fall-Winter 2015 jumpsuit by Rick Owens, \"Sphinx\" collection, handknitted cashmere",
     "src": "assets/designers/rick-owens/work-4.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "美國",
+   "life": "1961 年生於加州波特維爾",
+   "story": "瑞克·歐文斯在加州長大，曾在洛杉磯的歐提斯藝術設計學院學習藝術，之後學習打版和立裁。1994 年他在洛杉磯推出自己的品牌，2003 年搬到巴黎發展，同年開始在巴黎時裝週發表。\n\n他的風格常被形容為「暗黑」：黑色、灰色和石頭般的顏色，長而垂墜的輪廓、皮革和厚重的靴子，卻又帶有好萊塢式的華麗。他的時裝秀經常充滿震撼的畫面，也推出了家具系列和副牌 DRKSHDW。他的妻子兼合作夥伴 Michèle Lamy 也是品牌重要的靈魂人物。",
+   "context": "2000 年代起，前衛時尚與次文化、運動服的界線越來越模糊。歐文斯的暗黑美學吸引了大批忠實追隨者，成為一種生活態度。",
+   "contributions": [
+    "以暗黑、垂墜的輪廓建立鮮明的品牌美學。",
+    "把運動服、街頭與前衛時裝結合。",
+    "以震撼的時裝秀挑戰美與身體的定義。"
+   ],
+   "tags": [
+    "暗黑",
+    "垂墜",
+    "前衛",
+    "皮革"
+   ],
+   "language": "他的衣服修長、層疊，常用斜裁的針織布與粗糙的皮革，搭配厚底鞋，像是來自未來或廢墟的角色。",
+   "influence": "他的美學深刻影響了當代的暗黑系與前衛街頭風格。",
+   "timeline": [
+    {
+     "year": 1994,
+     "text": "於洛杉磯推出品牌"
+    },
+    {
+     "year": 2003,
+     "text": "移居巴黎並開始在時裝週發表"
+    }
+   ],
+   "links": [
+    {
+     "id": "ann-demeulemeester",
+     "text": "同樣以暗色系見長"
+    },
+    {
+     "id": "yohji-yamamoto",
+     "text": "同樣以黑色與垂墜見長"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "thom-browne",
@@ -4105,7 +7418,51 @@
     "desc": "Fall-Winter 2017 Thom Browne man's coat, wool twill with multiple buttons",
     "src": "assets/designers/thom-browne/work-4.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "美國",
+   "life": "1965 年生於賓州艾倫敦",
+   "story": "湯姆·布朗在賓州長大，畢業於聖母大學，曾經想當演員，後來進入服裝業，在 Club Monaco 等公司工作。2001 年他以預約制推出五套西裝，開始自己的品牌。\n\n他最有名的是「縮短的西裝」：袖子和褲管都比傳統短，露出手腕和腳踝，外套也比較緊。這種看起來有點像「穿小了」的比例，加上灰色和紅白藍四條紋的標誌，成為他的招牌。他的時裝秀充滿戲劇感，2014 年推出女裝。2023 年他接替湯姆·福特，擔任美國時裝設計師協會主席。",
+   "context": "2000 年代初，男裝西裝仍以寬大的輪廓為主。湯姆·布朗的短版西裝挑戰了傳統比例，帶動了男裝合身化的潮流。",
+   "contributions": [
+    "以縮短的西裝比例重新定義男裝輪廓。",
+    "以灰色與四條紋建立鮮明的品牌識別。",
+    "以劇場般的時裝秀呈現概念性的設計。"
+   ],
+   "tags": [
+    "短版西裝",
+    "灰色",
+    "四條紋",
+    "劇場感"
+   ],
+   "language": "他的衣服把傳統西裝當作玩具：比例縮短、細節放大、灰色重複出現，正經中帶著幽默。",
+   "influence": "他帶動了 2000 年代男裝的合身化，也讓西裝重新成為時尚討論的焦點。",
+   "timeline": [
+    {
+     "year": 2001,
+     "text": "以五套西裝推出品牌"
+    },
+    {
+     "year": 2014,
+     "text": "推出女裝"
+    },
+    {
+     "year": 2023,
+     "text": "擔任 CFDA 主席"
+    }
+   ],
+   "links": [
+    {
+     "id": "tom-ford",
+     "text": "接替其擔任 CFDA 主席"
+    },
+    {
+     "id": "hedi-slimane",
+     "text": "同時代改變男裝輪廓的設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "jeremy-scott",
@@ -4140,7 +7497,51 @@
     "desc": "Sujet : Enfants Mode Articles de sport Numérisation effectuée à partir d'un document original : 2015.51.1. Appartient à l'ensemble documentaire : MnS000 Appartient à l'ensemble documentaire : MnS006 Contexte : Jeremy Scott x Adidas, une histoire qui dure ! Le designer américain collabore avec la marque aux trois bandes depuis quelques années. A l’approche de Noël, le créatif Scott s’est penché sur le folklore des fêtes de fin d’année pour propose",
     "src": "assets/designers/jeremy-scott/work-1.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "美國",
+   "life": "1975 年生",
+   "story": "傑瑞米·史考特在美國堪薩斯市長大，就讀紐約普瑞特藝術學院，1997 年在巴黎推出自己的品牌。他的設計充滿流行文化元素：卡通、垃圾食物、品牌標誌和網路文化，被稱為「流行文化最不敬的設計師」。\n\n他和 adidas 長期合作，推出鞋舌長出翅膀的運動鞋等大膽設計。2013 年至 2023 年他擔任義大利品牌 Moschino 的創意總監，推出以麥當勞、芭比娃娃等為靈感的系列，深受流行歌手喜愛。",
+   "context": "2000 年代起，網路和社群媒體讓流行文化的圖像快速傳播。史考特把這些圖像搬上伸展台，讓時尚變得像一場玩笑和派對。",
+   "contributions": [
+    "把卡通、品牌標誌等流行文化元素帶入高級時裝。",
+    "與 adidas 合作推出極具辨識度的運動鞋設計。",
+    "以幽默與諷刺的設計延續 Moschino 的品牌精神。"
+   ],
+   "tags": [
+    "流行文化",
+    "幽默",
+    "卡通",
+    "運動鞋"
+   ],
+   "language": "他的衣服像大型的流行文化拼貼：亮色、巨大的圖案、玩具般的配件，把日常的消費符號變成時尚。",
+   "influence": "他是社群媒體時代最具代表性的「流行時尚」設計師之一。",
+   "timeline": [
+    {
+     "year": 1997,
+     "text": "在巴黎推出品牌"
+    },
+    {
+     "year": 2013,
+     "text": "出任 Moschino 創意總監"
+    },
+    {
+     "year": 2023,
+     "text": "離開 Moschino"
+    }
+   ],
+   "links": [
+    {
+     "id": "elsa-schiaparelli",
+     "text": "同樣以幽默與流行文化見長"
+    },
+    {
+     "id": "gianni-versace",
+     "text": "同樣大膽張揚的風格"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "zac-posen",
@@ -4205,7 +7606,50 @@
     "desc": "Making its debut at the Lincoln Center venue, The Heart Truth’s Red Dress Collection Fashion Show unveiled its 2011 collection of red dresses designed to celebrate the Red Dress as the national symbol for women and heart disease awareness. More than 20 of today’s top celebrities walked the runway in red dresses by America’s top designers to inspire women to take action to protect their heart health. The Heart Truth® is a national awareness campai",
     "src": "assets/designers/zac-posen/work-4.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "美國",
+   "life": "1980 年生於紐約",
+   "story": "扎克·波森在紐約蘇活區長大，小時候就會用布料替娃娃做禮服。他在高中時期到設計師 Nicole Miller 那裡實習，之後到倫敦中央聖馬丁學習。2001 年他推出自己的品牌，以優雅、具有雕塑感的晚禮服聞名，很快受到好萊塢明星的喜愛。\n\n他曾擔任設計比賽節目《決戰時裝伸展台》的評審，2014 年起擔任 Brooks Brothers 的女裝創意總監。2024 年他出任 Gap 創意總監與 Old Navy 首席創意長。",
+   "context": "2000 年代紅毯成為時尚的重要舞台。波森以好萊塢黃金時代式的禮服，滿足了明星在紅毯上的需求。",
+   "contributions": [
+    "以雕塑感的晚禮服延續好萊塢黃金時代的優雅風格。",
+    "從高級禮服跨足大眾服飾品牌，擔任 Gap 創意總監。"
+   ],
+   "tags": [
+    "晚禮服",
+    "紅毯",
+    "雕塑感",
+    "好萊塢"
+   ],
+   "language": "他的禮服強調腰線與曲線，常有大裙擺和精準的剪裁，讓人聯想到 1950 年代的電影明星。",
+   "influence": "他代表了美國年輕一代的高級禮服設計師。",
+   "timeline": [
+    {
+     "year": 2001,
+     "text": "推出自己的品牌"
+    },
+    {
+     "year": 2014,
+     "text": "出任 Brooks Brothers 女裝創意總監"
+    },
+    {
+     "year": 2024,
+     "text": "出任 Gap 創意總監"
+    }
+   ],
+   "links": [
+    {
+     "id": "oscar-de-la-renta",
+     "text": "同樣以禮服見長的美國設計師"
+    },
+    {
+     "id": "christian-dior",
+     "text": "同樣強調腰線與裙擺"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "jason-wu",
@@ -4252,7 +7696,55 @@
     "desc": "Editor-in-chief of Glamour magazine, Cindi Leive walks on the runway wearing a Jason Wu design at The Heart Truth's Red Dress Collection 2012 Fashion Show at Hammerstein Ballroom on February 8, 2012 in New York City. Photo by Dan & Corina Lecca",
     "src": "assets/designers/jason-wu/work-2.jpg"
    }
-  ]
+  ],
+  "profile": {
+   "country": "加拿大／美國",
+   "life": "1982 年生於台灣雲林",
+   "story": "吳季剛出生於台灣雲林，九歲隨家人移民到加拿大溫哥華。他從小就喜歡做娃娃的衣服，十幾歲時就開始為玩具公司設計娃娃服裝。他在帕森斯設計學院學習，並在設計師 Narciso Rodriguez 那裡工作，2006 年推出自己的品牌。\n\n2009 年，美國第一夫人蜜雪兒·歐巴馬在總統就職舞會上穿著他設計的白色單肩禮服，讓他一夜成名；2013 年第二次就職典禮她再度穿上他的作品。2013 年至 2016 年，他也擔任德國品牌 Hugo Boss 的女裝藝術總監。",
+   "context": "2009 年歐巴馬就職，第一夫人的穿著成為全球關注的焦點。她選擇年輕設計師的作品，讓美國新一代設計師獲得前所未有的關注。",
+   "contributions": [
+    "以優雅浪漫的女裝建立國際知名度。",
+    "為第一夫人設計就職禮服，成為美國時尚史上的重要時刻。",
+    "成為國際上最知名的台灣出身設計師之一。"
+   ],
+   "tags": [
+    "優雅",
+    "浪漫",
+    "禮服",
+    "台灣出身"
+   ],
+   "language": "他的衣服線條柔和、細節精緻，常有花卉、薄紗與刺繡，優雅又帶點少女感。",
+   "influence": "他的成功鼓舞了許多台灣與亞裔年輕設計師。",
+   "timeline": [
+    {
+     "year": 2006,
+     "text": "推出自己的品牌"
+    },
+    {
+     "year": 2009,
+     "text": "設計蜜雪兒·歐巴馬就職舞會禮服"
+    },
+    {
+     "year": 2013,
+     "text": "出任 Hugo Boss 女裝藝術總監"
+    }
+   ],
+   "links": [
+    {
+     "id": "vera-wang",
+     "text": "同為華裔設計師"
+    },
+    {
+     "id": "alexander-wang",
+     "text": "同世代的台裔美國設計師"
+    },
+    {
+     "id": "sophie-hong",
+     "text": "同樣來自台灣的設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "alexander-wang",
@@ -4278,7 +7770,54 @@
    "src": "assets/designers/alexander-wang/portrait.jpg"
   },
   "qid": "Q705844",
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "美國",
+   "life": "1983 年生於舊金山",
+   "story": "王大仁出生於舊金山的台裔家庭，十八歲到紐約就讀帕森斯設計學院，但沒有讀完就決定創業，2005 年推出自己的品牌。2008 年他獲得美國時裝設計師協會與《Vogue》的時尚基金獎，迅速成名。\n\n他以「模特兒下班後的穿著」為靈感，設計出黑色、寬鬆、帶有街頭感的衣服，看起來隨性卻很有型。2012 年至 2015 年，他擔任巴黎品牌 Balenciaga 的創意總監；2014 年他與 H&M 推出聯名系列。",
+   "context": "2000 年代後期，街頭服裝與高級時裝逐漸融合，年輕人追求「不刻意的酷」。王大仁的設計正好抓住這種都會年輕人的風格。",
+   "contributions": [
+    "以隨性的都會街頭風格定義 2000 年代後期的紐約時尚。",
+    "擔任 Balenciaga 創意總監，成為較早執掌巴黎時裝屋的年輕美國設計師。"
+   ],
+   "tags": [
+    "都會街頭",
+    "黑色",
+    "隨性",
+    "紐約"
+   ],
+   "language": "他的衣服以黑色為主，常是寬鬆的 T 恤、皮外套和運動元素，看起來不費力卻很有態度。",
+   "influence": "他是推動「運動休閒風」流行的設計師之一。",
+   "timeline": [
+    {
+     "year": 2005,
+     "text": "推出自己的品牌"
+    },
+    {
+     "year": 2008,
+     "text": "獲 CFDA/Vogue 時尚基金獎"
+    },
+    {
+     "year": 2012,
+     "text": "出任 Balenciaga 創意總監"
+    },
+    {
+     "year": 2014,
+     "text": "與 H&M 推出聯名系列"
+    }
+   ],
+   "links": [
+    {
+     "id": "cristobal-balenciaga",
+     "text": "擔任其品牌創意總監"
+    },
+    {
+     "id": "jason-wu",
+     "text": "同世代的台裔美國設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "virgil-abloh",
@@ -4304,7 +7843,64 @@
    "src": "assets/designers/virgil-abloh/portrait.jpg"
   },
   "qid": "Q26703582",
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "美國",
+   "life": "1980–2021",
+   "story": "維吉爾·阿布洛出生於美國伊利諾州的迦納移民家庭，母親是裁縫師。他大學主修土木工程，之後取得建築碩士學位，沒有正式學過服裝設計。他和饒舌歌手肯伊·威斯特長期合作，2009 年兩人一起到 Fendi 實習。\n\n2012 年他推出品牌 Pyrex Vision，隔年改為 Off-White，以斜條紋、引號文字和工業感的元素，把街頭服裝帶進高級時裝。2017 年他與 Nike 推出「The Ten」系列，重新設計十款經典球鞋。2018 年他出任路易威登男裝藝術總監，是第一位擔任這個職位的非裔美國人。他於 2021 年辭世。",
+   "context": "2010 年代街頭服裝成為時尚產業的主流，年輕消費者重視聯名、限量和網路話題。阿布洛是這個時代最具代表性的設計師之一。",
+   "contributions": [
+    "以 Off-White 讓街頭服裝成為高級時裝的一部分。",
+    "以引號、文字等手法讓設計帶有評論與幽默。",
+    "成為第一位擔任路易威登男裝藝術總監的非裔美國人。",
+    "透過聯名合作與講座，鼓勵年輕人投入設計。"
+   ],
+   "tags": [
+    "街頭",
+    "聯名",
+    "引號",
+    "建築思維"
+   ],
+   "language": "他常用「3% 原則」：只把既有的東西改變一點點，例如在球鞋上加上引號文字或束帶，讓人重新看見熟悉的物品。",
+   "influence": "他深刻影響了一代年輕設計師與消費者，讓街頭文化在精品產業中佔有核心地位。",
+   "timeline": [
+    {
+     "year": 2012,
+     "text": "推出 Pyrex Vision"
+    },
+    {
+     "year": 2013,
+     "text": "創立 Off-White"
+    },
+    {
+     "year": 2017,
+     "text": "與 Nike 推出「The Ten」"
+    },
+    {
+     "year": 2018,
+     "text": "出任路易威登男裝藝術總監"
+    },
+    {
+     "year": 2021,
+     "text": "辭世"
+    }
+   ],
+   "links": [
+    {
+     "id": "marc-jacobs",
+     "text": "同樣擔任路易威登創意職位"
+    },
+    {
+     "id": "dapper-dan",
+     "text": "街頭與精品結合的先驅"
+    },
+    {
+     "id": "demna",
+     "text": "同時代結合街頭與精品的設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "kerby-jean-raymond",
@@ -4319,7 +7915,59 @@
   ],
   "qid": "Q21066955",
   "portraitUnavailable": true,
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "美國",
+   "life": "1986 年生",
+   "story": "科比·讓-雷蒙在紐約布魯克林長大，父親是海地移民。2013 年他創立品牌 Pyer Moss，以服裝結合現場表演與社會評論，特別關注美國的種族議題。\n\n2015 年他在紐約時裝週發表以警察暴力為主題的系列，引起廣泛討論。2018 年至 2019 年，他推出三部曲系列「American, Also」，探討非裔美國人在美國文化中的位置。2018 年他獲得 CFDA/Vogue 時尚基金獎，2020 年獲選為 CFDA 年度男裝設計師，同年起擔任 Reebok 全球創意總監。2021 年 7 月，他成為第一位在巴黎高級訂製官方日程發表的非裔美國設計師。",
+   "context": "2010 年代美國社會對種族平等議題的討論越來越熱烈。讓-雷蒙把時裝秀變成發聲的平台，讓時尚參與社會對話。",
+   "contributions": [
+    "以時裝結合表演與社會評論，讓伸展台成為發聲的平台。",
+    "以「American, Also」系列重新講述非裔美國人的文化歷史。",
+    "成為第一位在巴黎高級訂製官方日程發表的非裔美國設計師。"
+   ],
+   "tags": [
+    "社會議題",
+    "表演",
+    "非裔文化",
+    "敘事"
+   ],
+   "language": "他的作品常把歷史圖像、文字和戲劇性的造型結合，讓衣服說故事，也讓觀眾思考。",
+   "influence": "他示範了時尚可以是社會運動的一部分。",
+   "timeline": [
+    {
+     "year": 2013,
+     "text": "創立 Pyer Moss"
+    },
+    {
+     "year": 2015,
+     "text": "發表以警察暴力為主題的系列"
+    },
+    {
+     "year": 2018,
+     "text": "獲 CFDA/Vogue 時尚基金獎"
+    },
+    {
+     "year": 2020,
+     "text": "獲 CFDA 年度男裝設計師"
+    },
+    {
+     "year": 2021,
+     "text": "於巴黎高級訂製日程發表"
+    }
+   ],
+   "links": [
+    {
+     "id": "patrick-kelly",
+     "text": "在巴黎發表的非裔美國設計先驅"
+    },
+    {
+     "id": "virgil-abloh",
+     "text": "同時代的非裔美國設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  },
  {
   "id": "christopher-john-rogers",
@@ -4334,6 +7982,45 @@
   ],
   "qid": "Q112066309",
   "portraitUnavailable": true,
-  "works": []
+  "works": [],
+  "profile": {
+   "country": "美國",
+   "life": "1993 年前後生於路易斯安那州巴頓魯日",
+   "story": "克里斯多福·約翰·羅傑斯在路易斯安那州巴頓魯日長大，母親曾是芭蕾舞者，父親學過攝影。他從高中就開始為紐奧良時裝週設計服裝，靈感來自動畫、畫家高更，以及祖母和教會女士們從頭到腳同色系的穿著。他就讀薩凡納藝術設計學院。\n\n2018 年秋天，二十四歲的他推出第一個系列，2019 年就贏得 CFDA/Vogue 時尚基金獎首獎。他的作品以大膽的色彩、誇張的體積和充滿喜悅的造型聞名，深受名人喜愛。",
+   "context": "2010 年代後期，時尚圈開始重視多元的身體與文化背景。羅傑斯以充滿自信和喜悅的色彩，為美國時尚帶來新的能量。",
+   "contributions": [
+    "以大膽的色彩與體積重新詮釋美國的華麗禮服。",
+    "以來自南方與教會文化的記憶，為時裝帶來新的視角。"
+   ],
+   "tags": [
+    "高彩度",
+    "大體積",
+    "喜悅",
+    "南方文化"
+   ],
+   "language": "他的衣服幾乎都是飽和的色彩：亮粉、桃紅、橘色和寶藍，搭配巨大的裙擺和蓬袖，充滿歡樂。",
+   "influence": "他是美國新一代設計師中最受矚目的人物之一。",
+   "timeline": [
+    {
+     "year": 2018,
+     "text": "推出第一個系列"
+    },
+    {
+     "year": 2019,
+     "text": "獲 CFDA/Vogue 時尚基金首獎"
+    }
+   ],
+   "links": [
+    {
+     "id": "patrick-kelly",
+     "text": "同樣以歡樂與南方文化見長"
+    },
+    {
+     "id": "kerby-jean-raymond",
+     "text": "同時代的非裔美國設計師"
+    }
+   ],
+   "method": "依維基百科、品牌與媒體等公開資料整理撰寫，整理日期 2026.11.28"
+  }
  }
 ]

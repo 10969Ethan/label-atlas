@@ -15,11 +15,16 @@
 - `assets/`：品牌標誌與圖片
 - `time-machine/index.html`：時光機獨立預覽版（輪廓示意圖，無外部圖片）
 
-## 靜態版限制
-chatgpt.site 版有伺服器端 API，GitHub Pages 沒有，以下功能改為本機或停用：
-- 帳號登入與雲端收藏（`/api/me`、`/api/library`）→ 收藏與筆記存在瀏覽器 localStorage
-- 未收錄品牌的線上搜尋（`/api/search`）、翻譯（`/api/translate`）、名詞查詢（`/api/glossary`）、人物檔案（`/api/designer-profile`）
-- 匯出時缺少 `designers/universe.js`、`designers/people.js`（書庫自動改用列表模式）
+## 靜態版（GitHub Pages）
+GitHub Pages 沒有伺服器，所以這個版本所有資料都存在 repo 裡，不呼叫任何 API：
+- **設計師人物誌**：91 位設計師的完整人物誌都在 `designers.json` 的 `profile` 欄位（原始稿在 `tools/profiles/*.json`，改完執行 `python3 tools/merge_profiles.py` 合併）。
+- **人像與作品圖**：存在 `assets/designers/<id>/`，來自維基共享資源，附作者與授權。由 GitHub Actions「Fetch designer media」（`tools/fetch_media.py`）下載；新增設計師後到 Actions 手動執行它即可補圖。不合適的圖片記在 `rejectedPortraits`／`rejectedWorks`，之後不會再被抓回來。
+- **服裝小辭典**：首頁內建 12 條 + `data/glossary.json` 的詞條，查不到時提供相近詞與維基百科連結。
+- **品牌研究書**：有對應設計師的品牌（如 COMME des GARÇONS、Yohji Yamamoto、Maison Margiela）會顯示站內人物誌內容；其他品牌需要 chatgpt.site 版的線上搜尋。
+- **時光機人物照片**：改讀 `designers.json`，不再即時查維基百科。
+- 收藏與筆記存在瀏覽器 localStorage；登入、線上翻譯在靜態版停用。
+
+同一份 `index.html` 也能放回 chatgpt.site：程式只在網址是 `github.io` 時切換成靜態模式，在 chatgpt.site 上仍會使用原本的 API。
 
 ## 新增服裝歷史節點（給 GPT / Claude 修改時參考）
 「穿越服裝史」的畫面（時間軸導覽、全部一覽、放大檢視）會自動讀取資料，新增內容時只要在 `index.html` 的資料陣列加一筆，不用改版面程式：
