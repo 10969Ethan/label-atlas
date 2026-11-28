@@ -385,7 +385,7 @@ function drawQuiz(){
 drawQuiz();
 
 /* ---------- 影片（若 assets/care/care-intro.mp4 存在就顯示） ---------- */
-fetch('../assets/care/care-intro.mp4',{method:'HEAD'}).then(r=>{if(!r.ok)return;const v=$('#video-slot');v.hidden=false;v.innerHTML='<video src="../assets/care/care-intro.mp4" controls muted playsinline preload="metadata"></video><div><div class="mini">Video</div><p>短片：一件衣服從洗標到收納的保養流程。</p><p class="hint">AI 生成示意影片，實際做法以本頁文字說明與洗標為準。</p></div>'}).catch(()=>{});
+fetch('../assets/care/care-intro.mp4',{method:'HEAD'}).then(r=>{if(!r.ok)return;const v=$('#video-slot');v.hidden=false;v.innerHTML='<video src="../assets/care/care-intro.mp4" controls muted loop playsinline preload="metadata" aria-label="洗滌保養示意影片：檢查洗標並平放晾乾毛衣"></video><div><div class="mini">Video</div><p>短片：一件衣服從洗標到收納的保養流程。</p><p class="hint">AI 生成示意影片（Grok），實際做法以本頁文字說明與洗標為準。</p></div>'}).catch(()=>{});
 </script>
 </body>
 </html>

@@ -49,9 +49,13 @@ D. 首頁 index.html
 三、請你做的事
 ━━━━━━━━━━━━━━━━━━
 1. 從 GitHub repo 取得最新檔案，覆蓋到這個網站（路徑保持不變）：
-   index.html、designers.json、designers/（整個資料夾）、care/index.html、data/glossary.json、assets/designers/（整個資料夾，約 16MB）。
+   index.html、designers.json、designers/（整個資料夾）、care/index.html、data/glossary.json、assets/designers/（整個資料夾，約 16MB），以及三支 Grok 影片：assets/care/care-intro.mp4、assets/time-machine/warp.mp4、assets/designers-universe/universe-intro.mp4。
    不需要：tools/、.github/、docs/、README.md。
-2. 如果我有提供 Grok 生成的影片檔，存成 assets/care/care-intro.mp4（洗滌保養頁會自動顯示）。若有第二支時光機影片，存成 assets/time-machine/warp.mp4，並在時光機區塊上方加一個 <video muted playsinline loop autoplay> 作為背景，同時尊重 prefers-reduced-motion（減少動態時不播放）。
+2. 影片已經在 repo 裡並接好，不需要另外寫程式：
+   - 洗滌保養頁：assets/care/care-intro.mp4（晾曬收納段落，有播放控制）。
+   - 首頁時光機區塊開頭：assets/time-machine/warp.mp4（.tm-video，捲到畫面內自動靜音播放，離開即暫停）。
+   - 設計師頁標題下方：assets/designers-universe/universe-intro.mp4。
+   三支都標註「AI 生成示意影片（Grok）」；使用者開啟「減少動態」時不自動播放、改顯示播放控制。
 3. 不要改寫 Claude 寫好的內容與程式；只有下面的檢查失敗時才修正，並說明改了哪裡。
 
 ━━━━━━━━━━━━━━━━━━
@@ -63,7 +67,8 @@ D. 首頁 index.html
 4. 首頁小辭典查「斜裁」有解釋；查不到的詞仍會呼叫 /api/glossary。
 5. 首頁搜尋 Nike 仍使用 /api/search，研究書能正常打開，完整頁不會卡在「正在翻閱…」。
 6. 手機寬度（390px）導覽列是單行、可左右滑。
-7. Console 沒有新的紅色錯誤。
+7. 三支影片都能播放：/care/ 晾曬段落、首頁時光機區塊開頭、/designers/ 標題下方。
+8. Console 沒有新的紅色錯誤。
 請回報每一項是「通過」或「失敗＋錯誤訊息」。
 ```
 

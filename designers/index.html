@@ -2,9 +2,10 @@
 <html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>設計師宇宙書庫｜LABEL ATLAS</title><link rel="stylesheet" href="atlas.css"></head>
 <body><header><a href="../#brand-library">LABEL ATLAS <small>／品牌書庫</small></a><span>設計師典藏</span></header>
 <main><div class="mast"><div><small>時尚史人物誌</small><h1>設計師宇宙書庫</h1></div><p>從一本品牌書出發，閱讀背後的人。</p></div>
+<figure class="ai-video"><video src="../assets/designers-universe/universe-intro.mp4" muted loop playsinline autoplay preload="metadata" aria-label="設計師宇宙示意影片：書本環繞行星漂浮"></video><figcaption>AI 生成示意影片（Grok）</figcaption></figure>
 <section class="universe"><div class="toolbar"><nav id="regions" aria-label="星區"></nav><label>活躍年代<select id="era"><option value="">全部年代</option></select></label><form id="find"><label for="query">尋找設計師或品牌</label><input id="query" type="search" list="suggestions" autocomplete="off"><datalist id="suggestions"></datalist><button type="submit">定位</button></form></div>
 <div id="sky"><div id="space"></div><div id="guide"><small id="focus-region"></small><h2 id="focus-brand"></h2><p id="focus-name"></p><button id="read">翻開人物誌</button><small id="cover-credit"></small></div></div>
 <div class="foot"><span id="status" role="status"></span><button id="motion" aria-pressed="false">減少動態</button></div></section>
 <details id="directory"><summary>瀏覽人物索引</summary><div id="index"></div></details></main>
 <dialog id="reader"><div class="paper"><div class="reader-bar"><span>LABEL ATLAS ／ 人物誌</span><button id="close">回到宇宙 ×</button></div><div id="pages"></div><nav class="pager"><button id="prev">上一位</button><button id="home">回到宇宙</button><button id="next">下一位</button></nav></div></dialog>
-<script type="module" src="atlas.js"></script></body></html>
+<script type="module" src="atlas.js"></script><script>if(matchMedia('(prefers-reduced-motion: reduce)').matches)document.querySelectorAll('.ai-video video').forEach(v=>{v.removeAttribute('autoplay');v.pause();v.controls=true})</script></body></html>
